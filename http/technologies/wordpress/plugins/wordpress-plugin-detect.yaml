@@ -5,13 +5,14 @@ info:
   author: s4e-io
   severity: info
   description: |
-    Detect the presence of a WordPress plugin.
+    Detects installed WordPress plugins by analyzing HTTP responses and common plugin paths
   reference:
     - https://wordpress.org/plugins/
   metadata:
     max-request: 1
-    framework: wordpress
-  tags: tech,wordpress,wp-plugin
+    shodan-query:
+      - http.component:"wordpress"
+  tags: tech,wp,wordpress,plugin,detection,wp-plugin
 
 http:
   - method: GET
@@ -20,7 +21,6 @@ http:
 
     host-redirects: true
     max-redirects: 2
-
     matchers-condition: or
     matchers:
       - type: dsl
