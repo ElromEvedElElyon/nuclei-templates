@@ -7,8 +7,6 @@ info:
   description: Dell EMC RecoverPoint management panel was detected.
   reference:
     - https://www.delltechnologies.com/en-us/data-protection/recoverpoint-for-virtual-machines.htm
-  classification:
-    cpe: cpe:2.3:a:dell:emc_recoverpoint:*:*:*:*:*:*:*:*
   metadata:
     verified: true
     max-request: 2
