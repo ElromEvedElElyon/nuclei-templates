@@ -14,7 +14,7 @@ info:
     product: emc_recoverpoint
     shodan-query:
       - title:"RecoverPoint Wizard"
-      - http.title:"RecoverPoint Wizard"
+      - http.favicon.hash:-742276344
   tags: panel,recoverpoint,dell,emc,detect,discovery
 
 http:
