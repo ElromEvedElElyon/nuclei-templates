@@ -1,27 +1,27 @@
-
 id: pocketbase-detect
 
 info:
   name: PocketBase Detection
   author: aykutgokbulut
   severity: info
-  description: Detects the presence of PocketBase backend.
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N
-    cvss-score: 0.0
+  description: Detects the presence of the PocketBase backend.
+  reference:
+    - https://pocketbase.io/
+  metadata:
+    verified: true
+    max-request: 1
+    vendor: pocketbase
+    product: pocketbase
+  tags: tech,pocketbase,detect,discovery
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}"
 
-    matchers-condition: and
     matchers:
       - type: word
-        words:
-          - "<title>PocketBase</title>"
         part: body
-
-      - type: status
-        status:
-          - 200
+        words:
+          - '<title>PocketBase'
+        case-insensitive: true
