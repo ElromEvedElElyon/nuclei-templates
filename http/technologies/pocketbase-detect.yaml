@@ -12,6 +12,7 @@ info:
     max-request: 1
     vendor: pocketbase
     product: pocketbase
+    shodan-query: http.favicon.hash:981081715
   tags: tech,pocketbase,detect,discovery
 
 http:
@@ -19,9 +20,14 @@ http:
     path:
       - "{{BaseURL}}"
 
+    matchers-condition: and
     matchers:
       - type: word
         part: body
         words:
           - '<title>PocketBase'
         case-insensitive: true
+
+      - type: status
+        status:
+          - 200
