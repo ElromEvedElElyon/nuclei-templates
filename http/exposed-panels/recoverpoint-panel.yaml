@@ -4,25 +4,23 @@ info:
   name: Dell EMC RecoverPoint Panel - Detect
   author: rxerium
   severity: info
-  description: Dell EMC RecoverPoint management panel was detected.
+  description: |
+    Dell EMC RecoverPoint management panel was detected.
   reference:
     - https://www.delltechnologies.com/en-us/data-protection/recoverpoint-for-virtual-machines.htm
   metadata:
     verified: true
-    max-request: 2
+    max-request: 1
     vendor: dell
     product: emc_recoverpoint
-    shodan-query:
-      - title:"RecoverPoint Wizard"
-      - http.favicon.hash:-742276344
-  tags: panel,recoverpoint,dell,emc,detect,discovery
+    shodan-query: http.favicon.hash:-742276344
+  tags: panel,recoverpoint,dell,emc,login,discovery
 
 http:
   - method: GET
     path:
       - "{{BaseURL}}/#!/welcome"
 
-    stop-at-first-match: true
     host-redirects: true
     max-redirects: 2
 
