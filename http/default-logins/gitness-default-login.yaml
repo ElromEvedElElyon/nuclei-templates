@@ -18,7 +18,7 @@ info:
 variables:
   username: "admin"
   password: "changeit"
-  
+
 flow: http(1) && http(2)
 
 http:
