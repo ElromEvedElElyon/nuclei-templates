@@ -4,7 +4,8 @@ info:
   name: PocketBase Detection
   author: aykutgokbulut
   severity: info
-  description: Detects the presence of the PocketBase backend.
+  description: |
+    Detected the presence of the PocketBase backend.
   reference:
     - https://pocketbase.io/
   metadata:
@@ -26,7 +27,6 @@ http:
         part: body
         words:
           - '<title>PocketBase'
-        case-insensitive: true
 
       - type: status
         status:
