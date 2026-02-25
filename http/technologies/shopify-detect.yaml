@@ -26,10 +26,9 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
           - "X-Shopify-Stage"
-          - "Shopify"
           - "Powered by Shopify"
           - "cdn.shopify.com"
           - "Shopify Store"
@@ -41,8 +40,6 @@ http:
         status:
           - 200
           - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
