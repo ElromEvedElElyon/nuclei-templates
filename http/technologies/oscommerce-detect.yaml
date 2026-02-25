@@ -27,9 +27,8 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
-          - "osCommerce"
           - "Powered by osCommerce"
           - "oscommerce.com"
           - "X-Powered-By-osCommerce"
@@ -39,9 +38,6 @@ http:
       - type: status
         status:
           - 200
-          - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
