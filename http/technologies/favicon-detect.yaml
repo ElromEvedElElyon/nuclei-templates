@@ -12,7 +12,7 @@ info:
     - https://github.com/sansatart/scrapts/blob/master/shodan-favicon-hashes.csv
   metadata:
     max-request: 2
-  tags: tech,favicon
+  tags: tech,favicon,discovery
 
 http:
   - method: GET
@@ -24,6 +24,17 @@ http:
     host-redirects: true
     max-redirects: 2
     matchers:
+
+      - type: dsl
+        name: "skysea-clientview"
+        dsl:
+          - "status_code==200 && (\"385597939\" == mmh3(base64_py(body)))"
+
+      - type: dsl
+        name: "ictbroadcast"
+        dsl:
+          - "status_code==200 && (\"-60395993\" == mmh3(base64_py(body)))"
+
       - type: dsl
         name: "brightdata-proxies"
         dsl:
@@ -2116,6 +2127,11 @@ http:
           - "status_code==200 && (\"-687783882\" == mmh3(base64_py(body)))"
 
       - type: dsl
+        name: "clawdbot-control-panel"
+        dsl:
+          - "status_code==200 && (\"-805544463\" == mmh3(base64_py(body)))"
+
+      - type: dsl
         name: "surfilter-ssl-vpn-portal"
         dsl:
           - "status_code==200 && (\"-590892202\" == mmh3(base64_py(body)))"
@@ -2314,6 +2330,11 @@ http:
         name: "liquidfiles"
         dsl:
           - "status_code==200 && (\"541087742\" == mmh3(base64_py(body)))"
+
+      - type: dsl
+        name: "liquidfiles"
+        dsl:
+          - "status_code==200 && (\"1906448386\" == mmh3(base64_py(body)))"
 
       - type: dsl
         name: "zyxel-network"
@@ -3890,4 +3911,4 @@ http:
       - type: dsl
         dsl:
           - 'mmh3(base64_py(body))'
-# digest: 4a0a00473045022100e87e5cad33cd2731dd648fc6c56caf11ee3c796683eebc872b6ea451f40a0d0c022058582ab789cbf60d1c7b083cb5a69dd54dc6ae7bfe6f8002410e16d1fcea0d59:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100e90e56977f506c299a6ea43742e76d472a1e482c89adc9735ad2c38479e9169f022100a53c1d0e8491dda0f9cd1398145c35595fdd5686769bd768c0f6da20880ff552:922c64590222798bb761d5b6d8e72950

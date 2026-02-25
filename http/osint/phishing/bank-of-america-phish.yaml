@@ -10,7 +10,7 @@ info:
     - https://bankofamerica.com
   metadata:
     max-request: 1
-  tags: phishing,BankOfAmerica,osint
+  tags: phishing,BankOfAmerica,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"bankofamerica.com")'
-# digest: 490a00463044022057494480c30005155a87aef2eda9172e871d58f1d8342186bff9391c6c4174ec022020ee72bfb58f4edd492a3a4de311547ddd3055b4255188581f3bf2e186b8a125:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100d28cb659b8c76af1eb16254efed8573abc7a29c4c4fdfd139019726131e7e0b40221009962d7f3bd6bdcd93c556b51967dd196a6417305518c4e7a9f9ebe1f2054673f:922c64590222798bb761d5b6d8e72950

@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: antispam-bee
     wpscan: https://wpscan.com/plugin/antispam-bee
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a004730450220478f1923756d1f0fc5b6cc3574126cf5feedae36afae2bfe54eddbb6bf1642a7022100ddc159f5e103a201bb7cbe9466b87c75151f66e3981675d0ac682b24195f6ba8:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a4ce1c22fc5629c0b1937b44b7c6aa220e5afccbd869ca3d0b233bd7da649795022100ad03d0efbed060c1630c295e2804965ca315b324ed56cf9995903af34b10c458:922c64590222798bb761d5b6d8e72950

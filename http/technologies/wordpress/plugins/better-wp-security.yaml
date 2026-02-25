@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: better-wp-security
     wpscan: https://wpscan.com/plugin/better-wp-security
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a004830460221009edbb904691b029d7335dd3bd686c9530af4d3cffbed2a5dcccf4bb302027c7c022100f40dea821b970e17327605f0699cb7d36cfd4f06b473c0d5e9d85d638c89fc4a:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100d211f6c01345da53769c1bf357f5f0fbf06f23f6866a58cdd186e54b5400b582022100f36fe2895e162cf8695125634986d034776508922b70feb8e70ac8ee343a41fe:922c64590222798bb761d5b6d8e72950

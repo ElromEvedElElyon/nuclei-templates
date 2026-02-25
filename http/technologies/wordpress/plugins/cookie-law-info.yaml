@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: cookie-law-info
     wpscan: https://wpscan.com/plugin/cookie-law-info
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502206bd9b75791dcac5de7f17d1233cfe0d9082b4612083610d91b80aec0e57bb2ef0221009999ccac775980408f72617d7f82a53dae9f4f108f8b3e964f9dc35e57adb321:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402206e5ac1011e15c903a4084b6b6baf27baf5787854aff4024323f4b984e07cda7c022022cc025fba6f92dc5cb0666dab525743382be87bb8ba6dd51c428b10d7344e5b:922c64590222798bb761d5b6d8e72950

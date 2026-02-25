@@ -12,7 +12,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.title:"Celebrus"
-  tags: tech,celebrus,detect
+  tags: tech,celebrus,detect,discovery
 
 http:
   - method: GET
@@ -35,4 +35,4 @@ http:
         group: 1
         regex:
           - 'Celebrus\s+([0-9.]+)\s+Collection'
-# digest: 4b0a00483046022100d1e5bf3bc50581b7f5da3256bc87837c10774b1461152c375b34dd4111fe61820221009a380d018fa1788681e07a9ea91fc5d19364b4642803a036eb9d9bc4c03a272d:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022005eeac7201071cd8b1f7f2f34759eb6172e3c558678f4a925adf85813f046ec00220019faed6b135a5711f753df9643a3dd868c1cd9d140a7d405148ee4a9ecd95c2:922c64590222798bb761d5b6d8e72950

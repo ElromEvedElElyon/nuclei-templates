@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: cookie-notice
     wpscan: https://wpscan.com/plugin/cookie-notice
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100fcbf4df4ac83c3ec9dbb6bb49e8763d3e0e5c1c01184df43b9ab34ff4c02cb600221008b4c258a0dec535c2d9e883c688b39e762f5a05c44407f7ea223af39e1c953bd:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a78804b94d2289e160d1cf23e51a4a1ba566dd40515ce68d2e46d1e16ab066cc022100c6147ba34ab229e6d5d9a1221e06d1feea3223289122d3611f8fc2f28da26b72:922c64590222798bb761d5b6d8e72950

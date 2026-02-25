@@ -10,7 +10,7 @@ info:
     - https://visualstudio.com
   metadata:
     max-request: 1
-  tags: phishing,visual-studio-code,osint
+  tags: phishing,visual-studio-code,osint,discovery
 http:
   - method: GET
     path:
@@ -34,4 +34,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"visualstudio.com")'
-# digest: 4a0a00473045022038b55b5669e51ec4706333275e8636bf257ebc9fc13e2515870211eeb5753af70221008305ebf9b155413efeff095a930a1f8a4d9c0d49ff66a5b067efdb28476ebb62:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502204d4e734b27e79b9ad5d71a974ad75f830d0a6c11fa9e422abeb300dc2adb1a5e022100a3fb468e552335d59b6089876430eed1a97ba186764a52dfc27f96c1487cf8e6:922c64590222798bb761d5b6d8e72950

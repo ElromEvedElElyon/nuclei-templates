@@ -10,7 +10,7 @@ info:
     - https://norton.com
   metadata:
     max-request: 1
-  tags: phishing,norton,osint
+  tags: phishing,norton,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"norton.com")'
-# digest: 4b0a004830460221009f123860617d18d02efa5da4137ccc420ddd734d7af529a6e0982656752464db022100a0246605106c1cec5b6c02ff1c567bd2a06dde76ca207511a0268f0731b3356b:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100bffef9986652ececfc606496cc4abbf825a5dd62336c6dad276042b65167b610022100fc5946bd1e426fe043e528590839b5277189be32b5bec32ce8f79f2fc77311da:922c64590222798bb761d5b6d8e72950

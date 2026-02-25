@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: safe-svg
     wpscan: https://wpscan.com/plugin/safe-svg
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100bbd11a5ce229a425430a0d723c3fc3801da0efef87c459ac59753c8bf79701f3022100bcc6f045d4593b6faf25127c7ccec062212860f168c3885e892dc83233d2bd6a:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100d95abda248774f50867b6a68adad9e465fff5e77f27604d657bc674e53e1ee55022100d8a00574aa70c940dc0ba417d164a07da80943917f2aa1a5e7478aa3795dc6bd:922c64590222798bb761d5b6d8e72950

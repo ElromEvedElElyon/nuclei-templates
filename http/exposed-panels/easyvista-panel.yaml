@@ -12,7 +12,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: http.title:"Easyvista"
-  tags: panel,easyvista,login,detect
+  tags: panel,easyvista,login,detect,discovery
 
 http:
   - method: GET
@@ -33,4 +33,4 @@ http:
         regex:
           - '(?i)package:\s+"([a-z0-9._-]+)"'
           - '(?i)version&nbsp;:&nbsp;([a-z0-9._-]+)'
-# digest: 4b0a00483046022100d59de72f42cfe2054242360c3a7092151b887814588ee0832d1006ac685557f8022100e504c4afed8be76057c425055648017ff7d18057bc65c5d446abae139d7413b8:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a1575cf9aa4aacc26dcf0290f41ef6164eb43c0bf7f4dcf6b6402402bd7ed658022100e309a210cbc172aee3883142d76accdc3549025d84c28dab04211a527b699121:922c64590222798bb761d5b6d8e72950

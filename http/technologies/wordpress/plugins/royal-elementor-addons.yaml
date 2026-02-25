@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: royal-elementor-addons
     wpscan: https://wpscan.com/plugin/royal-elementor-addons
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100f72400f06baf8b026525075beac6c24b0e193e850066471ec97eb9794487db5102210080716f59e5f5566d6627aa82eba70aca7e0639da657e7c366be50366b4152393:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022043f442b9dd8440f232a81b4f3dcb09ac0437ae2f3ef420dca59b9e21e32ba08d022100f8fc8e3350d65786e6eb18cd5bbca521626294ab639f4c8b56ef2e2cf4d3aadc:922c64590222798bb761d5b6d8e72950

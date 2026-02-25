@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: newsletter
     wpscan: https://wpscan.com/plugin/newsletter
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402203e29dcffe9d67d9dec314eea9dafcbd960589ab1a7a6c49fcf184169be4b1cf4022030433e4a68a6f6ea3cbb7e1ed7416f35d3f20324caab70d1e66147d2b0dae5fa:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100e2fdd5e2067fdecc47a5210f25eae550efdf2f2f3c974f56b4052d5a5d6d1098022000cc0f2087b23bac405f162af21b129efb515d650523803246f1165f2042e4cc:922c64590222798bb761d5b6d8e72950

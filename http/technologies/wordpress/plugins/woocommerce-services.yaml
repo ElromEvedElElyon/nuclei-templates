@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: woocommerce-services
     wpscan: https://wpscan.com/plugin/woocommerce-services
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022069b75b76d2fda495d24c112edaa1173a3898e7a100e6b61bb5e20128f527f994022100fb5f84ef43c3b3228f78ac09f0ffaf7799a2133ea0beb0cd0772b8ae0759dd0c:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203b1037bae62de15a23b9f9df13f4fcf1a2070a6eb04f393d0c533ca01a7c55a902205b18c34c4704547f7f7fc4a8413abad7285204d90fd0cc4a9227b0d137e2691f:922c64590222798bb761d5b6d8e72950

@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: meta-box
     wpscan: https://wpscan.com/plugin/meta-box
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100cd33545e98adca9ef0c5d2eab3d801b58194b187bca6cf8a152c1805c684d56602206feac4f4cac796ef8dc9d79191f221fd61e3eaba4250710db780af0f104a6be0:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220362500050aed67140b8e03bc9364143c445023ea3fea83778f368443bbac20a3022049bf6cd9d9d599ff0a911dcc8baca7edf73495381eeffbaca37c0005c039d3b0:922c64590222798bb761d5b6d8e72950

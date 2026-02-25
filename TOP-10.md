@@ -1,12 +1,12 @@
 |    TAG    | COUNT |    AUTHOR     | COUNT | DIRECTORY  | COUNT | SEVERITY | COUNT | TYPE | COUNT |
 |-----------|-------|---------------|-------|------------|-------|----------|-------|------|-------|
-| cve       |  3122 | dhiyaneshdk   |  1844 | http       |  8669 | info     |  4086 | file |   434 |
-| panel     |  1305 | daffainfo     |   868 | cloud      |   655 | high     |  2377 | dns  |    25 |
-| xss       |  1239 | princechaddha |   806 | file       |   434 | medium   |  2322 |      |       |
-| wordpress |  1143 | dwisiswant0   |   805 | dast       |   255 | critical |  1321 |      |       |
-| exposure  |  1084 | ritikchaddha  |   597 | workflows  |   202 | low      |   316 |      |       |
-| wp-plugin |  1002 | pussycat0x    |   504 | code       |   168 | unknown  |    53 |      |       |
-| osint     |   808 | pikpikcu      |   352 | network    |   140 |          |       |      |       |
-| tech      |   776 | pdteam        |   304 | javascript |    71 |          |       |      |       |
-| lfi       |   764 | ricardomaia   |   249 | ssl        |    38 |          |       |      |       |
-| misconfig |   739 | geeknik       |   235 | dns        |    22 |          |       |      |       |
+| vuln      |  6572 | dhiyaneshdk   |  2031 | http       | 10355 | info     |  4797 | file |   446 |
+| cve       |  3960 | daffainfo     |   946 | cloud      |   663 | high     |  2737 | dns  |    33 |
+| discovery |  3598 | princechaddha |   866 | file       |   446 | medium   |  2697 |      |       |
+| vkev      |  1644 | dwisiswant0   |   806 | code       |   277 | critical |  1683 |      |       |
+| wordpress |  1546 | ritikchaddha  |   750 | network    |   277 | low      |   491 |      |       |
+| panel     |  1400 | pussycat0x    |   750 | dast       |   249 | unknown  |    58 |      |       |
+| xss       |  1380 | rxerium       |   537 | workflows  |   206 |          |       |      |       |
+| wp-plugin |  1366 | pikpikcu      |   353 | javascript |   104 |          |       |      |       |
+| exposure  |  1366 | 0x_akoko      |   326 | ssl        |    38 |          |       |      |       |
+| osint     |  1130 | pdteam        |   317 | dns        |    30 |          |       |      |       |

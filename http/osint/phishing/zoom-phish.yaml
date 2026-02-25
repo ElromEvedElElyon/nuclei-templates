@@ -10,7 +10,7 @@ info:
     - https://zoom.us
   metadata:
     max-request: 1
-  tags: phishing,zoom,osint
+  tags: phishing,zoom,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"zoom.us")'
-# digest: 4a0a0047304502201df52b4f01e8486e71e75dac255c985f7f902b909cddcac703bf9790504eb80d022100c0162300d3e11819b131f68bb4139f488d4e32955b542dea63381cac21077e43:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203a904166384a4b38405a90995904ba5aef158e4dc64ce3058375b14a347754cf02203d860fdbdb93e91bbfe171b317232d8c2060aa29cda23a054537ae92189e4b4e:922c64590222798bb761d5b6d8e72950

@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: limit-login-attempts
     wpscan: https://wpscan.com/plugin/limit-login-attempts
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502201450f8c69f75c65be42de663926f5da18010c2c0b8bab35182387f29c6038841022100a236727aee7c3dff126c5aa320f11b607879c771b782e25f1ba05946a524c8e6:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402202f2c4830ca2c48b2d4ff5260e3508a491bf76eb09c66e9fcdd64063002f94e58022019267482a447f184f0e12a49f290f9d82f0d5210660d4be864efd8c8ffe0e081:922c64590222798bb761d5b6d8e72950

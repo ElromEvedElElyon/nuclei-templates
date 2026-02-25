@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: wp-mail-logging
     wpscan: https://wpscan.com/plugin/wp-mail-logging
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100bb7d7591027a26e1b0f4ecd4579061920333f744455b15493c4f70026c479501022100f4d3e1b1cc5f97318099c5e82388c072db00217ed90f4afdbd7854623457d086:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220204b28a93a57f55adf4f0ab819f775ea21916df22e7c9bdbe407d5aa2aa3731b0221009d1fcdfe3f4c79759f5a41704e02c5ec0e1d8897889493da6b9b66fe1f38da4d:922c64590222798bb761d5b6d8e72950

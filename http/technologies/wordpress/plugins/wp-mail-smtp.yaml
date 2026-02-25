@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: wp-mail-smtp
     wpscan: https://wpscan.com/plugin/wp-mail-smtp
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a0046304402206dee3bb768dc351ecd54620a5dd6ead33996489bd6782c611dc0104bf389e34302207335279e751b00c3ee1dcf0080caa92aff9ab3e3ee877f43b0e9bf16d5589945:922c64590222798bb761d5b6d8e72950
+# digest: 490a004630440220591fed55ff88883ab5f357632251fb16468c10d28bcf472126a34cdc3dab440102202d57261154da28bd442a08f993a3e21f3c1bc0fd1a8f929e52611c64e535167d:922c64590222798bb761d5b6d8e72950

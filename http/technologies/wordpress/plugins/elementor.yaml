@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: elementor
     wpscan: https://wpscan.com/plugin/elementor
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 490a00463044022032ff3165ba9af4832348cd088f090ef5545a6e39a2966aa3c2dc528f19e13c5602204e0c1dc20ee949c78d2194888916d9c87aac2dec05dc5ba1a37d51267edd8bda:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100d5bb9251ffe9ff370526f5aac7eb02f92146ee2981473664b50adcb56156a9540220160dfa2bc414b0e051b26de03e2008bd76d6ee7c18bd9a21e702dc4cac2fed4e:922c64590222798bb761d5b6d8e72950

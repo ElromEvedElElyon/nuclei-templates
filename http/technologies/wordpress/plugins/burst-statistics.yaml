@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: burst-statistics
     wpscan: https://wpscan.com/plugin/burst-statistics
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022018064bbaac9ca4131f78843c6c710bb0757aa1778a338c6d417b40e6993bc9a302210086255ed7dc6abf8e22e1c0885fd2b7386211e7fcb173f9560889bba549d508ec:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402201c7e6ac132e96dc81290539e6d5dfbf82d68ab04d2f4a59a3f1bdb7807503cf6022006fbd046fabadfbce98d8a5ad4409dcd0c0ecf1154cf99a697225b7921f214d6:922c64590222798bb761d5b6d8e72950

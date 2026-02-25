@@ -10,7 +10,7 @@ info:
     - https://python.org
   metadata:
     max-request: 1
-  tags: phishing,python,osint
+  tags: phishing,python,osint,discovery
 http:
   - method: GET
     path:
@@ -35,4 +35,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"python.org")'
-# digest: 4b0a00483046022100c7b824d773aad15ba399db0990a47cf363c0806d9f525b4e89d3ba6cfcdd0204022100f448920d48d0598792cfe927e9c96d4644f8501e22c532c4f14cfd889eb9a631:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502202425c1ea2bbfdcd0fed2a8a925eb88687de187457a885c8153582d6b8919efc402210087ff19fe30c360d5d4a717cc22b4bca53eedc0b81d3b9c8fee46ceedab529ab7:922c64590222798bb761d5b6d8e72950

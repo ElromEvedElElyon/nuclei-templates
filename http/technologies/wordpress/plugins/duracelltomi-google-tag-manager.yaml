@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: duracelltomi-google-tag-manager
     wpscan: https://wpscan.com/plugin/duracelltomi-google-tag-manager
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a004730450220619ee808e9718ea3a0e28a1978a3763d4aa65ca0409dc88bbecfd08217154cb7022100af009909c1a13e4814efadc2cf40a47f3c48cead7c57e5ddb6a575d4dd3d98c5:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100d595a88e2f3c406e6402a9cd552f6b52cc416633427eeaefb8c4fdd15a819910022100a55875d812217262fc58b2497b4ce5ac792a4fe38157d5902517ccce82968ab2:922c64590222798bb761d5b6d8e72950

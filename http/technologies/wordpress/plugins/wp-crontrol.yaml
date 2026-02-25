@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: wp-crontrol
     wpscan: https://wpscan.com/plugin/wp-crontrol
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100bf431a8e9cc861b5b39bbd360ed332f712fed97f29833628be5d82bed9c4f8bc022042e15e27f41a451d81afc1e159db2434e285a8bc7d944a3c7bf21d48c6c97970:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a004730450220639b1fc5c20342dbbc97780805072e9bb128d1635f702027f65504a829f51435022100d9974f14de7fa7a3ac0ffd8c2793e2ed590f033cc146322d95221fe21dd17c27:922c64590222798bb761d5b6d8e72950

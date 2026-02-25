@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: webp-converter-for-media
     wpscan: https://wpscan.com/plugin/webp-converter-for-media
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4b0a00483046022100b11689895bcdbb30b1077220285a74cde358b5978ea7d4e944b11cfb420dbada022100f2740c82b8b7d89a81431ae6e575944e80e000d4d06bfcf95a3a3c20b6966ffe:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402200cae0bbd6f1d216cae855c3a96e82606526b50beda20ada1c387f29e59c567c502201a124fc2dd0ed994224e745708ad9dce524ab0c596a5517a538c72d0bb64751a:922c64590222798bb761d5b6d8e72950

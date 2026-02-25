@@ -10,7 +10,7 @@ info:
     - https://bestbuy.com
   metadata:
     max-request: 1
-  tags: phishing,bestbuy,osint
+  tags: phishing,bestbuy,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"bestbuy.com")'
-# digest: 4a0a00473045022100a5ef5eecd24818c13160be63cf67458f5147b6ea9b2a9c5ea688588b0f64cc6202207275b9b73737db84212414f0cd98ad929f8c04746aaacf2ffd24f82fd30220aa:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502201a91dbbfbd30779ddb07e1f64923d18f9011fdc1d44a8378731cc681b0b5aa18022100ed8c27c57b7b023f2981b34cbbb54c26861b06aa8c91794ec245e975bff4f7a2:922c64590222798bb761d5b6d8e72950

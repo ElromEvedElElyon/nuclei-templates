@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: loco-translate
     wpscan: https://wpscan.com/plugin/loco-translate
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502205c98695ec2734cc94d3a2ce616d6411c4e420ce29087387c1798ee95146ed7b3022100e46d4a18747685295bdbaef7c3f6c6f425b8ea4c75777c35a0554226d73f6c6b:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022033bbcdacfb618911cc63f2be62a965aebafc033838f78d84598ad3ef7be77bce022044544ba3060081da0bc719054711d65d9b625549a02440126b51222dcd41629c:922c64590222798bb761d5b6d8e72950

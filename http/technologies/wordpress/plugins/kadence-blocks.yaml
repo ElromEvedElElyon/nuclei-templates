@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: kadence-blocks
     wpscan: https://wpscan.com/plugin/kadence-blocks
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502204925c656eaca08c89a5d76571847d42d9e6b1547baa613f9757f80312fb9d037022100842bcef240cb8590520e9dfc2a76e75c0b2b69e60b08b3586da0d69491cb7940:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a0047304502202328f441962b9911ed0afba805a4d2db1b681d1e14aebaa7cdc5df9f61934e41022100e00ba96078cd05e6866f75fc9febd5c9493dbc1baaf04df381885a9be68298f0:922c64590222798bb761d5b6d8e72950

@@ -11,7 +11,7 @@ info:
   metadata:
     max-request: 1
     shodan-query: html:"sekolahku.web"
-  tags: tech,sekolahku,cms
+  tags: tech,sekolahku,cms,discovery
 
 http:
   - method: GET
@@ -25,4 +25,4 @@ http:
           - 'sekolahku.web.id'
           - 'CMS Sekolahku'
         condition: or
-# digest: 4a0a00473045022100b1966fe63964a3ae57b7957e62ec3f495b818572a51cdef897403f8d6cad546c02206b3c275241fba03cc84a56444de2070468750d994ad29b22387f374000e4de51:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a0048304602210093a4a9a1d5db0ff4488d4108859138cb6bc03c04c6c141c7efd9125c42970134022100f363c77c24f63ad01063c9218992f525230fe6a2faf894a4ff0ba4ad5d26e75f:922c64590222798bb761d5b6d8e72950

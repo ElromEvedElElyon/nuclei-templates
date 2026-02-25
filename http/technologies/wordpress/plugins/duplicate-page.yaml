@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: duplicate-page
     wpscan: https://wpscan.com/plugin/duplicate-page
-  tags: tech,wordpress,wp-plugin,top-100,top-200
+  tags: tech,wordpress,wp-plugin,top-100,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a0047304502204bb09eb039cc3a1bcba60a087db029fd37addd381eca914113fb0a4ccb0b5591022100bad89db51d7b89c736d3aa375b48d84c60dd4ccc10d25960cad7d22de70d26d4:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203abdc6acae3ec39c10857bb6592712132794af873b3bc4c9a79a6178ee84372a02206b87aa83bafbe15034d5a41b30f7de7dcc95e6017649c553614fdfa6f8a512e3:922c64590222798bb761d5b6d8e72950

@@ -9,7 +9,7 @@ info:
   metadata:
     plugin_namespace: templately
     wpscan: https://wpscan.com/plugin/templately
-  tags: tech,wordpress,wp-plugin,top-200
+  tags: tech,wordpress,wp-plugin,top-200,discovery
 
 http:
   - method: GET
@@ -46,4 +46,4 @@ http:
         part: body
         regex:
           - '(?i)Stable.tag:\s?([\w.]+)'
-# digest: 4a0a00473045022100f666ccec4ee7ece3f31f0f00b819ecc064cfb8cafa414f86347d5c552596cc8a0220264ae0fb70eb7219368ae7696eaa136d486aff81c5bea063f51c06f5b5195c46:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a004830460221009697ce88e130c9bf6a8f5bb2fe8964bf9e83a1859df118c722f6f11ba83ed502022100d169f0edf561f01b5dee7bf52ed9353733244f1a5cd82c5fb83acc29d91b5610:922c64590222798bb761d5b6d8e72950
