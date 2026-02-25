@@ -29,7 +29,6 @@ http:
       - type: word
         part: response
         words:
-          - "Wix.com"
           - "Powered by Wix"
           - "X-Wix-Request-Id"
           - "Wix Static Site"
@@ -59,4 +58,3 @@ http:
         regex:
           - 'wix-id=([a-z0-9]+)'
           - 'siteid="([a-zA-Z0-9]+)"'
-          - 'wix\.com/([^/]+)'
