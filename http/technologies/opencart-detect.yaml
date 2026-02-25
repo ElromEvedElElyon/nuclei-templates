@@ -27,11 +27,9 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
-          - "OpenCart"
           - "Powered by OpenCart"
-          - "openCart"
           - "X-Powered-By-OpenCart"
           - "OpenCart Store"
         condition: or
@@ -40,9 +38,6 @@ http:
       - type: status
         status:
           - 200
-          - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
