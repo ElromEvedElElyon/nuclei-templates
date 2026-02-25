@@ -32,7 +32,6 @@ http:
     matchers:
       - type: word
         words:
-          - "Mezzanine CMS"
           - "powered by Mezzanine"
           - "Welcome to Mezzanine"
           - "Mezzanine version"
@@ -41,6 +40,5 @@ http:
 
       - type: regex
         regex:
-          - "(?i)mezzanine"
           - "(?i)mezzanine\\s+(v[0-9.]+)"
           - "(?i)<title>Mezzanine CMS"
