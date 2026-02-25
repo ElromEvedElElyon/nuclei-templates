@@ -953,8 +953,8 @@ code/windows/audit/winrm-remote-shell-access-allowed.yaml:c065d90361731773cde343
 code/windows/enumeration/rdp-ntlm-info.yaml:a4e4ee99b93ce4d060d0e525bf8a4d6c6f15c9f2
 code/windows/get-stored-credentials-cmdkey.yaml:0355b4ae1b0a1fdac60cea737538510bdebe6382
 contributors.json:362462fcd69214ad2fc765d007d8ac58dfe38344
-cves.json:f118382139777515b91c709d7009783c9e7dddff
-cves.json-checksum.txt:dca7a4335fa6a6cc3742a2bbf27954e14f1725a2
+cves.json:060b32cda7f26f4fe484518cf0ebed26da288055
+cves.json-checksum.txt:e645d38f148c4de89fe3402f9d07dc0a811caf0e
 dast/ai/ai-code-execution.yaml:22499b9349751bc0841e3c87a9ad36f17d98c565
 dast/ai/ai-data-exfiltration.yaml:7c3b8514ff64b5ba6737ee77bf3c71a074e9540c
 dast/ai/ai-prompt-injection.yaml:509eeec9e6458911087a2f93e2358a4b5e285429
@@ -4346,6 +4346,7 @@ http/cves/2022/CVE-2022-44290.yaml:0e4e8ae82532afe7c62cb9c6e111d39436e1c9cf
 http/cves/2022/CVE-2022-44291.yaml:e4e6c2d87e78ba6a7f1e2509e07f290f365fc865
 http/cves/2022/CVE-2022-44356.yaml:8ff457bce705ad1709aca81af938c4e0dfc3e0e2
 http/cves/2022/CVE-2022-4447.yaml:b15cc5977d4d8d8a518678d1d9de32579649bf61
+http/cves/2022/CVE-2022-44588.yaml:a7430759ae2a707be43eab6c8245216d2f2b6719
 http/cves/2022/CVE-2022-44877.yaml:b9420fe51d0824c073f9ca4ce295fdaf3035ccd1
 http/cves/2022/CVE-2022-44944.yaml:2a2355130ce62df6feaaedf3d44ebb06370162c3
 http/cves/2022/CVE-2022-44946.yaml:68cfa58b0a8816815b2e76d70146e1964168748b
@@ -12813,7 +12814,7 @@ ssl/tls-version.yaml:396e167fe4dc47cc31a3823287f767ac4ba3ed6d
 ssl/untrusted-root-certificate.yaml:bc78917f6ed97df44ec66fd168e6d3d51f2050a9
 ssl/weak-cipher-suites.yaml:a2c5b71896965bcbb458e1d2a5bcf54981301156
 ssl/wildcard-tls.yaml:93487bb9d9c28bf84ae1928887b0dafef67b4117
-templates-checksum.txt:e2d103ef2177726d3a4c44150f779d508d931646
+templates-checksum.txt:1cc8a18f1ff761fea348ba0d12f5329069efc671
 wappalyzer-mapping.yml:7f03bd65baacac20c1dc6bbf35ff2407959574f1
 workflows/74cms-workflow.yaml:bb010e767ad32b906153e36ea618be545b4e22d0
 workflows/acrolinx-workflow.yaml:8434089bb55dec3d7b2ebc6a6f340e73382dd0c4
