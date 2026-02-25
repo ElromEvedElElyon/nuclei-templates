@@ -31,7 +31,6 @@ http:
       - type: word
         part: body
         words:
-          - "Django"
           - "Powered by Django"
           - "django-project"
           - "Django Software Foundation"
