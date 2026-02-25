@@ -26,9 +26,8 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
-          - "Blogger"
           - "Powered by Blogger"
           - "blogspot.com"
           - "X-Powered-By-Blogger"
@@ -39,9 +38,6 @@ http:
       - type: status
         status:
           - 200
-          - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
