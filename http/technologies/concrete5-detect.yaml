@@ -29,10 +29,7 @@ http:
       - type: word
         part: body
         words:
-          - "Concrete5"
           - "Powered by Concrete5"
-          - "concrete5.org"
-          - "concretecms.com"
           - "X-Powered-By-Concrete5"
         condition: or
         case-insensitive: true
@@ -40,9 +37,6 @@ http:
       - type: status
         status:
           - 200
-          - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
