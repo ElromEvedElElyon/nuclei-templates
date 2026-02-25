@@ -16,15 +16,15 @@ info:
     shodan-query: title:"Hybris"
     product: hybris
     vendor: sap
-  tags: default-login,hybris
+  tags: default-login,hybris,vuln
 
 http:
   - raw:
       - |
-        GET /login HTTP/1.1
+        GET {{path}}login HTTP/1.1
         Host: {{Hostname}}
       - |
-        POST /j_spring_security_check HTTP/1.1
+        POST {{path}}j_spring_security_check HTTP/1.1
         Host: {{Hostname}}
         Origin: {{BaseURL}}
         Content-Type: application/x-www-form-urlencoded
@@ -32,15 +32,26 @@ http:
 
         j_username={{username}}&j_password={{password}}&_csrf={{csrftoken}}
       - |
-        GET / HTTP/1.1
+        GET {{path}} HTTP/1.1
         Host: {{Hostname}}
 
-    attack: pitchfork
+    attack: clusterbomb
     payloads:
       username:
         - admin
       password:
         - nimda
+
+      path:
+        - /
+        - /hac/
+        - /hmc/
+
+    stop-at-first-match: true
+    host-redirects: true
+    max-redirects: 2
+
+    skip-variables-check: true
 
     matchers-condition: and
     matchers:
@@ -62,4 +73,4 @@ http:
         group: 1
         regex:
           - '<meta name="_csrf" content="([a-z0-9-]+)" \/>'
-# digest: 490a004630440220705064ae9dc25d4fe3e47b9e434e3975c6a8125091d1fbff4393082ce7c818ed022031b0cc83879c3a7ab2f417d27c5201cb15c0d85a8552dc40ba7361cb1d174cec:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022053026faa0b18d49b126af36b8dcf8229aa4a962338c901e7527fd5b480b99358022063bce2dbbd0505da2041ed0b942d30937b7757777d5211cf2d34f854fa28cf41:922c64590222798bb761d5b6d8e72950

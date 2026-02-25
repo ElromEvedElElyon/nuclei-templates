@@ -10,7 +10,7 @@ info:
     - https://libreoffice.org
   metadata:
     max-request: 1
-  tags: phishing,libre-office,osint
+  tags: phishing,libre-office,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"libreoffice.org")'
-# digest: 490a0046304402203ff7e085ded196a022f2925c4db45c8c6a8aa2c16d5aaab62d01fad75dc77571022018fdc3070b8afe05b571573e45e1e32f4791f5d6a2f2776f60632e9ac3f52589:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a0048304602210098a10c79330319ead7ad2721c83d21f3bb882350a741da82482c370fcadcf1fd022100d788603dbb774900b3bf2faa969bb3638a76dd466e82becd73ba39c10d3a81a7:922c64590222798bb761d5b6d8e72950

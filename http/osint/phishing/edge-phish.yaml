@@ -10,7 +10,7 @@ info:
     - https://www.microsoft.com/en-us/edge/download?form=MA13FJ&ch=1
   metadata:
     max-request: 1
-  tags: phishing,edge,osint
+  tags: phishing,edge,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"microsoft.com")'
-# digest: 4a0a004730450221008809046f2163976244e1920f3732e2337ef0034b038697736d1310b259d4394702203bb015584fe5dd01875ebcbed581bc120cc993383e2dd3dd2cdd0970b1ac8d7e:922c64590222798bb761d5b6d8e72950
+# digest: 490a00463044022065bc8beb25d009410f9274d582e08cee7f1688183d905fad2662804cad39b6f7022028f4343cf88f2286276d1ce82573750e981bf300983eeaf8d96b4e5805055dfd:922c64590222798bb761d5b6d8e72950

@@ -12,7 +12,7 @@ info:
     verified: true
     max-request: 1
     shodan-query: title:"Cloud Services Appliance"
-  tags: ivanti,csa,panel,login
+  tags: ivanti,csa,panel,login,discovery
 
 http:
   - method: GET
@@ -29,4 +29,4 @@ http:
       - type: status
         status:
           - 200
-# digest: 4b0a00483046022100c05b63efbd554a7f7f8b829215eddd46985511631286a6a382e8f9f5601e28e3022100f0eb173d294e889a58b9f642030b3e78f0eb9d0dbce736aabccfb8e9a7a5c88e:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402204a7f026a9fecb327d5675fc952db909829a8cf3180f1056eae464788fbc2aa8102200dff77af65b517302478172704d14601376608ead0a1c7a76e5ad4d3b29a03b8:922c64590222798bb761d5b6d8e72950

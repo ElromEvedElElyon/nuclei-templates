@@ -10,7 +10,7 @@ info:
     - https://target.com
   metadata:
     max-request: 1
-  tags: phishing,target,osint
+  tags: phishing,target,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"target.com")'
-# digest: 4b0a00483046022100b752fe565c8197b9dab05fc0dfec14c5dfaf26b0d90ad93a7d0406cffd0aa21b022100f9713da459ddd4ab80dfb6143a73c8e6b44b9afb6f395f1ba5ff20fbaea0d7ad:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100e83bb3c6320735b593d15457d4561eb273fb82aeaf6812068a9401b7dce171eb022058662f05cafe0914ebf6aab19fd49cf3135579f30ad4523bf103aea165afc7d7:922c64590222798bb761d5b6d8e72950

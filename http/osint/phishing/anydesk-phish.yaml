@@ -10,7 +10,7 @@ info:
     - https://anydesk.com
   metadata:
     max-request: 1
-  tags: phishing,anydesk,osint
+  tags: phishing,anydesk,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"anydesk.com")'
-# digest: 4a0a0047304502205fdb7872eb60d3da6770cad43f6b3c95b93b97efcd2784f15a78e8df883a8590022100932cded3ee1aa28c7d48ae581ad2674f5b319ddbee93a603d9a2ad6c5fda8949:922c64590222798bb761d5b6d8e72950
+# digest: 490a0046304402203a79ac74ffb87b577d024e769ff0f9cc0a72fcefb50b5f53e0815b7d191ebf2d022066c16603b0cbedd6f57201eb4db0081c347b6af1b6a64336abc7c5e1a2e690b8:922c64590222798bb761d5b6d8e72950

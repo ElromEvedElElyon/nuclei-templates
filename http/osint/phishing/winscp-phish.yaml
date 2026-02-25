@@ -10,7 +10,7 @@ info:
     - https://winscp.net
   metadata:
     max-request: 1
-  tags: phishing,winscp,osint
+  tags: phishing,winscp,osint,discovery
 http:
   - method: GET
     path:
@@ -32,4 +32,4 @@ http:
       - type: dsl
         dsl:
           - '!contains(host,"winscp.net")'
-# digest: 490a004630440220568c8ae4e9dfa186c8406625e7bcae7efea419dc8c6ab9fc63f091a591b2741102201d567c6b37da7bb410bae49893ae73bb5b29b0b6625b7517991bf5211cfd0421:922c64590222798bb761d5b6d8e72950
+# digest: 4b0a00483046022100a082500d08269c295fee52e32978513474566499492e64321f5f761992b130430221009d96a3fbedd8b4e70b6b7904a3eafd63c6fbc56914b302aa9ac115eb69370edd:922c64590222798bb761d5b6d8e72950

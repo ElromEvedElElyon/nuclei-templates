@@ -10,7 +10,7 @@ info:
     - https://icloud.com
   metadata:
     max-request: 1
-  tags: phishing,icloud,osint
+  tags: phishing,icloud,osint,discovery
 http:
   - method: GET
     path:
@@ -34,4 +34,4 @@ http:
           - '!contains(host,"icloud.com")'
           - '!contains(host,"apple.com")'
         condition: and
-# digest: 490a00463044022070ec5170a9dd73425636c390b5d5dd3b4479943529465da20f8ec67585ab304302204759787c41235467bf316671e4e23a4ed39df51f6b8ca2a57abd20c71e441b1e:922c64590222798bb761d5b6d8e72950
+# digest: 4a0a00473045022100feb1ea52ab7979c5f027d1625e27ea2a2d17122e59c7b15f0ab61dda72d9b09b02203918784a58442b4ddabd7897a1ac4902a0c8e8f1010c2f722ec06acf580ba918:922c64590222798bb761d5b6d8e72950
