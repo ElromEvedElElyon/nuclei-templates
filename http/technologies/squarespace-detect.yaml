@@ -27,11 +27,9 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
-          - "Squarespace"
           - "Powered by Squarespace"
-          - "squarespace.com"
           - "X-Squarespace-Request-Id"
           - "Squarespace Template"
         condition: or
@@ -41,8 +39,6 @@ http:
         status:
           - 200
           - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
