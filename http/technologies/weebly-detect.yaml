@@ -26,9 +26,8 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
-          - "Weebly"
           - "Powered by Weebly"
           - "weebly.com"
           - "X-Powered-By-Weebly"
@@ -39,8 +38,6 @@ http:
         status:
           - 200
           - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
