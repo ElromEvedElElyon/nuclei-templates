@@ -27,7 +27,7 @@ http:
     matchers-condition: and
     matchers:
       - type: word
-        part: body
+        part: response
         words:
           - "ExpressionEngine"
           - "Powered by ExpressionEngine"
@@ -39,9 +39,6 @@ http:
       - type: status
         status:
           - 200
-          - 403
-          - 404
-        condition: or
 
     extractors:
       - type: regex
