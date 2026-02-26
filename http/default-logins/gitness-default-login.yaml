@@ -19,8 +19,6 @@ variables:
   username: "admin"
   password: "changeit"
 
-flow: http(1) && http(2)
-
 http:
   - raw:
       - |
@@ -30,31 +28,10 @@ http:
 
         {"login_identifier":"{{username}}","password":"{{password}}"}
 
-    extractors:
-      - type: json
-        name: token
-        part: body
-        internal: true
-        json:
-          - '.access_token'
-
     matchers:
       - type: dsl
         dsl:
-          - 'status_code == 200'
           - 'contains_all(body, "access_token", "principal_id", "session")'
-        condition: and
-        internal: true
-
-  - raw:
-      - |
-        GET /api/v1/user HTTP/1.1
-        Host: {{Hostname}}
-        Cookie: token={{token}}
-
-    matchers:
-      - type: dsl
-        dsl:
+          - 'contains(content_type, "application/json")'
           - 'status_code == 200'
-          - 'contains_all(body, "\"admin\":true", "display_name", "email")'
         condition: and
