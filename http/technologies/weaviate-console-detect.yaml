@@ -1,7 +1,7 @@
 id: weaviate-console-detect
 
 info:
-  name: Weaviate Console Detection
+  name: Weaviate Console - Detect
   author: rxerium
   severity: info
   description: |
