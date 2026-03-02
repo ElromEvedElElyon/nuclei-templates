@@ -23,6 +23,10 @@ http/cves/2026/CVE-2026-0829.yaml
 http/cves/2026/CVE-2026-1603.yaml
 http/default-logins/gitness-default-login.yaml
 http/exposed-panels/recoverpoint-panel.yaml
+http/exposures/tokens/interswitch/interswitch-webpay.yaml
+http/exposures/tokens/paystack/paystack-secret-live.yaml
+http/exposures/tokens/remita/remita-credentials.yaml
+http/exposures/tokens/sportybet/sportybet-api.yaml
 http/technologies/pocketbase-detect.yaml
 http/technologies/portkey-ai-detect.yaml
 http/technologies/weaviate-console-detect.yaml
