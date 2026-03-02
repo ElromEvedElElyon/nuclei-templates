@@ -1,12 +1,14 @@
-id: tinlance-interswitch-webpay-exposure
+id: interswitch-webpay
 
 info:
-  name: Tinlance Interswitch Webpay - Credentials Exposure
+  name: Interswitch Webpay - Credentials Exposure
   author: Lloydcoder
-  severity: medium
+  severity: info
   description: |
-    Exposure of Tinlance Interswitch Webpay product IDs, MAC keys and access tokens.
-  tags: exposure,interswitch,webpay,tinlance,lloydcoder,token
+    Exposure of Interswitch Webpay product IDs, MAC keys and access tokens.
+  reference:
+    - https://docs.interswitchgroup.com/reference/how-to-use-the-reference
+  tags: exposure,interswitch,webpay,token
 
 http:
   - method: GET
@@ -14,6 +16,7 @@ http:
       - "{{BaseURL}}"
 
     redirects: true
+
     matchers-condition: and
     matchers:
       - type: regex

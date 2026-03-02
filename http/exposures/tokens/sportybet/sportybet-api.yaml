@@ -1,12 +1,12 @@
-id: tinlance-sportybet-api-exposure
+id: sportybet-api
 
 info:
   name: SportyBet / BetKing Admin or API Token - Exposure
   author: Lloydcoder
-  severity: medium
+  severity: info
   description: |
-    Catches leaked internal tokens and admin endpoints for popular Nigerian betting platforms.
-  tags: exposure,betting,sportybet,betking,tinlance,token
+    Detected exposed internal tokens and administrative endpoints belonging to online betting platforms.
+  tags: exposure,betting,sportybet,betking,token
 
 http:
   - method: GET
