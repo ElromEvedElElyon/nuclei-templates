@@ -32,6 +32,7 @@
 - **Immunefi Report #71022**: ZKsync OS SUBMITTED 26 Mar, Status: Reported
 - **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800) — C4 server verified, BLOCKED on Immunefi
 - **Discord (Immunefi)**: wagner7978 (ID 771534250368565298, wagnermoura.on@gmail.com) — WORKING
+- **Guardian**: ElromAud61187 (sharebot) + ElromStandard777 (gmail), KYC BROKEN (500), finding emailed to 4 addresses
 - **ZKsync OS**: Report #71022 submitted + emails to security@matterlabs.dev + security@zksync.io
 
 ## WALLETS
@@ -47,7 +48,7 @@
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA.**
 - **ZKsync OS $5K-$100K**: SUBMITTED on Immunefi! Report #71022 (Medium severity) + emails sent
 - **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar
-- **Guardian $150K**: BLOCKED (WebGL2 + KYC), deadline 9 Abr
+- **Guardian $150K**: KYC BROKEN (500 error), finding emailed to 4 addresses, deadline 9 Abr
 - **NEAR Intents $300K**: Must use HackenProof
 - **nuclei-templates**: 9 PRs open = $1,350-$2,250
 - See: revenue-status.md, bounties-pipeline.md

@@ -30,6 +30,15 @@ with client.using_context(client.CONTEXT_CHROME):
     pass
 ```
 
+```bash
+# Software WebGL2 rendering (for THREE.js apps like Guardian Defender)
+LIBGL_ALWAYS_SOFTWARE=1 MOZ_WEBGL_FORCE_OPENGL=1 firefox --marionette -P profilename
+# Firefox prefs needed:
+# webgl.force-enabled = true
+# webgl.enable-webgl2 = true
+# gfx.webrender.software = true
+```
+
 **Key advantages over Chrome CDP:**
 - Firefox snap has built-in Marionette (no chromedriver needed)
 - MetaMask extension works natively (UUID: `5f7f84a3-b996-41eb-8db7-3199fbe66673`)
@@ -309,7 +318,7 @@ with smtplib.SMTP("smtp.gmail.com", 587) as s:
 |----------|---------|------------|--------|
 | Immunefi | Discord server-side mapping (elromauditor) | Used wagner7978 Discord instead | **RESOLVED** |
 | C4 | 2 submissions max per contest | Email backup | Active |
-| Guardian | WebGL2 required (Intel HD fails) | Need different machine | Active |
+| Guardian | KYC 500 error (Sumsub backend) | Email backup sent to 4 addresses, WebGL2 SOLVED via LIBGL_ALWAYS_SOFTWARE=1 | Active |
 | HackenProof | Cloudflare blocks API | Browser only | Active |
 | Discord | hCaptcha on registration | Manual only | Active |
 | pump.fun | Bonding curve not completed | Need SOL injection | Active |

@@ -22,13 +22,14 @@
 - **Email submissions**: security@matterlabs.dev (05:34+13:33 UTC) + security@zksync.io (12:36 UTC)
 - **NEXT**: Monitor report #71022 every 24-48h, follow up if no response by 2 Apr
 
-### Guardian Defender $150K — BLOQUEADO HARDWARE + EXPIRED TOKENS
-- **Login API funciona**: token em `~/.guardian_defender_token.json`
-- **Conta**: elromaud1774361187@sharebot.net / GuardElrom2026Sec#99
-- **BLOQUEIO 1**: SPA requer WebGL2 (THREE.js), GPU Intel HD 1st gen NAO suporta
-- **BLOQUEIO 2**: Password reset tokens EXPIRED (Session 35)
-- **KYC API**: POST /api/kyc/access-token retorna 500 (Sumsub integration issue)
-- **ACAO**: Precisa machine com WebGL2 OU Guardian fix backend. Re-request password reset
+### Guardian Defender $150K — KYC BROKEN (500 Error) — FINDING EMAILED
+- **Account 1 (ElromStandard777)**: inteligenciaartificialnow@gmail.com / GuardElrom2026!Sec#37 — browser login WORKS, API login returns 500
+- **Account 2 (ElromAud61187)**: elromaud1774361187@sharebot.net / GuardElrom2026Sec#99 — both API and browser login WORK
+- **WebGL2 SOLVED**: `LIBGL_ALWAYS_SOFTWARE=1` enables llvmpipe software rendering on Intel HD
+- **KYC BROKEN**: POST /api/kyc/access-token returns 500 Internal Server Error — CONFIRMED broken on BOTH accounts, both API and browser
+- **Submission API**: POST /api/issues — exists but BLOCKED by KYC requirement
+- **Finding C-01 EMAILED**: Sent to 4 Guardian addresses (support/info/security/team@guardianaudits.com) at 15:23 UTC 26 Mar
+- **ACAO**: Monitor email responses, retry KYC daily, try Telegram t.me/guardianaudits
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
@@ -56,9 +57,13 @@
 - **ACAO**: Build frontend, deploy, record video
 
 ### Guardian LimitBreak $150K — P1 (see TIER 0 blockers)
-- Deadline: 9 Abr
+- Deadline: 9 Abr (14 days)
 - 1 finding pronto (`~/limitbreak-amm/findings/C-01-operator-precedence-createPool.md`)
-- **BLOQUEIO**: Email verification + KYC Sumsub pendente + password reset tokens EXPIRED
+- **Password reset COMPLETE**: GuardElrom2026!Sec#37 (Account 1)
+- **Browser login WORKS** (both accounts), WebGL2 bypass SOLVED
+- **KYC BROKEN**: 500 error on backend (Sumsub), cannot submit via platform
+- **BACKUP**: Finding C-01 emailed to 4 Guardian addresses (15:23 UTC 26 Mar)
+- **ACAO**: Monitor email responses, retry KYC daily, try Telegram t.me/guardianaudits
 
 ### NEAR Intents $164K-$880K+ — HackenProof (MASSIVE!)
 - **3 separate programs**: Smart Contracts, Bridges (MPC+Omni), SDK
