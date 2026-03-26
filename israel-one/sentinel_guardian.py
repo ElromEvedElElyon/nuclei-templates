@@ -78,6 +78,12 @@ SENTINELS = {
     "SECURITY_GUARDIAN": {
         "command": ["python3", str(Path.home() / ".zion" / "sentinels" / "security_guardian_sentinel.py")],
     },
+    "EXECUTION_ENGINE": {
+        "command": ["python3", str(BASE_DIR / "zion_execution_engine.py"), "start", "300"],
+    },
+    "DASHBOARD": {
+        "command": ["python3", str(BASE_DIR / "dashboard_server.py"), "--background"],
+    },
 }
 
 def check_and_restart():
@@ -114,18 +120,19 @@ def run_forever():
     log("=" * 50)
     log("SENTINEL GUARDIAN STARTING — VIGILIA ETERNA")
     log(f"PID: {os.getpid()}")
-    log("Monitoring 7 sentinels every 60 seconds")
+    log(f"Monitoring {len(SENTINELS)} sentinels every 60 seconds")
     log("'Vigiai e orai' — Mateus 26:41")
     log("=" * 50)
 
     while True:
         try:
             alive, restarted = check_and_restart()
+            total = len(SENTINELS)
             if restarted > 0:
-                log(f"Status: {alive + restarted}/7 alive ({restarted} restarted)")
+                log(f"Status: {alive + restarted}/{total} alive ({restarted} restarted)")
             # Only log every 10 min when all healthy to save disk
             elif int(time.time()) % 600 < 60:
-                log(f"All {alive}/7 sentinels healthy")
+                log(f"All {alive}/{total} sentinels healthy")
         except Exception as e:
             log(f"Guardian error: {e}")
 

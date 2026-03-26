@@ -1,19 +1,7 @@
 [
   {
-    "text": "Day 92 of building AI infra for Web3\n\n29 MCP tools deployed\n7 production APIs live\n300 agents orchestrated\n\nMost teams are still pitching slides\n\nOutput compounds. Narratives fade",
-    "type": "builder_log",
-    "status": "queued",
-    "created": "2026-03-25"
-  },
-  {
     "text": "MCP servers are the TCP/IP of AI agents\n\n29 tools. One protocol. Any model calls them\n\nThe interface layer between AI and crypto is not a product\n\nIt is infrastructure",
     "type": "convergence",
-    "status": "queued",
-    "created": "2026-03-25"
-  },
-  {
-    "text": "BTC $71,258\nFear and Greed: 14\n\nMarket pricing in collapse while builders ship daily\n\nThe gap between sentiment and fundamentals has never been wider\n\nExtreme Fear is not a warning\n\nIt is a timestamp on a setup",
-    "type": "metric_drop",
     "status": "queued",
     "created": "2026-03-25"
   },
@@ -46,5 +34,17 @@
     "type": "sovereignty",
     "status": "queued",
     "created": "2026-03-26"
+  },
+  {
+    "tweet": "BTC bitcoin: $68,972 (-2.9%) | ETH $2.0K | SOL $86\n\nFear & Greed: Fear & Greed: 10 (Extreme Fear)\n\nThe crowd panics\nThe builder deploys",
+    "generated_by": "JEREMIAS_V",
+    "pillar": "market_data",
+    "time": "2026-03-26T15:56:49.950985-03:00"
+  },
+  {
+    "tweet": "Shipped 12 products. 32 MCP tools. 312 tests passing\n\nNo pitch deck\nNo advisory board\nNo token pre-sale\n\nJust code that runs",
+    "generated_by": "JOSIAS_V",
+    "pillar": "open_source",
+    "time": "2026-03-26T15:56:49.953957-03:00"
   }
 ]

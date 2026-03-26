@@ -418,6 +418,15 @@ def record_error(name, state=None, log=None):
         log = load_evolution_log()
 
     evo = get_agent_evolution(state, name)
+
+    # PROTECTION: Inviolable agents cannot lose XP or be demoted
+    if evo.get("inviolable") or evo.get("permanent") or evo.get("never_delete"):
+        evo["errors"] += 1
+        evo["last_error"] = now_iso()
+        evo["singularity_score"] = calc_singularity_score(evo)
+        append_log(log, "ERROR_ABSORBED", name, f"Error absorbed — agent is INVIOLABLE")
+        return state, log
+
     evo["errors"] += 1
     evo["xp"] = max(0, evo["xp"] + XP_PER_ERROR)  # Floor at 0
     evo["last_error"] = now_iso()
@@ -521,6 +530,21 @@ def run_evolution_cycle():
 
     for name, agent_data in discovered.items():
         evo = get_agent_evolution(state, name)
+
+        # PROTECTION: Never overwrite inviolable/permanent sentinel state
+        if evo.get("inviolable") or evo.get("permanent") or evo.get("never_delete"):
+            # Only accumulate runs — never reduce level/xp/tier
+            source_runs = agent_data.get("runs", 0)
+            if source_runs > evo["runs"]:
+                delta = source_runs - evo["runs"]
+                evo["runs"] = source_runs
+                evo["xp"] += delta * XP_PER_RUN
+                evo["level"] = max(evo["level"], calc_level_from_xp(evo["xp"]))
+            evo["singularity_score"] = max(evo["singularity_score"], calc_singularity_score(evo))
+            evo["last_evolved"] = now_iso()
+            evolved_count += 1
+            continue
+
         evo["source"] = agent_data.get("source", "unknown")
 
         # Sync runs/errors/revenue from source system
@@ -950,11 +974,18 @@ def cmd_record_revenue(name, amount_str):
 
 
 def cmd_reset(name):
-    """Reset an agent's evolution state."""
+    """Reset an agent's evolution state. INVIOLABLE agents CANNOT be reset."""
     state = load_evolution_state()
     name_upper = name.upper()
 
     if name_upper in state.get("agents", {}):
+        evo = state["agents"][name_upper]
+        # PROTECTION: Inviolable/permanent agents CANNOT be reset or deleted
+        if evo.get("inviolable") or evo.get("permanent") or evo.get("never_delete"):
+            print(f"  DENIED: {name_upper} is INVIOLABLE (Valente de Davi).")
+            print(f"  This agent is PERMANENT and cannot be reset, deleted, or demoted.")
+            print(f"  '{evo.get('scripture', 'O Senhor dos Exercitos esta conosco')}'")
+            return
         del state["agents"][name_upper]
         save_evolution_state(state)
         print(f"  Agent {name_upper} evolution state RESET.")
