@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZION COMMAND CENTER - Padrao Bitcoin Corp</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--bg4:#222;
+  --green:#00ff41;--green2:#00cc33;--gold:#ffd700;--gold2:#b8860b;
+  --red:#ff1744;--red2:#cc0000;--orange:#ff6600;
+  --text:#c0c0c0;--text2:#888;--white:#e0e0e0;
+  --border:#333;--border2:#444;
+}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:13px;overflow-x:hidden}
+a{color:var(--green);text-decoration:none}
+a:hover{color:var(--gold)}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+
+/* HEADER */
+.header{background:linear-gradient(180deg,#0d1a0d 0%,var(--bg) 100%);border-bottom:2px solid var(--green2);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
+.header-left{display:flex;align-items:center;gap:15px}
+.logo{color:var(--green);font-size:20px;font-weight:bold;text-shadow:0 0 10px rgba(0,255,65,0.3);letter-spacing:2px}
+.subtitle{color:var(--gold);font-size:10px;letter-spacing:1px}
+.blessing{color:var(--text2);font-size:9px;font-style:italic}
+.header-right{display:flex;align-items:center;gap:20px}
+.btc-ticker{color:var(--gold);font-size:16px;font-weight:bold;text-shadow:0 0 8px rgba(255,215,0,0.3)}
+.btc-ticker .label{color:var(--text2);font-size:10px}
+.mode-badge{padding:3px 10px;border-radius:3px;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1px}
+.mode-GUERRA{background:var(--red2);color:#fff}
+.mode-ENXAME{background:var(--orange);color:#000}
+.mode-OPERACAO{background:var(--green2);color:#000}
+.mode-ALERTA{background:var(--gold2);color:#000}
+.mode-REPOUSO{background:var(--border);color:var(--text)}
+.cnpj{color:var(--text2);font-size:9px}
+.time-display{color:var(--green);font-size:11px}
+
+/* STATS BAR */
+.stats-bar{display:flex;gap:0;border-bottom:1px solid var(--border);background:var(--bg2)}
+.stat-box{flex:1;padding:10px 15px;border-right:1px solid var(--border);text-align:center}
+.stat-box:last-child{border-right:none}
+.stat-value{font-size:22px;font-weight:bold;color:var(--green)}
+.stat-value.gold{color:var(--gold)}
+.stat-value.red{color:var(--red)}
+.stat-value.orange{color:var(--orange)}
+.stat-label{font-size:9px;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+
+/* MAIN GRID */
+.main{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:calc(100vh - 120px)}
+.main>section{border:1px solid var(--border);padding:0;overflow:hidden}
+
+/* SECTION HEADERS */
+.section-header{background:var(--bg3);padding:8px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.section-title{color:var(--green);font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:2px}
+.section-badge{background:var(--bg4);color:var(--text2);padding:2px 8px;border-radius:2px;font-size:10px}
+.section-content{padding:10px;max-height:400px;overflow-y:auto}
+
+/* DEPARTMENT GRID */
+.dept-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.dept-card{background:var(--bg3);border:1px solid var(--border);padding:6px 8px;border-radius:3px;cursor:pointer;transition:all 0.2s}
+.dept-card:hover{border-color:var(--green);background:var(--bg4)}
+.dept-card.active{border-color:var(--gold)}
+.dept-name{font-size:9px;color:var(--green);font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dept-head{font-size:8px;color:var(--gold)}
+.dept-count{font-size:14px;font-weight:bold;color:var(--white);margin:2px 0}
+.dept-active{font-size:8px;color:var(--green2)}
+
+/* AGENT TABLE */
+.agent-controls{display:flex;gap:8px;padding:8px 12px;background:var(--bg3);border-bottom:1px solid var(--border)}
+.agent-search{background:var(--bg);color:var(--green);border:1px solid var(--border);padding:5px 10px;border-radius:3px;font-family:inherit;font-size:11px;flex:1}
+.agent-search:focus{outline:none;border-color:var(--green)}
+.agent-filter{background:var(--bg);color:var(--text);border:1px solid var(--border);padding:5px 8px;border-radius:3px;font-family:inherit;font-size:10px;cursor:pointer}
+.agent-table-wrap{max-height:350px;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:11px}
+th{background:var(--bg3);color:var(--green);padding:6px 8px;text-align:left;position:sticky;top:0;cursor:pointer;user-select:none;font-size:10px;text-transform:uppercase;letter-spacing:1px}
+th:hover{color:var(--gold)}
+td{padding:4px 8px;border-bottom:1px solid #1a1a1a}
+tr:hover{background:var(--bg3)}
+.status-running{color:var(--green)}
+.status-idle{color:var(--text2)}
+.status-error{color:var(--red)}
+.status-active{color:var(--green)}
+.status-deployed{color:var(--green2)}
+.xp-bar{display:inline-block;width:40px;height:6px;background:var(--bg);border:1px solid var(--border);border-radius:3px;overflow:hidden;vertical-align:middle}
+.xp-fill{height:100%;background:var(--green);transition:width 0.3s}
+
+/* EVOLUTION PANEL */
+.evo-list{display:flex;flex-direction:column;gap:6px}
+.evo-agent{display:flex;align-items:center;gap:10px;padding:5px 8px;background:var(--bg3);border-radius:3px}
+.evo-name{color:var(--gold);font-weight:bold;width:100px;font-size:11px}
+.evo-level{color:var(--green);width:30px;font-size:10px}
+.evo-bar-wrap{flex:1;height:8px;background:var(--bg);border:1px solid var(--border);border-radius:4px;overflow:hidden}
+.evo-bar{height:100%;border-radius:4px;transition:width 0.5s}
+.evo-bar.t1{background:linear-gradient(90deg,var(--green2),var(--green))}
+.evo-bar.t2{background:linear-gradient(90deg,var(--gold2),var(--gold))}
+.evo-bar.t3{background:linear-gradient(90deg,#ff4500,var(--red))}
+.evo-xp{color:var(--text2);font-size:10px;width:60px;text-align:right}
+
+/* REVENUE PIPELINE */
+.pipeline{display:flex;flex-direction:column;gap:5px}
+.pipeline-item{display:flex;align-items:center;gap:8px;padding:6px 10px;background:var(--bg3);border-radius:3px;border-left:3px solid var(--border)}
+.pipeline-item.critical{border-left-color:var(--red)}
+.pipeline-item.active{border-left-color:var(--green)}
+.pipeline-item.blocked{border-left-color:var(--orange)}
+.pipeline-item.waiting{border-left-color:var(--text2)}
+.pipeline-name{flex:1;color:var(--white);font-size:11px}
+.pipeline-value{color:var(--gold);font-weight:bold;font-size:12px}
+.pipeline-deadline{color:var(--text2);font-size:9px;width:80px;text-align:right}
+.pipeline-status{font-size:9px;padding:2px 6px;border-radius:2px;text-transform:uppercase;font-weight:bold}
+.pipeline-status.ACTIVE{background:#003300;color:var(--green)}
+.pipeline-status.BLOCKED{background:#330000;color:var(--red)}
+.pipeline-status.IN_PROGRESS{background:#1a1a00;color:var(--gold)}
+.pipeline-status.WAITING_REVIEW{background:#1a1a1a;color:var(--text2)}
+.pipeline-status.RESEARCHING{background:#0d0d1a;color:#6699ff}
+.pipeline-status.PENDING{background:#1a1a1a;color:var(--orange)}
+.pipeline-status.BROWSER_REQUIRED{background:#1a0d00;color:var(--orange)}
+.pipeline-status.READY_TO_DEPLOY{background:#001a00;color:var(--green2)}
+.pipeline-status.WAITING_MERGE{background:#1a1a1a;color:var(--text2)}
+
+/* TWEET QUEUE */
+.tweet-list{display:flex;flex-direction:column;gap:5px}
+.tweet-item{background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:8px 10px}
+.tweet-text{color:var(--white);font-size:11px;line-height:1.4;white-space:pre-wrap;margin-bottom:4px}
+.tweet-meta{display:flex;justify-content:space-between;align-items:center}
+.tweet-type{color:var(--green2);font-size:9px;text-transform:uppercase}
+.tweet-status{font-size:9px;padding:1px 6px;border-radius:2px}
+.tweet-status.queued{background:#1a1a00;color:var(--gold)}
+.tweet-status.posted{background:#003300;color:var(--green)}
+
+/* BLOCKERS */
+.blocker-list{display:flex;flex-direction:column;gap:5px}
+.blocker-item{background:linear-gradient(90deg,#1a0000,var(--bg3));border:1px solid #330000;border-radius:3px;padding:8px 10px;border-left:3px solid var(--red)}
+.blocker-mission{color:var(--red);font-weight:bold;font-size:11px}
+.blocker-desc{color:var(--text);font-size:10px;margin-top:2px}
+.blocker-value{color:var(--gold);font-size:10px}
+.blocker-action{color:var(--green2);font-size:9px;margin-top:3px;font-style:italic}
+
+/* FULL WIDTH SECTIONS */
+.full-width{grid-column:1/-1}
+
+/* TOOLBAR */
+.toolbar{display:flex;gap:8px;padding:8px 12px;background:var(--bg2);border-bottom:1px solid var(--border)}
+.toolbar button{background:var(--bg3);color:var(--green);border:1px solid var(--border);padding:5px 12px;border-radius:3px;font-family:inherit;font-size:10px;cursor:pointer;text-transform:uppercase;letter-spacing:1px;transition:all 0.2s}
+.toolbar button:hover{background:var(--bg4);border-color:var(--green)}
+.toolbar button.active{border-color:var(--gold);color:var(--gold)}
+.toolbar .spacer{flex:1}
+.toolbar .status-dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}
+.toolbar .status-dot.on{background:var(--green);box-shadow:0 0 6px var(--green)}
+.toolbar .status-dot.off{background:var(--red)}
+
+/* LOADING */
+.loading{text-align:center;padding:20px;color:var(--text2)}
+.loading::after{content:'...';animation:dots 1.5s infinite}
+@keyframes dots{0%{content:''}33%{content:'.'}66%{content:'..'}100%{content:'...'}}
+
+/* SCANLINE EFFECT */
+.scanline{position:fixed;top:0;left:0;right:0;bottom:0;pointer-events:none;z-index:9999;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,255,65,0.01) 2px,rgba(0,255,65,0.01) 4px)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .main{grid-template-columns:1fr}
+  .dept-grid{grid-template-columns:repeat(3,1fr)}
+  .stats-bar{flex-wrap:wrap}
+  .stat-box{min-width:100px}
+}
+</style>
+</head>
+<body>
+<div class="scanline"></div>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-left">
+    <div>
+      <div class="logo">ZION COMMAND CENTER</div>
+      <div class="subtitle">PADRAO BITCOIN CORP</div>
+      <div class="blessing">Em nome do Senhor Jesus Cristo, nosso Salvador</div>
+    </div>
+    <span class="mode-badge mode-GUERRA" id="mode-badge">GUERRA</span>
+  </div>
+  <div class="header-right">
+    <div class="btc-ticker">
+      <div class="label">BTC/USD</div>
+      <span id="btc-price">--,---</span>
+    </div>
+    <div>
+      <div class="time-display" id="clock">--:--:--</div>
+      <div class="cnpj">CNPJ 51.148.891/0001-69</div>
+    </div>
+  </div>
+</header>
+
+<!-- TOOLBAR -->
+<div class="toolbar">
+  <button onclick="refreshAll()" title="Reload all data from server">REFRESH ALL</button>
+  <button onclick="loadLocalFiles()" title="Load from local JSON files">LOAD LOCAL</button>
+  <button id="btn-auto" onclick="toggleAutoRefresh()"><span class="status-dot off" id="auto-dot"></span>AUTO 30s</button>
+  <input type="file" id="file-input" multiple accept=".json" style="display:none" onchange="handleFileUpload(event)">
+  <div class="spacer"></div>
+  <span style="color:var(--text2);font-size:10px" id="last-update">Last update: never</span>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-box"><div class="stat-value" id="stat-total">1,449</div><div class="stat-label">Total Agents</div></div>
+  <div class="stat-box"><div class="stat-value" id="stat-active">0</div><div class="stat-label">Active Now</div></div>
+  <div class="stat-box"><div class="stat-value gold" id="stat-revenue">$0</div><div class="stat-label">Total Revenue</div></div>
+  <div class="stat-box"><div class="stat-value orange" id="stat-fear">--</div><div class="stat-label">Fear & Greed</div></div>
+  <div class="stat-box"><div class="stat-value" id="stat-runs">0</div><div class="stat-label">Total Runs</div></div>
+  <div class="stat-box"><div class="stat-value red" id="stat-errors">0</div><div class="stat-label">Errors</div></div>
+  <div class="stat-box"><div class="stat-value" id="stat-ram">--</div><div class="stat-label">RAM Usage</div></div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="main">
+
+  <!-- DEPARTMENT GRID -->
+  <section>
+    <div class="section-header">
+      <span class="section-title">Departments</span>
+      <span class="section-badge" id="dept-count">30 Divisions</span>
+    </div>
+    <div class="section-content">
+      <div class="dept-grid" id="dept-grid">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- REVENUE PIPELINE -->
+  <section>
+    <div class="section-header">
+      <span class="section-title">Revenue Pipeline</span>
+      <span class="section-badge" id="pipeline-total">$0</span>
+    </div>
+    <div class="section-content">
+      <div class="pipeline" id="pipeline-list">
+        <div class="loading">Loading pipeline</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENT TABLE (full width) -->
+  <section class="full-width">
+    <div class="section-header">
+      <span class="section-title">Agent Registry</span>
+      <span class="section-badge" id="agent-shown">0 shown</span>
+    </div>
+    <div class="agent-controls">
+      <input type="text" class="agent-search" id="agent-search" placeholder="Search agent name, dept, role..." oninput="filterAgents()">
+      <select class="agent-filter" id="filter-status" onchange="filterAgents()">
+        <option value="">All Status</option>
+        <option value="running">Running</option>
+        <option value="active">Active</option>
+        <option value="idle">Idle</option>
+        <option value="deployed">Deployed</option>
+        <option value="error">Error</option>
+      </select>
+      <select class="agent-filter" id="filter-dept" onchange="filterAgents()">
+        <option value="">All Depts</option>
+      </select>
+      <select class="agent-filter" id="filter-source" onchange="filterAgents()">
+        <option value="">All Sources</option>
+        <option value="army">Army (1001)</option>
+        <option value="corp">Corp (48)</option>
+        <option value="city">City (100)</option>
+        <option value="sales">Sales (300)</option>
+      </select>
+    </div>
+    <div class="agent-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th onclick="sortAgents('name')">Name</th>
+            <th onclick="sortAgents('dept')">Dept</th>
+            <th onclick="sortAgents('role')">Role</th>
+            <th onclick="sortAgents('level')">Lvl</th>
+            <th onclick="sortAgents('xp')">XP</th>
+            <th onclick="sortAgents('runs')">Runs</th>
+            <th onclick="sortAgents('errors')">Err</th>
+            <th onclick="sortAgents('revenue')">Revenue</th>
+            <th onclick="sortAgents('status')">Status</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody id="agent-tbody">
+          <tr><td colspan="10" class="loading">Loading agents</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- EVOLUTION PANEL -->
+  <section>
+    <div class="section-header">
+      <span class="section-title">Evolution / Singularity</span>
+      <span class="section-badge">Top Agents</span>
+    </div>
+    <div class="section-content">
+      <div class="evo-list" id="evo-list">
+        <div class="loading">Loading evolution data</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWEET QUEUE -->
+  <section>
+    <div class="section-header">
+      <span class="section-title">Tweet Queue</span>
+      <span class="section-badge" id="tweet-count">0 queued</span>
+    </div>
+    <div class="section-content">
+      <div class="tweet-list" id="tweet-list">
+        <div class="loading">Loading tweets</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCKERS (full width) -->
+  <section class="full-width">
+    <div class="section-header">
+      <span class="section-title" style="color:var(--red)">BLOCKERS / RED ALERTS</span>
+      <span class="section-badge" id="blocker-count" style="color:var(--red)">0</span>
+    </div>
+    <div class="section-content">
+      <div class="blocker-list" id="blocker-list">
+        <div class="loading">Scanning for blockers</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+// ================================================================
+// ZION COMMAND CENTER — Dashboard Controller
+// Em nome do Senhor Jesus Cristo, nosso Salvador
+// Padrao Bitcoin Corp — CNPJ 51.148.891/0001-69
+// Supreme Commander: CALEV
+// ================================================================
+
+const API_BASE = window.location.origin;
+let allAgents = [];
+let sortKey = 'name';
+let sortDir = 1;
+let autoRefreshTimer = null;
+
+// ── DEPARTMENTS (hardcoded from zion_army_1001.py) ──
+const DEPARTMENTS = {
+  CRYPTO_MARKETS:{id:1,head:"BARUK",agents:40},
+  DEFI_PROTOCOLS:{id:2,head:"NOACH",agents:35},
+  SECURITY_AUDIT:{id:3,head:"SAMAEL",agents:40},
+  BOUNTY_HUNTING:{id:4,head:"DAVI",agents:40},
+  SOFTWARE_DEV:{id:5,head:"TUBAL_CAIM",agents:40},
+  MCP_DEVELOPMENT:{id:6,head:"OLIAB",agents:35},
+  SALES:{id:7,head:"LEVI",agents:35},
+  MARKETPLACE:{id:8,head:"YOSEF",agents:30},
+  PARTNERSHIPS:{id:9,head:"NAFTALI",agents:30},
+  ENTERPRISE:{id:10,head:"YEHUDA",agents:30},
+  CONTENT:{id:11,head:"ISAIAS",agents:35},
+  SOCIAL_MEDIA:{id:12,head:"ISRAEL_ONE",agents:35},
+  SEO:{id:13,head:"DEBORA",agents:30},
+  GROWTH_HACKING:{id:14,head:"JOSUE",agents:30},
+  BRAND:{id:15,head:"MIRIAM",agents:30},
+  MARKET_INTEL:{id:16,head:"URIEL",agents:30},
+  GOVERNMENT_DATA:{id:17,head:"MIKAEL",agents:30},
+  OSINT:{id:18,head:"HANIEL",agents:30},
+  TREND_ANALYSIS:{id:19,head:"GAVRIEL",agents:30},
+  FISCAL:{id:20,head:"MATEUS",agents:30},
+  TREASURY:{id:21,head:"ESDRAS",agents:30},
+  INVOICING:{id:22,head:"ZACARIAS",agents:25},
+  LEGAL:{id:23,head:"TZADKIEL",agents:25},
+  FRONTEND:{id:24,head:"BETZALEL",agents:30},
+  BACKEND:{id:25,head:"HIRAM",agents:35},
+  DEVOPS:{id:26,head:"QUEHAT",agents:30},
+  AI_ML:{id:27,head:"ENOSH",agents:35},
+  COMMAND:{id:28,head:"CALEV",agents:25},
+  QUALITY:{id:29,head:"KEMUEL",agents:30},
+  KNOWLEDGE:{id:30,head:"SERAFIEL",agents:30}
+};
+
+// ── CLOCK ──
+function updateClock(){
+  const now = new Date();
+  const brt = new Date(now.getTime() - 3*3600000);
+  document.getElementById('clock').textContent =
+    brt.toISOString().substr(11,8) + ' BRT';
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// ── RENDER DEPARTMENTS ──
+function renderDepartments(agentData){
+  const grid = document.getElementById('dept-grid');
+  const deptCounts = {};
+  const deptActive = {};
+
+  // Count from agent data
+  if(agentData && agentData.length){
+    agentData.forEach(a => {
+      const d = a.dept || 'UNKNOWN';
+      deptCounts[d] = (deptCounts[d]||0) + 1;
+      if(a.status === 'running' || a.status === 'active' || a.status === 'deployed'){
+        deptActive[d] = (deptActive[d]||0) + 1;
+      }
+    });
+  }
+
+  let html = '';
+  for(const [name, dept] of Object.entries(DEPARTMENTS)){
+    const count = deptCounts[name] || dept.agents;
+    const active = deptActive[name] || 0;
+    html += `<div class="dept-card" onclick="filterByDept('${name}')" title="${name}">
+      <div class="dept-name">${name.replace(/_/g,' ')}</div>
+      <div class="dept-count">${count}</div>
+      <div class="dept-head">CMD: ${dept.head}</div>
+      <div class="dept-active">${active} active</div>
+    </div>`;
+  }
+  grid.innerHTML = html;
+}
+
+// ── RENDER AGENTS TABLE ──
+function renderAgents(agents){
+  const tbody = document.getElementById('agent-tbody');
+  if(!agents || !agents.length){
+    tbody.innerHTML = '<tr><td colspan="10" style="color:var(--text2);text-align:center;padding:20px">No agents loaded. Click REFRESH ALL or LOAD LOCAL.</td></tr>';
+    document.getElementById('agent-shown').textContent = '0 shown';
+    return;
+  }
+
+  let html = '';
+  agents.forEach(a => {
+    const statusClass = 'status-' + (a.status||'idle');
+    const level = a.level || 1;
+    const xp = a.xp || 0;
+    const xpNext = a.xp_to_next || 100;
+    const xpPct = Math.min(100, Math.round((xp/xpNext)*100));
+    const rev = a.revenue || 0;
+    const revStr = rev > 0 ? '$' + rev.toLocaleString() : '-';
+    const src = a.source || '?';
+
+    html += `<tr>
+      <td style="color:var(--gold);font-weight:bold">${a.name}</td>
+      <td style="font-size:9px">${(a.dept||'').replace(/_/g,' ')}</td>
+      <td style="font-size:10px;color:var(--text2)">${a.role||'-'}</td>
+      <td style="color:var(--green)">${level}</td>
+      <td><div class="xp-bar"><div class="xp-fill" style="width:${xpPct}%"></div></div> ${xp}</td>
+      <td>${a.runs||0}</td>
+      <td style="color:${(a.errors||0)>0?'var(--red)':'var(--text2)'}">${a.errors||0}</td>
+      <td style="color:${rev>0?'var(--gold)':'var(--text2)'}">${revStr}</td>
+      <td class="${statusClass}">${a.status||'idle'}</td>
+      <td style="font-size:9px;color:var(--text2)">${src}</td>
+    </tr>`;
+  });
+  tbody.innerHTML = html;
+  document.getElementById('agent-shown').textContent = agents.length + ' shown';
+}
+
+// ── FILTER & SORT ──
+function filterAgents(){
+  const search = document.getElementById('agent-search').value.toLowerCase();
+  const statusFilter = document.getElementById('filter-status').value;
+  const deptFilter = document.getElementById('filter-dept').value;
+  const sourceFilter = document.getElementById('filter-source').value;
+
+  let filtered = allAgents.filter(a => {
+    if(search && !(
+      (a.name||'').toLowerCase().includes(search) ||
+      (a.dept||'').toLowerCase().includes(search) ||
+      (a.role||'').toLowerCase().includes(search)
+    )) return false;
+    if(statusFilter && a.status !== statusFilter) return false;
+    if(deptFilter && a.dept !== deptFilter) return false;
+    if(sourceFilter && a.source !== sourceFilter) return false;
+    return true;
+  });
+
+  filtered.sort((a,b) => {
+    let va = a[sortKey] || '';
+    let vb = b[sortKey] || '';
+    if(typeof va === 'string') va = va.toLowerCase();
+    if(typeof vb === 'string') vb = vb.toLowerCase();
+    if(va < vb) return -1 * sortDir;
+    if(va > vb) return 1 * sortDir;
+    return 0;
+  });
+
+  renderAgents(filtered);
+}
+
+function sortAgents(key){
+  if(sortKey === key) sortDir *= -1;
+  else { sortKey = key; sortDir = 1; }
+  filterAgents();
+}
+
+function filterByDept(dept){
+  document.getElementById('filter-dept').value = dept;
+  filterAgents();
+}
+
+// ── POPULATE DEPT FILTER ──
+function populateDeptFilter(){
+  const sel = document.getElementById('filter-dept');
+  sel.innerHTML = '<option value="">All Depts</option>';
+  for(const name of Object.keys(DEPARTMENTS)){
+    sel.innerHTML += `<option value="${name}">${name.replace(/_/g,' ')}</option>`;
+  }
+}
+
+// ── RENDER EVOLUTION ──
+function renderEvolution(agents){
+  const el = document.getElementById('evo-list');
+  // Get top agents by level/xp
+  const ranked = [...agents]
+    .filter(a => (a.level||1) > 1 || (a.xp||0) > 0 || (a.runs||0) > 0)
+    .sort((a,b) => {
+      const la = (a.level||1)*10000 + (a.xp||0);
+      const lb = (b.level||1)*10000 + (b.xp||0);
+      return lb - la;
+    })
+    .slice(0, 20);
+
+  if(!ranked.length){
+    // Show department heads as default
+    const heads = Object.entries(DEPARTMENTS).map(([dept,d]) => ({
+      name: d.head, level: 1, xp: 0, xp_to_next: 100,
+      runs: 0, dept: dept
+    })).slice(0,15);
+    ranked.push(...heads);
+  }
+
+  let html = '';
+  ranked.forEach(a => {
+    const level = a.level || 1;
+    const xp = a.xp || 0;
+    const xpNext = a.xp_to_next || 100;
+    const pct = Math.min(100, Math.round((xp/xpNext)*100));
+    const tierClass = level >= 7 ? 't3' : level >= 4 ? 't2' : 't1';
+    html += `<div class="evo-agent">
+      <span class="evo-name">${a.name}</span>
+      <span class="evo-level">L${level}</span>
+      <div class="evo-bar-wrap"><div class="evo-bar ${tierClass}" style="width:${pct}%"></div></div>
+      <span class="evo-xp">${xp}/${xpNext} XP</span>
+    </div>`;
+  });
+  el.innerHTML = html || '<div style="color:var(--text2);text-align:center;padding:10px">No evolution data yet</div>';
+}
+
+// ── RENDER PIPELINE ──
+function renderPipeline(missions){
+  const el = document.getElementById('pipeline-list');
+  if(!missions || !Object.keys(missions).length){
+    el.innerHTML = '<div style="color:var(--text2);text-align:center;padding:10px">No pipeline data</div>';
+    return;
+  }
+
+  let html = '';
+  let totalValue = 0;
+  for(const [id, m] of Object.entries(missions)){
+    const statusClass = (m.status||'').replace(/ /g,'_');
+    const deadlineStr = m.deadline && m.deadline !== 'none' && m.deadline !== 'unknown'
+      ? new Date(m.deadline).toLocaleDateString() : '--';
+    const isBlocked = m.status === 'BLOCKED' || m.status === 'BROWSER_REQUIRED';
+    const itemClass = isBlocked ? 'blocked' : m.status === 'ACTIVE' ? 'active' :
+      m.status === 'IN_PROGRESS' || m.status === 'READY_TO_DEPLOY' ? 'active' : 'waiting';
+
+    // Parse value
+    const valStr = m.value || '$0';
+    const valNum = parseInt(valStr.replace(/[^0-9]/g,'')) || 0;
+    totalValue += valNum;
+
+    html += `<div class="pipeline-item ${itemClass}">
+      <span class="pipeline-status ${statusClass}">${m.status||'?'}</span>
+      <span class="pipeline-name">${id.replace(/_/g,' ')}</span>
+      <span class="pipeline-value">${m.value||'$0'}</span>
+      <span class="pipeline-deadline">${deadlineStr}</span>
+    </div>`;
+  }
+  el.innerHTML = html;
+  document.getElementById('pipeline-total').textContent = '$' + totalValue.toLocaleString() + ' pipeline';
+}
+
+// ── RENDER TWEETS ──
+function renderTweets(tweets){
+  const el = document.getElementById('tweet-list');
+  if(!tweets || !tweets.length){
+    el.innerHTML = '<div style="color:var(--text2);text-align:center;padding:10px">No queued tweets</div>';
+    document.getElementById('tweet-count').textContent = '0 queued';
+    return;
+  }
+
+  document.getElementById('tweet-count').textContent = tweets.length + ' queued';
+  let html = '';
+  tweets.forEach(t => {
+    const statusClass = t.status || 'queued';
+    html += `<div class="tweet-item">
+      <div class="tweet-text">${escapeHtml(t.text||'')}</div>
+      <div class="tweet-meta">
+        <span class="tweet-type">${t.type||'tweet'}</span>
+        <span class="tweet-status ${statusClass}">${t.status||'queued'}</span>
+      </div>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+// ── RENDER BLOCKERS ──
+function renderBlockers(missions){
+  const el = document.getElementById('blocker-list');
+  if(!missions){
+    el.innerHTML = '<div style="color:var(--text2);text-align:center;padding:10px">No blocker data</div>';
+    return;
+  }
+
+  const blockers = [];
+  for(const [id, m] of Object.entries(missions)){
+    if(m.status === 'BLOCKED' || m.status === 'BROWSER_REQUIRED'){
+      blockers.push({id, ...m});
+    }
+  }
+
+  if(!blockers.length){
+    el.innerHTML = '<div style="color:var(--green);text-align:center;padding:10px">ALL CLEAR - No active blockers</div>';
+    document.getElementById('blocker-count').textContent = '0';
+    return;
+  }
+
+  document.getElementById('blocker-count').textContent = blockers.length + ' CRITICAL';
+  let html = '';
+  blockers.forEach(b => {
+    html += `<div class="blocker-item">
+      <div class="blocker-mission">${b.id.replace(/_/g,' ')} - ${b.value||''}</div>
+      <div class="blocker-desc">BLOCKER: ${b.blocker||b.status}</div>
+      <div class="blocker-action">ACTION: ${b.action||'Resolve blocker'}</div>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+// ── UPDATE STATS ──
+function updateStats(agents, missions, btcPrice, fearGreed){
+  const active = agents.filter(a => a.status==='running'||a.status==='active'||a.status==='deployed').length;
+  const totalRuns = agents.reduce((s,a) => s + (a.runs||0), 0);
+  const totalErrors = agents.reduce((s,a) => s + (a.errors||0), 0);
+  const totalRevenue = agents.reduce((s,a) => s + (a.revenue||0), 0);
+
+  document.getElementById('stat-total').textContent = agents.length.toLocaleString();
+  document.getElementById('stat-active').textContent = active.toLocaleString();
+  document.getElementById('stat-runs').textContent = totalRuns.toLocaleString();
+  document.getElementById('stat-errors').textContent = totalErrors.toLocaleString();
+  document.getElementById('stat-revenue').textContent = '$' + totalRevenue.toLocaleString();
+
+  if(btcPrice) document.getElementById('btc-price').textContent = '$' + Math.round(btcPrice).toLocaleString();
+  if(fearGreed !== undefined){
+    const fgEl = document.getElementById('stat-fear');
+    fgEl.textContent = fearGreed;
+    fgEl.className = 'stat-value ' + (fearGreed < 25 ? 'red' : fearGreed < 50 ? 'orange' : 'green');
+  }
+
+  // RAM estimate
+  try{
+    document.getElementById('stat-ram').textContent = '~2.8G';
+  }catch(e){}
+}
+
+// ── FETCH DATA FROM SERVER ──
+async function fetchJSON(url){
+  try{
+    const r = await fetch(url, {signal: AbortSignal.timeout(5000)});
+    if(!r.ok) throw new Error(r.status);
+    return await r.json();
+  }catch(e){
+    console.warn('Fetch failed:', url, e.message);
+    return null;
+  }
+}
+
+async function refreshAll(){
+  document.getElementById('last-update').textContent = 'Updating...';
+
+  const [agentData, statusData, tweetData, revenueData] = await Promise.all([
+    fetchJSON(API_BASE + '/api/agents'),
+    fetchJSON(API_BASE + '/api/status'),
+    fetchJSON(API_BASE + '/api/tweets'),
+    fetchJSON(API_BASE + '/api/revenue')
+  ]);
+
+  // Process agents
+  if(agentData && agentData.agents){
+    allAgents = agentData.agents;
+    renderDepartments(allAgents);
+    renderEvolution(allAgents);
+    filterAgents();
+    updateStats(
+      allAgents,
+      statusData?.missions,
+      statusData?.btc_price,
+      statusData?.fear_greed
+    );
+  }
+
+  // Process status/missions
+  if(statusData && statusData.missions){
+    renderPipeline(statusData.missions);
+    renderBlockers(statusData.missions);
+    const badge = document.getElementById('mode-badge');
+    badge.textContent = statusData.mode || 'GUERRA';
+    badge.className = 'mode-badge mode-' + (statusData.mode || 'GUERRA');
+  }
+
+  // Process tweets
+  if(tweetData){
+    const tweets = tweetData.tweets || tweetData;
+    renderTweets(Array.isArray(tweets) ? tweets : []);
+  }
+
+  // Process revenue
+  if(revenueData && revenueData.total_usd !== undefined){
+    document.getElementById('stat-revenue').textContent = '$' + revenueData.total_usd.toLocaleString();
+  }
+
+  // RAM from status
+  if(statusData && statusData.ram_mb){
+    const ramGB = (statusData.ram_mb / 1024).toFixed(1);
+    document.getElementById('stat-ram').textContent = ramGB + 'G';
+  }
+
+  document.getElementById('last-update').textContent =
+    'Last update: ' + new Date().toLocaleTimeString();
+}
+
+// ── LOAD LOCAL FILES ──
+function loadLocalFiles(){
+  document.getElementById('file-input').click();
+}
+
+function handleFileUpload(event){
+  const files = event.target.files;
+  for(const file of files){
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      try{
+        const data = JSON.parse(e.target.result);
+        processUploadedData(file.name, data);
+      }catch(err){
+        console.error('Failed to parse', file.name, err);
+      }
+    };
+    reader.readAsText(file);
+  }
+  event.target.value = '';
+}
+
+function processUploadedData(filename, data){
+  if(filename.includes('queued_tweets')){
+    renderTweets(Array.isArray(data) ? data : []);
+  } else if(filename.includes('swarm_missions')){
+    renderPipeline(data.missions || {});
+    renderBlockers(data.missions || {});
+    if(data.mode){
+      const badge = document.getElementById('mode-badge');
+      badge.textContent = data.mode;
+      badge.className = 'mode-badge mode-' + data.mode;
+    }
+    if(data.btc_price) document.getElementById('btc-price').textContent = '$' + Math.round(data.btc_price).toLocaleString();
+    if(data.fear_greed !== undefined) document.getElementById('stat-fear').textContent = data.fear_greed;
+  } else if(filename.includes('revenue')){
+    if(data.total_usd !== undefined){
+      document.getElementById('stat-revenue').textContent = '$' + data.total_usd.toLocaleString();
+    }
+  } else {
+    // Assume agent JSON
+    if(data.name){
+      const agent = normalizeAgent(data, guessSource(filename));
+      const idx = allAgents.findIndex(a => a.name === agent.name);
+      if(idx >= 0) allAgents[idx] = agent;
+      else allAgents.push(agent);
+      filterAgents();
+      renderDepartments(allAgents);
+      renderEvolution(allAgents);
+      updateStats(allAgents);
+    }
+  }
+  document.getElementById('last-update').textContent =
+    'Loaded: ' + filename + ' at ' + new Date().toLocaleTimeString();
+}
+
+function guessSource(filename){
+  if(filename.includes('SALES') || filename.includes('_S.')) return 'sales';
+  return 'army';
+}
+
+function normalizeAgent(raw, source){
+  return {
+    name: raw.name || 'UNKNOWN',
+    dept: raw.department || raw.dept || '',
+    role: raw.role || raw.title || '',
+    level: raw.evolution?.level || raw.level || 1,
+    xp: raw.evolution?.xp || raw.xp || 0,
+    xp_to_next: raw.evolution?.xp_to_next || raw.xp_to_next || 100,
+    runs: raw.metrics?.runs || raw.runs || raw.run_count || 0,
+    errors: raw.metrics?.errors || raw.errors || raw.error_count || 0,
+    revenue: raw.evolution?.total_revenue_usd || raw.revenue_usd || 0,
+    status: raw.status || 'idle',
+    source: source || raw.source || 'army'
+  };
+}
+
+// ── AUTO REFRESH ──
+function toggleAutoRefresh(){
+  const dot = document.getElementById('auto-dot');
+  const btn = document.getElementById('btn-auto');
+  if(autoRefreshTimer){
+    clearInterval(autoRefreshTimer);
+    autoRefreshTimer = null;
+    dot.className = 'status-dot off';
+    btn.classList.remove('active');
+  } else {
+    autoRefreshTimer = setInterval(refreshAll, 30000);
+    dot.className = 'status-dot on';
+    btn.classList.add('active');
+    refreshAll();
+  }
+}
+
+// ── UTILITY ──
+function escapeHtml(str){
+  const d = document.createElement('div');
+  d.textContent = str;
+  return d.innerHTML;
+}
+
+// ── INIT ──
+populateDeptFilter();
+renderDepartments([]);
+renderPipeline({});
+renderBlockers({});
+renderTweets([]);
+renderEvolution([]);
+renderAgents([]);
+
+// Try initial load from server
+setTimeout(refreshAll, 500);
+</script>
+</body>
+</html>

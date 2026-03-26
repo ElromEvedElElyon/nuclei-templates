@@ -105,8 +105,8 @@ DEPARTMENTS = {
         "color": "\033[36m",  # teal
     },
     "COMMAND": {
-        "legion": "L10_METATRON",
-        "head": "METATRON",
+        "legion": "L10_CALEV",
+        "head": "CALEV",
         "mission": "Orchestration, strategy, inter-agent coordination",
         "color": "\033[97m",  # white
     },
@@ -538,8 +538,8 @@ AGENTS = {
         "git_repos": [],
     },
 
-    # ── L10 COMMAND (METATRON) ─────────────────────────────
-    "METATRON": {
+    # ── L10 COMMAND (CALEV) ─────────────────────────────
+    "CALEV": {
         "dept": "COMMAND", "role": "Supreme Commander / Orchestrator",
         "skill": "orchestration", "schedule": "00:00,06:00,12:00,18:00",
         "tools": ["shell_command", "read_file", "web_fetch", "crypto_price"],
@@ -548,7 +548,7 @@ AGENTS = {
         "goals": ["100% agent uptime", "Daily status report", "Revenue targets on track"],
         "git_repos": ["israel-one"],
     },
-    "SANDALFON": {
+    "ELIAS": {
         "dept": "COMMAND", "role": "Communications Director",
         "skill": "inter_agent_comms", "schedule": "07:00,13:00,19:00",
         "tools": ["read_file", "shell_command"],
