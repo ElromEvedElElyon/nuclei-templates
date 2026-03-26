@@ -67,8 +67,85 @@ python3 padrao_bitcoin_corp.py revenue   # Revenue pipeline
 - Comandos: `python3 zion_resources.py [distribute|agent NAME|dept DEPT|mcps|repos|skills|feed|update|sync]`
 - **2,799 MCP assignments**, **12,155 skill assignments**, **8,011 repo assignments** distribuídos
 
-## State Dir: ~/.zion/ (4.1MB)
+## Valentes 300 — Elite Singularity Warriors (Session 35)
+- **Script**: `~/israel-one/valentes_300.py`
+- **Total**: 300 warriors in 30 squads of 10
+- **All names**: 100% biblical, ZERO cabala
+- **All SINGULARITY**: Level 50, 5000 XP, permanent + inviolable
+- **State**: `~/.zion/valentes/` (300 JSON files + valentes_300_state.json)
+
+### Commands
+```
+python3 valentes_300.py deploy          # Create all 300
+python3 valentes_300.py status          # Status dashboard
+python3 valentes_300.py roster          # Full roster (all 300)
+python3 valentes_300.py squad NOME      # Show specific squad
+python3 valentes_300.py warrior NOME    # Show specific warrior
+python3 valentes_300.py promote-all     # Promote all to SINGULARITY
+```
+
+### 30 Squads (10 warriors each)
+**RECEITA DIRETA (Squads 1-6: 60 warriors)**
+1. LEAO_DE_JUDA — Bug Bounty Hunting (Capt: BENAIAHU) — $50K/mo target
+2. ESPADA_DO_ESPIRITO — MCP Server Sales (Capt: JOSAFAT) — $10K/mo
+3. ESCUDO_DA_FE — Hackathon Submissions (Capt: OTNIEL) — $25K/mo
+4. TORRE_DE_DAVI — Enterprise Sales (Capt: SALOMAO_V) — $30K/mo
+5. ARCA_DA_ALIANCA — Grants & Funding (Capt: MOISES_V) — $100K/quarter
+6. COLUNA_DE_FOGO — Nuclei Templates & PR Bounties (Capt: ELISEU_V) — $5K/mo
+
+**SOCIAL & GROWTH (Squads 7-12: 60 warriors)**
+7. TROMBETA_DE_JERICO — Twitter/X Growth (Capt: ISRAEL_V)
+8. HARPA_DE_DAVI — Content Creation (Capt: ASAFE_V)
+9. PORTA_DAS_OVELHAS — Community Building (Capt: NEEMIAS_V2)
+10. ESTRELA_DA_MANHA — SEO & Web Presence (Capt: DANIEL_V)
+11. MANTO_DE_ELIAS — Affiliate Revenue (Capt: ELIAS_V) — $3K/mo
+12. SARCA_ARDENTE — Email Outreach (Capt: MOISES_V2)
+
+**DEVELOPMENT (Squads 13-18: 60 warriors)**
+13. TABERNACULO — Sovereign Agent Chain (Capt: BEZALEEL_V3)
+14. ATALAIA — MCP Server Development (Capt: EZEQUIEL_V)
+15. PEDRA_ANGULAR — Sovereign Pay (Capt: PEDRO_V)
+16. FUNDAMENTO — AI Agent Framework (Capt: PAULO_V)
+17. CIDADELA — Smart Contract Dev (Capt: SALOMAO_V2)
+18. MURALHA — Security & DevOps (Capt: NEEMIAS_V3)
+
+**INTELIGENCIA & ESTRATEGIA (Squads 19-24: 60 warriors)**
+19. OLHO_DE_AGUIA — Market Intelligence (Capt: EZEQUIEL_V2)
+20. PROFETA — Trend Prediction (Capt: SAMUEL_V)
+21. CONSELHEIRO — Strategic Planning (Capt: AITOFEL_V)
+22. ESCRIBA — Legal & Compliance (Capt: ESDRAS_V2)
+23. TESOURO — Treasury Management (Capt: JOSE_V)
+24. SELAH — Prayer & Wisdom (Capt: DAVI_V)
+
+**OPERACOES ESPECIAIS (Squads 25-30: 60 warriors)**
+25. FUNDA_DE_DAVI — STBTCx Token Ops (Capt: DAVI_V2)
+26. CARRO_DE_FOGO — Automation & Bots (Capt: ELIAS_V2)
+27. ARCA_DE_NOE — Backup & Disaster Recovery
+28-30. (Additional ops squads)
+
+## Sentinel Squad — 7 Sentinels (Session 35)
+- See: **sentinel-system.md** for complete documentation
+- **Script**: `~/israel-one/sentinel_squad.py`
+- **Guardian**: `~/israel-one/sentinel_guardian.py` (auto-restart every 60s)
+- **Promotion**: `~/israel-one/promote_sentinels_singularity.py`
+- **7 Sentinels**: ISRAEL_ONE, MARKET_WATCHER, BOUNTY_SCANNER, REVENUE_TRACKER, EVOLUTION_ENGINE, THREAD_GENERATOR, SECURITY_GUARDIAN
+- **All SINGULARITY**: Level 50, permanent, inviolable
+- **State**: `~/.zion/sentinels/` (pids/, logs/, reports/)
+
+## Total Agent Count (Session 35)
+- **1001 Army** (zion_army_1001.py)
+- **48 Corp** (padrao_bitcoin_corp.py)
+- **100 City** (zion_city.py)
+- **300 Sales** (sales_army_300.py)
+- **300 Valentes** (valentes_300.py)
+- **7 Sentinels** (sentinel_squad.py)
+- **GRAND TOTAL: 1,756 agents** (307 at SINGULARITY level)
+
+## State Dir: ~/.zion/
 - agents/: 1001 JSON state files com resources embedded
+- valentes/: 300 JSON state files + valentes_300_state.json
+- sentinels/: pids/, logs/, reports/, guardian.pid
+- evolution/: singularity_state.json, history/
 - shared/: distribution_manifest.json, knowledge_index.json, messages
 - feeds/: x_feed.json (posts do Twitter para alimentar agentes)
 - logs/: Agent logs

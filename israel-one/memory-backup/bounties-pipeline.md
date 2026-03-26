@@ -30,21 +30,11 @@
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
-### nuclei-templates $150-$250/merged PR (Algora) — 9 PRs OPEN = $1,350-$2,250
-- **CLEAN (awaiting review)**: #15675, #15676, #15698, #15699, #15701
+### nuclei-templates $150-$250/merged PR (Algora) — 10 PRs OPEN = $1,500-$2,500
+- **CLEAN (awaiting review)**: #15675, #15676, #15698, #15699, #15701, **#15705** (NEW!)
 - **NEEDS FIX**: #15695 (exploit code), #15696 (wrong endpoint), #15700 (product detection)
-- **ZERO human reviews on ALL 9 PRs**
-- **#15675**: 5 KEV CVEs, rebased clean, Neo bot approved — awaiting @DhiyaneshGeek
-- **#15676**: CVE-2020-5849, CI SUCCESS, Neo approved — awaiting @theamanrawat
-- **#15695**: NEEDS FIX — exploit code must be removed
-- **#15696**: NEEDS FIX — wrong endpoint in template
-- **#15697**: 5 KEV CVEs batch 4 (GPON, Telerik RadAsyncUpload, SAP NetWeaver, Struts S2-008, ManageEngine)
-- **#15698**: 5 KEV CVEs batch 5 (Fortinet SSL VPN x2 XORtigate, SonicWall x2, Qlik Sense)
-- **#15699**: 5 KEV CVEs batch 6 (Fortinet fgfmd, Cisco ArcaneDoor, Ivanti CSA, Struts S2-067, Zyxel)
-- **#15700**: NEEDS FIX — product detection issue (WebLogic, Plex, Nagios, Pi-hole, Roundcube)
-- **#15701**: NEW Session 35 PR
-- **~36 uncovered KEV CVEs remain** in issue #7549 (18 already have templates, 30 in our PRs)
-- **Top 5 next batch**: CVE-2016-3976 (SAP), CVE-2016-2388 (SAP), CVE-2020-10221 (rConfig), CVE-2020-10181 (Sumavision), CVE-2018-5430 (TIBCO)
+- **#15705** (Session 35): SAP NetWeaver x2, rConfig, Sumavision, TIBCO JasperReports — vuln-specific probes
+- **~31 uncovered KEV CVEs remain** in issue #7549
 - **ACAO**: Fix #15695, #15696, #15700; keep submitting batches of 5
 
 ### INITIATE Hackathon (Initia) $25K — DoraHacks
@@ -66,13 +56,19 @@
 - 1 finding pronto (`~/limitbreak-amm/findings/C-01-operator-precedence-createPool.md`)
 - **BLOQUEIO**: Email verification + KYC Sumsub pendente + password reset tokens EXPIRED
 
-### NEAR Intents $300K — HackenProof ONLY
-- Smart contracts + MPC bridges
-- Cross-chain = top payout category historicamente
-- **IMPORTANT**: security@near.org is DEPRECATED for bug submissions — must use HackenProof.com
-- 8 findings ready in `~/near-intents-all-findings-report.md`
-- KYC HackenProof required
-- **ACAO**: Register HackenProof, complete KYC, submit findings
+### NEAR Intents $164K-$880K+ — HackenProof (MASSIVE!)
+- **3 separate programs**: Smart Contracts, Bridges (MPC+Omni), SDK
+- **CRITICAL**: $100K-$500K per finding | HIGH: $20K-$100K | MEDIUM: $1K-$20K
+- **Our 8 findings**: 1 CRITICAL ($100K-$500K) + 2 HIGH ($40K-$200K) + 5 MEDIUM ($5K-$100K)
+- **CRITICAL finding**: MockAttestation in production WASM bypasses ALL TEE verification
+- **Registration**: NO KYC upfront! Email + verify only. KYC only at withdrawal
+- **Payouts**: USDC on Base, BTC, or ETH. 3% commission. Min $100 withdrawal
+- **NO API**: Browser-only submission, each finding = separate report
+- **IMPORTANT**: security@near.org DEPRECATED — must use HackenProof.com only
+- **NEAR paid $1.8M to hackers historically** — they PAY
+- Findings: `~/near-intents-all-findings-report.md`
+- Guide: `/tmp/hackenproof_registration_guide.txt`
+- **ACAO URGENTE**: Register hackenproof.com → submit CRITICAL first → then HIGHs → then MEDIUMs
 
 ### Immunefi Variational $100K max — P2
 - Perps DEX, ~500 assets, smart contracts
