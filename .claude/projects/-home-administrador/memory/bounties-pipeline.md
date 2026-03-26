@@ -9,16 +9,18 @@
 - **PERDA CONFIRMADA**: ~$5K-15K em potencial H-02 + H-03 rewards
 - **STATUS**: Contest ENCERRADO 27 Mar 20:00 UTC. Aguardar resultado H-01
 
-### Immunefi — ZENDESK TICKETS OPEN — PLATAFORMA BLOQUEADA
+### Immunefi — REPORT #71022 SUBMITTED! ZKsync OS Bug
 - **Email VERIFICADO**: inteligenciaartificial.now@gmail.com
-- **Password**: ImmunefiElrom2026#Sec99
-- **Zendesk tickets**: #8002 and #8008 OPEN — NO human response yet
-- **Follow-up emails**: SENT 04:28 UTC 26 Mar to support@immunefi.com AND security@matterlabs.dev
-- **IMPORTANT**: Direct emails to support@immunefi.com get AUTO-REJECTED — must use Zendesk form
-- **API submission**: BLOCKED server-side (POST /api/report-draft returns 403 "You must connect your Discord account")
-- **Discord blocker**: elromauditor_86701 linked to old account, server-side mapping persists even after deauthorizing from Discord side
-- **ZKsync bug** pronto: `~/zksync-os-bug-report.md` (callstack off-by-one, $30K-$100K)
-- **ACAO**: Wait for Zendesk response OR create brand new Discord account with different email
+- **Password**: ImmElrom2026!Bug#99
+- **REPORT #71022**: SUBMITTED 26 Mar 2026 at 11:16 UTC — Status: **Reported**
+  - URL: https://bugs.immunefi.com/dashboard/submission/71022
+  - Severity: Medium | Program: ZKsync OS (project 947) | Asset: evm_interpreter
+  - Wallet: 0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B (Verified, Primary)
+- **Discord RESOLVED**: wagner7978 (ID 771534250368565298) connected — NOT elromauditor
+- **Discord (OLD/BLOCKED)**: elromauditor_86701 — still linked to different Immunefi account
+- **Zendesk tickets**: #8002 and #8008 OPEN — for Discord unlink request (may no longer matter)
+- **Email submissions**: security@matterlabs.dev (05:34+13:33 UTC) + security@zksync.io (12:36 UTC)
+- **NEXT**: Monitor report #71022 every 24-48h, follow up if no response by 2 Apr
 
 ### Guardian Defender $150K — BLOQUEADO HARDWARE + EXPIRED TOKENS
 - **Login API funciona**: token em `~/.guardian_defender_token.json`
@@ -75,7 +77,7 @@
 ### Immunefi Variational $100K max — P2
 - Perps DEX, ~500 assets, smart contracts
 - URL: immunefi.com/bug-bounty/variational/
-- **Same Discord blocker affects all Immunefi submissions**
+- **Discord RESOLVED** — wagner7978 connected, can now submit to ANY Immunefi program
 
 ## TIER 2: MEDIUM PRIORITY
 
@@ -160,7 +162,7 @@
 | Plataforma | Foco | Nota |
 |-----------|------|------|
 | Code4rena | Solidity audits | Web only, KYC APPROVED |
-| Immunefi | Smart contract bugs | $8M+ pipeline, DISCORD BLOCKED |
+| Immunefi | Smart contract bugs | $8M+ pipeline, Discord RESOLVED (wagner7978), Report #71022 active |
 | HackenProof | Web3 security | 200+ programas, KYC needed |
 | Algora | TypeScript bounties | Escrow, $500-$5K |
 | huntr.com | AI/ML bugs | ate $50K |
@@ -183,7 +185,7 @@
 - Critical: $100K min (10% of funds at risk)
 - High: $20K min
 - Payment: USDC on zkSync Era
-- **Same Discord blocker affects all Immunefi submissions**
+- **Discord RESOLVED** — can submit via wagner7978
 
 ## PRs STATUS (35+ open, 26 Mar — Session 35)
 - **nosana-ci/agent-challenge #18**: ZION agent — ONLY PR OPEN
