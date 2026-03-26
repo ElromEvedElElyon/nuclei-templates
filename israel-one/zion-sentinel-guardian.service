@@ -1,0 +1,16 @@
+[Unit]
+Description=ZION Sentinel Guardian — Vigilia Eterna (Auto-restart all 7 sentinels)
+After=network.target
+
+[Service]
+Type=simple
+User=administrador
+WorkingDirectory=/home/administrador/israel-one
+ExecStart=/usr/bin/python3 /home/administrador/israel-one/sentinel_guardian.py
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/administrador/.zion/sentinels/logs/guardian.log
+StandardError=append:/home/administrador/.zion/sentinels/logs/guardian.log
+
+[Install]
+WantedBy=multi-user.target
