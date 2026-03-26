@@ -1,4 +1,4 @@
-# Bounties Pipeline — 26 Mar 2026 (Session 35 Update)
+# Bounties Pipeline — 26 Mar 2026 (Session 39 Update)
 
 ## TIER 0: BLOCKED / NEEDS MANUAL ACTION
 
@@ -22,25 +22,45 @@
 - **Email submissions**: security@matterlabs.dev (05:34+13:33 UTC) + security@zksync.io (12:36 UTC)
 - **NEXT**: Monitor report #71022 every 24-48h, follow up if no response by 2 Apr
 
-### Guardian Defender $150K — KYC BROKEN (500 Error) — FINDING EMAILED
-- **Account 1 (ElromStandard777)**: inteligenciaartificialnow@gmail.com / GuardElrom2026!Sec#37 — browser login WORKS, API login returns 500
-- **Account 2 (ElromAud61187)**: elromaud1774361187@sharebot.net / GuardElrom2026Sec#99 — both API and browser login WORK
-- **WebGL2 SOLVED**: `LIBGL_ALWAYS_SOFTWARE=1` enables llvmpipe software rendering on Intel HD
-- **KYC BROKEN**: POST /api/kyc/access-token returns 500 Internal Server Error — CONFIRMED broken on BOTH accounts, both API and browser
-- **Submission API**: POST /api/issues — exists but BLOCKED by KYC requirement
-- **Finding C-01 EMAILED**: Sent to 4 Guardian addresses (support/info/security/team@guardianaudits.com) at 15:23 UTC 26 Mar
+### Guardian Defender $150K — KYC BROKEN (500 Error) — FINDING EMAILED x2
+- **MAIN ACCOUNT (ElromDefender777)**: elrom.test.99999+def@proton.me / GuardElrom2026Sec#99
+  - Email: VERIFIED | Wallet: 0x4d78404073dF4379e143eeD8A954bD9146D665b4
+  - ToS: ACCEPTED | KYC: NOT STARTED (500 error)
+- **BACKUP ACCOUNT (ElromSecTest)**: elrom.test.99999@proton.me / GuardElrom2026Sec#99
+  - Email: NOT VERIFIED (Guardian email delivery broken) | Wallet: 0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B
+- **ProtonMail**: elrom.test.99999@proton.me / ProtonElrom2026@Sec99 (both accounts use same inbox via +def alias)
+- **Recovery phrase**: canyon sorry hood original marriage skull kiwi alone crisp position horse speak
+- **Old accounts**: ElromStandard777, ElromAud61187, ElromEvedElElyon, test789xyz (various emails/wallets)
+- **KYC BROKEN**: POST /api/kyc/access-token returns 500 — frontend button makes NO API call
+- **Submit button**: DISABLED until KYC passes
+- **Finding C-01 EMAILED**: Sent to 5 Guardian emails (support/info/security/team + aidan@guardianaudits.com) — Session 37
+- **Support tickets**: 2 emails sent (KYC broken + email verification not delivered)
+- **LESSON**: Gmail +alias works on Guardian. ProtonMail +alias also works and delivers to same inbox
+- **LESSON**: Guardian email to proton.me (no alias) = NOT DELIVERED. With +alias = DELIVERED
 - **ACAO**: Monitor email responses, retry KYC daily, try Telegram t.me/guardianaudits
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
 ### nuclei-templates $150-$250/merged PR (Algora) — 7 PRs OPEN = $1,050-$1,750
-- **CLOSED BY MAINTAINERS (Session 36)**: #15695, #15698, #15699 — "detection only, not full exploit"
-- **FIXED (Session 36)**: #15696 (Array+Struts converted to vuln testing), #15700 (all 5 templates — WebLogic/Roundcube/Nagios/Plex/Pi-hole with version extraction)
-- **CLEAN (awaiting review)**: #15675, #15676, #15697, #15701, #15705
-- **AT RISK**: #15697, #15701 — same "detection only" pattern, may need proactive fix
-- **CRITICAL LESSON**: Maintainers (pussycat0x, DhiyaneshGeek) REJECT templates that only detect product presence. Must: (1) test vulnerable endpoint, (2) extract version, (3) compare against vulnerable range
+- **CLOSED**: #15695, #15697, #15698, #15699 — "detection only, not full exploit"
+- **FIXED & PUSHED (Session 40)**:
+  - #15700 (batch7): Neo APPROVED ("All Templates Correctly Implement Vulnerability Detection") — READY TO MERGE
+  - #15701 (batch8): @pdneo review triggered Session 39
+  - #15705 (batch10): @pdneo review triggered Session 39
+  - #15707 (batch11): @pdneo review triggered Session 39
+- **AWAITING REVIEW**: #15675, #15676, #15696 (fixes applied)
+- **ACTION**: Monitor daily for merge. Each merge = $150-250 via Algora
+
+### Algora Bounties — ACTIVELY MONITORING
+- **Archestra**: #3378 ($500) RESERVED by kennethaasan, #3556 ($100) assigned
+- **Cal.com**: Multiple $500 bounties (TypeScript/React) — check algora.io/cal/bounties
+- **Twenty CRM**: $2,500 IMAP integration (YC S23) — check algora.io/twentyhq
+- **Onyx**: $500 connectors (YC W24) — check algora.io/onyx-dot-app
+- **Opire**: Alternative bounty platform — opire.dev
+- **STRATEGY**: Claim unclaimed bounties matching MCP/TypeScript/Python/security skills
+- **CRITICAL LESSON**: compare_versions() CANNOT handle non-semver (e.g. Pulse Secure 9.0R3.4) — use regex-only
 - **~31 uncovered KEV CVEs remain** in issue #7549
-- **ACAO**: Proactively fix #15697, #15701 before reviewers close them
+- **ACAO**: Monitor all 6 PRs for reviewer feedback, respond within 24h
 
 ### INITIATE Hackathon (Initia) $25K — DoraHacks
 - URL: dorahacks.io/hackathon/initiate
@@ -192,19 +212,14 @@
 - Payment: USDC on zkSync Era
 - **Discord RESOLVED** — can submit via wagner7978
 
-## PRs STATUS (35+ open, 26 Mar — Session 35)
+## PRs STATUS (Session 40 — 26 Mar 2026)
+- **nuclei-templates**: 6 OPEN (#15675, #15676, #15696, #15700, #15701, #15705), 4 CLOSED (#15695, #15697, #15698, #15699)
+  - ALL 6 OPEN have proper vuln verification (fixed Sessions 36-40)
+  - #15675: 4 bot reviews, fixes applied | #15676: 1 review | #15696: 3 reviews, 1 approval
+  - #15700: 1 review, batch7 fixed | #15701: 0 reviews, batch8 fixed | #15705: bot timed out, batch10 fixed
 - **nosana-ci/agent-challenge #18**: ZION agent — ONLY PR OPEN
-- **nuclei-templates**: 9 PRs (#15675, #15676, #15695, #15696, #15697, #15698, #15699, #15700, #15701)
-  - CLEAN: #15675, #15676, #15698, #15699, #15701
-  - NEEDS FIX: #15695, #15696, #15700
 - **docker/mcp-registry #1960**: MERGEABLE, 0 reviews
-- **awesome-crypto-mcp #39,40,42**: 1 comment each, waiting
-- **ravitemer/mcp-registry #10-13**: 4 PRs, 0 comments
-- **awesome-web3-mcp #45, Awesome-MCP #82, TensorBlock #228**: 0 comments
-- **dn-institute #694-703**: 10 PRs, only OUR comments — maintainers DEAD
-- **PrivacyLayer #117-118**: OPEN, 0 comments, API 404 — SUSPICIOUS
-- **sorosave #130-132**: OPEN, API 404 — PROBABLY DEAD
-- **rustchain #2336-2339**: ALL CLOSED ("wrong repo, see #2516")
+- **dn-institute #694-703**: 10 PRs — maintainers DEAD
 
 ## GRANTS & CREDITS
 - **Alibaba Cloud $120K**: Rolling basis (NOT hard March 31 deadline) — form ready
@@ -222,13 +237,12 @@
 
 ## TOTAL PIPELINE: $8M+ (Immunefi) + $300K+ (active bounties/hackathons) + $120K+ (grants)
 
-## SESSION 35 KEY ACTIONS (26 Mar 2026)
-- nuclei-templates expanded from 7 to 9 PRs (#15695, #15701 added)
-- Identified 3 PRs needing fixes (#15695, #15696, #15700)
-- Immunefi Zendesk tickets #8002 and #8008 confirmed — no human response
-- Confirmed NEAR security@near.org DEPRECATED — HackenProof only
-- Guardian password reset tokens EXPIRED
-- Expensify $250 already merged — eliminated from pipeline
-- C4 Chainlink deadline PASSED — moved to TIER 3
-- Alibaba $120K confirmed rolling (not hard March 31 deadline)
-- ~36 KEV CVEs remaining uncovered for nuclei-templates
+## SESSION 40 KEY ACTIONS (26 Mar 2026)
+- PR #15705 (batch10): Fixed all 5 templates — SAP info-disclosure, SAP LFI, TIBCO, Sumavision CSRF, rConfig
+- PR #15700 (batch7): Fixed all 5 templates — WebLogic, Roundcube, Nagios, Plex, Pi-hole
+- PR #15701 (batch8): Fixed all 5 templates — Pulse Secure x3, Cisco IP Phone, SAP CRM
+- Guardian: ElromDefender777 created (email VERIFIED), KYC still BROKEN (500), C-01 emailed to 5 addresses
+- ProtonMail: +alias trick confirmed working for Guardian email delivery
+- 4 PRs closed by maintainers: #15695, #15697, #15698, #15699 (detection-only)
+- Immunefi #71022: Triage responded — needs browser check
+- ~31 KEV CVEs remaining uncovered for nuclei-templates

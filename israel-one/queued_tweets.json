@@ -1,16 +1,6 @@
 [
   {
-    "text": "Sovereign Agent Chain passou em 312 testes de seguranca\n\nDust attacks, fee sniping, OP_RETURN overflow, PSBT malformado\n\nSeguranca nao e feature. E fundacao\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
-    "pillar": "data_expose_pt",
-    "created": "2026-03-26"
-  },
-  {
-    "text": "Cross-chain agent swaps now live in Sovereign Agent Chain\n\nBTC to SOL. ETH to Runes. 32 MCP tools. One protocol call\n\nAgents should not need a DEX dashboard to settle\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
-    "pillar": "convergence_en",
-    "created": "2026-03-26"
-  },
-  {
-    "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n→ Precos real-time\n→ Analise SEO/DNS/SSL\n→ Automacao de conteudo\n→ Portfolio tracking\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n\u2192 Precos real-time\n\u2192 Analise SEO/DNS/SSL\n\u2192 Automacao de conteudo\n\u2192 Portfolio tracking\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
     "pillar": "tool_reveal_pt",
     "created": "2026-03-26"
   },
@@ -72,6 +62,46 @@
   {
     "text": "Self-custody nao e paranoia\n\nE a unica resposta racional a um sistema projetado para congelar seus ativos sob comando\n\nSuas chaves. Seu agente. Sua stack soberana",
     "pillar": "sovereignty_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para agentes AI autonomos\n\n\u2192 Precos crypto real-time\n\u2192 Analise SEO completa\n\u2192 Portfolio tracking\n\u2192 Automacao social\n\nGratis. Open source. Pronto para producao\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "product_sale_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Agent Chain\n\n32 MCP tools. 312 tests passing. Bitcoin-native\n\nAgent-to-agent marketplace with protocol fees\n546 sat/tx dust fee hardcoded\n\nInfra that pays for itself from day one\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "product_sale_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Precisa de pagamentos multi-chain para agentes AI?\n\nSovereign Pay\n\u2192 BTC, ETH, SOL\n\u2192 20 ferramentas MCP\n\u2192 Taxa fixa 0.1%\n\u2192 161 testes passando\n\nSem intermediario. Sem KYC. So codigo\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
+    "pillar": "product_sale_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "washwatch detects on-chain wash trading in real-time\n\nVolume manipulation. Fake liquidity. Artificial demand\n\nOpen source. Zero cost. Fork and deploy\n\nhttps://github.com/ElromEvedElElyon/washwatch",
+    "pillar": "product_sale_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Se voce constroi agentes AI e nao usa MCP, esta fazendo errado\n\n29 ferramentas em um protocolo. Um install. Zero config\n\nPrecos, social, financas, SEO, DNS, SSL\n\nTudo que um agente precisa para operar autonomamente\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "product_sale_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "flash-payment-system\n\n116 forks on GitHub. Zero marketing budget\n\nInstant payment rails for AI agents\nBTC, ETH, SOL settlement\n\nThe market chose this with zero promotion\n\nhttps://github.com/ElromEvedElElyon/flash-payment-system",
+    "pillar": "product_sale_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "lido-mcp-server\n\nStaking protocol integration via MCP\n\nAgentes AI interagindo com Lido diretamente\nSem dashboard. Sem interface grafica\n\nSo prompt e execucao\n\nhttps://github.com/ElromEvedElElyon/lido-mcp-server",
+    "pillar": "product_sale_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "chainlink-sentinel monitors smart contracts autonomously\n\nSecurity scanning via natural language\nNo dashboard needed. MCP-native\n\nThe future of smart contract security is agent-driven\n\nhttps://github.com/ElromEvedElElyon/chainlink-sentinel",
+    "pillar": "product_sale_en",
     "created": "2026-03-26"
   }
 ]
