@@ -81,6 +81,9 @@ PRODUCTS = [
     ("OpenClaw", "AI agent that runs on your machine, connects WhatsApp/Telegram/Discord"),
     ("Solana Vault Standard", "ERC-4626 on Solana, streaming yield, open source"),
     ("flash-payment-system", "Instant crypto payment rails for AI agents"),
+    ("Sovereign Agent Chain", "32 MCP tools, Bitcoin-native agent marketplace, 312 tests"),
+    ("Sovereign Pay", "20 MCP tools, multi-chain BTC/ETH/SOL, protocol fees, 161 tests"),
+    ("Sovereign Pay Lite", "18 MCP tools, multi-chain BTC/ETH/SOL, 0.1% flat fee, 144 tests"),
 ]
 
 # ─── 50+ TWEET TEMPLATES ─────────────────────────────────────────────

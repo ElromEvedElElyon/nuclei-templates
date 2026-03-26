@@ -80,6 +80,9 @@ PRODUCTS = {
     "lido-mcp-server": "11-tool DeFi integration for Lido staking protocol",
     "sintex-ai": "Web-based AI operating system with 8 apps, deployed live",
     "openclaw": "AI agent running on local machine, connects all messaging",
+    "sovereign-agent-chain": "32 MCP tools, AGT meta-protocol on OP_RETURN, Bitcoin-native, 312 tests",
+    "sovereign-pay": "20 MCP tools, multi-chain BTC/ETH/SOL, protocol fees, credit system, 161 tests",
+    "sovereign-pay-lite": "18 MCP tools, multi-chain BTC/ETH/SOL, 0.1% flat fee, 144 tests",
 }
 
 # ─── TARGET ACCOUNTS DATABASE ────────────────────────────────────────
@@ -304,6 +307,9 @@ TOPIC_MAP = {
     "crypto_media": ["market data", "industry analysis", "regulatory updates"],
     "exchange": ["listings", "regulation", "L2 deployment"],
     "bitcoin_dev": ["Bitcoin development", "ordinals", "Lightning"],
+    "bitcoin_infra": ["Bitcoin infrastructure", "Liquid", "sidechains", "Lightning"],
+    "bitcoin_builder": ["ordinals", "Runes", "inscriptions", "Bitcoin NFT"],
+    "ai_agent_crypto": ["AI agents on-chain", "autonomous agent economy", "agent tokens", "agent marketplace"],
 }
 
 
@@ -413,13 +419,17 @@ def _fill_template(template: str, target: dict) -> str:
     # Select a product relevant to the category
     product_keys = list(PRODUCTS.keys())
     if category in ("security", "security_platform"):
-        preferred = ["chainlink-sentinel", "flash-payment-system"]
+        preferred = ["chainlink-sentinel", "flash-payment-system", "sovereign-agent-chain"]
     elif category in ("ai_company", "ai_builder", "ai_tools", "mcp_core", "mcp_platform", "ai_product"):
-        preferred = ["claw-mcp-toolkit", "openclaw", "commerce-pay-mcp"]
+        preferred = ["claw-mcp-toolkit", "openclaw", "commerce-pay-mcp", "sovereign-agent-chain"]
     elif category in ("solana_builder", "solana_core", "solana_defi"):
-        preferred = ["solana-vault-standard", "flash-payment-system"]
+        preferred = ["solana-vault-standard", "flash-payment-system", "sovereign-pay"]
     elif category in ("defi_builder", "defi_analyst"):
-        preferred = ["solana-vault-standard", "lido-mcp-server", "flash-payment-system"]
+        preferred = ["solana-vault-standard", "lido-mcp-server", "flash-payment-system", "sovereign-pay-lite"]
+    elif category in ("bitcoin_dev", "bitcoin_infra", "bitcoin_builder"):
+        preferred = ["sovereign-agent-chain", "flash-payment-system"]
+    elif category in ("ai_agent_crypto", "ai_crypto"):
+        preferred = ["sovereign-agent-chain", "claw-mcp-toolkit", "openclaw"]
     else:
         preferred = product_keys
 

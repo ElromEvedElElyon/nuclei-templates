@@ -1,0 +1,530 @@
+[
+  {
+    "handle": "VitalikButerin",
+    "category": "crypto_leader",
+    "topics": [
+      "ethereum",
+      "L2",
+      "crypto philosophy",
+      "public goods"
+    ]
+  },
+  {
+    "handle": "CryptoHayes",
+    "category": "crypto_macro",
+    "topics": [
+      "macro",
+      "DeFi",
+      "derivatives",
+      "monetary policy"
+    ]
+  },
+  {
+    "handle": "AndreCronjeTech",
+    "category": "defi_builder",
+    "topics": [
+      "DeFi",
+      "Fantom",
+      "Sonic",
+      "yield",
+      "protocol design"
+    ]
+  },
+  {
+    "handle": "haaborsufi",
+    "category": "crypto_builder",
+    "topics": [
+      "DeFi",
+      "MEV",
+      "protocol"
+    ]
+  },
+  {
+    "handle": "bantaboreg",
+    "category": "crypto_research",
+    "topics": [
+      "crypto research",
+      "data analysis"
+    ]
+  },
+  {
+    "handle": "0xMert_",
+    "category": "solana_builder",
+    "topics": [
+      "Solana",
+      "infra",
+      "RPC",
+      "validator"
+    ]
+  },
+  {
+    "handle": "aaboreybtc",
+    "category": "bitcoin_dev",
+    "topics": [
+      "Bitcoin",
+      "Lightning",
+      "ordinals"
+    ]
+  },
+  {
+    "handle": "staborni",
+    "category": "defi_builder",
+    "topics": [
+      "DeFi",
+      "protocol",
+      "yield"
+    ]
+  },
+  {
+    "handle": "DefiIgnas",
+    "category": "defi_analyst",
+    "topics": [
+      "DeFi",
+      "yield",
+      "airdrop",
+      "protocol analysis"
+    ]
+  },
+  {
+    "handle": "WatcherGuru",
+    "category": "crypto_news",
+    "topics": [
+      "breaking news",
+      "crypto",
+      "regulation"
+    ]
+  },
+  {
+    "handle": "tier10k",
+    "category": "crypto_data",
+    "topics": [
+      "on-chain data",
+      "whale tracking",
+      "flows"
+    ]
+  },
+  {
+    "handle": "MessariCrypto",
+    "category": "crypto_research",
+    "topics": [
+      "research",
+      "reports",
+      "protocol analysis"
+    ]
+  },
+  {
+    "handle": "coinaborbase",
+    "category": "exchange",
+    "topics": [
+      "listings",
+      "regulation",
+      "Base L2"
+    ]
+  },
+  {
+    "handle": "sama",
+    "category": "ai_leader",
+    "topics": [
+      "AGI",
+      "OpenAI",
+      "AI safety",
+      "policy"
+    ]
+  },
+  {
+    "handle": "karpathy",
+    "category": "ai_researcher",
+    "topics": [
+      "LLM",
+      "training",
+      "neural nets",
+      "AI engineering"
+    ]
+  },
+  {
+    "handle": "ylecun",
+    "category": "ai_researcher",
+    "topics": [
+      "AI architecture",
+      "world models",
+      "Meta AI"
+    ]
+  },
+  {
+    "handle": "AnthropicAI",
+    "category": "ai_company",
+    "topics": [
+      "Claude",
+      "MCP",
+      "AI safety",
+      "constitutional AI"
+    ]
+  },
+  {
+    "handle": "alexalaborbert",
+    "category": "ai_researcher",
+    "topics": [
+      "AI research",
+      "ML",
+      "NLP"
+    ]
+  },
+  {
+    "handle": "emaborilyvn",
+    "category": "ai_builder",
+    "topics": [
+      "AI",
+      "agents",
+      "automation"
+    ]
+  },
+  {
+    "handle": "swaboryx",
+    "category": "ai_builder",
+    "topics": [
+      "AI agents",
+      "dev tools",
+      "automation"
+    ]
+  },
+  {
+    "handle": "hardmaru",
+    "category": "ai_researcher",
+    "topics": [
+      "ML research",
+      "creative AI",
+      "evolution"
+    ]
+  },
+  {
+    "handle": "goodfellow_ian",
+    "category": "ai_researcher",
+    "topics": [
+      "GANs",
+      "deep learning",
+      "AI security"
+    ]
+  },
+  {
+    "handle": "shaborwn_tai",
+    "category": "ai_crypto",
+    "topics": [
+      "AI agents",
+      "crypto",
+      "autonomous systems"
+    ]
+  },
+  {
+    "handle": "AIatMeta",
+    "category": "ai_company",
+    "topics": [
+      "Llama",
+      "open source AI",
+      "Meta research"
+    ]
+  },
+  {
+    "handle": "huaborggingface",
+    "category": "ai_platform",
+    "topics": [
+      "open source AI",
+      "models",
+      "datasets"
+    ]
+  },
+  {
+    "handle": "LangChainAI",
+    "category": "ai_tools",
+    "topics": [
+      "agents",
+      "chains",
+      "RAG",
+      "tool use"
+    ]
+  },
+  {
+    "handle": "far_el_nore",
+    "category": "ai_crypto",
+    "topics": [
+      "crypto AI",
+      "agents",
+      "DeFi automation"
+    ]
+  },
+  {
+    "handle": "solaborana",
+    "category": "solana_core",
+    "topics": [
+      "Solana",
+      "performance",
+      "ecosystem"
+    ]
+  },
+  {
+    "handle": "rajaborgopal",
+    "category": "solana_builder",
+    "topics": [
+      "Solana",
+      "DeFi",
+      "development"
+    ]
+  },
+  {
+    "handle": "taborrent",
+    "category": "solana_builder",
+    "topics": [
+      "Solana",
+      "infra",
+      "tooling"
+    ]
+  },
+  {
+    "handle": "aaborave",
+    "category": "solana_builder",
+    "topics": [
+      "Solana",
+      "DeFi",
+      "NFT"
+    ]
+  },
+  {
+    "handle": "JupiterExchange",
+    "category": "solana_defi",
+    "topics": [
+      "DEX",
+      "aggregation",
+      "Solana DeFi"
+    ]
+  },
+  {
+    "handle": "marinade_finance",
+    "category": "solana_defi",
+    "topics": [
+      "liquid staking",
+      "Solana",
+      "yield"
+    ]
+  },
+  {
+    "handle": "samczsun",
+    "category": "security",
+    "topics": [
+      "smart contract security",
+      "exploits",
+      "auditing"
+    ]
+  },
+  {
+    "handle": "bytes032",
+    "category": "security",
+    "topics": [
+      "security research",
+      "vulnerabilities",
+      "auditing"
+    ]
+  },
+  {
+    "handle": "pashovkrum",
+    "category": "security",
+    "topics": [
+      "audit",
+      "DeFi security",
+      "Solidity"
+    ]
+  },
+  {
+    "handle": "code4rena",
+    "category": "security_platform",
+    "topics": [
+      "audit contests",
+      "findings",
+      "security"
+    ]
+  },
+  {
+    "handle": "immunefi",
+    "category": "security_platform",
+    "topics": [
+      "bug bounties",
+      "exploits",
+      "whitehat"
+    ]
+  },
+  {
+    "handle": "OpenZeppelin",
+    "category": "security",
+    "topics": [
+      "smart contracts",
+      "standards",
+      "security"
+    ]
+  },
+  {
+    "handle": "modelcontextprotocol",
+    "category": "mcp_core",
+    "topics": [
+      "MCP",
+      "tool use",
+      "protocol"
+    ]
+  },
+  {
+    "handle": "GlamaAI",
+    "category": "mcp_platform",
+    "topics": [
+      "MCP marketplace",
+      "tools",
+      "discovery"
+    ]
+  },
+  {
+    "handle": "ClaudeAI",
+    "category": "ai_product",
+    "topics": [
+      "Claude",
+      "coding",
+      "reasoning"
+    ]
+  },
+  {
+    "handle": "vercel",
+    "category": "dev_infra",
+    "topics": [
+      "deployment",
+      "frontend",
+      "serverless"
+    ]
+  },
+  {
+    "handle": "supabase",
+    "category": "dev_infra",
+    "topics": [
+      "database",
+      "auth",
+      "backend"
+    ]
+  },
+  {
+    "handle": "rustlang",
+    "category": "dev_lang",
+    "topics": [
+      "Rust",
+      "systems programming",
+      "performance"
+    ]
+  },
+  {
+    "handle": "typescriptlang",
+    "category": "dev_lang",
+    "topics": [
+      "TypeScript",
+      "types",
+      "tooling"
+    ]
+  },
+  {
+    "handle": "zaborhuaborral",
+    "category": "macro",
+    "topics": [
+      "macro",
+      "rates",
+      "Fed",
+      "liquidity"
+    ]
+  },
+  {
+    "handle": "Croissaborant",
+    "category": "macro",
+    "topics": [
+      "global macro",
+      "FX",
+      "monetary policy"
+    ]
+  },
+  {
+    "handle": "TheBlock__",
+    "category": "crypto_media",
+    "topics": [
+      "crypto news",
+      "analysis",
+      "data"
+    ]
+  },
+  {
+    "handle": "coinabordesk",
+    "category": "crypto_media",
+    "topics": [
+      "market data",
+      "regulation",
+      "news"
+    ]
+  },
+  {
+    "handle": "Blockstream",
+    "category": "bitcoin_infra",
+    "topics": [
+      "Bitcoin",
+      "Lightning",
+      "Liquid",
+      "sidechain",
+      "Bitcoin infra"
+    ]
+  },
+  {
+    "handle": "loaborpp",
+    "category": "bitcoin_dev",
+    "topics": [
+      "Bitcoin Core",
+      "protocol development",
+      "OP_RETURN"
+    ]
+  },
+  {
+    "handle": "ordinalsbot",
+    "category": "bitcoin_builder",
+    "topics": [
+      "ordinals",
+      "inscriptions",
+      "Runes",
+      "Bitcoin NFT"
+    ]
+  },
+  {
+    "handle": "LeonidasNFT",
+    "category": "bitcoin_builder",
+    "topics": [
+      "ordinals",
+      "Runes",
+      "Bitcoin culture",
+      "inscriptions"
+    ]
+  },
+  {
+    "handle": "ai16zdao",
+    "category": "ai_agent_crypto",
+    "topics": [
+      "AI agents",
+      "autonomous agents",
+      "agent economy",
+      "crypto AI"
+    ]
+  },
+  {
+    "handle": "virtaboruals_io",
+    "category": "ai_agent_crypto",
+    "topics": [
+      "AI agents",
+      "agent tokens",
+      "autonomous economy"
+    ]
+  },
+  {
+    "handle": "AIWayfinder",
+    "category": "ai_agent_crypto",
+    "topics": [
+      "AI agents",
+      "agent navigation",
+      "on-chain agents"
+    ]
+  }
+]

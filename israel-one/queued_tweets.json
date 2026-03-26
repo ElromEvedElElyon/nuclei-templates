@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Day 92 of building AI infra for Web3\n\n29 MCP tools deployed\n7 production APIs live\n300 agents orchestrated\n\nMost teams are still pitching slides\n\nOutput compounds. Narratives fade",
+    "type": "builder_log",
+    "status": "queued",
+    "created": "2026-03-25"
+  },
+  {
+    "text": "MCP servers are the TCP/IP of AI agents\n\n29 tools. One protocol. Any model calls them\n\nThe interface layer between AI and crypto is not a product\n\nIt is infrastructure",
+    "type": "convergence",
+    "status": "queued",
+    "created": "2026-03-25"
+  },
+  {
+    "text": "BTC $71,258\nFear and Greed: 14\n\nMarket pricing in collapse while builders ship daily\n\nThe gap between sentiment and fundamentals has never been wider\n\nExtreme Fear is not a warning\n\nIt is a timestamp on a setup",
+    "type": "metric_drop",
+    "status": "queued",
+    "created": "2026-03-25"
+  },
+  {
+    "text": "Sovereign Agent Chain passed 54 edge-case security tests\n\nExtreme Bitcoin audit: dust attacks, fee sniping, OP_RETURN overflow, malformed PSBT\n\n312 tests total. Zero shortcuts\n\nSecurity is not a feature. It is the foundation",
+    "type": "builder_log",
+    "status": "queued",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Agent Chain supports 9 wallet formats natively\n\nPSBT signing. Taproot. Nested SegWit. Legacy\n\nAgents do not care about wallet UX. They care about protocol compatibility\n\nWe built for agents first",
+    "type": "stack_reveal",
+    "status": "queued",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Cross-chain agent swaps now live in Sovereign Agent Chain\n\nBTC to SOL. ETH to Runes. STBTCx as bridge asset\n\n32 MCP tools. One protocol call\n\nAgents should not need a DEX dashboard to settle",
+    "type": "convergence",
+    "status": "queued",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Agent Chain revenue model\n\n546 sat/tx dust fee on every transaction\n0.1% marketplace fee on agent-to-agent transfers\n\nHardcoded in protocol. No governance vote can remove it\n\nInfra that pays for itself from day one",
+    "type": "insider_alpha",
+    "status": "queued",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Agent Chain adds +1 sat/vB miner bonus on every AGT transaction\n\nMiners prioritize agent operations. Agents get faster confirmation\n\nAlignment through incentives. Not through trust\n\nThe only sustainable fee model is one where everyone profits",
+    "type": "sovereignty",
+    "status": "queued",
+    "created": "2026-03-26"
+  }
+]
