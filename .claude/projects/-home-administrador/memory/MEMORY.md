@@ -28,9 +28,11 @@
 ## BUG BOUNTY ACCOUNTS
 - See: immunefi-automation.md, elite-hacking-playbook.md
 - **C4**: ElromAuditor, KYC APPROVED, Discord CONNECTED, 0/2 slots
-- **Immunefi**: PadraoBTC736, VERIFIED, Discord BLOCKED (Zendesk #8002+#8008)
-- **Discord**: elromauditor_86701, LOGGED IN, C4 server verified
-- **ZKsync OS**: Emails sent (MatterLabs+Immunefi), awaiting Discord unlink
+- **Immunefi**: PadraoBTC736, VERIFIED, Discord: wagner7978 CONNECTED
+- **Immunefi Report #71022**: ZKsync OS SUBMITTED 26 Mar, Status: Reported
+- **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800) — C4 server verified, BLOCKED on Immunefi
+- **Discord (Immunefi)**: wagner7978 (ID 771534250368565298, wagnermoura.on@gmail.com) — WORKING
+- **ZKsync OS**: Report #71022 submitted + emails to security@matterlabs.dev + security@zksync.io
 
 ## WALLETS
 - **EVM/ETH**: `0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B`
@@ -41,22 +43,23 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (26 Mar 2026 — SESSION 35)
+## REVENUE STATUS (26 Mar 2026 — SESSION 36+)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA.**
-- **ZKsync OS $5K-$100K**: Emails enviados, Zendesk #8002+#8008
+- **ZKsync OS $5K-$100K**: SUBMITTED on Immunefi! Report #71022 (Medium severity) + emails sent
 - **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar
 - **Guardian $150K**: BLOCKED (WebGL2 + KYC), deadline 9 Abr
 - **NEAR Intents $300K**: Must use HackenProof
 - **nuclei-templates**: 9 PRs open = $1,350-$2,250
 - See: revenue-status.md, bounties-pipeline.md
 
-## ACTIVE WORK (Session 35 — 26 Mar 2026)
-- **ZKsync OS bug**: Emails sent, awaiting Immunefi support
+## ACTIVE WORK (Session 36+ — 26 Mar 2026)
+- **ZKsync OS bug**: SUBMITTED on Immunefi Report #71022 + emails to MatterLabs/ZKsync
 - **nuclei-templates**: 9 PRs (6 clean, 3 need fix)
 - **Nosana PR #18**: Needs frontend+video by Apr 14
 - **Valentes 300**: DEPLOYED, 307 singularities (7 sentinels + 300 valentes)
 - **Sentinel Squad**: 7 sentinels RUNNING, guardian auto-restart
 - **Tweet system**: tweet_now.py (safari15_5), 10/10 success rate
+- **Firefox Marionette**: WORKING for MetaMask wallet automation (port 2828)
 - See: bounties-pipeline.md, sentinel-system.md
 
 ## PRODUCTS (12 published)
