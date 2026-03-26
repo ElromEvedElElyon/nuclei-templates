@@ -1,4 +1,30 @@
-# Lessons Learned — Padroes Confirmados (42 Sessions — 26 Mar 2026)
+# Lessons Learned — Padroes Confirmados (43 Sessions — 26 Mar 2026)
+
+## Session 40 — Nuclei Template Fixes + Guardian Finalization (26 Mar 2026)
+
+### NUCLEI-TEMPLATES: Detection-Only → Vulnerability Verification
+- **4 PRs CLOSED** (#15695, #15697, #15698, #15699) for "Product Detection Instead of Vulnerability Detection"
+- **PATTERN**: Maintainers want: (1) exploit vulnerable endpoint directly, OR (2) extract version + compare_versions
+- **compare_versions() LIMITATION**: Cannot handle non-semver (e.g., Pulse Secure `9.0R3.4` with R-notation)
+  - SOLUTION: Use regex-only matching for non-semver products
+  - Regex example: `(?i)Pulse Connect Secure\s+(?:8\.\d+[Rr]\d+|9\.0[Rr][0-2](?:\.\d+)?|9\.0[Rr]3\.[0-3])\b`
+- **CSRF templates**: Must send actual POST (not just GET) + verify no CSRF token in forms
+- **Info disclosure**: Must match leaked data patterns (sap-user, WDUser, etc.), not just product strings
+- **Auth-required RCE**: Use version-based detection (compare_versions) since can't safely exploit
+- **EPSS fields**: Always include epss-score and epss-percentile in classification block
+- **CVSS verification**: Always cross-check score against vector (e.g., PR:L = 6.5 not 7.7 for TIBCO)
+- **Two-request approach**: Use `raw:` with HEAD/GET sequence + `part: body_2` for products needing context
+
+### FIXES APPLIED (15 templates across 3 PRs)
+- **PR #15705 (batch10)**: CVE-2016-2388, CVE-2016-3976, CVE-2018-5430, CVE-2020-10181, CVE-2020-10221
+- **PR #15700 (batch7)**: CVE-2015-4852, CVE-2017-16651, CVE-2019-15949, CVE-2020-5741, CVE-2020-8816
+- **PR #15701 (batch8)**: CVE-2019-11539, CVE-2020-8218, CVE-2020-8260, CVE-2020-3161, CVE-2018-2380
+
+### GUARDIAN DEFENDER: Account Management Lessons
+- **ProtonMail +alias delivery confirmed**: `+def@proton.me` delivers, base address may not
+- **Guardian KYC**: Sumsub integration broken (500 error) across ALL accounts — backend issue
+- **Workaround**: Email findings directly to contest creator + support addresses
+- **Credentials**: Always save to `~/.proton_creds` (chmod 600) + memory files
 
 ## Session 39 — ZION Execution Engine: 301 Agentes REAIS (26 Mar 2026)
 
@@ -18,12 +44,25 @@
 - NUNCA matar agentes — apenas ADICIONAR capacidades
 - NUNCA nomes cabalisticos ou de demonios — apenas BIBLICOS
 
-### ARQUIVOS CRIADOS
+### TWEET AGENT UPGRADE (Caio-level)
+- agent.py: 55% PT / 45% EN bilingual (was 100% EN — wrong)
+- Product URLs in tweets: every product has GitHub link
+- Queue consumption: 30% chance to pop from queued_tweets.json
+- 10 bilingual pillar types: data_expose_pt, tool_reveal_pt, builder_raw_en, etc.
+- Time-based schedule: PT mornings/evenings, EN afternoons/nights
+- revenue_missions.py: 7 missions (nuclei PRs, wallets, Algora, Immunefi, metrics)
+- nuclei PRs: `--json reviews` field causes parse error — remove it
+- `@pdneo review` comment triggers Neo bot review on nuclei PRs
+
+### ARQUIVOS CRIADOS/MODIFICADOS
 - `~/israel-one/zion_execution_engine.py` — motor central
 - `~/israel-one/task_functions.py` — 22 task functions
 - `~/israel-one/agent_roster.py` — grupo assignment
+- `~/israel-one/revenue_missions.py` — 7 revenue missions
 - `~/israel-one/backup_zion.sh` — backup automatico
 - `~/israel-one/security_shield.py` — security scan
+- `~/israel-one/agent.py` — tweet agent (upgraded bilingual + URLs)
+- `~/israel-one/queued_tweets.json` — 15 bilingual tweets with product links
 
 ## Session 37 — Guardian Defender KYC + ProtonMail + Email Verification (26 Mar 2026)
 
