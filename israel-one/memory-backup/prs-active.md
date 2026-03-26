@@ -1,14 +1,27 @@
-# PRs Ativos — 26 Mar 2026 (Session 30 Update)
+# PRs Ativos — 26 Mar 2026 (Session 35 Update)
 
-## TOTAL: 37 PRs OPEN em 12+ repos | 10+ CLOSED ultimo 7 dias
+## TOTAL: 40+ PRs OPEN em 12+ repos | 10+ CLOSED ultimo 7 dias
 
 ## nuclei-templates (projectdiscovery) — REPUTACAO + Algora $150-$250
-| PR | Title | Status | Notes |
-|----|-------|--------|-------|
-| #15676 | CVE-2020-5849 Unraid Auth Bypass | OPEN, MERGEABLE | Branch LIMPO (force-push 25 Mar), 1 arquivo only, 0 human reviews |
-| #15675 | 5 KEV CVE templates | OPEN, MERGEABLE | Review feedback endereçado (auth tag + matchers), 0 human reviews |
-| #15695 | 5 KEV CVE templates (Session 31) | OPEN, MERGEABLE | Added 5 new KEV templates (26 Mar), awaiting review |
-| #15696 | 5 KEV CVE batch3 (Session 31) | OPEN, MERGEABLE | Additional batch, 0 human reviews |
+| PR | Branch | Status | Reviewer | Notes |
+|----|--------|--------|----------|-------|
+| #15675 | add-kev-cve-templates | CLEAN, awaiting review | @DhiyaneshGeek | Review feedback addressed (auth tag + matchers) |
+| #15676 | add-cve-2020-5849 | CLEAN, awaiting review | @theamanrawat | 1 file only, force-pushed 25 Mar |
+| #15695 | add-5-kev-cve-templates-session31 | NEEDS FIX | — | Exploit code in CVE-2026-33017 must be removed |
+| #15696 | add-kev-cve-batch3 | NEEDS FIX | — | Wrong endpoint + product detection issues |
+| #15697 | add-kev-cve-batch4 | CLEAN, awaiting review | @DhiyaneshGeek | — |
+| #15698 | add-kev-cve-batch5 | CLEAN, awaiting review | @theamanrawat | — |
+| #15699 | add-kev-cve-batch6 | CLEAN, awaiting review | @Akokonunes | — |
+| #15700 | add-kev-cve-batch7 | NEEDS FIX | — | Product detection issues, Plex OS scope |
+| #15701 | add-kev-cve-batch8 | CLEAN, awaiting review | @DhiyaneshGeek | — |
+
+**9 PRs total** — 5 CLEAN, 3 NEEDS FIX (#15695, #15696, #15700), 1 CLEAN (#15676)
+
+## Nosana Builders Challenge — PR #18
+- **Status**: ZERO engagement from maintainers
+- **Deadline**: 14 Apr 2026
+- **NEEDS**: Frontend + deploy + video demonstration
+- **Repo**: nosana-ci/agent-challenge
 
 ## dn-institute (1712n) — $3,500-$4,500 POTENCIAL
 | PR | Issue | Prize | Title | Status |
@@ -24,14 +37,19 @@
 | #702 | #431 | $300 | Batch similarity search | OPEN, CI green, 0 reviews |
 | #703 | #428 | $300 | RAG context retrieval | OPEN, CI green, 0 reviews |
 
-**Nota**: Maintainers inativos 5+ dias. ZERO pings — aguardar sem pressao.
+**Nota**: Still 0 reviews on ALL 10 PRs. Maintainers inativos — NAO pingar.
+
+## RustChain bounties — CLOSED (25 Mar)
+- PRs #2324-#2339: ALL CLOSED by maintainer 25 Mar
+- Multiple issues got NEW COMMENTS (07:22 UTC 26 Mar) but PRs still closed
+- RTC token payout: ~185 RTC (~$18.50 at $0.10/token) — NAO VALE
 
 ## awesome-mcp/crypto (VISIBILIDADE)
 | PR | Repo | Status |
 |----|------|--------|
-| #228 | TensorBlock/awesome-mcp-servers | OPEN (Sovereign Agent Chain) NEW |
+| #228 | TensorBlock/awesome-mcp-servers | OPEN (Sovereign Agent Chain) |
 | #196 | TensorBlock/awesome-mcp-servers | OPEN (claw-mcp-toolkit) |
-| #42 | badkk/awesome-crypto-mcp-servers | OPEN (Sovereign Agent Chain) NEW |
+| #42 | badkk/awesome-crypto-mcp-servers | OPEN (Sovereign Agent Chain) |
 | #40 | badkk/awesome-crypto-mcp-servers | OPEN (flash-payment) |
 | #39 | badkk/awesome-crypto-mcp-servers | OPEN (chainlink-sentinel) |
 | #37 | badkk/awesome-crypto-mcp-servers | OPEN (claw-mcp-toolkit) |
@@ -44,10 +62,6 @@
 | #36 | royyannick/awesome-blockchain-mcps | OPEN (claw-mcp-toolkit) |
 | #33 | royyannick/awesome-blockchain-mcps | OPEN (runes-busd1-mcp) |
 | #45 | demcp/awesome-web3-mcp-servers | OPEN |
-
-## RustChain bounties — CLOSED (25 Mar)
-- PRs #2324-#2339: ALL CLOSED by maintainer 25 Mar
-- RTC token payout: ~185 RTC (~$18.50 at $0.10/token) — NAO VALE
 
 ## Outros
 | PR | Repo | Status |
@@ -63,12 +77,16 @@
 - toolsdk-ai/toolsdk-mcp-registry #209 — MERGED
 - TensorBlock #216 — MERGED
 
-## PRODUTOS PUBLICADOS (8 total)
-1. **Commerce Pay MCP** — github.com/ElromEvedElElyon/commerce-pay-mcp
-2. **Flash Payment System** — github.com/ElromEvedElElyon/flash-payment-system (61/61 tests)
-3. **sintex.ai** — DEPLOYED LIVE (Netlify)
-4. **OpenClaw Pro** — 6 tools, $19-99/mo
-5. **claw-mcp-toolkit** v1.0.0 — 29 tools, Glama AAA
-6. **Lido MCP Server** — 11 tools, TypeScript
-7. **revenue-mcp** — Glama listed
-8. **chainlink-sentinel** — Glama listed
+## PRODUCTS PUBLISHED (12 total)
+1. **Sovereign Agent Chain** v4.1.0 — github.com/ElromEvedElElyon/sovereign-agent-chain (32 MCP tools, Bitcoin-native)
+2. **Sovereign Agent Market** v3.0.0 — github.com/ElromEvedElElyon/sovereign-agent-market (28 MCP tools, agent marketplace)
+3. **Sovereign Pay** v2.0.0 — github.com/ElromEvedElElyon/sovereign-pay (20 MCP tools, multi-chain, BSL 1.1)
+4. **Sovereign Pay Lite** v2.1.0 — github.com/ElromEvedElElyon/sovereign-pay-lite (18 MCP tools, 0.1% flat fee)
+5. **Commerce Pay MCP** — github.com/ElromEvedElElyon/commerce-pay-mcp
+6. **Flash Payment System** — github.com/ElromEvedElElyon/flash-payment-system (99 tests, 116 clones)
+7. **sintex.ai** — DEPLOYED LIVE (Netlify)
+8. **OpenClaw Pro** — 6 tools, $19-99/mo
+9. **claw-mcp-toolkit** v1.0.0 — 29 tools, Glama AAA
+10. **Lido MCP Server** — 11 tools, TypeScript
+11. **revenue-mcp** — Glama listed
+12. **chainlink-sentinel** — Glama listed

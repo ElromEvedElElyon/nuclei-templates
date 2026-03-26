@@ -1,40 +1,58 @@
-# Bounties Pipeline — 26 Mar 2026 (Session 31 Browser Automation)
+# Bounties Pipeline — 26 Mar 2026 (Session 35 Update)
 
 ## TIER 0: BLOCKED / NEEDS MANUAL ACTION
 
-### C4 Chainlink $65K — DEADLINE 27 MAR 20:00 UTC — BLOCKED
+### C4 Chainlink $65K — DEADLINE PASSED (27 Mar) — CLOSED
 - **H-01**: SUBMETIDO DUAS VEZES (erro de duplicacao), usou 2/2 slots
 - **0/2 submissions restantes** — locked after 2 hours, NAO pode retirar
-- **H-02 e H-03**: PRONTOS mas NAO PODEM ser submetidos
-- **Login funciona**: ElromAuditor / C4_LVnFWosBgxQSQwJP!Ax
-- **PERDA**: ~$5K-15K em potencial H-02 + H-03 rewards
+- **H-02 e H-03**: PRONTOS mas NAO PODEM ser submetidos (slots esgotados)
+- **PERDA CONFIRMADA**: ~$5K-15K em potencial H-02 + H-03 rewards
+- **STATUS**: Contest ENCERRADO 27 Mar 20:00 UTC. Aguardar resultado H-01
 
-### Immunefi — EMAILS ENVIADOS — PLATAFORMA BLOQUEADA
+### Immunefi — ZENDESK TICKETS OPEN — PLATAFORMA BLOQUEADA
 - **Email VERIFICADO**: inteligenciaartificial.now@gmail.com
-- **Password**: `ImmElrom2026!Bug#99` (reset 26 Mar via Firebase)
-- **Email to security@matterlabs.dev**: SENT 05:34 UTC 26 Mar (no bounce)
-- **Zendesk ticket**: #45139974662801 (full report)
-- **API submission**: BLOCKED server-side (Discord check on /api/report-draft)
-- **BLOQUEIO**: Discord required para submeter reports (Discord OAuth)
-- **ZKsync bug** pronto: `~/zksync-os-bug-report.md` (callstack off-by-one)
-- **ACAO**: Criar conta Discord NOVA manualmente (hCaptcha) → conectar → submeter via plataforma
+- **Password**: ImmunefiElrom2026#Sec99
+- **Zendesk tickets**: #8002 and #8008 OPEN — NO human response yet
+- **Follow-up emails**: SENT 04:28 UTC 26 Mar to support@immunefi.com AND security@matterlabs.dev
+- **IMPORTANT**: Direct emails to support@immunefi.com get AUTO-REJECTED — must use Zendesk form
+- **API submission**: BLOCKED server-side (POST /api/report-draft returns 403 "You must connect your Discord account")
+- **Discord blocker**: elromauditor_86701 linked to old account, server-side mapping persists even after deauthorizing from Discord side
+- **ZKsync bug** pronto: `~/zksync-os-bug-report.md` (callstack off-by-one, $30K-$100K)
+- **ACAO**: Wait for Zendesk response OR create brand new Discord account with different email
 
-### Guardian Defender $150K — BLOQUEADO HARDWARE
+### Guardian Defender $150K — BLOQUEADO HARDWARE + EXPIRED TOKENS
 - **Login API funciona**: token em `~/.guardian_defender_token.json`
 - **Conta**: elromaud1774361187@sharebot.net / GuardElrom2026Sec#99
-- **BLOQUEIO**: SPA requer WebGL2 (THREE.js), GPU Intel HD 1st gen NAO suporta
+- **BLOQUEIO 1**: SPA requer WebGL2 (THREE.js), GPU Intel HD 1st gen NAO suporta
+- **BLOQUEIO 2**: Password reset tokens EXPIRED (Session 35)
 - **KYC API**: POST /api/kyc/access-token retorna 500 (Sumsub integration issue)
-- **ACAO**: Precisa machine com WebGL2 OU Guardian fix backend
+- **ACAO**: Precisa machine com WebGL2 OU Guardian fix backend. Re-request password reset
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
-### INITIATE Hackathon (Initia) $25K — DoraHacks (NOVO!)
+### nuclei-templates $150-$250/merged PR (Algora) — 9 PRs OPEN = $1,350-$2,250
+- **CLEAN (awaiting review)**: #15675, #15676, #15698, #15699, #15701
+- **NEEDS FIX**: #15695 (exploit code), #15696 (wrong endpoint), #15700 (product detection)
+- **ZERO human reviews on ALL 9 PRs**
+- **#15675**: 5 KEV CVEs, rebased clean, Neo bot approved — awaiting @DhiyaneshGeek
+- **#15676**: CVE-2020-5849, CI SUCCESS, Neo approved — awaiting @theamanrawat
+- **#15695**: NEEDS FIX — exploit code must be removed
+- **#15696**: NEEDS FIX — wrong endpoint in template
+- **#15697**: 5 KEV CVEs batch 4 (GPON, Telerik RadAsyncUpload, SAP NetWeaver, Struts S2-008, ManageEngine)
+- **#15698**: 5 KEV CVEs batch 5 (Fortinet SSL VPN x2 XORtigate, SonicWall x2, Qlik Sense)
+- **#15699**: 5 KEV CVEs batch 6 (Fortinet fgfmd, Cisco ArcaneDoor, Ivanti CSA, Struts S2-067, Zyxel)
+- **#15700**: NEEDS FIX — product detection issue (WebLogic, Plex, Nagios, Pi-hole, Roundcube)
+- **#15701**: NEW Session 35 PR
+- **~36 uncovered KEV CVEs remain** in issue #7549 (18 already have templates, 30 in our PRs)
+- **Top 5 next batch**: CVE-2016-3976 (SAP), CVE-2016-2388 (SAP), CVE-2020-10221 (rConfig), CVE-2020-10181 (Sumavision), CVE-2018-5430 (TIBCO)
+- **ACAO**: Fix #15695, #15696, #15700; keep submitting batches of 5
+
+### INITIATE Hackathon (Initia) $25K — DoraHacks
 - URL: dorahacks.io/hackathon/initiate
 - Deadline: Apr 15
 - **APENAS 3 SUBMISSIONS** — competicao BAIXISSIMA
 - Tracks: Web3, DeFi, Gaming, Appchain
 - **ACAO**: Registrar + build project com security+MCP+AI
-- Background research agent running
 
 ### Nosana ElizaOS Challenge $3K — Superteam Earn
 - PR #18 SUBMETIDO (unico PR open!)
@@ -43,21 +61,30 @@
 - Deadline: Apr 14
 - **ACAO**: Build frontend, deploy, record video
 
-### Guardian LimitBreak $150K — P1
+### Guardian LimitBreak $150K — P1 (see TIER 0 blockers)
 - Deadline: 9 Abr
 - 1 finding pronto (`~/limitbreak-amm/findings/C-01-operator-precedence-createPool.md`)
-- **BLOQUEIO**: Email verification + KYC Sumsub pendente
+- **BLOQUEIO**: Email verification + KYC Sumsub pendente + password reset tokens EXPIRED
 
-### NEAR Intents $300K — HackenProof (NEW!)
+### NEAR Intents $300K — HackenProof ONLY
 - Smart contracts + MPC bridges
 - Cross-chain = top payout category historicamente
+- **IMPORTANT**: security@near.org is DEPRECATED for bug submissions — must use HackenProof.com
+- 8 findings ready in `~/near-intents-all-findings-report.md`
 - KYC HackenProof required
+- **ACAO**: Register HackenProof, complete KYC, submit findings
 
 ### Immunefi Variational $100K max — P2
 - Perps DEX, ~500 assets, smart contracts
 - URL: immunefi.com/bug-bounty/variational/
+- **Same Discord blocker affects all Immunefi submissions**
 
 ## TIER 2: MEDIUM PRIORITY
+
+### C4 Chainlink Rewards $200K — (~mid-April)
+- Pool ENORME $200K, 30-day window
+- Precisa mesma KYC do C4 (ALREADY APPROVED)
+- **ACAO**: Auditar when contest opens
 
 ### dn-institute $3,500-$4,500
 - 10 PRs (#694-#703), CI green
@@ -67,7 +94,7 @@
 - SVS-8 construido, deploy pendente (faucet)
 - Deadline: 31 Mar
 
-### Algora Twenty CRM $2,500 (NEW!)
+### Algora Twenty CRM $2,500
 - URL: app.algora.io/twentyhq/bounties/g6i2c8YSNV9nHogT
 - TypeScript CRM, IMAP email sync
 - Plataforma com escrow — pagamento garantido se aceito
@@ -77,75 +104,52 @@
 - Tambem: X/Twitter API #73 ($100), Trend Intel #70 ($100), Google SERP #149 ($200)
 - Paga em $SX token — RISCO de token sem valor
 
-### Nosana Builders Challenge $3,000 USDC — MOVIDO para TIER 1 (PR #18 SUBMITTED)
-
-### NAVI Protocol $300K — HackenProof (NOVO Session 30!)
+### NAVI Protocol $300K — HackenProof
 - Smart contracts + web frontend
 - Critical smart contract: ate $300K | Web: ate $10K
 - Requer conta HackenProof ativa
-- **ACAO**: Ativar conta, auditar
 
-### C4 Chainlink Rewards $200K — NOVO! (~mid-April)
-- Pool ENORME $200K, 30-day window
-- Precisa mesma KYC do C4
-- **ACAO**: Se KYC resolver, auditar
-
-### Activepieces MCP $200/each — Algora (NOVO Session 30!)
+### Activepieces MCP $200/each — Algora
 - Build MCP integrations para Activepieces platform
 - SEM KYC, escrow payment
 - Stack multiples rapidamente
 - URL: algora.io/challenges/activepieces
+
+### Deploy-Gate Ed25519 Bypass $200 — P1
+- URL: github.com/permission-protocol/deploy-gate/issues/36
+- Task: Find flaw in Ed25519 signature verification
+- Skill match: PERFECT (security + MCP)
+
+### Lido MCP Server $5,000 — P1
+- $3K first / $2K second
+- Task: Build MCP server for Lido staking
+- Reference: MorkeethHQ/delegated-agent-treasury#2
+
+### huntr.com AI/ML Vulns $1,500-$4,000/finding — P1
+- Targets: ollama ($1,500), llama_index ($1,500), transformers ($1,500), mlflow ($1,500)
+- Model file format vulns: up to $4,000 (TensorRT, GGUF, ONNX)
+- Register at huntr.com
+
+### Endgame Hackathon (Bittensor) $10K+ — DoraHacks
+- Deadline: Apr 24
+- Decentralized AI tools
+- URL: dorahacks.io/hackathon/endgame/detail
+
+### Vertex Swarm Challenge $27K — DoraHacks
+- Deadline: Apr 6
+- AI agent coordination (C, Rust, ROS 2)
+- URL: dorahacks.io/hackathon/global-vertex-swarm-challenge
 
 ### HackenProof New Programs
 - Flipcash Reserve: Smart contracts
 - NEAR Bridges: MPC cross-chain
 - Ember EVM: Tokenized assets
 - Multipli ZK: ZK yield protocol
-- **NAVI Protocol**: Smart contracts ate $300K (NOVO!)
-
-### Deploy-Gate Ed25519 Bypass $200 — P1 (NEW 25 Mar!)
-- URL: github.com/permission-protocol/deploy-gate/issues/36
-- Task: Find flaw in Ed25519 signature verification
-- Opened: 24 Mar 2026 (FRESH)
-- Skill match: PERFECT (security + MCP — mcp-guard is MCP server)
-- Repos: deploy-gate + mcp-guard
-
-### Lido MCP Server $5,000 — P1 (NEW!)
-- $3K first / $2K second
-- Task: Build MCP server for Lido staking (stake, unstake, wrap, unwrap, balances)
-- Skill match: EXCELLENT (MCP is our specialty)
-- ~435 lines new code, ~8 hours
-- Reference: MorkeethHQ/delegated-agent-treasury#2
-
-### huntr.com AI/ML Vulns $1,500-$4,000/finding — P1
-- Targets: ollama ($1,500), llama_index ($1,500), transformers ($1,500), mlflow ($1,500)
-- Model file format vulns: up to $4,000 (TensorRT, GGUF, ONNX)
-- Skill match: EXCELLENT (security auditing)
-- Register at huntr.com
-
-### nuclei-templates $150-$250/merged PR (Algora)
-- **#15675**: 5 KEV CVEs, rebased clean, Neo bot approved, awaiting @DhiyaneshGeek
-- **#15676**: CVE-2020-5849, CI SUCCESS, Neo approved, awaiting @theamanrawat
-- **#15696** (Session 31): 5 KEV CVEs — Telerik, Array Networks, Apache Struts, Langflow, Cisco FMC
-- **#15697** (Session 33 NEW): 5 KEV CVEs — GPON, Telerik RadAsyncUpload, SAP NetWeaver, Struts S2-008, ManageEngine
-- **#15698** (Session 33): 5 KEV CVEs — Fortinet SSL VPN x2 (XORtigate), SonicWall x2, Qlik Sense
-- **#15699** (Session 33): 5 KEV CVEs — Fortinet fgfmd, Cisco ArcaneDoor, Ivanti CSA, Struts S2-067, Zyxel
-- **#15700** (Session 33): 5 KEV CVEs — WebLogic, Plex, Nagios XI, Pi-hole, Roundcube
-- **7 nuclei-templates PRs open = $1,050-$1,750 potential** if all merge
-- **~64 unchecked KEV CVEs remain** in issue #7549
-- **Session 33 output**: 20 NEW templates across 4 PRs
-
-### Endgame Hackathon (Bittensor) $10K+ — DoraHacks (NOVO!)
-- Deadline: Apr 24
-- Decentralized AI tools
-- URL: dorahacks.io/hackathon/endgame/detail
-
-### Vertex Swarm Challenge $27K — DoraHacks (NOVO!)
-- Deadline: Apr 6
-- AI agent coordination (C, Rust, ROS 2)
-- URL: dorahacks.io/hackathon/global-vertex-swarm-challenge
+- **NAVI Protocol**: Smart contracts ate $300K
 
 ## TIER 3: SKIP / LOW VALUE / CLOSED
+- **Expensify $250**: ALREADY MERGED — not for us (Session 35 confirmed)
+- **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar — H-01 submitted (duplicate), 0 slots left
 - **Golem Cloud MCP $3,500**: FECHADO E PAGO
 - **Desloppify $1,000**: FECHADO
 - **RustChain RTC**: ALL PRs CLOSED 25 Mar (wrong repo) — MORTO
@@ -157,9 +161,9 @@
 ## PLATAFORMAS ATIVAS
 | Plataforma | Foco | Nota |
 |-----------|------|------|
-| Code4rena | Solidity audits | Web only, KYC needed |
-| Immunefi | Smart contract bugs | $8M+ pipeline permanente |
-| HackenProof | Web3 security | 200+ programas |
+| Code4rena | Solidity audits | Web only, KYC APPROVED |
+| Immunefi | Smart contract bugs | $8M+ pipeline, DISCORD BLOCKED |
+| HackenProof | Web3 security | 200+ programas, KYC needed |
 | Algora | TypeScript bounties | Escrow, $500-$5K |
 | huntr.com | AI/ML bugs | ate $50K |
 | Opire | GitHub bounties | 100% payout |
@@ -177,22 +181,17 @@
 | XION | $250,000 |
 | Variational | $100,000 |
 
-### ZKsync Era $1.1M — Immunefi (NOVO Session 30!)
+### ZKsync Era $1.1M — Immunefi
 - Critical: $100K min (10% of funds at risk)
 - High: $20K min
 - Payment: USDC on zkSync Era
-- Mesma plataforma Immunefi — same KYC
 - **Same Discord blocker affects all Immunefi submissions**
 
-## PRs STATUS (32+ open, 26 Mar — Session 33)
+## PRs STATUS (35+ open, 26 Mar — Session 35)
 - **nosana-ci/agent-challenge #18**: ZION agent — ONLY PR OPEN
-- **nuclei-templates #15675**: 5 KEV CVEs, clean, Neo approved — awaiting @DhiyaneshGeek
-- **nuclei-templates #15676**: CVE-2020-5849, CI SUCCESS — awaiting @theamanrawat
-- **nuclei-templates #15696**: 5 KEV CVEs batch 3 (Session 31)
-- **nuclei-templates #15697**: 5 KEV CVEs batch 4 (GPON, Telerik, SAP, Struts, ManageEngine)
-- **nuclei-templates #15698**: 5 KEV CVEs batch 5 (Fortinet x2, SonicWall x2, Qlik)
-- **nuclei-templates #15699**: 5 KEV CVEs batch 6 (Fortinet fgfmd, Cisco, Ivanti, Struts, Zyxel)
-- **nuclei-templates #15700**: 5 KEV CVEs batch 7 (WebLogic, Plex, Nagios, Pi-hole, Roundcube)
+- **nuclei-templates**: 9 PRs (#15675, #15676, #15695, #15696, #15697, #15698, #15699, #15700, #15701)
+  - CLEAN: #15675, #15676, #15698, #15699, #15701
+  - NEEDS FIX: #15695, #15696, #15700
 - **docker/mcp-registry #1960**: MERGEABLE, 0 reviews
 - **awesome-crypto-mcp #39,40,42**: 1 comment each, waiting
 - **ravitemer/mcp-registry #10-13**: 4 PRs, 0 comments
@@ -203,21 +202,28 @@
 - **rustchain #2336-2339**: ALL CLOSED ("wrong repo, see #2516")
 
 ## GRANTS & CREDITS
-- **Alibaba Cloud $120K**: DEADLINE 31 MAR — form ready
+- **Alibaba Cloud $120K**: Rolling basis (NOT hard March 31 deadline) — form ready
 - **xAI $150/mo**: console.x.ai signup
 - **Together AI $15K**: together.ai/startup-accelerator
 - **Claude for OSS $1,200**: claude.com/contact-sales/claude-for-oss
 - **Anthropic $25K**: menlovc.com/anthology-fund-application
 
-## TOTAL PIPELINE: $8M+ (Immunefi) + $300K+ (active bounties/hackathons) + $160K (grants)
+## MARKET CONTEXT (26 Mar 2026 — Session 35)
+- **BTC**: $70K | **SOL**: $89 | **ETH**: $2.1K
+- **Fear & Greed Index**: 10/100 EXTREME FEAR
+- **AI agent tokens**: TAO $337, FET $0.24, VIRTUAL $0.70
+- **STBTCx**: $3,819 mcap, 7.17 SOL reserves, DORMANT (last trade 17 days ago), NOT graduated from bonding curve
+- **Book manuscript**: DOES NOT EXIST on this machine — needs to be written from scratch
 
-## SESSION 30.5 ACTIONS COMPLETED (26 Mar 2026)
-- Nosana ZION agent built + PR #18 (only submission)
-- 4 Nosana repos starred
-- 2 tweets posted (@opencllaw) — daily limit hit
-- C4 findings consolidated in /tmp/c4_submission_ready.txt
-- INITIATE hackathon identified ($25K, only 3 submissions!)
-- Endgame + Vertex hackathons identified
-- Bounty pipeline fully updated
-- 4 tweets queued for tomorrow in /tmp/tweets_queue.txt
-- Swarm daemon running continuously (PID 102462, 92% success)
+## TOTAL PIPELINE: $8M+ (Immunefi) + $300K+ (active bounties/hackathons) + $120K+ (grants)
+
+## SESSION 35 KEY ACTIONS (26 Mar 2026)
+- nuclei-templates expanded from 7 to 9 PRs (#15695, #15701 added)
+- Identified 3 PRs needing fixes (#15695, #15696, #15700)
+- Immunefi Zendesk tickets #8002 and #8008 confirmed — no human response
+- Confirmed NEAR security@near.org DEPRECATED — HackenProof only
+- Guardian password reset tokens EXPIRED
+- Expensify $250 already merged — eliminated from pipeline
+- C4 Chainlink deadline PASSED — moved to TIER 3
+- Alibaba $120K confirmed rolling (not hard March 31 deadline)
+- ~36 KEV CVEs remaining uncovered for nuclei-templates
