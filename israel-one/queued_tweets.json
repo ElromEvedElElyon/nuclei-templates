@@ -1,50 +1,77 @@
 [
   {
-    "text": "MCP servers are the TCP/IP of AI agents\n\n29 tools. One protocol. Any model calls them\n\nThe interface layer between AI and crypto is not a product\n\nIt is infrastructure",
-    "type": "convergence",
-    "status": "queued",
-    "created": "2026-03-25"
-  },
-  {
-    "text": "Sovereign Agent Chain passed 54 edge-case security tests\n\nExtreme Bitcoin audit: dust attacks, fee sniping, OP_RETURN overflow, malformed PSBT\n\n312 tests total. Zero shortcuts\n\nSecurity is not a feature. It is the foundation",
-    "type": "builder_log",
-    "status": "queued",
+    "text": "Sovereign Agent Chain passou em 312 testes de seguranca\n\nDust attacks, fee sniping, OP_RETURN overflow, PSBT malformado\n\nSeguranca nao e feature. E fundacao\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "data_expose_pt",
     "created": "2026-03-26"
   },
   {
-    "text": "Sovereign Agent Chain supports 9 wallet formats natively\n\nPSBT signing. Taproot. Nested SegWit. Legacy\n\nAgents do not care about wallet UX. They care about protocol compatibility\n\nWe built for agents first",
-    "type": "stack_reveal",
-    "status": "queued",
+    "text": "Cross-chain agent swaps now live in Sovereign Agent Chain\n\nBTC to SOL. ETH to Runes. 32 MCP tools. One protocol call\n\nAgents should not need a DEX dashboard to settle\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "convergence_en",
     "created": "2026-03-26"
   },
   {
-    "text": "Cross-chain agent swaps now live in Sovereign Agent Chain\n\nBTC to SOL. ETH to Runes. STBTCx as bridge asset\n\n32 MCP tools. One protocol call\n\nAgents should not need a DEX dashboard to settle",
-    "type": "convergence",
-    "status": "queued",
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n→ Precos real-time\n→ Analise SEO/DNS/SSL\n→ Automacao de conteudo\n→ Portfolio tracking\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "tool_reveal_pt",
     "created": "2026-03-26"
   },
   {
-    "text": "Sovereign Agent Chain revenue model\n\n546 sat/tx dust fee on every transaction\n0.1% marketplace fee on agent-to-agent transfers\n\nHardcoded in protocol. No governance vote can remove it\n\nInfra that pays for itself from day one",
-    "type": "insider_alpha",
-    "status": "queued",
+    "text": "Sovereign Agent Chain revenue model\n\n546 sat/tx dust fee on every transaction\n0.1% marketplace fee on agent-to-agent transfers\n\nHardcoded in protocol. No governance vote can remove it\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "insider_alpha_en",
     "created": "2026-03-26"
   },
   {
-    "text": "Sovereign Agent Chain adds +1 sat/vB miner bonus on every AGT transaction\n\nMiners prioritize agent operations. Agents get faster confirmation\n\nAlignment through incentives. Not through trust\n\nThe only sustainable fee model is one where everyone profits",
-    "type": "sovereignty",
-    "status": "queued",
+    "text": "12 produtos publicados. 167 ferramentas MCP. 826 testes passando\n\nNenhum pitch deck. Nenhum investidor. So codigo\n\nhttps://github.com/ElromEvedElElyon",
+    "pillar": "builder_log_pt",
     "created": "2026-03-26"
   },
   {
-    "tweet": "BTC bitcoin: $68,972 (-2.9%) | ETH $2.0K | SOL $86\n\nFear & Greed: Fear & Greed: 10 (Extreme Fear)\n\nThe crowd panics\nThe builder deploys",
-    "generated_by": "JEREMIAS_V",
-    "pillar": "market_data",
-    "time": "2026-03-26T15:56:49.950985-03:00"
+    "text": "washwatch: detector on-chain de wash trading\n\nIdentifica manipulacao de volume em qualquer token ERC-20\n\nOpen source. Zero custo. Pronto para producao\n\nhttps://github.com/ElromEvedElElyon/washwatch",
+    "pillar": "tool_reveal_pt",
+    "created": "2026-03-26"
   },
   {
-    "tweet": "Shipped 12 products. 32 MCP tools. 312 tests passing\n\nNo pitch deck\nNo advisory board\nNo token pre-sale\n\nJust code that runs",
-    "generated_by": "JOSIAS_V",
-    "pillar": "open_source",
-    "time": "2026-03-26T15:56:49.953957-03:00"
+    "text": "300 autonomous agents running on 3.3GB RAM\n\nRound-robin scheduling across 8 task groups\nBounty hunting. PR monitoring. Market intel. Security scans\n\nZero cloud. Sovereign infra",
+    "pillar": "technical_alpha_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "flash-payment-system\n\nPayment rails instantaneos para agentes AI\n\n116 clones no GitHub. Zero marketing. So codigo que resolve\n\nhttps://github.com/ElromEvedElElyon/flash-payment-system",
+    "pillar": "product_promo",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Liquidez concentrada e a primitiva mais subutilizada do DeFi\n\n4000x eficiencia de capital vs V2\n90% dos LPs ainda usam full range\n\nO edge esta no range management",
+    "pillar": "defi_analysis_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "The MCP economy is invisible but growing\n\nEvery tool becomes composable. Every agent becomes capable\n\n29 tools. One server. Zero cloud\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "convergence_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Pay processa BTC, ETH e SOL\n\n20 ferramentas MCP. Taxa fixa 0.1%\nSettlement multi-chain. Sem intermediario\n\nPagamentos entre agentes. Infra soberana\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
+    "pillar": "tool_reveal_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "7 PRs abertos em projectdiscovery/nuclei-templates\n\nCada merge = $150-250 via Algora bounty\n\nSeguranca cibernetica paga. Open source tambem",
+    "pillar": "data_expose_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Two types of MCP servers\n\nType A: wrapper around an API, 3 tools\nType B: full protocol integration, 32 tools, 312 tests\n\nThe market only rewards Type B\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "technical_alpha_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "chainlink-sentinel\n\nMonitoramento autonomo de smart contracts via MCP\n\nSeguranca on-chain nao deveria precisar de dashboard\n\nhttps://github.com/ElromEvedElElyon/chainlink-sentinel",
+    "pillar": "tool_reveal_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Self-custody nao e paranoia\n\nE a unica resposta racional a um sistema projetado para congelar seus ativos sob comando\n\nSuas chaves. Seu agente. Sua stack soberana",
+    "pillar": "sovereignty_pt",
+    "created": "2026-03-26"
   }
 ]

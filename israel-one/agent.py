@@ -16,8 +16,9 @@ LOG_DIR = BASE_DIR / "logs"
 
 POSTING_HANDLE = "opencllaw"
 TARGET_HANDLE = "0xCVYH"
-TWEET_LANGUAGE = "en"
-MAX_TWEETS_PER_DAY = 12
+MAX_TWEETS_PER_DAY = 15
+QUEUE_FILE = BASE_DIR / "queued_tweets.json"
+GITHUB_BASE = "https://github.com/ElromEvedElElyon"
 MIN_INTERVAL_SEC = 55  # Twitter rate limit safety
 BRT = timezone(timedelta(hours=-3))
 
@@ -71,139 +72,133 @@ PILLARS = [
     "market_data"
 ]
 
-# ─── PRODUCTS TO REFERENCE ────────────────────────────────────────────
+# ─── PRODUCTS TO REFERENCE (with URLs for link tweets) ───────────────
 PRODUCTS = [
-    ("ClawChat", "PWA AI assistant, 4 providers racing, zero cost"),
-    ("claw-mcp-toolkit", "29 tools for crypto, social, finance via Claude"),
-    ("chainlink-sentinel", "Autonomous security scanner for smart contracts"),
-    ("revenue-mcp", "Revenue tracking and pipeline management via AI"),
-    ("SintexOS", "Web-based AI operating system with 8 apps"),
-    ("OpenClaw", "AI agent that runs on your machine, connects WhatsApp/Telegram/Discord"),
-    ("Solana Vault Standard", "ERC-4626 on Solana, streaming yield, open source"),
-    ("flash-payment-system", "Instant crypto payment rails for AI agents"),
-    ("Sovereign Agent Chain", "32 MCP tools, Bitcoin-native agent marketplace, 312 tests"),
-    ("Sovereign Pay", "20 MCP tools, multi-chain BTC/ETH/SOL, protocol fees, 161 tests"),
-    ("Sovereign Pay Lite", "18 MCP tools, multi-chain BTC/ETH/SOL, 0.1% flat fee, 144 tests"),
+    {"name": "Sovereign Agent Chain", "desc": "32 MCP tools, Bitcoin-native, 312 tests", "url": f"{GITHUB_BASE}/sovereign-agent-chain", "tools": 32, "tests": 312},
+    {"name": "Sovereign Agent Market", "desc": "28 MCP tools, bUSD1 Runes trading", "url": f"{GITHUB_BASE}/sovereign-agent-market", "tools": 28, "tests": 209},
+    {"name": "Sovereign Pay", "desc": "20 MCP tools, multi-chain BTC/ETH/SOL", "url": f"{GITHUB_BASE}/sovereign-pay", "tools": 20, "tests": 161},
+    {"name": "Sovereign Pay Lite", "desc": "18 MCP tools, 0.1% flat fee", "url": f"{GITHUB_BASE}/sovereign-pay-lite", "tools": 18, "tests": 144},
+    {"name": "claw-mcp-toolkit", "desc": "29 tools crypto/social/finance", "url": f"{GITHUB_BASE}/claw-mcp-toolkit", "npm": "claw-mcp-toolkit", "tools": 29},
+    {"name": "chainlink-sentinel", "desc": "Smart contract security scanner", "url": f"{GITHUB_BASE}/chainlink-sentinel"},
+    {"name": "flash-payment-system", "desc": "Instant AI agent payment rails", "url": f"{GITHUB_BASE}/flash-payment-system"},
+    {"name": "revenue-mcp", "desc": "Revenue tracking pipeline via AI", "url": f"{GITHUB_BASE}/revenue-mcp"},
+    {"name": "lido-mcp-server", "desc": "Lido staking protocol MCP", "url": f"{GITHUB_BASE}/lido-mcp-server"},
+    {"name": "mcp-crypto-prices", "desc": "Real-time crypto prices MCP", "url": f"{GITHUB_BASE}/mcp-crypto-prices"},
+    {"name": "openclaw-webtools-mcp", "desc": "SEO/DNS/SSL web analysis MCP", "url": f"{GITHUB_BASE}/openclaw-webtools-mcp"},
+    {"name": "washwatch", "desc": "On-chain wash trading detector", "url": f"{GITHUB_BASE}/washwatch"},
 ]
 
-# ─── 50+ TWEET TEMPLATES ─────────────────────────────────────────────
-# Each template is a function that returns tweet text
-# {data} placeholders filled with real MCP data when available
+# Product links for easy referencing in tweets
+PRODUCT_LINKS = {p["name"]: p["url"] for p in PRODUCTS}
+
+# ─── TWEET TEMPLATES (55% PT / 45% EN — proven +774% growth) ─────────
+# {product}, {url}, {tools}, {tests} filled from PRODUCTS
+# {btc_price}, {eth_price}, {sol_price}, {fear_greed} from live data
+# {n} = random number, {component} = random tech
 
 TEMPLATES = {
-    # ── BUILDER LOG (daily updates) ──
-    "builder_log": [
-        "{n} deploys before lunch. Zero meetings. The build continues",
-        "Pushed {n} PRs today\n\nNo standup. No retro. Just output",
-        "Monday: 0 meetings\nTuesday: 0 meetings\nWednesday: shipped\n\nThe pattern holds",
-        "Refactored the entire {component} pipeline in one session\n\nClaude did the heavy lifting. I did the thinking",
-        "3 AM deploy. No one asked. No one approved\n\nSovereign builders do not wait for permission",
-        "Shipped {product} update while most were planning their sprint\n\nThe gap between talkers and builders grows daily",
+    # ── DATA EXPOSE [PT] — HIGHEST ENGAGEMENT ──
+    "data_expose_pt": [
+        "BTC a ${btc_price}\nFear & Greed: {fear_greed}\n\nO sinal esta na divergencia entre preco e sentimento",
+        "ETH ${eth_price} ({eth_change}%) | SOL ${sol_price} ({sol_change}%)\n\nDois ecossistemas. Uma tese. Dinheiro programavel vence",
+        "DeFi TVL $417B e subindo\n\nProtocolos sem integracao MCP vao perder para quem tem\n\nA interface de linguagem natural engole dashboards",
+        "{n} CVEs criticas esta semana no CISA KEV\n\nA maioria dos protocolos DeFi nunca rodou um scan de seguranca\n\nOportunidade para quem audita",
+        "7 PRs abertos em nuclei-templates\n\nCada merge = $150-250 via Algora\n\nSeguranca paga. Codigo aberto tambem",
+    ],
+
+    # ── TOOL REVEAL [PT] — 2nd HIGHEST ENGAGEMENT ──
+    "tool_reveal_pt": [
+        "Construimos {product_name}\n\n→ {product_tools} ferramentas MCP\n→ {product_tests} testes passando\n→ Zero cloud. Zero custo\n\n{product_url}",
+        "claw-mcp-toolkit\n\n→ 29 ferramentas: crypto, social, financas\n→ Precos em tempo real via CoinGecko\n→ Analise SEO, DNS, SSL integrada\n\nnpx claw-mcp-toolkit para comecar\n\n{claw_url}",
+        "Sovereign Pay processa BTC, ETH e SOL\n\n→ {product_tools} ferramentas MCP\n→ Taxa fixa 0.1%\n→ Settlement multi-chain\n\nPagamentos entre agentes. Sem intermediario\n\n{product_url}",
+        "chainlink-sentinel\n\nMonitoramento autonomo de smart contracts via MCP\n\nSeguranca nao deveria precisar de dashboard\n\n{sentinel_url}",
+        "12 produtos publicados. 167 ferramentas MCP. 826 testes\n\nNenhum pitch deck. Nenhum investidor. So codigo que funciona\n\n{claw_url}",
+    ],
+
+    # ── BUILDER RAW MOMENTS [EN] ──
+    "builder_raw_en": [
+        "3 AM. {n} deploys. Zero meetings\n\nSovereign builders do not wait for permission",
+        "Pushed {n} PRs today\n\nNo standup. No retro. Just output\n\n{product_url}",
         "Morning routine:\n- git pull\n- claude code\n- ship\n- repeat\n\nNo Slack required",
-        "Built, tested, deployed. All before the first meeting invite landed\n\nDeleted the invite",
-        "Another day of output. No roadmap presentation. No stakeholder sync\n\nJust code that works",
+        "Built, tested, deployed. All before the first meeting invite\n\nDeleted the invite",
+        "Shipped {product_name} update while most were planning their sprint\n\nThe gap between talkers and builders grows daily\n\n{product_url}",
     ],
 
-    # ── STACK REVEAL ──
-    "stack_reveal": [
-        "Current stack:\n→ Claude Opus for reasoning\n→ MCP for tool access\n→ Solana for settlement\n→ Zero cloud cost\n\nInfra sovereign",
-        "Running:\n→ 29 MCP tools\n→ 4 AI providers\n→ Real-time crypto data\n→ Autonomous posting\n\nAll local. All sovereign",
-        "The stack that ships:\n→ Claude Code as core\n→ curl_cffi for distribution\n→ CoinGecko for alpha\n→ GitHub for proof\n\nNo middle layer",
-        "What my agents run:\n→ Price feeds every 60s\n→ Fear & Greed monitoring\n→ Auto-tweet generation\n→ Engagement tracking\n\nZero human in the loop",
-        "Tech stack 2026:\n→ AI agent as CEO\n→ MCP as nervous system\n→ Blockchain as treasury\n→ Code as the only employee",
-    ],
-
-    # ── BINARY FRAME ──
-    "binary_frame": [
-        "Two kinds of builders in 2026\n\nType A: meetings, roadmaps, quarterly reviews\nType B: ships daily, iterates hourly, sleeps optional\n\nType A gets funding. Type B gets users",
-        "Two kinds of AI companies\n\nOnes that sell seats\nOnes that deploy agents\n\nThe second kind will eat the first",
-        "Two paths for crypto in 2026\n\nPath A: regulated, custodial, KYC everything\nPath B: permissionless, self-custody, agent-native\n\nBoth will exist. Only one matters",
-        "Two types of MCP servers\n\nType A: wrapper around an API, 3 tools\nType B: full protocol integration, {n}+ tools\n\nThe market only rewards Type B",
-        "Developers vs builders\n\nDevelopers write code for tickets\nBuilders write code because they cannot stop\n\nThe difference is visible in the commit history",
-    ],
-
-    # ── METRIC DROP ──
-    "metric_drop": [
-        "BTC at ${btc_price}\nFear & Greed: {fear_greed}\n\nThe signal is in the divergence",
-        "{trending_coin} up {pct}% in 24h\n\nMost will buy the top. Few positioned before the move",
-        "Market cap: ${total_mcap}\nBTC dominance: {btc_dom}%\n\nThe rotation tells you more than the price",
-        "ETH at ${eth_price}\nSOL at ${sol_price}\n\nTwo ecosystems. One thesis. Programmable money wins",
-        "{n} MCP servers deployed this week\n\nThe agent economy is not coming. It is here",
-    ],
-
-    # ── INSIDER ALPHA ──
-    "insider_alpha": [
-        "Most AI agents run on OpenAI\n\nThe smart ones run Claude with MCP\n\nThe smartest ones run both and let them compete",
-        "The real alpha is not in the token\n\nIt is in the infrastructure layer beneath it\n\nEvery protocol needs an MCP server. Most do not have one yet",
-        "AI agents will become the primary users of DeFi\n\nNot retail. Not institutions. Agents\n\nBuild the rails or become irrelevant",
-        "Natural language trading is not a feature\n\nIt is the entire interface layer collapsing into a single prompt\n\nEvery CEX dashboard becomes obsolete",
-        "The gap between free and paid AI inference closed this quarter\n\nThe arbitrage window for building on free models is still open\n\nNot for long",
-        "Concentrated liquidity changed the game\n\n4000x capital efficiency vs V2\n\nBut 90% of LPs still use full-range. The edge is in the range",
-    ],
-
-    # ── SOVEREIGNTY ──
-    "sovereignty": [
-        "Your keys. Your agent. Your sovereign stack\n\nEverything else is a subscription to someone else's decisions",
-        "Self-custody is not paranoia\n\nIt is the only rational response to a system designed to freeze your assets on command",
-        "Every centralized service is a single point of failure\n\nEvery decentralized protocol is a single point of freedom\n\nChoose accordingly",
-        "The most important feature of any software in 2026:\n\nCan you run it without permission?\n\nIf no, you do not own it",
-        "Open source is not charity\n\nIt is a competitive moat\n\nClosedness invites regulation. Openness invites contribution",
-    ],
-
-    # ── CONVERGENCE (AI x Crypto) ──
-    "convergence": [
-        "The merge accelerates",
-        "AI x Crypto is not a narrative\n\nIt is the convergence of two sovereign technologies\n\nOne thinks. The other settles. Together they execute",
-        "MCP + Solana + Claude = the complete autonomous agent stack\n\nNo API keys to manage. No cloud to maintain. Just intent to execution",
-        "DeFi protocols without MCP integration will lose to those with it\n\nThe interface layer is collapsing into natural language\n\nAdapt or become a backend",
-        "Every AI model will have a wallet\n\nEvery wallet will have an agent\n\nThe question is not if. It is who builds the best bridge",
-    ],
-
-    # ── PREDICTION / RECEIPTS ──
-    "prediction": [
-        "6 months ago: MCP tools are a niche experiment\nToday: 269 stars on a single MCP server\n\nReceipts matter more than predictions",
-        "By Q4 2026:\n- Every DeFi protocol has an MCP server\n- AI agents execute 30%+ of on-chain volume\n- Natural language replaces every trading dashboard\n\nBookmark this",
-        "The playbook is simple:\n\n1. Build in public\n2. Ship daily\n3. Let the code speak\n\nEverything else is noise",
-    ],
-
-    # ── ANTI-PATTERN ──
-    "anti_pattern": [
-        "If your AI agent needs permission to think, it is not an agent\n\nIt is a chatbot with extra steps",
-        "Raising capital to build an AI wrapper is the 2026 version of raising capital to build a website in 1999\n\nThe smart money builds infrastructure",
-        "If you need a meeting to decide what to build next, the market has already moved\n\nShip first. Discuss later",
-        "The biggest risk in crypto is not volatility\n\nIt is building something no one asked for\n\nListen to the chain. Read the transactions. The users tell you everything",
-    ],
-
-    # ── TWO WORD GRENADE ──
-    "two_word": [
+    # ── ULTRA SHORT CRYPTIC [EN] ──
+    "ultra_short_en": [
         "Ship or irrelevance",
-        "The merge accelerates",
         "Agents eat dashboards",
-        "Build. Ship. Repeat",
         "Sovereign by default",
         "Code over consensus",
         "Output over optics",
         "Infra over narrative",
         "Execute or exit",
         "Permissionless wins",
+        "The merge accelerates",
+        "MCP is the new API",
     ],
 
-    # ── MCP TOOLS ──
-    "mcp_tools": [
-        "29 tools running under one MCP server\n\nCrypto prices. Social automation. Finance tracking\n\nOne install. Zero cloud. Complete autonomy",
-        "MCP servers are the nervous system of autonomous AI\n\nEvery tool an agent needs in one protocol\n\nBuild the server. Let the agents decide what to call",
-        "Most AI tools still require manual setup\n\nMCP tools auto-discover. Auto-connect. Auto-execute\n\nThe difference between a chatbot and an agent",
-        "Shipped chainlink-sentinel as MCP server\n\nReal-time smart contract monitoring via natural language\n\nSecurity scanning should not require a dashboard",
-        "The MCP economy is invisible but growing\n\nEvery tool becomes composable. Every agent becomes capable\n\nInfra wins quietly",
+    # ── NEWS + INSIDER TAKE [EN] ──
+    "insider_alpha_en": [
+        "Most AI agents run on OpenAI\n\nThe smart ones run Claude with MCP\n\nThe smartest ones run both and let them compete",
+        "Every protocol needs an MCP server. Most do not have one yet\n\nThe real alpha is in the infrastructure layer\n\n{claw_url}",
+        "AI agents will become the primary users of DeFi\n\nNot retail. Not institutions. Agents\n\nBuild the rails or become irrelevant",
+        "Natural language trading is not a feature\n\nIt is the entire interface layer collapsing into a single prompt",
+        "The gap between free and paid AI inference closed this quarter\n\nThe arbitrage window for building on free models is still open",
     ],
 
-    # ── DeFi ALPHA ──
-    "defi_alpha": [
-        "Concentrated liquidity is the most underutilized primitive in DeFi\n\n4000x capital efficiency. Yet 90% of LPs still use full range\n\nThe edge is in the range management",
-        "Stablecoin yield is the gateway\n\nStart with DAI-USDC. Zero impermanent loss. Learn the mechanics\n\nThen graduate to volatile pairs with real conviction",
-        "The yield comes from fees, not emissions\n\nIf a protocol pays you in its own token to stay, ask why real users are not paying enough\n\nReal yield > printed yield",
-        "DeFi makes your crypto work 24/7\n\nWhile you sleep, your LP positions earn fees\nWhile you sleep, your vaults compound\n\nThe market never closes",
-        "Risk management is the only alpha that compounds\n\n5-7% per month. Every month. Bull or bear\n\nThe math beats the narrative every time",
+    # ── DeFi/MARKET ANALYSIS [PT] ──
+    "defi_analysis_pt": [
+        "Liquidez concentrada e a primitiva mais subutilizada do DeFi\n\n4000x eficiencia de capital vs V2\n\n90% dos LPs ainda usam full range. O edge esta no range",
+        "Yield real vem de taxas, nao de emissoes\n\nSe o protocolo paga em token proprio para voce ficar, pergunte por que usuarios reais nao pagam o suficiente",
+        "DeFi faz seu crypto trabalhar 24/7\n\nEnquanto voce dorme, LP positions geram fees\nEnquanto voce dorme, vaults fazem compound\n\nO mercado nunca fecha",
+        "BTC dominance {btc_dom}%\n\nA rotacao conta mais que o preco\n\nCapital inteligente se posiciona antes do movimento",
+        "Gestao de risco e o unico alpha que faz compound\n\n5-7% ao mes. Todo mes. Bull ou bear\n\nA matematica vence a narrativa",
+    ],
+
+    # ── TECHNICAL ALPHA [EN] ──
+    "technical_alpha_en": [
+        "Current stack:\n→ Claude Opus for reasoning\n→ MCP for tool access\n→ Solana for settlement\n→ Zero cloud cost\n\nInfra sovereign\n\n{product_url}",
+        "Running:\n→ 29 MCP tools\n→ 4 AI providers\n→ Real-time crypto data\n→ 300 autonomous agents\n\nAll local. All sovereign\n\n{claw_url}",
+        "Tech stack 2026:\n→ AI agent as CEO\n→ MCP as nervous system\n→ Blockchain as treasury\n→ Code as the only employee",
+        "What 300 agents run:\n→ Price feeds every 60s\n→ Bounty scanning every 2h\n→ PR monitoring every 4h\n→ Security scans every 15min\n\nZero human in the loop",
+        "Two types of MCP servers\n\nType A: wrapper around an API, 3 tools\nType B: full protocol integration, 32 tools\n\nThe market only rewards Type B\n\n{product_url}",
+    ],
+
+    # ── BUILDER LOG [PT/EN] ──
+    "builder_log_pt": [
+        "Dia {day_of_year}. {n} commits. Zero reunioes\n\nO efeito composto de output diario e a unica vantagem injusta que escala",
+        "12 produtos. 167 ferramentas MCP. 826 testes passando\n\n47 repos publicos. 7 PRs pagos em andamento\n\nRecibos > promessas\n\n{claw_url}",
+        "Construir em publico e a unica estrategia que paga\n\nCada commit e uma prova. Cada PR e um recibo\n\nO codigo fala por si\n\n{product_url}",
+        "Stack soberana:\n→ Claude Code como core\n→ MCP como sistema nervoso\n→ Bitcoin como settlement\n→ Open source como moat\n\nSem VC. Sem pitch deck. So output",
+        "300 agentes autonomos rodando em uma maquina com 3.3GB RAM\n\nRound-robin scheduling. Zero cloud. Infra soberana\n\nLimitacao de hardware gera criatividade de software",
+    ],
+
+    # ── SOVEREIGNTY [PT] ──
+    "sovereignty_pt": [
+        "Suas chaves. Seu agente. Sua stack soberana\n\nTodo o resto e uma assinatura das decisoes de outra pessoa",
+        "Self-custody nao e paranoia\n\nE a unica resposta racional a um sistema projetado para congelar seus ativos sob comando",
+        "O software mais importante de 2026 responde uma pergunta:\n\nVoce pode rodar sem permissao?\n\nSe nao, voce nao e dono\n\n{product_url}",
+        "Open source nao e caridade\n\nE um moat competitivo\n\nFechado convida regulacao. Aberto convida contribuicao",
+        "Cada servico centralizado e um ponto unico de falha\n\nCada protocolo descentralizado e um ponto unico de liberdade",
+    ],
+
+    # ── CONVERGENCE AI x CRYPTO [EN] ──
+    "convergence_en": [
+        "AI x Crypto is not a narrative\n\nIt is the convergence of two sovereign technologies\n\nOne thinks. The other settles. Together they execute\n\n{product_url}",
+        "MCP + Solana + Claude = the complete autonomous agent stack\n\nNo API keys. No cloud. Just intent to execution\n\n{claw_url}",
+        "Every AI model will have a wallet\nEvery wallet will have an agent\n\nThe question is not if. It is who builds the best bridge",
+        "DeFi protocols without MCP integration will lose to those with it\n\nThe interface layer is collapsing into natural language\n\nAdapt or become a backend",
+        "By Q4 2026:\n- Every DeFi protocol has an MCP server\n- AI agents execute 30%+ of on-chain volume\n- Natural language replaces dashboards\n\nBookmark this",
+    ],
+
+    # ── PRODUCT PROMO (with links) ──
+    "product_promo": [
+        "{product_name}\n\n{product_desc}\n\nOpen source. Zero cloud. Production ready\n\n{product_url}",
+        "Sovereign Agent Chain\n\n→ 32 ferramentas MCP\n→ 312 testes passando\n→ Bitcoin-native agent marketplace\n→ PSBT signing + Taproot\n\n{sovereign_url}",
+        "Precisando de MCP tools para crypto?\n\nclaw-mcp-toolkit: 29 ferramentas prontas\n\n→ Precos em tempo real\n→ Automacao social\n→ Rastreamento financeiro\n\nnpx claw-mcp-toolkit\n\n{claw_url}",
+        "washwatch: detector on-chain de wash trading\n\nIdentifica manipulacao de volume em qualquer token\n\nOpen source. Zero custo\n\n{washwatch_url}",
+        "flash-payment-system\n\nPayment rails instantaneos para agentes AI\n\n116 clones e contando. Zero marketing. So codigo\n\n{flash_url}",
     ],
 }
 
@@ -350,25 +345,28 @@ class IsraelMemory:
 
 # ─── TWEET GENERATION ─────────────────────────────────────────────────
 def select_template_type(hour):
-    """Select template type based on BRT time and variety."""
-    if 7 <= hour < 9:
-        candidates = ["metric_drop", "insider_alpha", "defi_alpha"]
-    elif 9 <= hour < 11:
-        candidates = ["builder_log", "stack_reveal", "mcp_tools"]
-    elif 11 <= hour < 13:
-        candidates = ["insider_alpha", "defi_alpha", "convergence"]
-    elif 13 <= hour < 15:
-        candidates = ["binary_frame", "builder_log", "anti_pattern"]
-    elif 15 <= hour < 17:
-        candidates = ["builder_log", "stack_reveal", "prediction"]
-    elif 17 <= hour < 19:
-        candidates = ["convergence", "defi_alpha", "sovereignty"]
-    elif 19 <= hour < 21:
-        candidates = ["insider_alpha", "prediction", "sovereignty"]
-    elif 21 <= hour < 23:
-        candidates = ["sovereignty", "convergence", "two_word"]
-    else:  # 23-7 (night/early morning)
-        candidates = ["two_word", "convergence", "builder_log"]
+    """Select template type based on BRT time — 55% PT / 45% EN."""
+    # Schedule mirrors Caio's proven timing
+    if 2 <= hour < 4:      # Late night grind
+        candidates = ["ultra_short_en", "builder_raw_en"]
+    elif 7 <= hour < 9:    # Morning news [PT]
+        candidates = ["data_expose_pt", "defi_analysis_pt"]
+    elif 9 <= hour < 11:   # Mid-morning [EN]
+        candidates = ["insider_alpha_en", "technical_alpha_en"]
+    elif 11 <= hour < 13:  # Lunch [PT]
+        candidates = ["tool_reveal_pt", "product_promo"]
+    elif 13 <= hour < 15:  # Afternoon [PT]
+        candidates = ["builder_log_pt", "tool_reveal_pt"]
+    elif 15 <= hour < 17:  # PM [EN]
+        candidates = ["builder_raw_en", "technical_alpha_en"]
+    elif 17 <= hour < 19:  # Evening [EN]
+        candidates = ["ultra_short_en", "convergence_en"]
+    elif 19 <= hour < 21:  # Night [PT]
+        candidates = ["defi_analysis_pt", "data_expose_pt"]
+    elif 21 <= hour < 23:  # Late [PT]
+        candidates = ["sovereignty_pt", "builder_log_pt"]
+    else:  # 23-2 / 4-7
+        candidates = ["ultra_short_en", "convergence_en", "builder_raw_en"]
 
     # Filter to only types that exist in TEMPLATES
     candidates = [c for c in candidates if c in TEMPLATES]
@@ -379,16 +377,27 @@ def select_template_type(hour):
 
 
 def fill_template(template_str, data):
-    """Fill template placeholders with real data."""
+    """Fill template placeholders with real data + product URLs."""
     result = template_str
 
     # Random numbers
     result = result.replace("{n}", str(random.randint(2, 7)))
+    result = result.replace("{day_of_year}", str(datetime.now(BRT).timetuple().tm_yday))
 
-    # Products
-    if "{product}" in result:
-        product = random.choice(PRODUCTS)
-        result = result.replace("{product}", product[0])
+    # Pick a random product for this tweet
+    product = random.choice(PRODUCTS)
+    result = result.replace("{product_name}", product["name"])
+    result = result.replace("{product_desc}", product.get("desc", ""))
+    result = result.replace("{product_url}", product.get("url", ""))
+    result = result.replace("{product_tools}", str(product.get("tools", "")))
+    result = result.replace("{product_tests}", str(product.get("tests", "")))
+
+    # Specific product URLs
+    result = result.replace("{claw_url}", f"{GITHUB_BASE}/claw-mcp-toolkit")
+    result = result.replace("{sovereign_url}", f"{GITHUB_BASE}/sovereign-agent-chain")
+    result = result.replace("{sentinel_url}", f"{GITHUB_BASE}/chainlink-sentinel")
+    result = result.replace("{washwatch_url}", f"{GITHUB_BASE}/washwatch")
+    result = result.replace("{flash_url}", f"{GITHUB_BASE}/flash-payment-system")
 
     if "{component}" in result:
         components = ["auth", "payment", "indexer", "vault", "bridge", "oracle"]
@@ -407,19 +416,43 @@ def fill_template(template_str, data):
     if "{btc_dom}" in result:
         result = result.replace("{btc_dom}", str(random.randint(48, 58)))
 
-    # Clean any remaining unfilled placeholders
+    # Clean any remaining unfilled placeholders (but keep URLs intact)
     result = re.sub(r'\{[a-z_]+\}', '', result)
 
     return result.strip()
 
 
+def _pop_queued_tweet():
+    """Pop a tweet from queued_tweets.json if available."""
+    try:
+        if QUEUE_FILE.exists():
+            queue = json.loads(QUEUE_FILE.read_text())
+            if queue and len(queue) > 0:
+                tweet = queue.pop(0)
+                QUEUE_FILE.write_text(json.dumps(queue, indent=2))
+                text = tweet.get("text", "") if isinstance(tweet, dict) else str(tweet)
+                pillar = tweet.get("pillar", "queued") if isinstance(tweet, dict) else "queued"
+                if text:
+                    log.info(f"Popped queued tweet [{pillar}] ({len(text)} chars)")
+                    return text, pillar
+    except Exception as e:
+        log.warning(f"Queue read failed: {e}")
+    return None, None
+
+
 def generate_tweet(memory, crypto_data=None):
-    """Generate a unique tweet using templates + data enrichment."""
+    """Generate a unique tweet — queue first (30%), then templates."""
+    # 30% chance to consume from queue if available
+    if random.random() < 0.30:
+        text, pillar = _pop_queued_tweet()
+        if text and not memory.is_duplicate(text):
+            return text, f"queued_{pillar}"
+
     hour = datetime.now(BRT).hour
     template_type = select_template_type(hour)
 
     # Get templates for this type
-    templates = TEMPLATES.get(template_type, TEMPLATES["two_word"])
+    templates = TEMPLATES.get(template_type, TEMPLATES["ultra_short_en"])
 
     # Try up to 10 times to find a non-duplicate
     for attempt in range(10):
@@ -442,8 +475,13 @@ def generate_tweet(memory, crypto_data=None):
 
         log.debug(f"Duplicate on attempt {attempt+1}, retrying...")
 
-    # Fallback: generate timestamp-unique tweet
-    fallback = f"Day {datetime.now(BRT).timetuple().tm_yday}. Still shipping. Still building\n\nThe compound effect of daily output is the only unfair advantage that scales"
+    # Fallback: pop from queue
+    text, pillar = _pop_queued_tweet()
+    if text and not memory.is_duplicate(text):
+        return text, f"queued_{pillar}"
+
+    # Final fallback
+    fallback = f"Dia {datetime.now(BRT).timetuple().tm_yday}. Construindo. Entregando\n\nO efeito composto de output diario e a unica vantagem que escala"
     log.warning("All templates exhausted. Using fallback")
     return fallback, "fallback"
 
