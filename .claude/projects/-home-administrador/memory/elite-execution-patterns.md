@@ -155,7 +155,7 @@ python3 sentinel_guardian.py      # Auto-restart dead sentinels
 | 6 | Flash Payment System | ElromEvedElElyon/flash-payment-system | 99 tests, 116 clones, 1 star | Fast payment devs |
 | 7 | sintex.ai | Netlify LIVE | 45KB single HTML, Neon Brutalist | AI tool users |
 | 8 | OpenClaw Pro | — | 6 premium tools, $19-99/mo | Power users |
-| 9 | claw-mcp-toolkit v1.0.0 | npm package | 29 tools, Glama AAA badge, 1 star | MCP developers |
+| 9 | claw-mcp-toolkit v1.0.0 | ElromEvedElElyon/claw-mcp-toolkit | 29 tools, Glama AAA, NOT on npm (needs publish) | MCP developers |
 | 10 | Lido MCP Server | ElromEvedElElyon/lido-mcp-server | 11 tools, TypeScript | DeFi/staking devs |
 | 11 | revenue-mcp | — | Glama listed | Revenue tracking |
 | 12 | chainlink-sentinel | — | Glama listed | Oracle monitoring |

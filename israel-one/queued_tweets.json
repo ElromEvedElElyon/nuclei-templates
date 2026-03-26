@@ -1,6 +1,6 @@
 [
   {
-    "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n\u2192 Precos real-time\n\u2192 Analise SEO/DNS/SSL\n\u2192 Automacao de conteudo\n\u2192 Portfolio tracking\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n→ Precos real-time\n→ Analise SEO/DNS/SSL\n→ Automacao de conteudo\n→ Portfolio tracking\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
     "pillar": "tool_reveal_pt",
     "created": "2026-03-26"
   },
@@ -65,7 +65,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "claw-mcp-toolkit\n\n29 ferramentas para agentes AI autonomos\n\n\u2192 Precos crypto real-time\n\u2192 Analise SEO completa\n\u2192 Portfolio tracking\n\u2192 Automacao social\n\nGratis. Open source. Pronto para producao\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para agentes AI autonomos\n\n→ Precos crypto real-time\n→ Analise SEO completa\n→ Portfolio tracking\n→ Automacao social\n\nGratis. Open source. Pronto para producao\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
     "pillar": "product_sale_pt",
     "created": "2026-03-26"
   },
@@ -75,7 +75,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "Precisa de pagamentos multi-chain para agentes AI?\n\nSovereign Pay\n\u2192 BTC, ETH, SOL\n\u2192 20 ferramentas MCP\n\u2192 Taxa fixa 0.1%\n\u2192 161 testes passando\n\nSem intermediario. Sem KYC. So codigo\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
+    "text": "Precisa de pagamentos multi-chain para agentes AI?\n\nSovereign Pay\n→ BTC, ETH, SOL\n→ 20 ferramentas MCP\n→ Taxa fixa 0.1%\n→ 161 testes passando\n\nSem intermediario. Sem KYC. So codigo\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
     "pillar": "product_sale_pt",
     "created": "2026-03-26"
   },
@@ -102,6 +102,56 @@
   {
     "text": "chainlink-sentinel monitors smart contracts autonomously\n\nSecurity scanning via natural language\nNo dashboard needed. MCP-native\n\nThe future of smart contract security is agent-driven\n\nhttps://github.com/ElromEvedElElyon/chainlink-sentinel",
     "pillar": "product_sale_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Construimos 12 produtos open source para agentes AI\n\n167 ferramentas MCP. 826 testes. Zero investidor\n\nCada produto resolve um problema real:\n→ Pagamentos entre agentes\n→ Seguranca de smart contracts\n→ Precos crypto em tempo real\n→ Detector de wash trading\n\nhttps://github.com/ElromEvedElElyon",
+    "pillar": "product_catalog_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Built 12 products. Published 47 repos. 9 security PRs pending review\n\nNo team. No funding. No meetings\n\nJust one builder and Claude Code shipping daily\n\nThe output speaks",
+    "pillar": "builder_authority_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Sovereign Agent Chain processa transacoes com fee de 546 sat/tx\n\nCada transacao entre agentes gera receita para o protocolo\n\nNao e um token. E infraestrutura que se paga sozinha\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "data_expose_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "How 300 agents run on 3.3GB RAM\n\n→ Single daemon, round-robin scheduling\n→ 8 task groups, 5min cycles\n→ Each agent executes real work\n→ Bounty scanning, PR monitoring, market intel\n\nHardware limits breed software creativity",
+    "pillar": "technical_alpha_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "MCP servers sao o sistema nervoso dos agentes AI\n\nCada ferramenta que um agente precisa em um protocolo\n\nConstrua o server. Deixe os agentes decidir o que chamar\n\n29 ferramentas prontas: https://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "mcp_evangelism_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "7 security PRs in projectdiscovery/nuclei-templates\n\nEach one detects a real CVE in production systems\n\nWebLogic RCE. Pulse Secure bypass. Cisco IP Phone overflow\n\nSecurity contributions that protect the internet",
+    "pillar": "security_data_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Open source nao e caridade\n\nE o unico moat competitivo que escala sem capital\n\n116 forks do flash-payment-system. Zero marketing\n\nO codigo bom se distribui sozinho\n\nhttps://github.com/ElromEvedElElyon/flash-payment-system",
+    "pillar": "sovereignty_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Every DeFi protocol will need an MCP server\n\nLido already has one. Chainlink has monitoring\n\nThe protocols that integrate first get the agent liquidity\n\nhttps://github.com/ElromEvedElElyon/lido-mcp-server",
+    "pillar": "defi_alpha_en",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "Dois tipos de MCP servers\n\nTipo A: wrapper de API, 3 ferramentas, sem testes\nTipo B: integracao completa, 32 ferramentas, 312 testes\n\nO mercado so recompensa Tipo B\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "pillar": "binary_frame_pt",
+    "created": "2026-03-26"
+  },
+  {
+    "text": "If you build AI agents, you need MCP tools\n\nCrypto prices. SEO analysis. Social automation. Portfolio tracking\n\n29 tools. One install. Zero config\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "pillar": "cta_en",
     "created": "2026-03-26"
   }
 ]
