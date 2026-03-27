@@ -29,11 +29,13 @@
 - See: immunefi-automation.md, elite-hacking-playbook.md
 - **C4**: ElromAuditor, KYC APPROVED, Discord CONNECTED, 0/2 slots
 - **Immunefi**: PadraoBTC736, VERIFIED, Discord: wagner7978 CONNECTED
-- **Immunefi Report #71022**: ZKsync OS SUBMITTED 26 Mar, Status: Reported
+- **Immunefi Report #71022**: ZKsync OS SUBMITTED 26 Mar, Status: Reported, triage responded
 - **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800) — C4 server verified, BLOCKED on Immunefi
 - **Discord (Immunefi)**: wagner7978 (ID 771534250368565298, wagnermoura.on@gmail.com) — WORKING
-- **Guardian**: ElromAud61187 (sharebot) + ElromStandard777 (gmail), KYC BROKEN (500), finding emailed to 4 addresses
+- **Guardian**: ElromDefender777 (`elrom.test.99999+def@proton.me` / `GuardElrom2026Sec#99` / wallet `0x4d78...65b4`) — EMAIL VERIFIED, KYC BROKEN
 - **ZKsync OS**: Report #71022 submitted + emails to security@matterlabs.dev + security@zksync.io
+- **Opire**: Registration INCOMPLETE — GitHub OAuth authorize page reached but button not clicked
+- **Stripe**: `acct_1RlC98Cpy8OI4abM` (PADRAO BITCOIN) — needed for Opire payouts
 
 ## WALLETS
 - **EVM/ETH**: `0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B`
@@ -44,24 +46,25 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (26 Mar 2026 — SESSION 36+)
-- **$0 received. EMERGENCIA FINANCEIRA MAXIMA.**
-- **ZKsync OS $5K-$100K**: SUBMITTED on Immunefi! Report #71022 (Medium severity) + emails sent
-- **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar
-- **Guardian $150K**: KYC BROKEN (500 error), finding emailed to 4 addresses, deadline 9 Abr
-- **NEAR Intents $300K**: Must use HackenProof
-- **nuclei-templates**: 9 PRs open = $1,350-$2,250
+## REVENUE STATUS (27 Mar 2026 — SESSION 44)
+- **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
+- **ZKsync OS $5K-$100K**: Immunefi #71022 SUBMITTED, triage responded 26 Mar
+- **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar — await H-01 judging
+- **Guardian $150K**: KYC BROKEN, C-01 emailed, deadline 9 Abr
+- **NEAR Intents $300K**: 8 findings ready, HackenProof browser-only
+- **nuclei-templates**: 10 PRs OPEN (#15675,#15676,#15696,#15700,#15701,#15705,#15707,#15709,#15710,#15711) = $1,500-$2,500
+- **claude-builders-bounty**: 5 PRs (#15-#19) = $575 via Opire (registration PENDING)
+- **dn-institute**: 10 PRs (#694-#703) = $3,500-$4,500 (0 reviews)
 - See: revenue-status.md, bounties-pipeline.md
 
-## ACTIVE WORK (Session 36+ — 26 Mar 2026)
-- **ZKsync OS bug**: SUBMITTED on Immunefi Report #71022 + emails to MatterLabs/ZKsync
-- **nuclei-templates**: 9 PRs (6 clean, 3 need fix)
-- **Nosana PR #18**: Needs frontend+video by Apr 14
-- **Valentes 300**: DEPLOYED, 307 singularities (7 sentinels + 300 valentes)
-- **Sentinel Squad**: 7 sentinels RUNNING, guardian auto-restart
-- **Tweet system**: tweet_now.py (safari15_5), 10/10 success rate
-- **Firefox Marionette**: WORKING for MetaMask wallet automation (port 2828)
-- See: bounties-pipeline.md, sentinel-system.md
+## ACTIVE WORK (Session 44 — 27 Mar 2026)
+- **Opire bounties $575**: PRs #15-#19 OPEN, Opire registration INCOMPLETE (OAuth authorize button not clicked)
+- **nuclei-templates**: 10 PRs OPEN, 4 CLOSED (detection-only pattern)
+- **Immunefi #71022**: Triage responded 26 Mar — check dashboard
+- **HackenProof NEAR**: 6 reports prepared (Chainstack+Backpack), browser-only submission
+- **Opire OAuth**: GitHub cookies decrypt with artifacts, need proper Chrome CDP or manual auth
+- **Chrome cookies**: AES-128-CBC, key=PBKDF2('peanuts','saltysalt',1,16), IV=16 spaces, v10 prefix — BUT decryption has prefix garbage (keyring issue?)
+- See: bounties-pipeline.md, opire-bounty-workflow.md
 
 ## PRODUCTS (12 published)
 - **Sovereign Agent Chain** v4.1.0: 32 MCP tools, Bitcoin-native, 312 tests
@@ -128,4 +131,5 @@
 - **ariel-gotas-ecosystem.md** — 63 repos Ariel, Naia MCP, Gotas
 - **china-mercadolivre-strategy.md** — Triangular sales, Alibaba
 - **caio-full-ecosystem.md** — YHP, Cultura Builder, cursos
+- **opire-bounty-workflow.md** — Opire platform guide, API, registration status
 - **x-policy-growth.md** — Algoritmo X, error 226/344, growth hacks

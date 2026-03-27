@@ -41,15 +41,18 @@
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
-### nuclei-templates $150-$250/merged PR (Algora) — 7 PRs OPEN = $1,050-$1,750
+### nuclei-templates $150-$250/merged PR (Algora) — 10 PRs OPEN = $1,500-$2,500
 - **CLOSED**: #15695, #15697, #15698, #15699 — "detection only, not full exploit"
-- **FIXED & PUSHED (Session 40)**:
-  - #15700 (batch7): Neo APPROVED ("All Templates Correctly Implement Vulnerability Detection") — READY TO MERGE
-  - #15701 (batch8): @pdneo review triggered Session 39
-  - #15705 (batch10): @pdneo review triggered Session 39
-  - #15707 (batch11): @pdneo review triggered Session 39
+- **APPROVED**: #15700 — Neo APPROVED ("All Templates Correctly Implement") — READY TO MERGE
+- **FIXED & PUSHED**: #15701, #15705, #15707 (vuln verification, Session 40)
+- **ADDITIONAL**: #15709, #15710, #15711 (new KEV batches)
 - **AWAITING REVIEW**: #15675, #15676, #15696 (fixes applied)
 - **ACTION**: Monitor daily for merge. Each merge = $150-250 via Algora
+
+### Opire Bounties — claude-builders-bounty $575
+- **5 PRs**: #15 ($50), #16 ($75), #17 ($100), #18 ($150), #19 ($200)
+- **BLOCKER**: Opire registration NOT COMPLETE
+- **ACTION**: Complete OAuth + Stripe setup
 
 ### Algora Bounties — ACTIVELY MONITORING
 - **Archestra**: #3378 ($500) RESERVED by kennethaasan, #3556 ($100) assigned
