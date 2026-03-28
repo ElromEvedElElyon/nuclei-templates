@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "paypal": {
+      "type": "http",
+      "url": "https://mcp.paypal.com/mcp"
+    },
+    "xai-grok": {
+      "command": "node",
+      "args": ["/home/administrador/xai-mcp-server/dist/index.js"],
+      "env": {
+        "XAI_API_KEY": "COLE_SUA_KEY_AQUI"
+      }
+    },
+    "grok-search": {
+      "command": "node",
+      "args": ["/home/administrador/grok-search-mcp/index.js"],
+      "env": {
+        "XAI_API_KEY": "COLE_SUA_KEY_AQUI"
+      }
+    },
+    "x-mcp": {
+      "command": "node",
+      "args": ["/home/administrador/x-mcp-server/build/index.js"],
+      "env": {
+        "TWITTER_API_KEY": "CONFIGURE_EM_developer.x.com",
+        "TWITTER_API_SECRET": "CONFIGURE_EM_developer.x.com",
+        "TWITTER_ACCESS_TOKEN": "CONFIGURE_EM_developer.x.com",
+        "TWITTER_ACCESS_SECRET": "CONFIGURE_EM_developer.x.com"
+      }
+    },
+    "mythos-edge": {
+      "command": "python3",
+      "args": ["/home/administrador/israel-four/mcp/mythos_mcp_server.py"],
+      "env": {}
+    }
+  }
+}

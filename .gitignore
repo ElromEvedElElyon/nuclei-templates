@@ -6,3 +6,11 @@ local/
 *.txt
 /.claude
 CLAUDE.md
+
+# SECURITY: NEVER commit Claude memory or credentials
+/.claude/projects/
+/.claude/secure-backup/
+*credentials*
+*secrets*
+*.env
+*_creds

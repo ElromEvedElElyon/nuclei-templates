@@ -1,21 +1,59 @@
 [
   {
-    "text": "MYTHOS is here.\n\nThe Anthropic Capybara leak changed everything. 3,000 internal docs exposed.\n\nWe wrote the preparation guide:\n- 15 chapters + 100 prompts\n- Smart contract security patterns\n- Bug bounty hunting with AI\n- Real autonomous agent case study\n\n$6.66. EN + PT.",
+    "text": "MYTHOS is LIVE.\n\n15 chapters on the Anthropic Capybara leak. 7 appendices. 100+ prompts. 30+ vulnerability patterns.\n\n8 languages. PDF + HTML. $6.66\n\nNo hype. Just preparation.\n\nhttps://sintex.ai/mythos",
     "priority": "P0",
-    "topic": "mythos_launch",
-    "category": "product_launch"
+    "topic": "mythos_launch_live",
+    "category": "product_launch",
+    "added": "2026-03-28"
   },
   {
-    "text": "Everyone is talking about the Anthropic leak.\n\nNobody is preparing for what comes next.\n\nMYTHOS is the only guide focused on Capybara/Claude Mythos. 15 chapters of honest preparation.\n\nNo hype. No fake promises. Just preparation.\n\nThe difference between who thrives and who falls behind was always PREPARATION.",
+    "text": "3,000 leaked Anthropic documents. One guide to prepare you.\n\nMYTHOS covers:\n- Capybara/Claude Mythos capabilities\n- 7-component prompt engineering\n- Smart contract vulnerability patterns\n- Bug bounty with AI\n- Working autonomous agent code\n\n$6.66 at https://sintex.ai/mythos",
+    "priority": "P0",
+    "topic": "mythos_overview",
+    "category": "product_launch",
+    "added": "2026-03-28"
+  },
+  {
+    "text": "Everyone is talking about the Anthropic leak.\n\nNobody is preparing for what comes next.\n\nMYTHOS: 15 chapters. 7 appendices. 8 languages.\n\n$6.66. Less than a coffee.\n\nhttps://sintex.ai/mythos",
     "priority": "P0",
     "topic": "mythos_positioning",
-    "category": "product_launch"
+    "category": "product_launch",
+    "added": "2026-03-28"
   },
   {
-    "text": "MYTHOS includes a working autonomous agent (Israel/Four) as a case study.\n\n1,282 lines. 14 commands. 6 modes. 30 vulnerability patterns.\n\nNot theory. Working code.\n\nBuilt with the exact prompt engineering techniques in the guide.\n\n$6.66. One coffee = your competitive advantage.",
+    "text": "MYTHOS includes a working autonomous agent (1,282 lines) as a case study.\n\n14 commands. 6 modes. 30 vulnerability patterns.\n\nNot theory. Working code built with the exact techniques in the guide.\n\n$6.66 at https://sintex.ai/mythos",
     "priority": "P0",
     "topic": "mythos_agent",
-    "category": "product_launch"
+    "category": "product_launch",
+    "added": "2026-03-28"
+  },
+  {
+    "text": "MYTHOS available in 8 languages:\n\nEnglish. Portuguese. Spanish. French. German. Italian. Russian. Chinese.\n\nPDF + HTML included. More languages added weekly.\n\nThe AI revolution is global. Your preparation should be too.\n\n$6.66 at https://sintex.ai/mythos",
+    "priority": "P0",
+    "topic": "mythos_languages",
+    "category": "product_launch",
+    "added": "2026-03-28"
+  },
+  {
+    "text": "What you get with MYTHOS:\n\n- The 6 Capybara breakthrough capabilities explained\n- Complete prompt engineering framework (7 components)\n- Chain-of-Thought, Tree-of-Thought, ReAct techniques\n- 30+ smart contract vulnerability patterns\n- Bug bounty templates for Immunefi, Code4rena, HackerOne\n\nhttps://sintex.ai/mythos",
+    "priority": "P0",
+    "topic": "mythos_contents",
+    "category": "product_launch",
+    "added": "2026-03-28"
+  },
+  {
+    "text": "BTC dropped. Cybersecurity stocks fell 4-6%. Markets reacted to Claude Mythos in hours.\n\nMost people panicked.\n\nThe ones who thrive will be the ones who prepared.\n\nMYTHOS: $6.66\n\nhttps://sintex.ai/mythos",
+    "priority": "P0",
+    "topic": "mythos_market_reaction",
+    "category": "product_launch",
+    "added": "2026-03-28"
+  },
+  {
+    "text": "Honest disclaimer about MYTHOS:\n\nNobody has access to the unreleased model. Not us. Not anyone.\n\nWhat we sell is the most thorough analysis of what was published + prompt engineering that works TODAY.\n\nNo hype. Just preparation.\n\n$6.66 at https://sintex.ai/mythos",
+    "priority": "P0",
+    "topic": "mythos_honesty",
+    "category": "product_launch",
+    "added": "2026-03-28"
   },
   {
     "text": "TapToons v2.0 just dropped\n\npixel art edition. 100 funny sounds. retro mini-game. animated starfield. neon glow UI\n\n30 sounds free. 70 premium for $0.99\n\nbuilt with zero dependencies. 50KB. pure Web Audio synthesis\n\nhttps://elromevedelelyon.github.io/taptoons/",
@@ -200,7 +238,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "claw-mcp-toolkit\n\n29 ferramentas para agentes AI autonomos\n\n\u2192 Precos crypto real-time\n\u2192 Analise SEO completa\n\u2192 Portfolio tracking\n\u2192 Automacao social\n\nGratis. Open source. Pronto para producao\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "text": "claw-mcp-toolkit\n\n29 ferramentas para agentes AI autonomos\n\n→ Precos crypto real-time\n→ Analise SEO completa\n→ Portfolio tracking\n→ Automacao social\n\nGratis. Open source. Pronto para producao\n\nnpx claw-mcp-toolkit\n\nhttps://github.com/ElromEvedElElyon/claw-mcp-toolkit",
     "pillar": "product_sale_pt",
     "created": "2026-03-26"
   },
@@ -210,7 +248,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "Precisa de pagamentos multi-chain para agentes AI?\n\nSovereign Pay\n\u2192 BTC, ETH, SOL\n\u2192 20 ferramentas MCP\n\u2192 Taxa fixa 0.1%\n\u2192 161 testes passando\n\nSem intermediario. Sem KYC. So codigo\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
+    "text": "Precisa de pagamentos multi-chain para agentes AI?\n\nSovereign Pay\n→ BTC, ETH, SOL\n→ 20 ferramentas MCP\n→ Taxa fixa 0.1%\n→ 161 testes passando\n\nSem intermediario. Sem KYC. So codigo\n\nhttps://github.com/ElromEvedElElyon/sovereign-pay",
     "pillar": "product_sale_pt",
     "created": "2026-03-26"
   },
@@ -240,7 +278,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "Construimos 12 produtos open source para agentes AI\n\n167 ferramentas MCP. 826 testes. Zero investidor\n\nCada produto resolve um problema real:\n\u2192 Pagamentos entre agentes\n\u2192 Seguranca de smart contracts\n\u2192 Precos crypto em tempo real\n\u2192 Detector de wash trading\n\nhttps://github.com/ElromEvedElElyon",
+    "text": "Construimos 12 produtos open source para agentes AI\n\n167 ferramentas MCP. 826 testes. Zero investidor\n\nCada produto resolve um problema real:\n→ Pagamentos entre agentes\n→ Seguranca de smart contracts\n→ Precos crypto em tempo real\n→ Detector de wash trading\n\nhttps://github.com/ElromEvedElElyon",
     "pillar": "product_catalog_pt",
     "created": "2026-03-26"
   },
@@ -255,7 +293,7 @@
     "created": "2026-03-26"
   },
   {
-    "text": "How 300 agents run on 3.3GB RAM\n\n\u2192 Single daemon, round-robin scheduling\n\u2192 8 task groups, 5min cycles\n\u2192 Each agent executes real work\n\u2192 Bounty scanning, PR monitoring, market intel\n\nHardware limits breed software creativity",
+    "text": "How 300 agents run on 3.3GB RAM\n\n→ Single daemon, round-robin scheduling\n→ 8 task groups, 5min cycles\n→ Each agent executes real work\n→ Bounty scanning, PR monitoring, market intel\n\nHardware limits breed software creativity",
     "pillar": "technical_alpha_en",
     "created": "2026-03-26"
   },
@@ -291,7 +329,7 @@
   },
   {
     "tweet": "Shipped 12 products. 32 MCP tools. 312 tests passing\n\nNo pitch deck\nNo advisory board\nNo token pre-sale\n\nJust code that runs",
-    "generated_by": "JUD\u00c1_V",
+    "generated_by": "JUDÁ_V",
     "pillar": "builder_ethos",
     "time": "2026-03-27T01:02:36.609123-03:00"
   },
@@ -338,7 +376,7 @@
     "time": "2026-03-28T01:36:26.478130-03:00"
   },
   {
-    "text": "TapToons v2.0 \u2014 100 funny sounds generated in real-time\n\npixel art. mini-game. 30 free sounds\n\n$0.99 for all 100\n\nhttps://elromevedelelyon.github.io/taptoons/",
+    "text": "TapToons v2.0 — 100 funny sounds generated in real-time\n\npixel art. mini-game. 30 free sounds\n\n$0.99 for all 100\n\nhttps://elromevedelelyon.github.io/taptoons/",
     "priority": "P1",
     "topic": "taptoons_v2_promo",
     "added": "2026-03-28",
@@ -350,5 +388,25 @@
     "topic": "taptoons_v2_promo",
     "added": "2026-03-28",
     "source": "israel_five"
+  },
+  {
+    "text": "TapToons visual effects:\n\n- animated parallax starfield\n- neon glow on every button\n- screen shake on tap\n- confetti on premium unlock\n- CRT scanline overlay\n\n50KB single HTML file\n\nhttps://elromevedelelyon.github.io/taptoons/",
+    "priority": "P1",
+    "topic": "taptoons_v2_promo",
+    "added": "2026-03-28",
+    "source": "israel_five"
+  },
+  {
+    "text": "the entire TapToons sound engine runs on 10 synthesis recipes\n\ntone, sweep, burst, formant, noise, wobble, impact, chord, slide, repeat\n\nno audio files. everything generated by your browser\n\n50KB total\n\nhttps://elromevedelelyon.github.io/taptoons/",
+    "priority": "P1",
+    "topic": "taptoons_v2_promo",
+    "added": "2026-03-28",
+    "source": "israel_five"
+  },
+  {
+    "text": "6 pixel art characters. Screen shake. Neon glow. Confetti.\n\nAll in a 50KB PWA that works offline.\n\nhttps://elromevedelelyon.github.io/taptoons/",
+    "created": "2026-03-28T16:37:31.622758-03:00",
+    "source": "israel_six",
+    "posted": false
   }
 ]
