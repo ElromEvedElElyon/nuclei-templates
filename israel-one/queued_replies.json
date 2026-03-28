@@ -1,0 +1,20 @@
+[
+  {
+    "target": "@AnthropicAI",
+    "tweet": "Built 12 MCP products on Claude this month. The tool-use architecture is the most underrated feature in AI right now. Not the model size. The composability",
+    "type": "builder_proof",
+    "status": "queued"
+  },
+  {
+    "target": "@solaborana",
+    "tweet": "Shipped a vault standard with streaming yield on Solana last week. The DX gap between Solana and EVM is closing fast. Anchor makes it almost too easy",
+    "type": "builder_proof",
+    "status": "queued"
+  },
+  {
+    "target": "@karpathy",
+    "tweet": "The real unlock is giving models access to tools, not making them bigger. Our 150-tool MCP stack outperforms a raw API call every time. Context plus tools beats parameters",
+    "type": "insight",
+    "status": "queued"
+  }
+]

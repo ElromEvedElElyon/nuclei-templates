@@ -1,0 +1,226 @@
+{
+  "posted_hashes": [
+    "f8d1367bc5f4",
+    "16583c71a7d1",
+    "3ba6d515d5ed",
+    "3fc5dff90b94",
+    "723f698a3cdf",
+    "956d7e5cd6d7",
+    "75d2d8551d22",
+    "9d75ad2bc56e",
+    "c3e4df258361",
+    "54f01e5455ac",
+    "887e567e5cfb",
+    "ffa3bdfdb8e9",
+    "106f0ce55773",
+    "1a357dc61941",
+    "52911254c1e6",
+    "54276a60479b",
+    "890a6b88d590",
+    "13ccae47db25",
+    "df62fc79f980",
+    "6ce451572990",
+    "836781a2c422",
+    "234072879e47",
+    "e97582d9db78",
+    "c265d364bcd4"
+  ],
+  "posted_tweets": [
+    {
+      "text": "Monday: 0 meetings\nTuesday: 0 meetings\nWednesday: shipped\n\nThe pattern holds",
+      "hash": "f8d1367bc5f4",
+      "template": "builder_log",
+      "method": "tweet_now",
+      "timestamp": "2026-03-25T01:03:11.704770-03:00"
+    },
+    {
+      "text": "Morning routine:\n- git pull\n- claude code\n- ship\n- repeat\n\nNo Slack required",
+      "hash": "16583c71a7d1",
+      "template": "builder_log",
+      "method": "tweet_now",
+      "timestamp": "2026-03-25T06:37:45.194708-03:00"
+    },
+    {
+      "text": "2 MCP servers deployed this week\n\nThe agent economy is not coming. It is here",
+      "hash": "3ba6d515d5ed",
+      "template": "metric_drop",
+      "method": "tweet_now",
+      "timestamp": "2026-03-25T07:49:09.722962-03:00"
+    },
+    {
+      "text": "If you need a meeting to decide what to build next, the market has already moved\n\nShip first. Discus...",
+      "hash": "3fc5dff90b94",
+      "template": "anti_pattern",
+      "method": "tweet_now",
+      "timestamp": "2026-03-25T13:00:48.856990-03:00"
+    },
+    {
+      "text": "MCP + Solana + Claude = the complete autonomous agent stack\n\nNo API keys to manage. No cloud to main...",
+      "hash": "723f698a3cdf",
+      "template": "convergence",
+      "method": "tweet_now",
+      "timestamp": "2026-03-25T21:35:43.326137-03:00"
+    },
+    {
+      "text": "7 deploys before lunch. Zero meetings. The build continues",
+      "hash": "956d7e5cd6d7",
+      "template": "builder_log",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T00:26:05.827746-03:00"
+    },
+    {
+      "text": "Permissionless wins",
+      "hash": "75d2d8551d22",
+      "template": "two_word",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T05:29:15.588958-03:00"
+    },
+    {
+      "text": "6 MCP servers deployed this week\n\nThe agent economy is not coming. It is here",
+      "hash": "9d75ad2bc56e",
+      "template": "metric_drop",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T07:36:46.464528-03:00"
+    },
+    {
+      "text": "DeFi protocols without MCP integration will lose to those with it\n\nThe interface layer is collapsing...",
+      "hash": "c3e4df258361",
+      "template": "convergence",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T11:10:31.931987-03:00"
+    },
+    {
+      "text": "Stablecoin yield is the gateway\n\nStart with DAI-USDC. Zero impermanent loss. Learn the mechanics\n\nTh...",
+      "hash": "54f01e5455ac",
+      "template": "defi_alpha",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T12:19:48.862507-03:00"
+    },
+    {
+      "text": "By Q4 2026:\n- Every DeFi protocol has an MCP server\n- AI agents execute 30%+ of on-chain volume\n- Na...",
+      "hash": "887e567e5cfb",
+      "template": "prediction",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T15:08:39.956005-03:00"
+    },
+    {
+      "text": "6 months ago: MCP tools are a niche experiment\nToday: 269 stars on a single MCP server\n\nReceipts mat...",
+      "hash": "ffa3bdfdb8e9",
+      "template": "prediction",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T15:41:48.719165-03:00"
+    },
+    {
+      "text": "Sovereign Agent Chain passou em 312 testes de seguranca\n\nDust attacks, fee sniping, OP_RETURN overfl...",
+      "hash": "106f0ce55773",
+      "template": "queued_data_expose_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T16:31:13.556208-03:00"
+    },
+    {
+      "text": "4 CVEs criticas esta semana no CISA KEV\n\nA maioria dos protocolos DeFi nunca rodou um scan de segura...",
+      "hash": "1a357dc61941",
+      "template": "data_expose_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T20:16:53.513220-03:00"
+    },
+    {
+      "text": "Self-custody nao e paranoia\n\nE a unica resposta racional a um sistema projetado para congelar seus a...",
+      "hash": "52911254c1e6",
+      "template": "sovereignty_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-26T21:29:59.103385-03:00"
+    },
+    {
+      "text": "claw-mcp-toolkit\n\n29 ferramentas para crypto, social e financas via Claude\n\n→ Precos real-time\n→ Ana...",
+      "hash": "54276a60479b",
+      "template": "queued_tool_reveal_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T01:09:25.329177-03:00"
+    },
+    {
+      "text": "12 produtos publicados. 167 ferramentas MCP. 826 testes passando\n\nNenhum pitch deck. Nenhum investid...",
+      "hash": "890a6b88d590",
+      "template": "queued_builder_log_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T07:21:00.227810-03:00"
+    },
+    {
+      "text": "The gap between free and paid AI inference closed this quarter\n\nThe arbitrage window for building on...",
+      "hash": "13ccae47db25",
+      "template": "insider_alpha_en",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T09:59:43.384649-03:00"
+    },
+    {
+      "text": "Construimos mcp-crypto-prices\n\n→  ferramentas MCP\n→  testes passando\n→ Zero cloud. Zero custo\n\nhttps...",
+      "hash": "df62fc79f980",
+      "template": "tool_reveal_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T11:22:57.154232-03:00"
+    },
+    {
+      "text": "claw-mcp-toolkit\n\n→ 29 ferramentas: crypto, social, financas\n→ Precos em tempo real via CoinGecko\n→ ...",
+      "hash": "6ce451572990",
+      "template": "tool_reveal_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T12:25:24.544856-03:00"
+    },
+    {
+      "text": "Stack soberana:\n→ Claude Code como core\n→ MCP como sistema nervoso\n→ Bitcoin como settlement\n→ Open ...",
+      "hash": "836781a2c422",
+      "template": "builder_log_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T14:58:54.482250-03:00"
+    },
+    {
+      "text": "Yield real vem de taxas, nao de emissoes\n\nSe o protocolo paga em token proprio para voce ficar, perg...",
+      "hash": "234072879e47",
+      "template": "defi_analysis_pt",
+      "method": "tweet_now",
+      "timestamp": "2026-03-27T19:40:46.441905-03:00"
+    },
+    {
+      "text": "The merge accelerates",
+      "hash": "e97582d9db78",
+      "template": "ultra_short_en",
+      "method": "tweet_now",
+      "timestamp": "2026-03-28T01:31:26.218162-03:00"
+    },
+    {
+      "text": "MCP is the new API",
+      "hash": "c265d364bcd4",
+      "template": "ultra_short_en",
+      "method": "tweet_now",
+      "timestamp": "2026-03-28T02:41:06.053660-03:00"
+    }
+  ],
+  "daily_counts": {
+    "2026-03-25": 5,
+    "2026-03-26": 10,
+    "2026-03-27": 7,
+    "2026-03-28": 2
+  },
+  "templates_used": {
+    "builder_log": 3,
+    "metric_drop": 2,
+    "anti_pattern": 1,
+    "convergence": 2,
+    "two_word": 1,
+    "defi_alpha": 1,
+    "prediction": 2,
+    "queued_data_expose_pt": 1,
+    "data_expose_pt": 1,
+    "sovereignty_pt": 1,
+    "queued_tool_reveal_pt": 1,
+    "queued_builder_log_pt": 1,
+    "insider_alpha_en": 1,
+    "tool_reveal_pt": 2,
+    "builder_log_pt": 1,
+    "defi_analysis_pt": 1,
+    "ultra_short_en": 2
+  },
+  "best_performing": [],
+  "total_posted": 24,
+  "created": "2026-03-25T01:03:04.349077-03:00"
+}

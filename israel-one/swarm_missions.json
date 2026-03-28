@@ -1,0 +1,108 @@
+{
+  "version": "1.0",
+  "mode": "GUERRA",
+  "activated": "2026-03-25T09:44:00-03:00",
+  "btc_price": 71422,
+  "fear_greed": 14,
+  "usd_brl": 5.25,
+  "missions": {
+    "M1_C4_CHAINLINK": {
+      "value": "$65,000",
+      "deadline": "2026-03-27T20:00:00Z",
+      "status": "BLOCKED",
+      "blocker": "KYC browser needed",
+      "agents": ["YONATAN", "AVINOAM"],
+      "findings_ready": 24,
+      "submitted": 1,
+      "action": "Complete KYC via browser → submit remaining findings"
+    },
+    "M2_GUARDIAN_LIMITBREAK": {
+      "value": "$150,000",
+      "deadline": "2026-04-09",
+      "status": "BLOCKED",
+      "blocker": "KYC Sumsub browser needed",
+      "agents": ["AVISHAI", "CHIZKIYAH"],
+      "findings_ready": 8,
+      "action": "Complete KYC → submit findings"
+    },
+    "M3_DEPLOY_GATE_ED25519": {
+      "value": "$200",
+      "deadline": "none",
+      "status": "IN_PROGRESS",
+      "agents": ["AZRIEL", "RAZIEL", "SAMAEL"],
+      "action": "Analyze Ed25519 verification for bypass → submit exploit"
+    },
+    "M4_LIDO_MCP_SERVER": {
+      "value": "$5,000",
+      "deadline": "unknown",
+      "status": "RESEARCHING",
+      "agents": ["OLIAB", "NADAV", "AVIHU"],
+      "action": "Find bounty source → build MCP server → submit"
+    },
+    "M5_HUNTR_AI_VULNS": {
+      "value": "$1,500+/finding",
+      "deadline": "none",
+      "status": "PENDING",
+      "agents": ["SHIMSHON_A", "AZRIEL"],
+      "targets": ["ollama", "llama_index", "transformers"],
+      "action": "Register huntr.com → audit targets → submit"
+    },
+    "M6_NUCLEI_TEMPLATES": {
+      "value": "$150-$250/PR",
+      "deadline": "none",
+      "status": "ACTIVE",
+      "agents": ["SHAMA", "SHIMSHON_A"],
+      "prs": ["#15675 (FIXED, awaiting review)", "#15676 (clean, awaiting review)"],
+      "action": "Write 3-5 more CVE templates from KEV list"
+    },
+    "M7_DN_INSTITUTE": {
+      "value": "$3,500-$4,500",
+      "deadline": "none",
+      "status": "WAITING_REVIEW",
+      "agents": ["BENAYAHU"],
+      "prs_open": 10,
+      "action": "Wait for maintainer review. DO NOT ping again."
+    },
+    "M8_SUPERTEAM_VAULT": {
+      "value": "$4,000 USDG",
+      "deadline": "2026-03-31",
+      "status": "READY_TO_DEPLOY",
+      "agents": ["GAD", "HADORAM"],
+      "sol_devnet": "2.0 SOL available",
+      "action": "Deploy SVS-8 to devnet → submit"
+    },
+    "M9_ALIBABA_CLOUD": {
+      "value": "$120,000 credits",
+      "deadline": "2026-03-31",
+      "status": "BROWSER_REQUIRED",
+      "agents": ["ELAZAR_B"],
+      "action": "Submit form at survey.alibabacloud.com"
+    },
+    "M10_XAI_CREDITS": {
+      "value": "$175/month",
+      "deadline": "none",
+      "status": "BROWSER_REQUIRED",
+      "agents": ["ENOSH"],
+      "action": "Signup at accounts.x.ai"
+    },
+    "M11_TWITTER_GROWTH": {
+      "value": "X Revenue Share (500+ followers needed)",
+      "deadline": "ongoing",
+      "status": "ACTIVE",
+      "agents": ["ISRAEL_ONE"],
+      "today_posted": 1,
+      "queued": 3,
+      "action": "Post queued tweets when daily limit resets"
+    },
+    "M12_PUNKPEYE_MCP_PRS": {
+      "value": "visibility/reputation",
+      "deadline": "none",
+      "status": "WAITING_MERGE",
+      "agents": ["PINHAS_MCP"],
+      "prs": ["#3507 (ready)", "#3717", "#3718", "#3802 (needs Glama)"],
+      "action": "Ping #3507. Submit flash-payment to Glama for #3802."
+    }
+  },
+  "total_pipeline": "$8M+ (Immunefi permanent) + $225K (active bounties) + $160K (grants)",
+  "priority_order": ["M1", "M2", "M3", "M4", "M8", "M5", "M6", "M9", "M10", "M11", "M12", "M7"]
+}

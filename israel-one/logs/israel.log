@@ -1,0 +1,1033 @@
+2026-03-25 00:12:25,777 [INFO] Crypto data: BTC=$70,484 ETH=$2,152 SOL=$90.97
+2026-03-25 00:12:26,515 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 00:12:26,517 [INFO] Generated [builder_log] (76 chars): Monday: 0 meetings
+Tuesday: 0 meetings
+Wednesday: shipped
+
+T...
+2026-03-25 00:12:26,517 [INFO] Generated [convergence] (137 chars): AI x Crypto is not a narrative
+
+It is the convergence of two...
+2026-03-25 00:12:26,518 [INFO] Generated [builder_log] (58 chars): 7 deploys before lunch. Zero meetings. The build continues...
+2026-03-25 00:12:26,518 [INFO] Generated [two_word] (20 chars): Infra over narrative...
+2026-03-25 00:12:26,518 [INFO] Generated [two_word] (18 chars): Output over optics...
+2026-03-25 00:32:37,491 [INFO] Crypto data: BTC=$70,586 ETH=$2,154 SOL=$90.93
+2026-03-25 00:32:38,321 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 00:32:38,323 [INFO] Generated [two_word] (21 chars): Agents eat dashboards...
+2026-03-25 00:32:38,323 [INFO] Generated [convergence] (149 chars): DeFi protocols without MCP integration will lose to those wi...
+2026-03-25 00:32:38,323 [INFO] Generated [two_word] (21 chars): The merge accelerates...
+2026-03-25 00:32:38,323 [INFO] Generated [two_word] (20 chars): Infra over narrative...
+2026-03-25 00:32:38,323 [INFO] Generated [convergence] (137 chars): AI x Crypto is not a narrative
+
+It is the convergence of two...
+2026-03-25 01:01:54,814 [INFO] Crypto data: BTC=$70,686 ETH=$2,157 SOL=$91.68
+2026-03-25 01:01:55,621 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 01:01:55,624 [INFO] Generated [two_word] (20 chars): Sovereign by default...
+2026-03-25 01:01:55,625 [INFO] Generated [convergence] (21 chars): The merge accelerates...
+2026-03-25 01:01:55,626 [INFO] Generated [convergence] (149 chars): DeFi protocols without MCP integration will lose to those wi...
+2026-03-25 01:01:55,629 [INFO] Generated [convergence] (124 chars): Every AI model will have a wallet
+
+Every wallet will have an...
+2026-03-25 01:01:55,630 [INFO] Generated [convergence] (137 chars): AI x Crypto is not a narrative
+
+It is the convergence of two...
+2026-03-25 01:03:04,347 [INFO] ============================================================
+2026-03-25 01:03:04,348 [INFO] ISRAEL/ONE Agent Starting — DAEMON MODE
+2026-03-25 01:03:04,348 [INFO] Posting as: @opencllaw
+2026-03-25 01:03:04,348 [INFO] Style: builder-authority
+2026-03-25 01:03:04,348 [INFO] Max tweets/day: 12
+2026-03-25 01:03:04,348 [INFO] Interval: 60-120 minutes (randomized)
+2026-03-25 01:03:04,348 [INFO] ============================================================
+2026-03-25 01:03:05,009 [INFO] Crypto data: BTC=$70,688 ETH=$2,157 SOL=$91.68
+2026-03-25 01:03:06,368 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 01:03:06,378 [INFO] Generated [builder_log] (76 chars): Monday: 0 meetings
+Tuesday: 0 meetings
+Wednesday: shipped
+
+T...
+2026-03-25 01:03:06,378 [INFO] Posting: Monday: 0 meetings
+Tuesday: 0 meetings
+Wednesday: shipped
+
+The pattern holds
+2026-03-25 01:03:11,704 [INFO] Tweet posted via tweet_now.py
+2026-03-25 01:03:11,705 [INFO] Posted successfully. Today: 1/12
+2026-03-25 01:03:11,705 [INFO] Next cycle in 84 minutes
+2026-03-25 01:40:25,328 [INFO] Crypto data: BTC=$70,727 ETH=$2,160 SOL=$91.65
+2026-03-25 01:40:26,287 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 01:40:26,291 [INFO] Generated [two_word] (21 chars): The merge accelerates...
+2026-03-25 01:40:26,295 [INFO] Generated [two_word] (19 chars): Ship or irrelevance...
+2026-03-25 01:40:26,298 [INFO] Generated [convergence] (137 chars): AI x Crypto is not a narrative
+
+It is the convergence of two...
+2026-03-25 01:40:26,298 [INFO] Generated [convergence] (130 chars): MCP + Solana + Claude = the complete autonomous agent stack
+...
+2026-03-25 01:40:26,299 [INFO] Generated [builder_log] (58 chars): 6 deploys before lunch. Zero meetings. The build continues...
+2026-03-25 02:50:47,591 [WARNING] Crypto data fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_market_cap=true"\nreq = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d))\n']' timed out after 15 seconds
+2026-03-25 03:12:05,323 [WARNING] Fear & Greed fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.alternative.me/fng/?limit=1"\nreq = urllib.request.Request(url, headers={"User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d[\'data\'][0]))\n']' timed out after 15 seconds
+2026-03-25 03:26:16,851 [INFO] Generated [builder_log] (76 chars): Morning routine:
+- git pull
+- claude code
+- ship
+- repeat
+
+N...
+2026-03-25 03:51:52,134 [INFO] Posting: Morning routine:
+- git pull
+- claude code
+- ship
+- repeat
+
+No Slack required
+2026-03-25 06:37:45,177 [INFO] Tweet posted via tweet_now.py
+2026-03-25 06:37:45,232 [INFO] Posted successfully. Today: 2/12
+2026-03-25 06:37:45,245 [INFO] Next cycle in 71 minutes
+2026-03-25 07:49:06,500 [INFO] Crypto data: BTC=$71,484 ETH=$2,184 SOL=$92.44
+2026-03-25 07:49:07,291 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 07:49:07,311 [INFO] Generated [metric_drop] (77 chars): 2 MCP servers deployed this week
+
+The agent economy is not c...
+2026-03-25 07:49:07,313 [INFO] Posting: 2 MCP servers deployed this week
+
+The agent economy is not coming. It is here
+2026-03-25 07:49:09,722 [INFO] Tweet posted via tweet_now.py
+2026-03-25 07:49:09,731 [INFO] Posted successfully. Today: 3/12
+2026-03-25 07:49:09,732 [INFO] Next cycle in 79 minutes
+2026-03-25 09:08:43,758 [INFO] Crypto data: BTC=$71,801 ETH=$2,191 SOL=$93.00
+2026-03-25 09:08:44,678 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 09:08:44,679 [INFO] Generated [mcp_tools] (148 chars): MCP servers are the nervous system of autonomous AI
+
+Every t...
+2026-03-25 09:08:44,679 [INFO] Posting: MCP servers are the nervous system of autonomous AI
+
+Every tool an agent needs in one protocol
+
+Build the server. Let the agents decide what to call
+2026-03-25 09:08:46,627 [ERROR] tweet_now.py failed: [*] Tweet (148 chars): MCP servers are the nervous system of autonomous AI
+
+Every tool an agent needs in one protocol
+
+Build the server. Let th...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-25 09:08:46,628 [ERROR] Posting failed
+2026-03-25 09:08:46,628 [INFO] Next cycle in 114 minutes
+2026-03-25 11:10:41,108 [WARNING] Crypto data fetch failed: [Errno 11] Resource temporarily unavailable
+2026-03-25 11:10:41,141 [WARNING] Fear & Greed fetch failed: [Errno 11] Resource temporarily unavailable
+2026-03-25 11:10:41,159 [INFO] Generated [insider_alpha] (142 chars): The real alpha is not in the token
+
+It is in the infrastruct...
+2026-03-25 11:10:41,161 [INFO] Posting: The real alpha is not in the token
+
+It is in the infrastructure layer beneath it
+
+Every protocol needs an MCP server. Most do not have one yet
+2026-03-25 11:10:41,165 [ERROR] Script posting failed: [Errno 11] Resource temporarily unavailable
+2026-03-25 11:10:41,166 [ERROR] Posting failed
+2026-03-25 11:10:41,167 [INFO] Next cycle in 110 minutes
+2026-03-25 13:00:44,810 [INFO] Crypto data: BTC=$70,843 ETH=$2,163 SOL=$91.80
+2026-03-25 13:00:45,606 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 13:00:45,665 [INFO] Generated [anti_pattern] (107 chars): If you need a meeting to decide what to build next, the mark...
+2026-03-25 13:00:45,686 [INFO] Posting: If you need a meeting to decide what to build next, the market has already moved
+
+Ship first. Discuss later
+2026-03-25 13:00:48,854 [INFO] Tweet posted via tweet_now.py
+2026-03-25 13:00:48,873 [INFO] Posted successfully. Today: 4/12
+2026-03-25 13:00:48,874 [INFO] Next cycle in 75 minutes
+2026-03-25 14:35:09,244 [WARNING] Crypto data fetch failed: [Errno 11] Resource temporarily unavailable
+2026-03-25 16:06:28,957 [INFO] Crypto data: BTC=$70,877 ETH=$2,163 SOL=$91.64
+2026-03-25 16:06:29,795 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 16:06:29,798 [INFO] Generated [stack_reveal] (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→...
+2026-03-25 16:06:29,799 [INFO] Generated [builder_log] (124 chars): Shipped Solana Vault Standard update while most were plannin...
+2026-03-25 16:06:29,799 [INFO] Generated [builder_log] (89 chars): Another day of output. No roadmap presentation. No stakehold...
+2026-03-25 16:06:29,799 [INFO] Generated [builder_log] (102 chars): Refactored the entire bridge pipeline in one session
+
+Claude...
+2026-03-25 16:06:29,799 [INFO] Generated [builder_log] (53 chars): Pushed 4 PRs today
+
+No standup. No retro. Just output...
+2026-03-25 16:44:23,854 [INFO] Crypto data: BTC=$71,003 ETH=$2,173 SOL=$91.78
+2026-03-25 16:44:24,740 [INFO] Fear & Greed: 14 (Extreme Fear)
+2026-03-25 16:44:24,744 [INFO] Generated [stack_reveal] (130 chars): The stack that ships:
+→ Claude Code as core
+→ curl_cffi for ...
+2026-03-25 16:44:24,751 [INFO] Generated [builder_log] (58 chars): 3 deploys before lunch. Zero meetings. The build continues...
+2026-03-25 16:44:24,751 [INFO] Generated [prediction] (162 chars): By Q4 2026:
+- Every DeFi protocol has an MCP server
+- AI age...
+2026-03-25 16:44:24,751 [INFO] Generated [prediction] (105 chars): The playbook is simple:
+
+1. Build in public
+2. Ship daily
+3....
+2026-03-25 16:44:24,751 [INFO] Generated [stack_reveal] (111 chars): Running:
+→ 29 MCP tools
+→ 4 AI providers
+→ Real-time crypto ...
+2026-03-25 21:34:00,897 [INFO] Crypto data: BTC=$71,313 ETH=$2,167 SOL=$91.69
+2026-03-25 21:34:01,840 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-25 21:34:01,863 [INFO] Generated [two_word] (19 chars): Code over consensus...
+2026-03-25 21:34:01,864 [INFO] Generated [sovereignty] (106 chars): Your keys. Your agent. Your sovereign stack
+
+Everything else...
+2026-03-25 21:34:01,864 [INFO] Generated [two_word] (19 chars): Ship or irrelevance...
+2026-03-25 21:34:01,865 [INFO] Generated [two_word] (19 chars): Permissionless wins...
+2026-03-25 21:34:01,865 [INFO] Generated [sovereignty] (114 chars): Open source is not charity
+
+It is a competitive moat
+
+Closed...
+2026-03-25 21:35:35,380 [INFO] ============================================================
+2026-03-25 21:35:35,381 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-25 21:35:35,381 [INFO] Posting as: @opencllaw
+2026-03-25 21:35:35,381 [INFO] Style: builder-authority
+2026-03-25 21:35:35,381 [INFO] Max tweets/day: 12
+2026-03-25 21:35:35,381 [INFO] Interval: 60-120 minutes (randomized)
+2026-03-25 21:35:35,382 [INFO] ============================================================
+2026-03-25 21:35:38,701 [INFO] Crypto data: BTC=$71,303 ETH=$2,166 SOL=$91.70
+2026-03-25 21:35:39,466 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-25 21:35:39,468 [INFO] Generated [convergence] (130 chars): MCP + Solana + Claude = the complete autonomous agent stack
+...
+2026-03-25 21:35:39,468 [INFO] Posting: MCP + Solana + Claude = the complete autonomous agent stack
+
+No API keys to manage. No cloud to maintain. Just intent to execution
+2026-03-25 21:35:43,325 [INFO] Tweet posted via tweet_now.py
+2026-03-25 21:35:43,329 [INFO] Posted successfully. Today: 5/12
+2026-03-25 21:35:43,329 [INFO] Next cycle in 82 minutes
+2026-03-25 22:58:00,592 [INFO] Crypto data: BTC=$71,245 ETH=$2,165 SOL=$91.78
+2026-03-25 22:58:01,356 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-25 22:58:01,379 [INFO] Generated [two_word] (19 chars): Build. Ship. Repeat...
+2026-03-25 22:58:01,379 [INFO] Posting: Build. Ship. Repeat
+2026-03-25 22:58:03,798 [ERROR] tweet_now.py failed: [*] Tweet (19 chars): Build. Ship. Repeat
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 3f1990fd70a3d70a3d70...
+[*] Fetching main.js t 
+2026-03-25 22:58:03,799 [ERROR] Posting failed
+2026-03-25 22:58:03,800 [INFO] Next cycle in 87 minutes
+2026-03-26 00:20:35,299 [INFO] Crypto data: BTC=$70,895 ETH=$2,151 SOL=$90.88
+2026-03-26 00:20:36,062 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 00:20:36,065 [INFO] Generated [convergence] (21 chars): The merge accelerates...
+2026-03-26 00:20:36,065 [INFO] Generated [two_word] (21 chars): Agents eat dashboards...
+2026-03-26 00:20:36,065 [INFO] Generated [convergence] (124 chars): Every AI model will have a wallet
+
+Every wallet will have an...
+2026-03-26 00:20:36,066 [INFO] Generated [two_word] (15 chars): Execute or exit...
+2026-03-26 00:20:36,066 [INFO] Generated [builder_log] (89 chars): Another day of output. No roadmap presentation. No stakehold...
+2026-03-26 00:26:02,979 [INFO] Crypto data: BTC=$70,742 ETH=$2,147 SOL=$90.81
+2026-03-26 00:26:03,772 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 00:26:03,797 [INFO] Generated [builder_log] (58 chars): 7 deploys before lunch. Zero meetings. The build continues...
+2026-03-26 00:26:03,799 [INFO] Posting: 7 deploys before lunch. Zero meetings. The build continues
+2026-03-26 00:26:05,825 [INFO] Tweet posted via tweet_now.py
+2026-03-26 00:26:05,842 [INFO] Posted successfully. Today: 1/12
+2026-03-26 00:26:05,843 [INFO] Next cycle in 68 minutes
+2026-03-26 04:28:16,665 [INFO] ============================================================
+2026-03-26 04:28:16,665 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-26 04:28:16,665 [INFO] Posting as: @opencllaw
+2026-03-26 04:28:16,665 [INFO] Style: builder-authority
+2026-03-26 04:28:16,665 [INFO] Max tweets/day: 12
+2026-03-26 04:28:16,666 [INFO] Interval: 60-120 minutes (randomized)
+2026-03-26 04:28:16,666 [INFO] ============================================================
+2026-03-26 04:28:17,154 [INFO] Crypto data: BTC=$69,997 ETH=$2,118 SOL=$89.08
+2026-03-26 04:28:17,977 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 04:28:17,978 [INFO] Generated [two_word] (18 chars): Output over optics...
+2026-03-26 04:28:17,979 [INFO] Posting: Output over optics
+2026-03-26 04:28:20,371 [ERROR] tweet_now.py failed: [*] Tweet (18 chars): Output over optics
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: c555440fae147ae147ae...
+[*] Fetching main.js to 
+2026-03-26 04:28:20,371 [ERROR] Posting failed
+2026-03-26 04:28:20,371 [INFO] Next cycle in 90 minutes
+2026-03-26 04:31:55,335 [INFO] ============================================================
+2026-03-26 04:31:55,336 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-26 04:31:55,336 [INFO] Posting as: @opencllaw
+2026-03-26 04:31:55,336 [INFO] Style: builder-authority
+2026-03-26 04:31:55,336 [INFO] Max tweets/day: 12
+2026-03-26 04:31:55,336 [INFO] Interval: 55-90 minutes (randomized)
+2026-03-26 04:31:55,336 [INFO] ============================================================
+2026-03-26 04:31:55,759 [INFO] Crypto data: BTC=$69,931 ETH=$2,117 SOL=$89.04
+2026-03-26 04:31:56,439 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 04:31:56,441 [INFO] Generated [convergence] (21 chars): The merge accelerates...
+2026-03-26 04:31:56,441 [INFO] Posting: The merge accelerates
+2026-03-26 04:31:58,511 [ERROR] tweet_now.py failed: [*] Tweet (21 chars): The merge accelerates
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 4cb8750e666666666666...
+[*] Fetching main.js 
+2026-03-26 04:31:58,511 [ERROR] Posting failed
+2026-03-26 04:31:58,512 [INFO] Next cycle in 57 minutes
+2026-03-26 05:29:12,889 [INFO] Crypto data: BTC=$69,819 ETH=$2,117 SOL=$88.69
+2026-03-26 05:29:13,543 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 05:29:13,543 [INFO] Generated [two_word] (19 chars): Permissionless wins...
+2026-03-26 05:29:13,543 [INFO] Posting: Permissionless wins
+2026-03-26 05:29:15,588 [INFO] Tweet posted via tweet_now.py
+2026-03-26 05:29:15,590 [INFO] Posted successfully. Today: 2/12
+2026-03-26 05:29:15,590 [INFO] Next cycle in 81 minutes
+2026-03-26 05:58:27,774 [INFO] Crypto data: BTC=$69,990 ETH=$2,119 SOL=$88.83
+2026-03-26 05:58:28,461 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 05:58:28,461 [INFO] Generated [builder_log] (58 chars): 4 deploys before lunch. Zero meetings. The build continues...
+2026-03-26 05:58:28,461 [INFO] Posting: 4 deploys before lunch. Zero meetings. The build continues
+2026-03-26 05:58:30,207 [ERROR] tweet_now.py failed: [*] Tweet (58 chars): 4 deploys before lunch. Zero meetings. The build continues
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 2d112a0 
+2026-03-26 05:58:30,207 [ERROR] Posting failed
+2026-03-26 05:58:30,208 [INFO] Next cycle in 98 minutes
+2026-03-26 06:50:19,987 [INFO] Crypto data: BTC=$69,414 ETH=$2,079 SOL=$87.99
+2026-03-26 06:50:20,641 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 06:50:20,641 [INFO] Generated [two_word] (15 chars): Execute or exit...
+2026-03-26 06:50:20,642 [INFO] Posting: Execute or exit
+2026-03-26 06:50:28,209 [ERROR] tweet_now.py failed: [*] Tweet (15 chars): Execute or exit
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 135a01011eb851eb851e...
+[*] Fetching main.js to ge 
+2026-03-26 06:50:28,210 [ERROR] Posting failed
+2026-03-26 06:50:28,210 [INFO] Next cycle in 64 minutes
+2026-03-26 07:36:42,699 [INFO] Crypto data: BTC=$69,581 ETH=$2,079 SOL=$88.15
+2026-03-26 07:36:43,355 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 07:36:43,355 [INFO] Generated [metric_drop] (77 chars): 6 MCP servers deployed this week
+
+The agent economy is not c...
+2026-03-26 07:36:43,355 [INFO] Posting: 6 MCP servers deployed this week
+
+The agent economy is not coming. It is here
+2026-03-26 07:36:46,464 [INFO] Tweet posted via tweet_now.py
+2026-03-26 07:36:46,465 [INFO] Posted successfully. Today: 3/12
+2026-03-26 07:36:46,465 [INFO] Next cycle in 73 minutes
+2026-03-26 07:54:40,683 [INFO] Crypto data: BTC=$69,499 ETH=$2,077 SOL=$87.89
+2026-03-26 07:54:41,346 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 07:54:41,347 [INFO] Generated [insider_alpha] (145 chars): Natural language trading is not a feature
+
+It is the entire ...
+2026-03-26 07:54:41,347 [INFO] Posting: Natural language trading is not a feature
+
+It is the entire interface layer collapsing into a single prompt
+
+Every CEX dashboard becomes obsolete
+2026-03-26 07:54:43,614 [ERROR] tweet_now.py failed: [*] Tweet (145 chars): Natural language trading is not a feature
+
+It is the entire interface layer collapsing into a single prompt
+
+Every CEX d...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 07:54:43,615 [ERROR] Posting failed
+2026-03-26 07:54:43,615 [INFO] Next cycle in 70 minutes
+2026-03-26 08:49:49,268 [INFO] Crypto data: BTC=$69,390 ETH=$2,071 SOL=$87.63
+2026-03-26 08:49:50,954 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 08:49:50,955 [INFO] Generated [insider_alpha] (142 chars): The real alpha is not in the token
+
+It is in the infrastruct...
+2026-03-26 08:49:50,955 [INFO] Posting: The real alpha is not in the token
+
+It is in the infrastructure layer beneath it
+
+Every protocol needs an MCP server. Most do not have one yet
+2026-03-26 08:49:52,880 [ERROR] tweet_now.py failed: [*] Tweet (142 chars): The real alpha is not in the token
+
+It is in the infrastructure layer beneath it
+
+Every protocol needs an MCP server. Mo...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 08:49:52,880 [ERROR] Posting failed
+2026-03-26 08:49:52,881 [INFO] Next cycle in 64 minutes
+2026-03-26 09:05:17,262 [INFO] Crypto data: BTC=$69,302 ETH=$2,070 SOL=$87.57
+2026-03-26 09:05:17,918 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 09:05:17,919 [INFO] Generated [stack_reveal] (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→...
+2026-03-26 09:05:17,919 [INFO] Posting: Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→ Blockchain as treasury
+→ Code as the only employee
+2026-03-26 09:05:20,209 [ERROR] tweet_now.py failed: [*] Tweet (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→ Blockchain as treasury
+→ Code as the only employee
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got  
+2026-03-26 09:05:20,210 [ERROR] Posting failed
+2026-03-26 09:05:20,210 [INFO] Next cycle in 81 minutes
+2026-03-26 09:54:22,741 [INFO] Crypto data: BTC=$69,374 ETH=$2,072 SOL=$87.51
+2026-03-26 09:54:23,486 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 09:54:23,508 [INFO] Generated [mcp_tools] (120 chars): The MCP economy is invisible but growing
+
+Every tool becomes...
+2026-03-26 09:54:23,510 [INFO] Posting: The MCP economy is invisible but growing
+
+Every tool becomes composable. Every agent becomes capable
+
+Infra wins quietly
+2026-03-26 09:54:26,043 [ERROR] tweet_now.py failed: [*] Tweet (120 chars): The MCP economy is invisible but growing
+
+Every tool becomes composable. Every agent becomes capable
+
+Infra wins quietly
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)... 
+2026-03-26 09:54:26,044 [ERROR] Posting failed
+2026-03-26 09:54:26,044 [INFO] Next cycle in 75 minutes
+2026-03-26 10:27:20,392 [INFO] Crypto data: BTC=$69,397 ETH=$2,078 SOL=$87.78
+2026-03-26 10:27:21,130 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 10:27:21,152 [INFO] Generated [stack_reveal] (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→...
+2026-03-26 10:27:21,153 [INFO] Posting: Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→ Blockchain as treasury
+→ Code as the only employee
+2026-03-26 10:27:51,051 [ERROR] tweet_now.py failed: [*] Tweet (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→ Blockchain as treasury
+→ Code as the only employee
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got  Traceback (most recent call last):
+  File "/home/administrador/.local/lib/python3.13/site-packages/curl_cffi/requests/session.py", line 652, in request
+    c.perform()
+    ~~~~~~~~~^^
+  File "/home/ad
+2026-03-26 10:27:51,052 [ERROR] Posting failed
+2026-03-26 10:27:51,053 [INFO] Next cycle in 83 minutes
+2026-03-26 11:10:21,086 [INFO] Crypto data: BTC=$69,649 ETH=$2,080 SOL=$87.95
+2026-03-26 11:10:21,951 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 11:10:21,996 [INFO] Generated [convergence] (149 chars): DeFi protocols without MCP integration will lose to those wi...
+2026-03-26 11:10:22,010 [INFO] Posting: DeFi protocols without MCP integration will lose to those with it
+
+The interface layer is collapsing into natural language
+
+Adapt or become a backend
+2026-03-26 11:10:31,920 [INFO] Tweet posted via tweet_now.py
+2026-03-26 11:10:31,967 [INFO] Posted successfully. Today: 4/12
+2026-03-26 11:10:31,968 [INFO] Next cycle in 69 minutes
+2026-03-26 11:50:57,164 [INFO] Crypto data: BTC=$69,413 ETH=$2,075 SOL=$87.65
+2026-03-26 11:50:57,896 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 11:50:57,930 [INFO] Generated [defi_alpha] (166 chars): Concentrated liquidity is the most underutilized primitive i...
+2026-03-26 11:50:57,933 [INFO] Posting: Concentrated liquidity is the most underutilized primitive in DeFi
+
+4000x capital efficiency. Yet 90% of LPs still use full range
+
+The edge is in the range management
+2026-03-26 11:51:00,650 [ERROR] tweet_now.py failed: [*] Tweet (166 chars): Concentrated liquidity is the most underutilized primitive in DeFi
+
+4000x capital efficiency. Yet 90% of LPs still use f...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 11:51:00,651 [ERROR] Posting failed
+2026-03-26 11:51:00,653 [INFO] Next cycle in 68 minutes
+2026-03-26 12:19:39,323 [INFO] Crypto data: BTC=$68,884 ETH=$2,060 SOL=$87.12
+2026-03-26 12:19:40,117 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 12:19:40,136 [INFO] Generated [defi_alpha] (150 chars): Stablecoin yield is the gateway
+
+Start with DAI-USDC. Zero i...
+2026-03-26 12:19:40,138 [INFO] Posting: Stablecoin yield is the gateway
+
+Start with DAI-USDC. Zero impermanent loss. Learn the mechanics
+
+Then graduate to volatile pairs with real conviction
+2026-03-26 12:19:48,857 [INFO] Tweet posted via tweet_now.py
+2026-03-26 12:19:48,873 [INFO] Posted successfully. Today: 5/12
+2026-03-26 12:19:48,873 [INFO] Next cycle in 97 minutes
+2026-03-26 12:59:25,904 [INFO] Crypto data: BTC=$69,089 ETH=$2,070 SOL=$87.56
+2026-03-26 12:59:26,623 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 12:59:26,642 [INFO] Generated [defi_alpha] (132 chars): Risk management is the only alpha that compounds
+
+5-7% per m...
+2026-03-26 12:59:26,645 [INFO] Posting: Risk management is the only alpha that compounds
+
+5-7% per month. Every month. Bull or bear
+
+The math beats the narrative every time
+2026-03-26 12:59:30,007 [ERROR] tweet_now.py failed: [*] Tweet (132 chars): Risk management is the only alpha that compounds
+
+5-7% per month. Every month. Bull or bear
+
+The math beats the narrativ...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 12:59:30,008 [ERROR] Posting failed
+2026-03-26 12:59:30,009 [INFO] Next cycle in 82 minutes
+2026-03-26 13:05:06,257 [INFO] ============================================================
+2026-03-26 13:05:06,259 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-26 13:05:06,259 [INFO] Posting as: @opencllaw
+2026-03-26 13:05:06,259 [INFO] Style: builder-authority
+2026-03-26 13:05:06,259 [INFO] Max tweets/day: 12
+2026-03-26 13:05:06,259 [INFO] Interval: 55-90 minutes (randomized)
+2026-03-26 13:05:06,259 [INFO] ============================================================
+2026-03-26 13:05:08,127 [INFO] Crypto data: BTC=$69,000 ETH=$2,068 SOL=$87.53
+2026-03-26 13:05:08,899 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 13:05:08,900 [INFO] Generated [builder_log] (87 chars): Built, tested, deployed. All before the first meeting invite...
+2026-03-26 13:05:08,900 [INFO] Posting: Built, tested, deployed. All before the first meeting invite landed
+
+Deleted the invite
+2026-03-26 13:05:11,785 [ERROR] tweet_now.py failed: [*] Tweet (87 chars): Built, tested, deployed. All before the first meeting invite landed
+
+Deleted the invite
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 byte 
+2026-03-26 13:05:11,785 [ERROR] Posting failed
+2026-03-26 13:05:11,785 [INFO] Next cycle in 81 minutes
+2026-03-26 13:57:19,969 [INFO] Crypto data: BTC=$68,912 ETH=$2,062 SOL=$87.16
+2026-03-26 13:57:20,767 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 13:57:20,784 [INFO] Generated [builder_log] (58 chars): 6 deploys before lunch. Zero meetings. The build continues...
+2026-03-26 13:57:20,785 [INFO] Posting: 6 deploys before lunch. Zero meetings. The build continues
+2026-03-26 13:57:23,500 [ERROR] tweet_now.py failed: [*] Tweet (58 chars): 6 deploys before lunch. Zero meetings. The build continues
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: debde91 
+2026-03-26 13:57:23,500 [ERROR] Posting failed
+2026-03-26 13:57:23,503 [INFO] Next cycle in 71 minutes
+2026-03-26 14:26:44,823 [INFO] Crypto data: BTC=$68,953 ETH=$2,065 SOL=$87.14
+2026-03-26 14:26:45,571 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 14:26:45,601 [INFO] Generated [anti_pattern] (96 chars): If your AI agent needs permission to think, it is not an age...
+2026-03-26 14:26:45,601 [INFO] Posting: If your AI agent needs permission to think, it is not an agent
+
+It is a chatbot with extra steps
+2026-03-26 14:26:48,146 [ERROR] tweet_now.py failed: [*] Tweet (96 chars): If your AI agent needs permission to think, it is not an agent
+
+It is a chatbot with extra steps
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key 
+2026-03-26 14:26:48,146 [ERROR] Posting failed
+2026-03-26 14:26:48,147 [INFO] Next cycle in 74 minutes
+2026-03-26 15:08:36,542 [INFO] Crypto data: BTC=$68,433 ETH=$2,048 SOL=$86.60
+2026-03-26 15:08:37,244 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 15:08:37,265 [INFO] Generated [prediction] (162 chars): By Q4 2026:
+- Every DeFi protocol has an MCP server
+- AI age...
+2026-03-26 15:08:37,266 [INFO] Posting: By Q4 2026:
+- Every DeFi protocol has an MCP server
+- AI agents execute 30%+ of on-chain volume
+- Natural language replaces every trading dashboard
+
+Bookmark this
+2026-03-26 15:08:39,953 [INFO] Tweet posted via tweet_now.py
+2026-03-26 15:08:39,966 [INFO] Posted successfully. Today: 6/12
+2026-03-26 15:08:39,967 [INFO] Next cycle in 81 minutes
+2026-03-26 15:41:44,449 [INFO] Crypto data: BTC=$68,276 ETH=$2,040 SOL=$85.83
+2026-03-26 15:41:45,263 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 15:41:45,291 [INFO] Generated [prediction] (125 chars): 6 months ago: MCP tools are a niche experiment
+Today: 269 st...
+2026-03-26 15:41:45,296 [INFO] Posting: 6 months ago: MCP tools are a niche experiment
+Today: 269 stars on a single MCP server
+
+Receipts matter more than predictions
+2026-03-26 15:41:48,715 [INFO] Tweet posted via tweet_now.py
+2026-03-26 15:41:48,731 [INFO] Posted successfully. Today: 7/12
+2026-03-26 15:41:48,733 [INFO] Next cycle in 79 minutes
+2026-03-26 16:21:08,806 [INFO] Crypto data: BTC=$68,453 ETH=$2,044 SOL=$85.96
+2026-03-26 16:21:09,486 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 16:21:09,489 [INFO] Generated [builder_raw_en] (80 chars): Built, tested, deployed. All before the first meeting invite...
+2026-03-26 16:21:09,490 [INFO] Popped queued tweet [queued] (167 chars)
+2026-03-26 16:21:09,491 [INFO] Generated [builder_raw_en] (183 chars): Shipped Sovereign Agent Chain update while most were plannin...
+2026-03-26 16:21:09,492 [INFO] Generated [builder_raw_en] (167 chars): Shipped Sovereign Pay update while most were planning their ...
+2026-03-26 16:21:09,492 [INFO] Generated [technical_alpha_en] (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→...
+2026-03-26 16:21:51,492 [INFO] Crypto data: BTC=$68,453 ETH=$2,044 SOL=$85.96
+2026-03-26 16:21:52,151 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 16:21:52,153 [INFO] Generated [technical_alpha_en] (200 chars): Two types of MCP servers
+
+Type A: wrapper around an API, 3 t...
+2026-03-26 16:21:52,153 [INFO] Generated [technical_alpha_en] (168 chars): Running:
+→ 29 MCP tools
+→ 4 AI providers
+→ Real-time crypto ...
+2026-03-26 16:21:52,153 [INFO] Generated [technical_alpha_en] (191 chars): Two types of MCP servers
+
+Type A: wrapper around an API, 3 t...
+2026-03-26 16:21:52,154 [INFO] Generated [builder_raw_en] (113 chars): Pushed 4 PRs today
+
+No standup. No retro. Just output
+
+https...
+2026-03-26 16:21:52,154 [INFO] Generated [technical_alpha_en] (111 chars): Tech stack 2026:
+→ AI agent as CEO
+→ MCP as nervous system
+→...
+2026-03-26 16:31:09,598 [INFO] Crypto data: BTC=$68,405 ETH=$2,041 SOL=$85.77
+2026-03-26 16:31:10,330 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 16:31:10,332 [INFO] Popped queued tweet [data_expose_pt] (215 chars)
+2026-03-26 16:31:10,332 [INFO] Posting: Sovereign Agent Chain passou em 312 testes de seguranca
+
+Dust attacks, fee sniping, OP_RETURN overflow, PSBT malformado
+
+Seguranca nao e feature. E fundacao
+
+https://github.com/ElromEvedElElyon/sovereign-agent-chain
+2026-03-26 16:31:13,555 [INFO] Tweet posted via tweet_now.py
+2026-03-26 16:31:13,556 [INFO] Posted successfully. Today: 8/15
+2026-03-26 16:39:28,728 [INFO] Crypto data: BTC=$68,499 ETH=$2,046 SOL=$85.61
+2026-03-26 16:39:29,385 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 16:39:29,387 [INFO] Popped queued tweet [convergence_en] (225 chars)
+2026-03-26 16:39:29,387 [INFO] Posting: Cross-chain agent swaps now live in Sovereign Agent Chain
+
+BTC to SOL. ETH to Runes. 32 MCP tools. One protocol call
+
+Agents should not need a DEX dashboard to settle
+
+https://github.com/ElromEvedElElyon/sovereign-agent-chain
+2026-03-26 16:39:31,791 [ERROR] tweet_now.py failed: [*] Tweet (225 chars): Cross-chain agent swaps now live in Sovereign Agent Chain
+
+BTC to SOL. ETH to Runes. 32 MCP tools. One protocol call
+
+Ag...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 16:39:31,791 [ERROR] Posting failed
+2026-03-26 17:00:51,809 [INFO] Crypto data: BTC=$68,537 ETH=$2,048 SOL=$85.61
+2026-03-26 17:00:52,503 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 17:00:52,529 [INFO] Generated [defi_alpha] (132 chars): Risk management is the only alpha that compounds
+
+5-7% per m...
+2026-03-26 17:00:52,530 [INFO] Posting: Risk management is the only alpha that compounds
+
+5-7% per month. Every month. Bull or bear
+
+The math beats the narrative every time
+2026-03-26 17:00:55,038 [ERROR] tweet_now.py failed: [*] Tweet (132 chars): Risk management is the only alpha that compounds
+
+5-7% per month. Every month. Bull or bear
+
+The math beats the narrativ...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 17:00:55,039 [ERROR] Posting failed
+2026-03-26 17:00:55,040 [INFO] Next cycle in 70 minutes
+2026-03-26 18:11:45,666 [INFO] Crypto data: BTC=$68,870 ETH=$2,062 SOL=$86.31
+2026-03-26 18:11:46,434 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 18:11:46,470 [INFO] Generated [sovereignty] (116 chars): Self-custody is not paranoia
+
+It is the only rational respon...
+2026-03-26 18:11:46,474 [INFO] Posting: Self-custody is not paranoia
+
+It is the only rational response to a system designed to freeze your assets on command
+2026-03-26 18:11:49,142 [ERROR] tweet_now.py failed: [*] Tweet (116 chars): Self-custody is not paranoia
+
+It is the only rational response to a system designed to freeze your assets on command
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] 
+2026-03-26 18:11:49,142 [ERROR] Posting failed
+2026-03-26 18:11:49,144 [INFO] Next cycle in 88 minutes
+2026-03-26 19:39:57,242 [INFO] Crypto data: BTC=$68,745 ETH=$2,061 SOL=$86.54
+2026-03-26 19:39:58,000 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 19:39:58,024 [INFO] Generated [prediction] (105 chars): The playbook is simple:
+
+1. Build in public
+2. Ship daily
+3....
+2026-03-26 19:39:58,025 [INFO] Posting: The playbook is simple:
+
+1. Build in public
+2. Ship daily
+3. Let the code speak
+
+Everything else is noise
+2026-03-26 19:40:00,439 [ERROR] tweet_now.py failed: [*] Tweet (105 chars): The playbook is simple:
+
+1. Build in public
+2. Ship daily
+3. Let the code speak
+
+Everything else is noise
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verifi 
+2026-03-26 19:40:00,440 [ERROR] Posting failed
+2026-03-26 19:40:00,441 [INFO] Next cycle in 81 minutes
+2026-03-26 20:16:48,077 [INFO] ============================================================
+2026-03-26 20:16:48,092 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-26 20:16:48,092 [INFO] Posting as: @opencllaw
+2026-03-26 20:16:48,092 [INFO] Style: builder-authority
+2026-03-26 20:16:48,092 [INFO] Max tweets/day: 15
+2026-03-26 20:16:48,092 [INFO] Interval: 55-90 minutes (randomized)
+2026-03-26 20:16:48,092 [INFO] ============================================================
+2026-03-26 20:16:49,028 [INFO] Crypto data: BTC=$68,781 ETH=$2,062 SOL=$86.73
+2026-03-26 20:16:49,686 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 20:16:49,688 [INFO] Generated [data_expose_pt] (134 chars): 4 CVEs criticas esta semana no CISA KEV
+
+A maioria dos proto...
+2026-03-26 20:16:49,688 [INFO] Posting: 4 CVEs criticas esta semana no CISA KEV
+
+A maioria dos protocolos DeFi nunca rodou um scan de seguranca
+
+Oportunidade para quem audita
+2026-03-26 20:16:53,512 [INFO] Tweet posted via tweet_now.py
+2026-03-26 20:16:53,514 [INFO] Posted successfully. Today: 9/15
+2026-03-26 20:16:53,514 [INFO] Next cycle in 72 minutes
+2026-03-26 21:29:52,646 [INFO] Crypto data: BTC=$68,739 ETH=$2,060 SOL=$86.45
+2026-03-26 21:29:53,359 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-26 21:29:53,383 [INFO] Generated [sovereignty_pt] (117 chars): Self-custody nao e paranoia
+
+E a unica resposta racional a u...
+2026-03-26 21:29:53,383 [INFO] Posting: Self-custody nao e paranoia
+
+E a unica resposta racional a um sistema projetado para congelar seus ativos sob comando
+2026-03-26 21:29:59,101 [INFO] Tweet posted via tweet_now.py
+2026-03-26 21:29:59,111 [INFO] Posted successfully. Today: 10/15
+2026-03-26 21:29:59,111 [INFO] Next cycle in 86 minutes
+2026-03-26 22:56:02,174 [INFO] Crypto data: BTC=$68,931 ETH=$2,070 SOL=$86.71
+2026-03-26 22:56:02,885 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-26 22:56:02,909 [INFO] Popped queued tweet [judah_product_promo] (266 chars)
+2026-03-26 22:56:02,914 [INFO] Posting: claw-mcp-toolkit: 29 tools for crypto, social, and finance inside Claude
+
+real-time prices. SEO analysis. portfolio tracking. content automation
+
+AAA rated on Glama. zero config. one command:
+npx claw-mcp-toolkit
+
+https://github.com/ElromEvedElElyon/claw-mcp-toolkit
+2026-03-26 22:56:05,330 [ERROR] tweet_now.py failed: [*] Tweet (266 chars): claw-mcp-toolkit: 29 tools for crypto, social, and finance inside Claude
+
+real-time prices. SEO analysis. portfolio trac...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-26 22:56:05,331 [ERROR] Posting failed
+2026-03-26 22:56:05,333 [INFO] Next cycle in 74 minutes
+2026-03-27 00:10:45,383 [INFO] Crypto data: BTC=$68,669 ETH=$2,060 SOL=$86.62
+2026-03-27 00:10:46,998 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 00:10:47,073 [INFO] Generated [ultra_short_en] (20 chars): Infra over narrative...
+2026-03-27 00:10:47,074 [INFO] Posting: Infra over narrative
+2026-03-27 00:10:50,554 [ERROR] tweet_now.py failed: [*] Tweet (20 chars): Infra over narrative
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: c24f5f0dc28f5c28f5c2...
+[*] Fetching main.js  
+2026-03-27 00:10:50,556 [ERROR] Posting failed
+2026-03-27 00:10:50,556 [INFO] Next cycle in 58 minutes
+2026-03-27 01:09:22,254 [INFO] Crypto data: BTC=$68,431 ETH=$2,047 SOL=$86.07
+2026-03-27 01:09:23,011 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 01:09:23,032 [INFO] Popped queued tweet [tool_reveal_pt] (237 chars)
+2026-03-27 01:09:23,038 [INFO] Posting: claw-mcp-toolkit
+
+29 ferramentas para crypto, social e financas via Claude
+
+→ Precos real-time
+→ Analise SEO/DNS/SSL
+→ Automacao de conteudo
+→ Portfolio tracking
+
+npx claw-mcp-toolkit
+
+https://github.com/ElromEvedElElyon/claw-mcp-toolkit
+2026-03-27 01:09:25,326 [INFO] Tweet posted via tweet_now.py
+2026-03-27 01:09:25,333 [INFO] Posted successfully. Today: 1/15
+2026-03-27 01:09:25,337 [INFO] Next cycle in 87 minutes
+2026-03-27 02:37:18,063 [INFO] Crypto data: BTC=$68,539 ETH=$2,058 SOL=$86.06
+2026-03-27 02:37:18,809 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 02:37:18,834 [INFO] Generated [ultra_short_en] (18 chars): MCP is the new API...
+2026-03-27 02:37:18,836 [INFO] Posting: MCP is the new API
+2026-03-27 02:37:20,928 [ERROR] tweet_now.py failed: [*] Tweet (18 chars): MCP is the new API
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 1e89c010028f5c28f5c2...
+[*] Fetching main.js to 
+2026-03-27 02:37:20,929 [ERROR] Posting failed
+2026-03-27 02:37:20,929 [INFO] Next cycle in 87 minutes
+2026-03-27 04:04:57,484 [INFO] Crypto data: BTC=$68,635 ETH=$2,062 SOL=$86.02
+2026-03-27 04:04:58,218 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 04:04:58,235 [INFO] Popped queued tweet [insider_alpha_en] (242 chars)
+2026-03-27 04:04:58,237 [INFO] Posting: Sovereign Agent Chain revenue model
+
+546 sat/tx dust fee on every transaction
+0.1% marketplace fee on agent-to-agent transfers
+
+Hardcoded in protocol. No governance vote can remove it
+
+https://github.com/ElromEvedElElyon/sovereign-agent-chain
+2026-03-27 04:05:01,550 [ERROR] tweet_now.py failed: [*] Tweet (242 chars): Sovereign Agent Chain revenue model
+
+546 sat/tx dust fee on every transaction
+0.1% marketplace fee on agent-to-agent tra...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-27 04:05:01,550 [ERROR] Posting failed
+2026-03-27 04:05:01,552 [INFO] Next cycle in 56 minutes
+2026-03-27 05:01:13,197 [INFO] Crypto data: BTC=$68,481 ETH=$2,065 SOL=$85.86
+2026-03-27 05:01:13,928 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 05:01:13,953 [INFO] Generated [ultra_short_en] (18 chars): MCP is the new API...
+2026-03-27 05:01:13,954 [INFO] Posting: MCP is the new API
+2026-03-27 05:01:16,031 [ERROR] tweet_now.py failed: [*] Tweet (18 chars): MCP is the new API
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 579a5d10010000...
+[*] Fetching main.js to get C 
+2026-03-27 05:01:16,033 [ERROR] Posting failed
+2026-03-27 05:01:16,033 [INFO] Next cycle in 61 minutes
+2026-03-27 06:03:16,299 [INFO] Crypto data: BTC=$67,865 ETH=$2,047 SOL=$85.03
+2026-03-27 06:03:17,064 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 06:03:17,066 [INFO] Generated [ultra_short_en] (18 chars): MCP is the new API...
+2026-03-27 06:03:17,066 [INFO] Posting: MCP is the new API
+2026-03-27 06:03:19,415 [ERROR] tweet_now.py failed: [*] Tweet (18 chars): MCP is the new API
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: d4a64710051eb851eb85...
+[*] Fetching main.js to 
+2026-03-27 06:03:19,415 [ERROR] Posting failed
+2026-03-27 06:03:19,415 [INFO] Next cycle in 77 minutes
+2026-03-27 07:20:57,209 [INFO] Crypto data: BTC=$67,649 ETH=$2,039 SOL=$84.93
+2026-03-27 07:20:57,919 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 07:20:57,943 [INFO] Popped queued tweet [builder_log_pt] (150 chars)
+2026-03-27 07:20:57,950 [INFO] Posting: 12 produtos publicados. 167 ferramentas MCP. 826 testes passando
+
+Nenhum pitch deck. Nenhum investidor. So codigo
+
+https://github.com/ElromEvedElElyon
+2026-03-27 07:21:00,226 [INFO] Tweet posted via tweet_now.py
+2026-03-27 07:21:00,231 [INFO] Posted successfully. Today: 2/15
+2026-03-27 07:21:00,235 [INFO] Next cycle in 89 minutes
+2026-03-27 08:50:13,419 [INFO] Crypto data: BTC=$66,775 ETH=$1,995 SOL=$83.45
+2026-03-27 08:50:14,143 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 08:50:14,168 [INFO] Popped queued tweet [tool_reveal_pt] (197 chars)
+2026-03-27 08:50:14,174 [INFO] Posting: washwatch: detector on-chain de wash trading
+
+Identifica manipulacao de volume em qualquer token ERC-20
+
+Open source. Zero custo. Pronto para producao
+
+https://github.com/ElromEvedElElyon/washwatch
+2026-03-27 08:50:21,928 [ERROR] tweet_now.py failed: [*] Tweet (197 chars): washwatch: detector on-chain de wash trading
+
+Identifica manipulacao de volume em qualquer token ERC-20
+
+Open source. Ze...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-27 08:50:21,928 [ERROR] Posting failed
+2026-03-27 08:50:21,932 [INFO] Next cycle in 69 minutes
+2026-03-27 09:59:40,069 [INFO] Crypto data: BTC=$66,568 ETH=$1,988 SOL=$83.10
+2026-03-27 09:59:40,846 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 09:59:40,862 [INFO] Generated [insider_alpha_en] (126 chars): The gap between free and paid AI inference closed this quart...
+2026-03-27 09:59:40,862 [INFO] Posting: The gap between free and paid AI inference closed this quarter
+
+The arbitrage window for building on free models is still open
+2026-03-27 09:59:43,383 [INFO] Tweet posted via tweet_now.py
+2026-03-27 09:59:43,388 [INFO] Posted successfully. Today: 3/15
+2026-03-27 09:59:43,388 [INFO] Next cycle in 83 minutes
+2026-03-27 11:22:53,631 [INFO] Crypto data: BTC=$66,046 ETH=$1,979 SOL=$83.07
+2026-03-27 11:22:54,319 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 11:22:54,343 [INFO] Generated [tool_reveal_pt] (148 chars): Construimos mcp-crypto-prices
+
+→  ferramentas MCP
+→  testes ...
+2026-03-27 11:22:54,344 [INFO] Posting: Construimos mcp-crypto-prices
+
+→  ferramentas MCP
+→  testes passando
+→ Zero cloud. Zero custo
+
+https://github.com/ElromEvedElElyon/mcp-crypto-prices
+2026-03-27 11:22:57,150 [INFO] Tweet posted via tweet_now.py
+2026-03-27 11:22:57,163 [INFO] Posted successfully. Today: 4/15
+2026-03-27 11:22:57,163 [INFO] Next cycle in 62 minutes
+2026-03-27 12:25:17,069 [INFO] Crypto data: BTC=$66,010 ETH=$1,990 SOL=$83.17
+2026-03-27 12:25:18,076 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 12:25:18,182 [INFO] Generated [tool_reveal_pt] (220 chars): claw-mcp-toolkit
+
+→ 29 ferramentas: crypto, social, financas...
+2026-03-27 12:25:18,185 [INFO] Posting: claw-mcp-toolkit
+
+→ 29 ferramentas: crypto, social, financas
+→ Precos em tempo real via CoinGecko
+→ Analise SEO, DNS, SSL integrada
+
+npx claw-mcp-toolkit para comecar
+
+https://github.com/ElromEvedElElyon/claw-mcp-toolkit
+2026-03-27 12:25:24,416 [INFO] Tweet posted via tweet_now.py
+2026-03-27 12:25:25,285 [INFO] Posted successfully. Today: 5/15
+2026-03-27 12:25:25,285 [INFO] Next cycle in 80 minutes
+2026-03-27 13:48:57,224 [INFO] ============================================================
+2026-03-27 13:48:57,389 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-27 13:48:57,389 [INFO] Posting as: @opencllaw
+2026-03-27 13:48:57,389 [INFO] Style: builder-authority
+2026-03-27 13:48:57,389 [INFO] Max tweets/day: 15
+2026-03-27 13:48:57,390 [INFO] Interval: 55-90 minutes (randomized)
+2026-03-27 13:48:57,390 [INFO] ============================================================
+2026-03-27 13:48:58,316 [INFO] Crypto data: BTC=$66,077 ETH=$1,989 SOL=$82.95
+2026-03-27 13:48:58,974 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 13:48:58,976 [INFO] Generated [builder_log_pt] (151 chars): Stack soberana:
+→ Claude Code como core
+→ MCP como sistema n...
+2026-03-27 13:48:58,976 [INFO] Posting: Stack soberana:
+→ Claude Code como core
+→ MCP como sistema nervoso
+→ Bitcoin como settlement
+→ Open source como moat
+
+Sem VC. Sem pitch deck. So output
+2026-03-27 13:49:02,124 [ERROR] tweet_now.py failed: [*] Tweet (151 chars): Stack soberana:
+→ Claude Code como core
+→ MCP como sistema nervoso
+→ Bitcoin como settlement
+→ Open source como moat
+
+Se...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-27 13:49:02,125 [ERROR] Posting failed
+2026-03-27 13:49:02,125 [INFO] Next cycle in 69 minutes
+2026-03-27 14:58:51,222 [INFO] Crypto data: BTC=$65,603 ETH=$1,975 SOL=$82.27
+2026-03-27 14:58:51,947 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 14:58:51,970 [INFO] Generated [builder_log_pt] (151 chars): Stack soberana:
+→ Claude Code como core
+→ MCP como sistema n...
+2026-03-27 14:58:51,970 [INFO] Posting: Stack soberana:
+→ Claude Code como core
+→ MCP como sistema nervoso
+→ Bitcoin como settlement
+→ Open source como moat
+
+Sem VC. Sem pitch deck. So output
+2026-03-27 14:58:54,478 [INFO] Tweet posted via tweet_now.py
+2026-03-27 14:58:54,497 [INFO] Posted successfully. Today: 6/15
+2026-03-27 14:58:54,497 [INFO] Next cycle in 80 minutes
+2026-03-27 18:13:21,581 [INFO] Crypto data: BTC=$66,054 ETH=$1,988 SOL=$82.83
+2026-03-27 18:13:22,426 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 18:13:22,428 [INFO] Popped queued tweet [product_technical_pt] (226 chars)
+2026-03-27 18:13:22,428 [INFO] Posting: 45KB. uma pagina HTML. roda em qualquer dispositivo
+
+TapToons gera 130+ sons em tempo real via Web Audio API
+
+zero download. zero dependencia. combo system incluso
+
+$0.99 vitalicio
+
+https://elromevedelelyon.github.io/taptoons/
+2026-03-27 18:13:24,789 [ERROR] tweet_now.py failed: [*] Tweet (226 chars): 45KB. uma pagina HTML. roda em qualquer dispositivo
+
+TapToons gera 130+ sons em tempo real via Web Audio API
+
+zero downl...
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS) 
+2026-03-27 18:13:24,789 [ERROR] Posting failed
+2026-03-27 18:16:40,496 [INFO] ============================================================
+2026-03-27 18:16:40,496 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-27 18:16:40,496 [INFO] Posting as: @opencllaw
+2026-03-27 18:16:40,496 [INFO] Style: builder-authority
+2026-03-27 18:16:40,496 [INFO] Max tweets/day: 15
+2026-03-27 18:16:40,496 [INFO] Interval: 55-90 minutes (randomized)
+2026-03-27 18:16:40,497 [INFO] ============================================================
+2026-03-27 18:16:41,311 [INFO] Crypto data: BTC=$66,090 ETH=$1,988 SOL=$82.85
+2026-03-27 18:16:42,063 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 18:16:42,067 [INFO] Generated [ultra_short_en] (20 chars): Sovereign by default...
+2026-03-27 18:16:42,067 [INFO] Posting: Sovereign by default
+2026-03-27 18:16:45,060 [ERROR] tweet_now.py failed: [*] Tweet (20 chars): Sovereign by default
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 2a6c4210051eb851eb85...
+[*] Fetching main.js  
+2026-03-27 18:16:45,060 [ERROR] Posting failed
+2026-03-27 18:16:45,060 [INFO] Next cycle in 83 minutes
+2026-03-27 19:40:43,085 [INFO] Crypto data: BTC=$65,885 ETH=$1,982 SOL=$82.58
+2026-03-27 19:40:43,864 [INFO] Fear & Greed: 13 (Extreme Fear)
+2026-03-27 19:40:43,906 [INFO] Generated [defi_analysis_pt] (150 chars): Yield real vem de taxas, nao de emissoes
+
+Se o protocolo pag...
+2026-03-27 19:40:43,907 [INFO] Posting: Yield real vem de taxas, nao de emissoes
+
+Se o protocolo paga em token proprio para voce ficar, pergunte por que usuarios reais nao pagam o suficiente
+2026-03-27 19:40:46,440 [INFO] Tweet posted via tweet_now.py
+2026-03-27 19:40:46,453 [INFO] Posted successfully. Today: 7/15
+2026-03-27 19:40:46,453 [INFO] Next cycle in 79 minutes
+2026-03-27 21:09:35,587 [WARNING] Crypto data fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_market_cap=true"\nreq = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d))\n']' timed out after 15 seconds
+2026-03-27 21:20:59,107 [WARNING] Fear & Greed fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.alternative.me/fng/?limit=1"\nreq = urllib.request.Request(url, headers={"User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d[\'data\'][0]))\n']' timed out after 15 seconds
+2026-03-27 21:33:31,668 [INFO] Generated [builder_log_pt] (106 chars): Dia 86. 5 commits. Zero reunioes
+
+O efeito composto de outpu...
+2026-03-27 21:37:48,299 [INFO] Posting: Dia 86. 5 commits. Zero reunioes
+
+O efeito composto de output diario e a unica vantagem injusta que escala
+2026-03-27 21:51:29,811 [ERROR] Script posting failed: Command '['python3', '/home/administrador/tweet_now.py', 'Dia 86. 5 commits. Zero reunioes\n\nO efeito composto de output diario e a unica vantagem injusta que escala']' timed out after 60 seconds
+2026-03-27 21:54:11,349 [ERROR] Posting failed
+2026-03-27 21:57:53,390 [INFO] Next cycle in 79 minutes
+2026-03-28 01:31:19,424 [INFO] Crypto data: BTC=$66,221 ETH=$1,990 SOL=$82.65
+2026-03-28 01:31:20,521 [INFO] Fear & Greed: 12 (Extreme Fear)
+2026-03-28 01:31:20,582 [INFO] Generated [ultra_short_en] (21 chars): The merge accelerates...
+2026-03-28 01:31:20,582 [INFO] Posting: The merge accelerates
+2026-03-28 01:31:26,213 [INFO] Tweet posted via tweet_now.py
+2026-03-28 01:31:26,232 [INFO] Posted successfully. Today: 1/15
+2026-03-28 01:31:26,232 [INFO] Next cycle in 69 minutes
+2026-03-28 02:41:03,303 [INFO] Crypto data: BTC=$66,278 ETH=$1,992 SOL=$82.60
+2026-03-28 02:41:04,049 [INFO] Fear & Greed: 12 (Extreme Fear)
+2026-03-28 02:41:04,059 [INFO] Generated [ultra_short_en] (18 chars): MCP is the new API...
+2026-03-28 02:41:04,059 [INFO] Posting: MCP is the new API
+2026-03-28 02:41:06,052 [INFO] Tweet posted via tweet_now.py
+2026-03-28 02:41:06,063 [INFO] Posted successfully. Today: 2/15
+2026-03-28 02:41:06,063 [INFO] Next cycle in 79 minutes
+2026-03-28 04:02:12,016 [WARNING] Crypto data fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_market_cap=true"\nreq = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d))\n']' timed out after 15 seconds
+2026-03-28 04:03:25,776 [WARNING] Fear & Greed fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.alternative.me/fng/?limit=1"\nreq = urllib.request.Request(url, headers={"User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d[\'data\'][0]))\n']' timed out after 15 seconds
+2026-03-28 04:04:20,910 [INFO] Popped queued tweet [queued] (270 chars)
+2026-03-28 04:04:41,617 [INFO] Posting: MYTHOS is here.
+
+The Anthropic Capybara leak changed everything. 3,000 internal docs exposed.
+
+We wrote the preparation guide:
+- 15 chapters + 100 prompts
+- Smart contract security patterns
+- Bug bounty hunting with AI
+- Real autonomous agent case study
+
+$6.66. EN + PT.
+2026-03-28 04:06:52,304 [ERROR] Script posting failed: Command '['python3', '/home/administrador/tweet_now.py', 'MYTHOS is here.\n\nThe Anthropic Capybara leak changed everything. 3,000 internal docs exposed.\n\nWe wrote the preparation guide:\n- 15 chapters + 100 prompts\n- Smart contract security patterns\n- Bug bounty hunting with AI\n- Real autonomous agent case study\n\n$6.66. EN + PT.']' timed out after 60 seconds
+2026-03-28 04:07:13,132 [ERROR] Posting failed
+2026-03-28 04:07:36,835 [INFO] Next cycle in 56 minutes
+2026-03-28 05:48:53,865 [WARNING] Crypto data fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_market_cap=true"\nreq = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d))\n']' timed out after 15 seconds
+2026-03-28 06:18:20,048 [WARNING] Fear & Greed fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.alternative.me/fng/?limit=1"\nreq = urllib.request.Request(url, headers={"User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d[\'data\'][0]))\n']' timed out after 15 seconds
+2026-03-28 06:30:09,717 [INFO] Generated [builder_raw_en] (112 chars): Pushed 6 PRs today
+
+No standup. No retro. Just output
+
+https...
+2026-03-28 06:37:45,549 [INFO] Posting: Pushed 6 PRs today
+
+No standup. No retro. Just output
+
+https://github.com/ElromEvedElElyon/sovereign-agent-chain
+2026-03-28 07:08:28,472 [ERROR] Script posting failed: Command '['python3', '/home/administrador/tweet_now.py', 'Pushed 6 PRs today\n\nNo standup. No retro. Just output\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain']' timed out after 60 seconds
+2026-03-28 07:16:21,212 [ERROR] Posting failed
+2026-03-28 07:23:33,096 [INFO] Next cycle in 59 minutes
+2026-03-28 11:32:40,335 [WARNING] Crypto data fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true&include_market_cap=true"\nreq = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d))\n']' timed out after 15 seconds
+2026-03-28 12:22:58,201 [WARNING] Fear & Greed fetch failed: Command '['python3', '-c', '\nimport urllib.request, json\nurl = "https://api.alternative.me/fng/?limit=1"\nreq = urllib.request.Request(url, headers={"User-Agent": "IsraelOne/1.0"})\nresp = urllib.request.urlopen(req, timeout=10)\nd = json.loads(resp.read())\nprint(json.dumps(d[\'data\'][0]))\n']' timed out after 15 seconds
+2026-03-28 12:52:45,418 [INFO] Generated [tool_reveal_pt] (170 chars): chainlink-sentinel
+
+Monitoramento autonomo de smart contract...
+2026-03-28 12:52:45,507 [INFO] Posting: chainlink-sentinel
+
+Monitoramento autonomo de smart contracts via MCP
+
+Seguranca nao deveria precisar de dashboard
+
+https://github.com/ElromEvedElElyon/chainlink-sentinel
+2026-03-28 12:56:53,342 [ERROR] Script posting failed: Command '['python3', '/home/administrador/tweet_now.py', 'chainlink-sentinel\n\nMonitoramento autonomo de smart contracts via MCP\n\nSeguranca nao deveria precisar de dashboard\n\nhttps://github.com/ElromEvedElElyon/chainlink-sentinel']' timed out after 60 seconds
+2026-03-28 12:56:53,343 [ERROR] Posting failed
+2026-03-28 12:56:53,344 [INFO] Next cycle in 59 minutes

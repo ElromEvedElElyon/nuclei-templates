@@ -1,0 +1,251 @@
+[
+  {
+    "id": 1,
+    "source_text": "The next billion-dollar companies won't have 10,000 employees.\n\nThey'll have 3 founders and 200 AI agents.\n\nWe're not preparing for this future.\nWe're building it.",
+    "source_hash": "741983c67312",
+    "source_type": "hot_take",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "The next billion-dollar companies won't have 10,000 employees.\n\nBreaking this down",
+      "The numbers:\n\n10 is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "History does not repeat but it rhymes\n\nThe last cycle rewarded infrastructure builders who ignored the noise\n\nThis cycle will do the same",
+      "Smart operators are not waiting for permission\n\nThey are shipping autonomous systems that generate revenue while they sleep\n\nThe 24/7 economy demands 24/7 infrastructure",
+      "We did not write a whitepaper about this\n\nWe shipped ClawChat\n\nPWA AI assistant, 4 providers racing, zero cost\n\nCode over consensus",
+      "The risk is real\n\nExecution risk. Market risk. Timing risk\n\nBut the biggest risk of all is building nothing while waiting for certainty\n\nCertainty is a luxury. Conviction is a choice",
+      "Summary:\n\nThe noise is temporary. The infrastructure is permanent\n\nWe ship every day. The receipts are public\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-26T16:32:05.681339-03:00",
+    "crypto_data": {
+      "btc_price": "68,397",
+      "eth_price": "2,041",
+      "sol_price": "85.73",
+      "btc_change": "-3.5",
+      "eth_change": "-5.9",
+      "sol_change": "-6.6",
+      "total_mcap": "1.37T",
+      "fear_greed": "10",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 2,
+    "source_text": "We gave our agent a task at 2 AM.\n\nBy 6 AM it had:\n- Analyzed 14 repos\n- Identified 3 integration points\n- Written the connectors\n- Deployed to staging\n\nNo human in the loop.\n\nThis is what autonomous means.",
+    "source_hash": "f5eccd136b40",
+    "source_type": "data_point",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "We gave our agent a task at 2 AM.\n\nBreaking this down",
+      "Breaking it down:\n\n- Analyzed 14 repos\n- Identified 3 integration points\n- Written the connectors\n- Deployed to staging",
+      "Every major technological shift follows the same pattern:\n\nDismissal\nCuriosity\nPanic adoption\n\nWe are between stages 2 and 3",
+      "Smart operators are not waiting for permission\n\nThey are shipping autonomous systems that generate revenue while they sleep\n\nThe 24/7 economy demands 24/7 infrastructure",
+      "We did not write a whitepaper about this\n\nWe shipped claw-mcp-toolkit\n\n29 tools for crypto, social, finance via Claude\n\nCode over consensus",
+      "The risk is real\n\nExecution risk. Market risk. Timing risk\n\nBut the biggest risk of all is building nothing while waiting for certainty\n\nCertainty is a luxury. Conviction is a choice",
+      "Bottom line:\n\nWe gave our agent a task at 2 AM\n\nWe are not debating this. We are building it\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-26T20:16:50.421806-03:00",
+    "crypto_data": {
+      "fear_greed": "10",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 3,
+    "source_text": "Multi-agent systems will replace most SaaS within 5 years.\n\nWhy pay $50/month for a tool when an agent can build you a custom one in 20 minutes?\n\nThe SaaS bubble is about to meet its needle.",
+    "source_hash": "1cac9ca567d0",
+    "source_type": "hot_take",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "Multi-agent systems will replace most SaaS within 5 years.\n\nMost people are not paying attention\n\nThread",
+      "The numbers:\n\n$50 is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "The internet in 1997\nMobile in 2009\nCrypto in 2015\nAI agents in 2026\n\nSame pattern. Different infrastructure\n\nThe builders who showed up early captured the decade",
+      "What the serious builders are doing right now:\n\n- Deploying MCP servers for every protocol\n- Building agent-native interfaces\n- Replacing dashboards with natural language\n\nQuietly. Without announcements",
+      "This is why we built SintexOS\n\nWeb-based AI operating system with 8 apps\n\nNot theory. Deployed. Running. Verifiable",
+      "Valid concern: autonomous agents making financial decisions creates real risk\n\nThe answer is not to stop building\n\nThe answer is verifiable behavior, open-source code, and transparent execution\n\nTrust through transparency",
+      "Bottom line:\n\nWhy pay $50/month for a tool when an agent can build you a custom one in 20 minu\n\nWe are not debating this. We are building it\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T00:16:52.830442-03:00",
+    "crypto_data": {
+      "btc_price": "68,715",
+      "eth_price": "2,061",
+      "sol_price": "86.44",
+      "btc_change": "-3.1",
+      "eth_change": "-4.2",
+      "sol_change": "-4.9",
+      "total_mcap": "1.37T",
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 4,
+    "source_text": "Your AI agent should be able to:\n\n- Read a codebase\n- Find the bug\n- Write the fix\n- Test the fix\n- Deploy the fix\n\nAll while you sleep.\n\nIf it can't, it's a chatbot, not an agent.",
+    "source_hash": "3f4ee2250475",
+    "source_type": "statement",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "Your AI agent should be able to:\n\nBreaking this down",
+      "Breaking it down:\n\n- Read a codebase\n- Find the bug\n- Write the fix\n- Test the fix",
+      "Every major technological shift follows the same pattern:\n\nDismissal\nCuriosity\nPanic adoption\n\nWe are between stages 2 and 3",
+      "What the serious builders are doing right now:\n\n- Deploying MCP servers for every protocol\n- Building agent-native interfaces\n- Replacing dashboards with natural language\n\nQuietly. Without announcements",
+      "We did not write a whitepaper about this\n\nWe shipped OpenClaw\n\nAI agent that runs on your machine, fully sovereign\n\nCode over consensus",
+      "The honest counter:\n\nMost AI agents today are fragile. They break in production. They hallucinate\n\nBut so did the first websites. The first mobile apps. The first smart contracts\n\nInfrastructure matures. The thesis does not change",
+      "The signal is clear for those paying attention\n\nOutput over optics. Code over consensus. Execution over everything\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T04:16:54.040538-03:00",
+    "crypto_data": {
+      "btc_price": "68,775",
+      "eth_price": "2,066",
+      "sol_price": "86.01",
+      "btc_change": "-1.8",
+      "eth_change": "-2.5",
+      "sol_change": "-3.5",
+      "total_mcap": "1.38T",
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 5,
+    "source_text": "Hot take: 90% of AI startups are just API wrappers with a landing page.\n\nThe ones that survive will be the ones where the AI actually makes autonomous decisions, takes actions, and ships results.\n\nWrappers die. Agents survive.",
+    "source_hash": "c9e861e501ac",
+    "source_type": "hot_take",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "Hot take: 90% of AI startups are just API wrappers with a landing page.\n\nThis changes everything. Here is why",
+      "The numbers:\n\n90% is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "The internet in 1997\nMobile in 2009\nCrypto in 2015\nAI agents in 2026\n\nSame pattern. Different infrastructure\n\nThe builders who showed up early captured the decade",
+      "What the serious builders are doing right now:\n\n- Deploying MCP servers for every protocol\n- Building agent-native interfaces\n- Replacing dashboards with natural language\n\nQuietly. Without announcements",
+      "Proof of work:\n\nOpenClaw — AI agent that runs on your machine, fully sovereign\n\nOpen source. Auditable. No permission required\n\nShipping is the only credential that matters",
+      "Valid concern: autonomous agents making financial decisions creates real risk\n\nThe answer is not to stop building\n\nThe answer is verifiable behavior, open-source code, and transparent execution\n\nTrust through transparency",
+      "Summary:\n\nThe noise is temporary. The infrastructure is permanent\n\nWe ship every day. The receipts are public\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T08:16:55.929013-03:00",
+    "crypto_data": {
+      "btc_price": "66,601",
+      "eth_price": "1,993",
+      "sol_price": "83.19",
+      "btc_change": "-4.2",
+      "eth_change": "-3.7",
+      "sol_change": "-5.3",
+      "total_mcap": "1.33T",
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 6,
+    "source_text": "\"Crypto is dead\" headlines appear every 6 months.\n\nMeanwhile:\n- Bitcoin at new ATH territory\n- DeFi TVL climbing\n- AI x crypto intersection exploding\n- On-chain activity up across L1s\n\nThe signal is in the data, not the headlines.",
+    "source_hash": "fe1dcc19fd3c",
+    "source_type": "data_point",
+    "source_file": "opencllaw",
+    "thread_parts": [
+      "BTC $66,205\nFear and Greed: 13\n\n\"Crypto is dead\" headlines appear every 6 months",
+      "Breaking it down:\n\n- Bitcoin at new ATH territory\n- DeFi TVL climbing\n- AI x crypto intersection exploding\n- On-chain activity up across L1s",
+      "Current state:\n\nBTC: $66,205\nETH: $1,989\nSOL: $83.19\nSentiment: Extreme Fear\n\nThe last time sentiment was here, the setup lasted weeks\n\nNot months",
+      "The institutions filing quietly\nThe protocols deploying without announcements\nThe agents executing without human input\n\nThis is where the signal lives",
+      "This is why we built Solana Vault Standard\n\nERC-4626 on Solana, streaming yield\n\nNot theory. Deployed. Running. Verifiable",
+      "Honest assessment:\n\nNot every thesis plays out on schedule\nNot every build finds product-market fit\nNot every deployment survives contact with users\n\nBut the ones that do change everything",
+      "Final word:\n\nShip or become irrelevant. The market rewards builders, not commentators\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T12:16:58.858169-03:00",
+    "crypto_data": {
+      "btc_price": "66,205",
+      "eth_price": "1,989",
+      "sol_price": "83.19",
+      "btc_change": "-3.8",
+      "eth_change": "-3.5",
+      "sol_change": "-4.5",
+      "total_mcap": "1.32T",
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 7,
+    "source_text": "Sovereign Agent Chain\n\n32 MCP tools. 312 tests passing. Bitcoin-native\n\nAgent-to-agent marketplace with protocol fees\n546 sat/tx dust fee hardcoded\n\nInfra that pays for itself from day one\n\nhttps://github.com/ElromEvedElElyon/sovereign-agent-chain",
+    "source_hash": "bc70434b7d34",
+    "source_type": "default",
+    "source_file": "queued",
+    "thread_parts": [
+      "Sovereign Agent Chain\n\nThis changes everything. Here is why",
+      "The numbers:\n\n32 is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "History does not repeat but it rhymes\n\nThe last cycle rewarded infrastructure builders who ignored the noise\n\nThis cycle will do the same",
+      "The institutions filing quietly\nThe protocols deploying without announcements\nThe agents executing without human input\n\nThis is where the signal lives",
+      "Proof of work:\n\nOpenClaw — AI agent that runs on your machine, fully sovereign\n\nOpen source. Auditable. No permission required\n\nShipping is the only credential that matters",
+      "Honest assessment:\n\nNot every thesis plays out on schedule\nNot every build finds product-market fit\nNot every deployment survives contact with users\n\nBut the ones that do change everything",
+      "Final word:\n\nShip or become irrelevant. The market rewards builders, not commentators\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T13:48:59.840463-03:00",
+    "crypto_data": {
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 8,
+    "source_text": "Cybersecurity stocks dropped 7-11% after Claude Mythos leaked\n\nCRWD -7%. TENB -11%. BTC -4%\n\nThe market just priced in AI-powered vulnerability discovery\n\nEvery smart contract protocol needs autonomous monitoring NOW\n\nWe built it: chainlink-sentinel",
+    "source_hash": "546b54063775",
+    "source_type": "default",
+    "source_file": "queued",
+    "thread_parts": [
+      "Cybersecurity stocks dropped 7-11% after Claude Mythos leaked\n\nMost people are not paying attention\n\nThread",
+      "The numbers:\n\n11% is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "History does not repeat but it rhymes\n\nThe last cycle rewarded infrastructure builders who ignored the noise\n\nThis cycle will do the same",
+      "Retail watches the price\nSmart money watches the infrastructure\n\nNew protocols. New primitives. New rails\n\nThe alpha is in what gets built, not what gets bought",
+      "This is why we built claw-mcp-toolkit\n\n29 tools for crypto, social, finance via Claude\n\nNot theory. Deployed. Running. Verifiable",
+      "The strongest counter-argument:\n\nMaybe it is too early. Maybe the market is not ready\n\nBut every builder who changed the world heard the same thing\n\nToo early is better than too late. Always",
+      "The thesis is simple:\n\nBuild sovereign infrastructure. Ship daily. Let the output speak\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-27T18:16:44.335857-03:00",
+    "crypto_data": {
+      "fear_greed": "13",
+      "fear_greed_label": "Extreme Fear"
+    }
+  },
+  {
+    "id": 9,
+    "source_text": "TapToons v2.0 just dropped\n\npixel art edition. 100 funny sounds. retro mini-game. animated starfield. neon glow UI\n\n30 sounds free. 70 premium for $0.99\n\nbuilt with zero dependencies. 50KB. pure Web Audio synthesis\n\nhttps://elromevedelelyon.github.io/taptoons/",
+    "source_hash": "6a2ccba414f3",
+    "source_type": "default",
+    "source_file": "queued",
+    "thread_parts": [
+      "TapToons v2.0 just dropped\n\nThe data tells a different story",
+      "The numbers:\n\n$0.99 is not a random data point\n\nIt is the result of structural shifts happening beneath the surface",
+      "History does not repeat but it rhymes\n\nThe last cycle rewarded infrastructure builders who ignored the noise\n\nThis cycle will do the same",
+      "The institutions filing quietly\nThe protocols deploying without announcements\nThe agents executing without human input\n\nThis is where the signal lives",
+      "Proof of work:\n\nSintexOS — Web-based AI operating system with 8 apps\n\nOpen source. Auditable. No permission required\n\nShipping is the only credential that matters",
+      "Honest assessment:\n\nNot every thesis plays out on schedule\nNot every build finds product-market fit\nNot every deployment survives contact with users\n\nBut the ones that do change everything",
+      "The signal is clear for those paying attention\n\nOutput over optics. Code over consensus. Execution over everything\n\nFollow @opencllaw for daily alpha"
+    ],
+    "thread_length": 7,
+    "status": "generated",
+    "created": "2026-03-28T03:24:31.334216-03:00",
+    "crypto_data": {
+      "btc_price": "66,389",
+      "eth_price": "2,002",
+      "sol_price": "82.98",
+      "btc_change": "-3.4",
+      "eth_change": "-2.9",
+      "sol_change": "-3.6",
+      "total_mcap": "1.33T",
+      "fear_greed": "12",
+      "fear_greed_label": "Extreme Fear"
+    }
+  }
+]

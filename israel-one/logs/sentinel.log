@@ -1,0 +1,36 @@
+2026-03-25 21:35:35,380 [INFO] ============================================================
+2026-03-25 21:35:35,381 [INFO] ISRAEL/ONE Agent Starting — SENTINEL MODE
+2026-03-25 21:35:35,381 [INFO] Posting as: @opencllaw
+2026-03-25 21:35:35,381 [INFO] Style: builder-authority
+2026-03-25 21:35:35,381 [INFO] Max tweets/day: 12
+2026-03-25 21:35:35,381 [INFO] Interval: 60-120 minutes (randomized)
+2026-03-25 21:35:35,382 [INFO] ============================================================
+2026-03-25 21:35:38,701 [INFO] Crypto data: BTC=$71,303 ETH=$2,166 SOL=$91.70
+2026-03-25 21:35:39,466 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-25 21:35:39,468 [INFO] Generated [convergence] (130 chars): MCP + Solana + Claude = the complete autonomous agent stack
+...
+2026-03-25 21:35:39,468 [INFO] Posting: MCP + Solana + Claude = the complete autonomous agent stack
+
+No API keys to manage. No cloud to maintain. Just intent to execution
+2026-03-25 21:35:43,325 [INFO] Tweet posted via tweet_now.py
+2026-03-25 21:35:43,329 [INFO] Posted successfully. Today: 5/12
+2026-03-25 21:35:43,329 [INFO] Next cycle in 82 minutes
+2026-03-25 22:58:00,592 [INFO] Crypto data: BTC=$71,245 ETH=$2,165 SOL=$91.78
+2026-03-25 22:58:01,356 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-25 22:58:01,379 [INFO] Generated [two_word] (19 chars): Build. Ship. Repeat...
+2026-03-25 22:58:01,379 [INFO] Posting: Build. Ship. Repeat
+2026-03-25 22:58:03,798 [ERROR] tweet_now.py failed: [*] Tweet (19 chars): Build. Ship. Repeat
+
+[*] Fetching x.com homepage (curl_cffi + chrome TLS)...
+[+] Got verification key (48 bytes)
+[+] Animation key: 3f1990fd70a3d70a3d70...
+[*] Fetching main.js t 
+2026-03-25 22:58:03,799 [ERROR] Posting failed
+2026-03-25 22:58:03,800 [INFO] Next cycle in 87 minutes
+2026-03-26 00:26:02,979 [INFO] Crypto data: BTC=$70,742 ETH=$2,147 SOL=$90.81
+2026-03-26 00:26:03,772 [INFO] Fear & Greed: 10 (Extreme Fear)
+2026-03-26 00:26:03,797 [INFO] Generated [builder_log] (58 chars): 7 deploys before lunch. Zero meetings. The build continues...
+2026-03-26 00:26:03,799 [INFO] Posting: 7 deploys before lunch. Zero meetings. The build continues
+2026-03-26 00:26:05,825 [INFO] Tweet posted via tweet_now.py
+2026-03-26 00:26:05,842 [INFO] Posted successfully. Today: 1/12
+2026-03-26 00:26:05,843 [INFO] Next cycle in 68 minutes
