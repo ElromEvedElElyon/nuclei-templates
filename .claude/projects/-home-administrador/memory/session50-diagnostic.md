@@ -42,3 +42,10 @@
 5. **nuclei PRs** dependem de maintainer — passivo
 
 ### ISRAEL/SIX criado nesta sessao para resolver TUDO
+
+## SESSION 51 UPDATE (28 Mar 2026 ~19:40 UTC)
+- TapToons v1 repo: branding FIXED (v2→v1 em 3 lugares)
+- TapToons v2 public: N64 Monster Edition RESTORED (havia sido revertido)
+- TapToons v2 private: 673 linhas uncommitted COMMITTED (sessao crashou)
+- Ambas GitHub Pages: builds OK, sites LIVE verificados
+- Backup commit: 3fcd907e79f

@@ -54,7 +54,7 @@
 
 ## REVENUE STATUS (28 Mar 2026 — SESSION 51)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **MYTHOS Book v1.3**: $6.66, 11 idiomas, EPUBs prontos, KDP NEXT
+- **MYTHOS Book v1.5**: $6.66, **14 idiomas COMPLETOS**, 14 EPUBs, KDP NEXT
 - **TapToons v2.0**: LIVE, $0.99, Stripe+PayPal
 - **ZKsync OS $5K-$100K**: Immunefi #71022, triage responded 26 Mar
 - **nuclei-templates**: 8 PRs OPEN = $1,350-$2,250
@@ -80,31 +80,11 @@
 - **HARPA AI**: Extensao Firefox/Chrome gratis com Grok+GPT+Claude+Gemini
 - See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
 
-## AI AGENTS ARSENAL (Session 45 — 9 repos clonados + instalados)
-### Twitter/X Agents
-- **ElizaOS v2**: ~/eliza-agent/ — #1 crypto Twitter (17.6K stars, TypeScript)
-- **twitter-automation-ai**: ~/twitter-automation-ai/ — Selenium stealth, multi-conta, INSTALADO
-- **DOT Automation**: ~/dot-automation/ — Personalidade 4 camadas, INSTALADO
-- **LangChain Social**: ~/social-media-agent/ — Official cron scheduler
-
-### MCP Servers (Twitter/X)
-- **twitter-mcp-server**: ~/twitter-mcp-server/ — Full lifecycle
-- **xai-mcp-server**: ~/xai-mcp-server/ — Grok tools, BUILD OK
-- **grok-search-mcp**: ~/grok-search-mcp/ — Twitter search via Grok, INSTALADO
-- **x-mcp-server**: ~/x-mcp-server/ — 16 tools, BUILD OK
-
-### Frameworks
-- **CrewAI**: ~/crewAI/ — Multi-agent roles (44K stars)
-- **Grok Free**: ~/grok-api-free/ — Grok SEM API key
-
-### Engines Criados
-- `~/israel-one/grok_free_engine.py` — Grok web scraping (needs fix)
-- `~/israel-one/gemini_free_engine.py` — Gemini API gratis
-- `~/israel-one/VIRAL_STRATEGY.md` — Estrategia viral multi-perfil
-- `~/israel-one/FREE_AI_SETUP.md` — Guia APIs gratis
-
-### MCP Config: ~/.mcp.json
-- paypal, xai-grok, grok-search, x-mcp (keys pendentes)
+## AI AGENTS ARSENAL (Session 45)
+- **Twitter**: ElizaOS, twitter-automation-ai, DOT, LangChain Social
+- **MCP**: twitter-mcp, xai-mcp, grok-search, x-mcp (all BUILD OK)
+- **Engines**: gemini_free_engine.py, grok_free_engine.py (needs fix)
+- See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
 
 ## ATOMUS AI PROJECT (Session 45)
 - **atomus-ai**: npm toolkit atomico para agentes AI, 10 modules, 46 tests, zero deps
@@ -124,24 +104,26 @@
 - **TapToons**: PWA funny sound effects, $0.99, Stripe+PayPal
 - See: capybara-bible-product.md
 
-## TAPTOONS v2.0 — Pixel Art Edition (Session 48)
+## TAPTOONS — DOIS PRODUTOS LIVE (Session 51 Fix)
+### V1 — Pixel Art Edition
+- **LIVE**: https://elromevedelelyon.github.io/taptoons-v1/
+- **Repo PUBLIC**: https://github.com/ElromEvedElElyon/taptoons-v1 (main branch)
+- **Title**: "TapToons v1 - Pixel Art Sounds & Game" (FIXED Session 51)
+- **Local**: ~/taptoons/ (public mirror, master branch)
+- 1425 lines, 64KB, emojis nos botoes
+
+### V2.1 — N64 Monster Edition (CURRENT BEST)
 - **LIVE**: https://elromevedelelyon.github.io/taptoons/
-- **Public repo**: https://github.com/ElromEvedElElyon/taptoons
-- **Private dev**: https://github.com/ElromEvedElElyon/taptoons-v2
-- **Version**: v2.0 AAA PREMIUM (28 Mar 2026) — Stripe LIVE + PayPal
-- **Features**: 100 sounds, mini-game, 6 characters, starfield, neon glow, confetti, screen shake
-- **Store guide**: ~/taptoons-v2/STORE_SUBMISSION.md (FREE: Microsoft, Samsung, Amazon, Huawei)
-- **Promo**: ~/taptoons-v2/PROMO_CONTENT.md (3 video scripts, Reddit, PH, HN posts)
+- **Repo PUBLIC**: https://github.com/ElromEvedElElyon/taptoons (master branch)
+- **Repo PRIVATE**: https://github.com/ElromEvedElElyon/taptoons-v2 (main branch)
+- **Local dev**: ~/taptoons-v2/ | **Local public**: ~/taptoons/
+- **Title**: "TapToons v2 - Monster Runner N64" (RESTORED Session 51)
+- 1422 lines, 67KB, text labels (sem emojis), game pad mobile, 6 monsters
+- **Features**: 100 sounds, game pad controls, 6 procedural monsters, SW cache v5
+- **Price**: $0.99 | **Stripe**: `https://buy.stripe.com/6oUdR80Vu5pm3S56uV0x20c`
+- **PayPal**: `https://www.paypal.com/paypalme/PadraoBitcoin/0.99`
+- **APK**: `~/taptoons-twa/taptoons-v2.apk` (11.1KB, signed)
 - See: taptoons-v2-plan.md
-- **Price**: $0.99 (free 3 packs/30 sounds, premium 7 packs/70 sounds)
-- **Tech**: PWA, Web Audio API, DeviceMotion, 50KB single HTML, 10 synthesis recipes
-- **Stripe LIVE**: `https://buy.stripe.com/6oUdR80Vu5pm3S56uV0x20c`
-- **PayPal LIVE**: `https://www.paypal.com/paypalme/PadraoBitcoin/0.99`
-- **APK**: `~/taptoons-twa/taptoons-v2.apk` (11.1KB, io.standardbitcoin.taptoons, signed)
-- **Keystore**: `~/taptoons-twa/taptoons-keystore.jks` (pass: taptoons2026, alias: taptoons)
-- **Android SDK**: `~/.bubblewrap/android_sdk/` (build-tools 34.0.0, platform 34)
-- **52/52 tests PASSING** (sounds, game, payments, PWA, CSP, icons, SW, chars)
-- **Tweets**: 3 v2 posted + 57 queued
 
 ## ISRAEL/FIVE — TapToons Product Manager (Session 48)
 - **Repo PRIVADO**: https://github.com/ElromEvedElElyon/israel-five (PUSHED)
@@ -200,32 +182,14 @@
 - Dashboard port 8777
 
 ## CLAUDE MYTHOS / CAPYBARA (Leak 27 Mar 2026)
-- **NOVO TIER**: Capybara > Opus > Sonnet > Haiku
-- **Status**: Treinamento completo, early access privado, SEM API publica
-- **Pricing est.**: $10-20 input / $50-100+ output per M tokens
-- **6 core capabilities**: Cybersecurity, Coding, Reasoning, Multi-step, Agents, Vuln Discovery
-- **"Far ahead of ANY other AI model in cyber capabilities"**
-- **HackerOne**: APPLY https://forms.gle/3ocTorSkkuvcGePn9 ($25K/jailbreak)
-- **Fellows Program**: APPLY https://job-boards.greenhouse.io/anthropic/jobs/5023394008 ($3,850/semana!)
-- **Integracao futura**: claw-mcp-toolkit, chainlink-sentinel prontos
-- See: claude-mythos-intel.md, hackerone-anthropic.md
+- Capybara > Opus > Sonnet > Haiku | Early access privado, SEM API
+- **HackerOne**: https://forms.gle/3ocTorSkkuvcGePn9 ($25K/jailbreak)
+- **Fellows**: https://job-boards.greenhouse.io/anthropic/jobs/5023394008 ($3,850/sem)
+- See: claude-mythos-intel.md
 
-## TOPIC FILES (this directory)
-- **claude-mythos-intel.md** — Intel completa Mythos/Capybara leak
-- **hackerone-anthropic.md** — Bug bounty program, $25K, apply URL
-- **palantir-intel.md** — Palantir AIP, MCP, Pentagon crisis, opportunities
-- **ai-agents-arsenal.md** — 9 repos clonados, engines, MCP config
-- **lessons-learned.md** — Padroes, erros, o que funciona
-- **bounties-pipeline.md** — $8M+ pipeline
-- **revenue-status.md** — Pipeline receita, deadlines
-- **credits-applications.md** — xAI, Alibaba $120K, Google Cloud, Together AI
-- **prs-active.md** — PRs abertos
-- **operational-playbook.md** — Tools, workflows, Twitter posting
-- **twitter-config.md** — Scripts, cookies, rate limits
-- **x-policy-growth.md** — Algoritmo X, error 226/344, growth hacks
-- **immunefi-automation.md** — Immunefi CDP, API
-- **smart-contract-security.md** — Top 30 vulns, audit methodology
-- **opire-bounty-workflow.md** — Opire platform guide
-- **atomus-project.md** — npm package, Israel Two agent
-- **sentinel-system.md** — Sentinel + guardian docs
-- **zion-army-reference.md** — 1001+ agentes, commands
+## TOPIC FILES
+- revenue-status.md, bounties-pipeline.md, prs-active.md, credentials-secure.md
+- taptoons-v2-plan.md, capybara-bible-product.md, claude-mythos-intel.md
+- ai-agents-arsenal.md, operational-playbook.md, x-rules-anti-suspension.md
+- immunefi-automation.md, smart-contract-security.md, opire-bounty-workflow.md
+- zion-army-reference.md, sentinel-system.md, lessons-learned.md
