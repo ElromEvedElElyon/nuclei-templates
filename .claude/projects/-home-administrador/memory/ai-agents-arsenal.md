@@ -1,0 +1,96 @@
+# AI Agents Arsenal — Cloned & Ready (27 Mar 2026)
+
+## CLONED REPOS (Session 45)
+
+### Twitter/X Agents
+| Repo | Path | Type | Key Feature |
+|------|------|------|-------------|
+| ElizaOS v2 | ~/eliza-agent/ | TypeScript/Bun | #1 crypto Twitter agent, 17.6K stars, 200+ plugins |
+| twitter-automation-ai | ~/twitter-automation-ai/ | Python/Selenium | Multi-account, stealth, no API needed |
+| DOT Automation | ~/dot-automation/ | Python | Personality-driven autonomous posting |
+| LangChain Social Agent | ~/social-media-agent/ | TypeScript | Official LangChain, cron scheduler |
+
+### MCP Servers (Twitter/X)
+| Repo | Path | Type | Key Feature |
+|------|------|------|-------------|
+| twitter-mcp-server | ~/twitter-mcp-server/ | TypeScript | Best Twitter MCP, full lifecycle |
+| xai-mcp-server | ~/xai-mcp-server/ | TypeScript | Grok image/video/search/chat |
+| grok-search-mcp | ~/grok-search-mcp/ | TypeScript | Twitter search via Grok API |
+| x-mcp-server | ~/x-mcp-server/ | TypeScript | 16 tools for X integration |
+
+### Frameworks
+| Repo | Path | Type | Key Feature |
+|------|------|------|-------------|
+| CrewAI | ~/crewAI/ | Python | Multi-agent roles, 44K stars |
+
+### Already Present
+| Repo | Path | Type |
+|------|------|------|
+| twitter-scraper-mcp | ~/twitter-scraper-mcp/ | MCP scraper |
+| claw-mcp-toolkit | ~/claw-mcp-toolkit/ | Our MCP toolkit |
+| israel-one | ~/israel-one/ | Our sentinel agent |
+| twitter-mcp-server | ~/twitter-mcp-server/ | Twitter MCP |
+
+## INTEGRATION PLAN FOR ISRAEL/ONE + @opencllaw
+
+### Priority 1: xAI MCP Server (Grok)
+- Install: `cd ~/xai-mcp-server && npm install`
+- Needs: xAI API key from console.x.ai ($175 free first month)
+- Tools: generate_image, chat, analyze_image, live_search, generate_video
+- Use: Real-time X trend detection + content generation
+
+### Priority 2: twitter-automation-ai (Selenium stealth)
+- Install: `cd ~/twitter-automation-ai && pip install -r requirements.txt`
+- Config: config/accounts.json + config/settings.json
+- Features: Multi-account, proxy rotation, undetected Chrome
+- Use: Post without API, stealth mode, complements tweet_now.py
+
+### Priority 3: DOT Automation (personality)
+- Install: `cd ~/dot-automation && pip install -r requirements.txt`
+- Config: 4-layer personality (Identity, Cognition, Expression, Behavior)
+- Use: Generate ultra-human personality for @opencllaw brand
+
+### Priority 4: ElizaOS (full stack)
+- Install: `cd ~/eliza-agent && bun install` (needs Node 23.3+)
+- WARNING: Heavy (~53MB repo, large deps). May OOM on 3.3GB machine
+- Use: Full crypto-native agent with Twitter + Discord + Telegram
+
+### Priority 5: CrewAI (multi-agent crew)
+- Install: `cd ~/crewAI && pip install crewai`
+- Use: Orchestrate Research -> Draft -> Edit -> Post pipeline
+
+## FREE AI ALTERNATIVES (no xAI API needed)
+
+### Grok Free Wrapper (NO API KEY)
+- Path: ~/grok-api-free/ (realasfngl/Grok-Api)
+- Status: Bug com parsing scripts (grok.com mudou layout)
+- Models: grok-3-auto, grok-3-fast, grok-4, grok-4-mini-thinking
+- Engine: ~/israel-one/grok_free_engine.py
+
+### Google Gemini (100% FREE UNLIMITED)
+- URL: https://aistudio.google.com/apikey
+- Engine: ~/israel-one/gemini_free_engine.py
+- `export GEMINI_API_KEY=your_key`
+- PRIORITY 1: Get key from aistudio.google.com
+
+### Groq (FREE 14,400 req/dia)
+- URL: https://console.groq.com
+- Models: Llama 4, Gemma 3, Mixtral
+- `export GROQ_API_KEY=gsk_your_key`
+
+### HARPA AI (Chrome Extension FREE)
+- URL: https://harpa.ai
+- Combines: GPT, Claude, Gemini, Grok in one extension
+- 100+ automation commands including Twitter content
+- Free tier available
+
+### xAI API (NEEDS $5 spend first for data sharing)
+- Console: https://console.x.ai — @opencllaw linked
+- $25 signup credits BUT need to spend $5 to unlock $150/mo
+- UNIQUE: Only model with REAL-TIME X/Twitter data
+
+## TOP COMMERCIAL TOOLS (no clone needed)
+- OpenTweet: $5.99/mo posting API (17x cheaper than Twitter API)
+- Tweet Hunter: $49-99/mo, AI ghostwriter + CRM
+- Typefully: Free-$49/mo, threads + scheduling
+- NoimosAI: Full autonomous X management fleet
