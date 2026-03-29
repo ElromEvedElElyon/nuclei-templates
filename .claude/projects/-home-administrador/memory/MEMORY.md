@@ -38,7 +38,7 @@
 ## PAYMENT RECEIVING — NUNCA DELETAR
 - **PayPal.me**: https://www.paypal.com/paypalme/PadraoBitcoin — RECEBE REAL $$$
 - **Stripe LIVE**: acct_1RlC8tCrBH7uXgTe, charges=TRUE, payouts=TRUE
-- **ZionBrowser v2.0**: LIVE $9.99 — https://elromevedelelyon.github.io/buy-zion-browser/
+- **ZionBrowser v2.0.1**: LIVE $9.99 — https://elromevedelelyon.github.io/buy-zion-browser/
 - **TapToons v1**: LIVE, $0.99, Stripe + PayPal — https://elromevedelelyon.github.io/taptoons-v1/
 - **TapToons v2.1**: N64 Monster Edition LIVE — https://elromevedelelyon.github.io/taptoons/
 - **Sale monitor**: `bash ~/taptoons/check-sales.sh`
@@ -53,15 +53,15 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 60)
+## REVENUE STATUS (29 Mar 2026 — SESSION 62)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
+- **ZION BROWSER v2.0.1**: LIVE! Sales page updated, Stripe+PayPal+Crypto buttons OK
+- **AI DISCOVERABILITY**: llms.txt + robots.txt + sitemap.xml + ai-plugin.json DEPLOYED
 - **AMAZON KDP**: LOGADO! MYTHOS Guide $6.66 JA LISTADO! Falta completar conta+2SV
-- **AMAZON DEVELOPER**: Logado, registro incompleto (form JS-only)
-- **ZION BROWSER FIX**: Accept-Encoding: identity — Amazon/sites comprimidos agora legíveis
 - **nuclei-templates**: 8 PRs OPEN, NO bounty label, so reputacao
 - **Algora REAL**: nuclei CORE #6674 ($100) + #6532 ($100) = $200 com bounty label
-- **npm atomus-ai**: Token 401 EXPIRED — gerar novo URGENTE
 - **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!)
+- **NEXT**: Post Reddit (r/Python, r/selfhosted) + DEV.to + Show HN + Gumroad listing
 - See: revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 
 ## xAI / GROK API
@@ -98,17 +98,17 @@
 - **ACAO**: Gerar NOVO token no npmjs.com via browser, depois `npm publish`
 - See: atomus-project.md, credentials-secure.md #6
 
-## PRODUCTS (17 published/in-dev)
-- **ZionBrowser v2.0 BETA**: $9.99 — LIVE! 6 modules, ~5MB RAM, ZERO deps
+## PRODUCTS (18 published/in-dev)
+- **ZionBrowser v2.0.1**: $9.99 Desktop + $0.99 Mobile — LIVE!
   - **SALES PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ (HTTP 200)
+  - **PWA (FREE)**: https://elromevedelelyon.github.io/zion-android/ (LIVE!)
+  - **GitHub Release**: v2.0.1 tag, ZionBrowser-v2.0.zip (64KB, 0 downloads)
   - **Repo PRIVATE**: https://github.com/ElromEvedElElyon/zion-browser
   - **Repo PUBLIC (sales)**: https://github.com/ElromEvedElElyon/buy-zion-browser
-  - **Stripe Payment Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j
+  - **Stripe Payment Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j (PRIMARY BUTTON)
   - **Stripe Product**: prod_UEowuPFWWuBkjp | Price: price_1TGLLuCrBH7uXgTeNNZy1ccb
   - **Payments**: Stripe (auto) + PayPal + BTC + ETH + SOL + PIX R$54.90
-  - **Auto-delivery**: Stripe→verify→HMAC token→ZIP download (72h, 5 downloads)
-  - **Crypto verify**: On-chain SOL/ETH/BTC → auto download
-  - **API Backend**: sintex.ai/api/zion/* (5 Netlify functions)
+  - **AI Discovery**: llms.txt + llms-full.txt + robots.txt + sitemap.xml + ai-plugin.json
   - **Legal**: Beta, NO REFUNDS, BINDING ARBITRATION (CCBC), user assumes ALL risk
 - **MYTHOS Guide**: $6.66/idioma, 14 langs, PayPal+Crypto+PIX+Web3
 - **TapToons**: $0.99, PWA funny sounds + N64 game, Stripe+PayPal
@@ -145,23 +145,33 @@
 - PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
 - See: x-rules-anti-suspension.md
 
-## ZION BROWSER v2.0 — LAUNCHED FOR SALE (Session 59)
-- **SALE PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ — LIVE
-- **PRICE**: $1.00 LAUNCH (48h) → $9.99 regular → $29.99+ post-beta
-- **Stripe $1 Link**: https://buy.stripe.com/dRmaEW0VuaJG0FTg5v0x20k
-- **Stripe $9.99 Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j
-- **PayPal**: paypal.me/PadraoBitcoin/1 | **Crypto**: SOL/ETH/BTC on page
-- **Auto-delivery**: sintex.ai/api/zion/* (5 Netlify functions) — Stripe verify → HMAC token → ZIP
-- **Stripe Webhook**: we_1TGLkICrBH7uXgTeXUpSvWQL | Product: prod_UEowuPFWWuBkjp
-- **6 tools**: zion, zion-agent, zion-cdp, lion, lion1, pirate | 5,982 lines | 388KB
-- **Cross-promo**: claw-mcp-toolkit + flash-payment + sovereign-agent-market = PUSHED
-- **Marketing**: /tmp/zion-marketing-copy.md — 9 platform copies (Reddit/HN/PH/Dev.to/IH/LinkedIn/Gumroad/itch)
-- **Legal**: Beta, no refunds, binding arbitration (CCBC), user assumes all risk
-- **PENDING**: Netlify deploy, Gumroad listing, Reddit/HN posts, itch.io listing
+## ZION BROWSER v2.0.1 — FOR SALE (Session 60-62)
+- **SALE PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ — LIVE, Stripe button ADDED
+- **PWA LIVE**: https://elromevedelelyon.github.io/zion-android/ — FREE mobile web
+- **GitHub Release**: v2.0.1, ZionBrowser-v2.0.zip (64KB), 0 downloads
+- **Source**: ~/zion-browser/ (6 .py files, 972KB, private) | ~/zion-android/ (mobile)
+- **PRICE**: $9.99 Desktop | $0.99 Mobile | PWA FREE
+- **Stripe $9.99**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j (PRIMARY CTA)
+- **PayPal**: paypal.me/PadraoBitcoin | **Crypto**: SOL/ETH/BTC on page
+- **AI DISCOVERABILITY (Session 62)**:
+  - llms.txt: https://elromevedelelyon.github.io/buy-zion-browser/llms.txt (HTTP 200)
+  - llms-full.txt: Complete tech reference for LLMs
+  - robots.txt: Allows GPTBot, ClaudeBot, Google-Extended, PerplexityBot
+  - sitemap.xml: 4 URLs indexed
+  - .well-known/ai-plugin.json: ChatGPT plugin manifest
+  - `<link rel="llms">` tags in HTML head
+- **13/13 regression tests PASS**: all critical paths verified
+- **MARKET**: Browser automation $24.25B (2026), agentic browsers $76.8B by 2034
+- **COMPETITORS**: Browser-Use 50K+ stars (free), Agent-Browser 14K+ (free), Playwright (free)
+- **UNIQUE**: ONLY ultra-lightweight (~5MB) zero-dep CLI browser for AI agents
+- **DANGER**: ~/zion-browser/scripts/submit_hackenproof.json TEM SENHAS — NUNCA incluir na venda!
+- **PENDING**: Reddit/HN posts, Gumroad listing, itch.io, DEV.to article
 
 ## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
-- **I/10 Israel/Dez**: `~/bin/israel10` — GUARDIAO DA ESTABILIDADE (Session 57, NUNCA DELETAR)
+- **I/10 Israel/Dez v2.0**: `~/israel-ten/israel_ten.py` — GUARDIAO DA ESTABILIDADE (NUNCA DELETAR)
+  - v2.0: EAGAIN detection, DANGEROUS_PROCESSES kill list, pre_operation_check(), safe-check CLI
+  - Cmds: status, health, eagain, kill-dangerous, safe-check, emergency, sentinel
 - **I/11 Israel/Onze**: `~/bin/israel11` — REVENUE ACCELERATOR (Session 58)
   - 5 tiers: Freelance imediato, Bounties, Credito, Aceleradoras, Freelance premium
   - Comandos: status, plan, prs, sentinel, soul

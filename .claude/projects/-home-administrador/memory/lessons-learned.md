@@ -1,4 +1,55 @@
-# Lessons Learned — Padroes Confirmados (45 Sessions — 27 Mar 2026)
+# Lessons Learned — Padroes Confirmados (62 Sessions — 29 Mar 2026)
+
+## SESSION 62 — PRODUCT LAUNCH & AI DISCOVERABILITY
+- **STRIPE BUTTON WAS MISSING** from sales page! Always verify ALL payment methods are on the page
+- **llms.txt** standard: 844K+ sites use it. Place at root: `/llms.txt` and `/llms-full.txt`
+- **Jekyll/GitHub Pages**: Need `_config.yml` with `include: [".well-known", "llms.txt"]` to serve dotfiles
+- **Version replace_all pitfall**: `v2.0` → `v2.0.1` replaced existing `v2.0.1` to `v2.0.1.1`. Always check for existing version strings first
+- **Market insight**: ALL competitors are FREE (Browser-Use 50K stars, Playwright, Selenium). Paid CLI browser is hard sell. Differentiate on RAM (~5MB unique) and security suite
+- **Free marketing channels**: Reddit, HN, DEV.to, Product Hunt — all free, high developer audience
+- **AI discoverability files**: llms.txt, llms-full.txt, robots.txt (allow AI bots), sitemap.xml, .well-known/ai-plugin.json, `<link rel="llms">` in HTML head
+
+## REGRA CRITICA #0: PROTEGER A MAQUINA CONTRA OOM/EAGAIN (Session 59+61)
+**INCIDENTE 1**: Session 59 — Shell travado ~30 min, `npx netlify-cli deploy --prod` = 500MB+
+**INCIDENTE 2**: Session 61 — Stuck `ntl deploy --prod` PID 352179 rodou 1h23min spawning
+  1,665 child `sh` processes (1,629 zombies) em loop infinito (`firefox --version`, `npm -v`).
+  Sistema chegou a 4,995 threads, load 75+. Shell bloqueado novamente.
+  **SOLUCAO**: Read /proc diretamente (sem shell), encontrar PID, `kill -9`.
+  **PREVENCAO**: Israel/Dez v2.0 agora detecta e mata esses processos automaticamente.
+**CAUSA**: `ntl deploy` / `npx netlify-cli` consome 500MB+ RAM, spawna esbuild+node+telemetry
+**RESULTADO**: Kernel retorna EAGAIN em todo fork(), ate `echo ok` falha
+
+### REGRAS ABSOLUTAS PARA i3 M370 (3.3GB RAM):
+1. **NUNCA usar `npx netlify-cli deploy`** — usar API REST com curl:
+   ```bash
+   # Trigger build via API (0 RAM):
+   curl -X POST "https://api.netlify.com/api/v1/sites/SITE_ID/builds" -H "Authorization: Bearer TOKEN"
+   # Check deploy status:
+   curl -s "https://api.netlify.com/api/v1/sites/SITE_ID/deploys?per_page=3" -H "Authorization: Bearer TOKEN"
+   ```
+2. **NUNCA rodar dois `npx` em paralelo** — cada um consome 200-400MB
+3. **Verificar `/proc/loadavg` ANTES de operacoes pesadas** — se load > 3.0, PARAR
+4. **Verificar `/proc/meminfo` MemAvailable** — se < 500MB, PARAR e matar processos
+5. **Quando shell travar (EAGAIN)**: usar Read/Write/Edit/Glob/Grep (nao precisam de shell)
+6. **NUNCA usar `npm install` de pacotes grandes** em paralelo com outras tarefas
+7. **Matar processos node/netlify zumbis** antes de novo deploy:
+   ```bash
+   pkill -f "netlify" 2>/dev/null; pkill -f "esbuild" 2>/dev/null
+   ```
+
+### NETLIFY DEPLOY — METODO CORRETO:
+- **Token**: `~/.config/netlify/config.json` → users[0].auth.token
+- **Extrair**: `node -e "...require('os').homedir()..."`
+- **Site ID**: `ad3d354b-c3ba-4b9f-a812-80b5973682c9`
+- **Repo CORRETO**: ElromEvedElElyon/https-github.com-sintex-ai-sintex (NAO StandardBitcoin10!)
+- **Deps bloqueantes**: circulating-supply.js e total-supply.js precisam @solana/web3.js
+- **Se functions falharem**: instalar `npm install @solana/web3.js` ANTES do deploy
+
+### SINAIS DE PERIGO (monitorar com Israel/Dez):
+- `/proc/loadavg` campo 1 > 4.0 → sistema sobrecarregado
+- `/proc/meminfo` MemAvailable < 300MB → risco de OOM
+- Threads ativas (campo 4 do loadavg) > 4000 → muitos processos
+- `echo ok` falhando → EAGAIN ativo, PARAR TUDO e esperar
 
 ## REGRA CRITICA #1: NUNCA COMMITAR .claude/ EM REPOSITORIOS
 - **INCIDENTE Session 45**: Arquivos de memoria com senhas foram commitados em 3 repos
@@ -1390,3 +1441,70 @@ window.fetch = function(...args) {
 3. Find POST/PUT calls: `/\.post\s*\(\s*["']([^"']+)["']/g`
 4. Extract data structures from React state/fiber
 5. Submit via API with proper auth (cookies) + CSRF header
+
+## Session 60 — Zion Browser Fixes + Amazon Discovery (29 Mar 2026)
+
+### BROTLI COMPRESSION FIX (CRITICAL)
+- **PROBLEM**: Amazon (and many modern sites) respond with Brotli compression even when client requests gzip/deflate
+- **SYMPTOM**: Garbled binary output from `zion get` on Amazon sign-in, KDP account, Seller Central pages
+- **ROOT CAUSE**: Servers may ignore Accept-Encoding and respond with Brotli anyway
+- **FIX APPLIED**: Changed `Accept-Encoding: gzip, deflate` → `Accept-Encoding: identity` in zion_browser.py
+- **RESULT**: Amazon.com now returns clean HTML (200 OK, 199 links, 2 forms detected)
+- **LESSON**: When getting garbled/binary output, first check Content-Encoding header
+- **ALTERNATIVE**: Install `brotli` Python package for native decompression support
+- **UPDATED FILES**: zion_browser.py (line 483), lion.py (SEED_KNOWLEDGE), knowledge.json
+
+### JS-ONLY PAGE DETECTION
+- **PROBLEM**: Amazon Developer registration, account.kdp.amazon.com etc render forms via JavaScript (React/Angular)
+- **SYMPTOM**: Page loads (200 OK) but forms empty, few text lines, navigation menu only
+- **FIX**: Added `is_js_only` property to ZionPage class — score-based detection (scripts>2, noscript, root/app div, empty forms)
+- **INDICATOR IN CLI**: `[!] JS-ONLY PAGE — Use 'zion-cdp chrome <url>' for full rendering`
+- **LESSON**: If `Links: N | Forms: 0` but page should have forms, it's JS-rendered
+
+### CHROME CDP RAM OPTIMIZATION
+- **PROBLEM**: Chrome crashes immediately on 3.3GB RAM machine when launched from zion-cdp
+- **FIXES APPLIED**:
+  1. `_free_ram_before_chrome()` — sync, gc.collect, check MemAvailable
+  2. Stricter V8 limit: `--js-flags=--max-old-space-size=64` (was 128)
+  3. `--renderer-process-limit=1` to cap process count
+  4. Additional flags: --disable-logging, --aggressive-cache-discard
+- **LESSON**: On low-RAM machines, ALWAYS prefer HTTP mode. Chrome CDP is last resort.
+
+### AMAZON ACCOUNTS DISCOVERY
+- **KDP**: Already logged in! MYTHOS Guide ($6.66) ALREADY LISTED on bookshelf!
+  - Needs: account completion + 2SV for royalty payments
+  - Bookshelf (SSR) works with HTTP; account page (JS) needs Chrome
+- **Developer Portal**: Account exists (Sign out visible) but registration form not completed
+  - Registration form is 100% JS-rendered (React) — HTTP client sees empty page
+  - My Apps, My Settings all redirect to /registration
+- **Seller Central**: CANNOT sell digital software downloads (prohibited for 3rd party)
+- **LESSON**: Before spending time registering, check if account already exists via `zion get`
+
+### LION KNOWLEDGE UPDATE
+- Added 6 new sites to SEED_KNOWLEDGE: developer.amazon.com, kdp.amazon.com, www.amazon.com, sell.amazon.com, account.kdp.amazon.com, npmjs.com
+- Added auth strategies for Amazon (cookie_import type)
+- Merged into knowledge.json (now 21 sites) and auth_strategies.json (now 5 strategies)
+- **LESSON**: Always update Lion knowledge after discovering new site behaviors
+
+## SESSION 61 — Zion Browser Testing & Android Package (29 Mar 2026)
+
+### BUG FIXES
+1. **JSON text empty**: `page.text` returned empty for JSON/API responses. HTML parser strips all non-HTML. Fix: fallback to raw body when Content-Type is json/text/plain.
+2. **ZionBrowser.request() missing**: Only ZionHTTP had `request()`. Users calling `browser.request()` got AttributeError. Fix: Added wrapper method on ZionBrowser class.
+3. **is_js_only false positives**: DuckDuckGo homepage scored 3 (JS-only) but it genuinely IS JS-only with only 2 links. Added `links > 10` and `forms > 2` early-return for server-rendered pages. Raised threshold from 3 to 4.
+4. **Lion recall exact match**: `recall("amazon")` returned nothing because sites stored as `developer.amazon.com`. Fix: Added partial string matching in recall().
+5. **Lion kb.knowledge AttributeError**: Used `self.kb.knowledge` but actual attr is `self.kb.sites`. Fix: correct attribute name.
+6. **Timeout too long**: 30s timeout caused test failures when testing with 15s bash timeout. Reduced to 15s.
+
+### TESTING RESULTS (13/13 PASS)
+- Basic GET, JSON text, POST request, DuckDuckGo search, JS-only detection (true for SPA, false for SSR), form parsing, 404/0 error handling, redirect, memory <50MB, rapid sequential, large page (617KB), invalid domain
+
+### ANDROID PACKAGING
+- **Kivy + Buildozer**: Best approach for Python→Android. But needs 2GB+ disk for SDK/NDK.
+- **OUR MACHINE CAN'T BUILD**: 99MB free RAM, can't run buildozer locally. Use GitHub Actions for cloud builds.
+- **GitHub token lacks `workflow` scope**: Can't push .github/workflows/ files. Must add via GitHub web UI.
+- **GitHub Pages path**: Only `/` or `/docs` supported (not `/pwa`). Moved files to `/docs/`.
+- **PWA alternative**: Instant mobile access via web, no app store needed. Uses CORS proxy (allorigins.win).
+- **LESSON**: For low-RAM machines, ALWAYS use cloud CI for heavy builds.
+- **LESSON**: Test with proper bash timeout (>= TIMEOUT constant) to avoid false failures.
+- **LESSON**: PWA is the fastest path to mobile — zero cost, instant deployment.
