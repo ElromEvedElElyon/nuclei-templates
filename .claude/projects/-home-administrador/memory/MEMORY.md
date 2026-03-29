@@ -52,9 +52,14 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (28 Mar 2026 — SESSION 51)
+## REVENUE STATUS (28 Mar 2026 — SESSION 54)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **MYTHOS Book v1.5**: $6.66, **14 idiomas COMPLETOS**, 14 EPUBs, KDP NEXT
+- **MYTHOS Book v2.0**: $6.66/idioma, 14 idiomas, Web3 Payment BUILT
+  - 14 manuscripts RESTRUCTURED (Bible→END), mythos.html UPDATED (14 langs)
+  - 4 Netlify Functions: payment-create-order, submit-tx, status, download
+  - Phantom+MetaMask wallet connect, on-chain verify, HMAC download tokens
+  - NEXT: rebuild EPUBs+PDFs, deploy to Netlify, set env vars (HMAC_SECRET, DOWNLOAD_SECRET)
+  - KDP: DRAFT PAUSADO — cidadania BR, pessoa fisica, colaborador, revisar material
 - **TapToons v2.0**: LIVE, $0.99, Stripe+PayPal
 - **ZKsync OS $5K-$100K**: Immunefi #71022, triage responded 26 Mar
 - **nuclei-templates**: 8 PRs OPEN = $1,350-$2,250
@@ -95,7 +100,7 @@
 - See: atomus-project.md, credentials-secure.md #6
 
 ## PRODUCTS (15 published/in-dev)
-- **MYTHOS Guide**: $6.66, LIVE at https://sintex.ai/mythos, 8 langs, PayPal+Crypto+PIX
+- **MYTHOS Guide**: $6.66/idioma, LIVE at https://sintex.ai/mythos, 14 langs, PayPal+Crypto+PIX+Web3
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
 - **Sovereign Pay** | **Sovereign Pay Lite** | **Commerce Pay MCP**
 - **Flash Payment System** (116 clones) | **sintex.ai** | **OpenClaw Pro**
@@ -164,6 +169,19 @@
 - **180-day window**: LLM diversification = opportunity
 - See: palantir-intel.md
 
+## ISRAEL/SEVEN — THE MONEY MACHINE (Session 53)
+- **Local**: ~/israel-seven/israel_seven.py — revenue multi-vector agent
+- **Run**: `python3 ~/israel-seven/israel_seven.py warmode` (all vectors)
+- **Commands**: dashboard, hunt, list, credit, follow, warmode, status
+- **8 FRENTES**: Freelance, Marketplace, Credito BR, Bounties, Produtos, Grants, Email, nuclei
+- **WAR PLAN**: ~/israel-seven/WAR_PLAN.md (plano completo)
+- **KEY INTEL Session 53**:
+  - **PRONAMPE 2026**: R$250K credito, Selic+6%, 72 meses, FGO garantia, solicitar via gov.br
+  - **Claude Marketplace**: LANCOU 6 Mar 2026! Submit em platform.claude.com/plugins/submit
+  - **Upwork/Fiverr**: Claude specialists $75-200/hr, AI agents $300-1500/gig
+  - **MCP Market**: 10,000+ servers, 97M monthly downloads, mcpmarket.com
+  - **Freelance AI**: Upwork demand +109% YoY, top earners $200/hr
+
 ## ISRAEL/SIX — THE REVENUE COMMANDER (Session 50)
 - **Repo**: ~/israel-six/israel_six.py — 700+ lines, 12 modules, 9 modes
 - **Run**: `python3 ~/israel-six/israel_six.py warmode` (full cycle)
@@ -186,6 +204,15 @@
 - **HackerOne**: https://forms.gle/3ocTorSkkuvcGePn9 ($25K/jailbreak)
 - **Fellows**: https://job-boards.greenhouse.io/anthropic/jobs/5023394008 ($3,850/sem)
 - See: claude-mythos-intel.md
+
+## ROTA MORTAL — PLANO ATIVO (Session 53)
+- **8 FRENTES SIMULTANEAS**: Freelance, Marketplace, Credito, Bounties, Produtos, Grants, Email, PRs
+- **War Plan**: ~/israel-seven/WAR_PLAN.md
+- **Meta 24h**: $100+ (primeiro cliente freelance)
+- **Meta 7d**: $1,000+ | **Meta 30d**: $10,000+ | **Meta 90d**: $100,000+
+- **PRONAMPE**: R$250K disponivel para CNPJ 51.148.891/0001-69
+- **Freelance**: Upwork + Fiverr (Claude specialist $75-200/hr)
+- **Marketplace**: Claude Marketplace + mcpmarket.com + Glama (AAA)
 
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, prs-active.md, credentials-secure.md

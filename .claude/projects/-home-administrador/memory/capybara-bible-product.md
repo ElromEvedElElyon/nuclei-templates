@@ -2,12 +2,37 @@
 # "Preparing for the Biggest Technological Revolution of the Decade"
 # CONFIDENCIAL — Produto Padrao Bitcoin | NUNCA DELETAR
 
-## STATUS: v1.5 — LIVE, 14 LANGUAGES COMPLETE, 14 EPUBs (Session 51)
-## PRECO: $6.66 USD / R$34.90 BRL / $14.99 paperback
-## SALES PAGE: https://sintex.ai/mythos (LIVE 28 Mar 2026)
-## PAYMENT: PayPal.me/PadraoBitcoin/6.66 | BTC | ETH/EVM | SOL | PIX
+## STATUS: v2.0 — Web3 Payment + 14 Langs + Manuscripts Restructured (Session 54)
+## PRECO: $6.66 USD per language / R$34.90 BRL / 70% royalty
+## SALES PAGE: https://sintex.ai/mythos (UPDATED Session 54)
+## PAYMENT: PayPal | Web3 Wallet Connect (Phantom/MetaMask) | PIX | Manual Crypto
 ## REPO PRIVADO: https://github.com/ElromEvedElElyon/mythos-guide (PUSHED)
 ## LOCAL: ~/capybara-bible/
+
+## AMAZON KDP — DRAFT PAUSADO (Session 53, 28 Mar 2026)
+- **Account**: standardbitcoin.io@gmail.com / HaylaHorse20@
+- **ASIN**: A1M3B0MAA1KRQ
+- **Step 1 Details**: CONCLUIDA (title, subtitle, desc, 7 keywords, categories, author)
+- **Step 2 Content**: CONCLUIDA (MYTHOS_EN.epub + cover_1600x2560.jpg uploaded, DRM=No, AI=Sim/Claude)
+- **Step 3 Pricing**: SALVO ($6,66 USD, 70% royalty, all territories auto-filled)
+- **PUBLICACAO**: PAUSADA — salvar como rascunho até material ajustado
+- **DECISAO Session 53**: NÃO publicar agora, corrigir material + propaganda por email primeiro
+- **Colaborador a adicionar**: Elrom Eved El Elyon (Autor) — no Step 1 Colaboradores
+- **FISCAL**: Mudar cidadania de AMERICANO → BRASILEIRO (Pessoa Física, CPF, W-8BEN)
+- **Dados bancários**: Pessoa FÍSICA (não jurídica) — prontos para preencher
+- **Para desbloquear publicação**: (1) Banco com SWIFT, (2) W-8BEN como BRASILEIRO PF, (3) Ajustar material
+- **URL Details**: https://kdp.amazon.com/pt_BR/title-setup/kindle/A1M3B0MAA1KRQ/details
+- **URL Pricing**: https://kdp.amazon.com/pt_BR/title-setup/kindle/A1M3B0MAA1KRQ/pricing
+- **URL Tax**: https://kdp.amazon.com/en_US/account/taxinterview
+
+## PENDENCIAS KDP (Session 53)
+1. [ ] Adicionar colaborador "Elrom Eved El Elyon" como Autor no Step 1
+2. [ ] Alterar cidadania de americano para BRASILEIRO na entrevista fiscal
+3. [ ] Preencher dados bancários como PESSOA FÍSICA (não jurídica)
+4. [ ] Preencher W-8BEN (formulário fiscal para não-residentes EUA)
+5. [ ] Revisar e ajustar material do livro antes de publicar
+6. [ ] Preparar propaganda por email antes do lançamento
+7. [ ] SALVAR COMO RASCUNHO (não publicar até tudo pronto)
 
 ## CRITICAL FIX (Session 51)
 - **ALL 7 translations were WRONG** — contained capybara animal content, not MYTHOS
@@ -59,20 +84,64 @@
 - **Crypto**: BTC/ETH/SOL wallets on sales page
 - **PIX**: CNPJ 51.148.891/0001-69
 - **Bible page**: https://sintex.ai/bible (65+ languages, LIVE)
+- **Preco**: $6.66 por idioma individual (14 PDFs vendidos separadamente)
+
+## SESSION 54 — EXECUTADO (28 Mar 2026)
+### DONE: Manuscritos Reestruturados (14/14)
+- "Biblia 194 idiomas" MOVIDA para ultima pagina de cada manuscrito
+- Versiculo (Joao 1:1 + 3:16) MANTIDO em cada idioma como confissao de fe
+- QR code + link sintex.ai/bible ADICIONADO abaixo do versiculo
+- Nota "Biblia Sagrada GRATUITA para toda humanidade" no FIM
+- Arquivos editados: FULL_MANUSCRIPT.md + 13 _XX.md variants
+
+### DONE: mythos.html Atualizado
+- "8 languages" → "14 languages" em TODO o HTML
+- 14 bandeiras na grid de edicoes (todas com "PDF Ready")
+- Seletor de idioma no hero e no CTA final
+- @opencllaw → @standardbitcoin
+- hreflang tags para 14 idiomas
+- Schema.org/FAQ atualizado (14 langs, $6.66/idioma)
+- "Includes John 3:16" → "Read the Holy Bible FREE"
+
+### DONE: Web3 Payment System (4 Netlify Functions)
+- `payment-create-order.js`: CoinGecko price, unique orderId, HMAC signature
+- `payment-submit-tx.js`: Receives tx hash, generates verify token
+- `payment-status.js`: On-chain verify (Solana RPC, Ethereum RPC, Blockstream API), HMAC download token
+- `payment-download.js`: HMAC verify, 24h expiry, max 5 downloads, serves EPUB/PDF
+- Frontend: Multi-step modal (email→chain→wallet connect→verify→download)
+- Wallet Connect: Phantom (SOL), MetaMask (ETH), manual tx hash fallback
+- USDC + native tokens supported
+- netlify.toml: /api/payment/* routes + /private/* blocking
+
+### BLOCKED: EPUB/PDF Rebuild
+- Bash non-functional entire session (exit code 1 on ALL commands)
+- 14 EPUBs EXIST from prior build (need rebuild after manuscript changes)
+- PDFs NOT YET GENERATED (need WeasyPrint)
+- **NEXT SESSION**: `cd ~/capybara-bible && python3 build_epub.py EN PT ES FR DE IT RU ZH JA KO AR HI TR NL && python3 build_pdf.py EN PT ES FR DE IT RU ZH JA KO AR HI TR NL`
+
+### PENDING: Biblia Completa Gratuita (Projeto Longo Prazo)
+- Joao Ferreira de Almeida Revista e Corrigida (CCB) como base
+- 66 livros completos (Genesis a Apocalipse)
+- Traduzir fielmente para 194 idiomas — ZERO alteracao
+- Disponibilizar em sintex.ai/bible GRATIS para toda humanidade
+
+### Plano Completo
+- Aprovado: `~/.claude/plans/temporal-swinging-bentley.md`
+- Fases: 1-Manuscritos DONE, 2-Build BLOCKED, 3-mythos.html DONE, 4-Web3 DONE, 5-Biblia PENDING
 
 ## LAUNCH CHECKLIST
-- [x] Manuscript complete PT (1,380 lines) + EN (1,381) + ES + FR + DE
+- [x] 14 manuscripts restructured (Bible→END, verse+QR kept)
+- [x] 14 EPUBs exist (need rebuild for manuscript changes)
+- [x] Sales page updated: 14 languages + language selector
+- [x] Web3 payment: 4 Netlify Functions + wallet connect frontend
 - [x] All appendices filled (A-G)
-- [x] EPUBs generated (EN, PT, ES, FR, DE)
-- [x] HTMLs generated
-- [x] Sales page LIVE at sintex.ai/mythos
-- [x] Sales plan created
-- [x] KDP submission guide ready
-- [x] Cover HTML ready (dist/cover.html)
+- [x] Cover JPG generated (1600x2560px)
+- [x] Amazon KDP draft saved
 - [x] 62 MYTHOS launch tweets queued
-- [ ] Amazon KDP submission (NEEDS BROWSER LOGIN)
-- [ ] Gumroad listing (NEEDS BROWSER)
-- [ ] Cover screenshot (1600x2560px from cover.html)
-- [ ] Remaining 8+ translations (agents running)
+- [ ] **Rebuild EPUBs** (bash needed): `python3 build_epub.py EN PT ...`
+- [ ] **Generate PDFs** (bash needed): `python3 build_pdf.py EN PT ...`
+- [ ] Deploy to Netlify (git push sintex-ai-ultimate)
+- [ ] Set HMAC_SECRET + DOWNLOAD_SECRET env vars in Netlify
+- [ ] KDP: Fix fiscal (brasileiro PF), add collaborator, publish
+- [ ] Gumroad listing
 - [ ] Product Hunt launch
-- [ ] PDFs regenerated (current ones are from old version)

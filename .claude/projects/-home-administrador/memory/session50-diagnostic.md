@@ -49,3 +49,27 @@
 - TapToons v2 private: 673 linhas uncommitted COMMITTED (sessao crashou)
 - Ambas GitHub Pages: builds OK, sites LIVE verificados
 - Backup commit: 3fcd907e79f
+
+## SESSION 51 BACKUP (28 Mar 2026 ~19:30 BRT)
+- Israel/Six: PUSHED to GitHub (ElromEvedElElyon/israel-six PRIVATE)
+- Israel/One: tweets queue COMMITTED (70 tweets)
+- Main repo: 44 memory files COMMITTED (a3ec6b08515)
+- Local backup: ~/backup-session51-20260328_1929.tar.gz (173KB)
+- Israel/Four: clean, up-to-date
+- Israel/Five: clean, up-to-date
+- ALL MEMORY FILES: Updated and backed up
+
+## SESSION 53 UPDATE (28 Mar 2026)
+- **MYTHOS KDP**: Conectou ao Firefox via Marionette, verificou Steps 1-3 preenchidos
+- **DECISAO**: PAUSAR publicação — salvar como rascunho até ajustes feitos
+- **PENDENCIAS identificadas**:
+  1. Adicionar colaborador "Elrom Eved El Elyon" como Autor
+  2. Mudar cidadania de AMERICANO → BRASILEIRO na entrevista fiscal
+  3. Dados bancários como PESSOA FÍSICA (não jurídica) — user diz prontos
+  4. W-8BEN como brasileiro
+  5. Revisar/ajustar material do livro
+  6. Preparar propaganda por email antes do lançamento
+- **Bash MORTO**: OOM na máquina i3 3.3GB RAM, todos comandos shell retornam exit 1
+- **Firefox**: Caiu durante navegação KDP, MCP firefox-devtools desconectou
+- **Workaround**: kdp_helper.py criado (Marionette driver) — funcionou inicialmente
+- **Memory files**: Atualizados via Edit (único tool funcional)
