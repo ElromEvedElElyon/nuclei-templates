@@ -135,26 +135,29 @@
 - PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
 - See: x-rules-anti-suspension.md
 
-## ZION BROWSER v2.0 + LION Agent (Session 56 MAJOR UPGRADE)
-- **CLI**: `~/bin/zion` | `~/bin/zion-agent` | `~/bin/zion-cdp` | `~/bin/lion`
-- **4 modules**: zion_browser.py, zion_cdp.py, zion_agent.py, lion.py — ALL pure Python stdlib
-- **678 Firefox cookies imported** | 14 sites known | 3 auth strategies | DuckDuckGo search
-- **HTTP+Chrome hybrid**: ~5MB (HTTP) / ~200MB (Chrome CDP on-demand for Cloudflare/SPA)
-- **LION**: Learning agent brain — sites, errors, auth, cookies intelligence, auto-adapts
-- **Working**: GitHub, Opire, Bugcrowd, Upwork, DuckDuckGo, GitHub API — all HTTP 200
-- **Cloudflare**: HackenProof, Sherlock, Cantina (need Chrome CDP when RAM free)
+## ZION BROWSER v2.0 ECOSYSTEM (Session 56 — FULL BUILD)
+- **6 tools**: `~/bin/zion` `~/bin/zion-agent` `~/bin/zion-cdp` `~/bin/lion` `~/bin/lion1` `~/bin/pirate`
+- **6 modules**: zion_browser.py, zion_cdp.py, zion_agent.py, lion.py, lion_one.py, pirate.py
+- ALL pure Python stdlib, ZERO deps, persistent memory in ~/.zion/
+- **ZionBrowser**: HTTP+Chrome hybrid, 678 cookies, DuckDuckGo search, pipelines, API server
+- **LION**: Learning brain — 14 sites, 3 auth strategies, error memory, auto-adapts
+- **LION-1**: Cookie/token/key hunter + prompt injection shield + file integrity (26,275 files baselined)
+- **PIRATE**: Military guardian — 8 layers, rootkit detection, process/network scanner, quarantine
+- **Scan Results**: 5521 files scanned, rootkit 6/7 CLEAN, 0 dangerous ports, 302 processes clean
+- **Shadow Backups**: ~/.zion/lion1/shadow_backups/ (15 critical files)
 - **PRODUTO**: $29.99 — AI Agent Browser Toolkit
 
-## ISRAEL AGENTS (I/1→I/9, no I/3) + LION
-- I/1(tweets) I/2(npm) I/4(security+LION) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
-- **LION**: `~/bin/lion status|navigate|learn|recall|train|pipeline`
+## ISRAEL AGENTS (I/1→I/9) + LION + LION-1 + PIRATE
+- I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
+- **LION**: `~/bin/lion` — Learning navigator
+- **LION-1**: `~/bin/lion1` — Cookie/token hunter + shield
+- **PIRATE**: `~/bin/pirate` — Military machine guardian
 - See: zion-army-reference.md
 
-## ROTA MORTAL — Session 55 Update
+## ROTA MORTAL — Session 56 Update
 - **War Plan**: ~/israel-seven/WAR_PLAN.md
 - PRONAMPE R$250K | Freelance $75-200/hr | 14 bounty platforms | 39 revenue channels
 - **PIPELINE: $33M+ optimistic, $17M+ realistic**
-- See: claude-mythos-intel.md, operational-playbook.md
 
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
