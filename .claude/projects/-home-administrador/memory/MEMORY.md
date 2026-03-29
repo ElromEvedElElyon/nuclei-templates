@@ -172,11 +172,14 @@
 - **PIRATE**: `~/bin/pirate` — Military machine guardian
 - See: zion-army-reference.md
 
-## ROTA MORTAL — Session 57 Update
+## ROTA MORTAL — Session 58 Update
 - **War Plan**: ~/israel-seven/WAR_PLAN.md
-- PRONAMPE R$250K | Freelance $75-200/hr | 14 bounty platforms | 39 revenue channels
+- PRONAMPE R$150K | Freelance $30-150/hr | 14 bounty platforms | 55 revenue channels
 - **PIPELINE: $33M+ optimistic, $17M+ realistic**
-- **Israel/Dez (I/10)**: CRIADO Session 57 — guardiao de estabilidade, NUNCA deletar
+- **REGRA MAXIMA**: ZERO TRABALHO GRATIS. So com CERTEZA de pagamento.
+- **CANAIS GARANTIDOS**: Algora escrow ($150-250/merge), Immunefi bounty, AI Training (Mindrift/Outlier/DataAnnotation $30-150/hr), PRONAMPE R$150K
+- **PR #15700**: FIXED+PUSHED (flow-based detection), re-review solicitado 29 Mar
+- **DIA 1 ABRIL**: Executar registros (Mindrift+Outlier+SEBRAE+PRONAMPE+Hats Finance)
 
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
