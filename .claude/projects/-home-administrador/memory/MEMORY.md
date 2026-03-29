@@ -38,6 +38,7 @@
 ## PAYMENT RECEIVING — NUNCA DELETAR
 - **PayPal.me**: https://www.paypal.com/paypalme/PadraoBitcoin — RECEBE REAL $$$
 - **Stripe LIVE**: acct_1RlC8tCrBH7uXgTe, charges=TRUE, payouts=TRUE
+- **ZionBrowser v2.0**: LIVE $9.99 — https://elromevedelelyon.github.io/buy-zion-browser/
 - **TapToons v1**: LIVE, $0.99, Stripe + PayPal — https://elromevedelelyon.github.io/taptoons-v1/
 - **TapToons v2.1**: N64 Monster Edition LIVE — https://elromevedelelyon.github.io/taptoons/
 - **Sale monitor**: `bash ~/taptoons/check-sales.sh`
@@ -52,17 +53,17 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 55)
+## REVENUE STATUS (29 Mar 2026 — SESSION 58)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **nuclei-templates**: 8 PRs OPEN (#15675-#15710), #15700 APPROVED = $1,350-$2,250
-- **claude-builders-bounty**: 5 bounties ($50-$200) = $575 total, HEAVY competition (69-100 comments each)
-- **Immunefi #71022**: Session expired, need re-login to check status
-- **TapToons**: v1+v2 LIVE, HTTP 200, $0 sales
-- **MYTHOS**: KDP PAUSADO, Web3 BUILT, 14→23 langs in progress
-- **npm atomus-ai**: NOT PUBLISHED, token EXPIRES 3 Apr!
-- **NEAR**: Security team said use HackenProof — re-submit there
-- **Superteam Vault $4K**: DEADLINE 31 MAR (AMANHA!)
-- **TokenTon26 $25.5K**: DEADLINE 2 ABR (4 DIAS!)
+- **nuclei-templates**: 8 PRs OPEN, NONE approved (#15700 has review comments, NOT approved!)
+  - 4 PRs need fixes (#15700, #15696, #15676, #15675)
+  - 4 PRs awaiting review (#15710, #15707, #15705, #15701)
+  - 6 PRs CLOSED without merge
+- **CREDITO EMPRESARIAL**: PRONAMPE R$150K + BNDES R$2M + Desenvolve SP R$700K + Fintechs R$900K
+- **FREELANCE IMEDIATO**: Mindrift $30-100/hr, Outlier $50-65/hr, DataAnnotation $40/hr, Alignerr $150/hr
+- **HACKATHONS**: Frontier $250K, ETHGlobal $150K, Four.Meme $50K, HashKey 40K USDT
+- **ACELERADORAS**: YC $500K (DL 4 Mai), SEBRAE R$250K (DL 30 Abr), Techstars $120K
+- **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!) — pre-aceleracao GRATUITA
 - See: revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 
 ## xAI / GROK API
@@ -98,8 +99,14 @@
 - **URGENTE**: Publicar ANTES do token expirar ou gerar novo
 - See: atomus-project.md, credentials-secure.md #6
 
-## PRODUCTS (16 published/in-dev)
-- **ZionBrowser v1.0**: $29.99 — CLI browser ~5MB RAM, AI agents, ZERO deps (NEW Session 54!)
+## PRODUCTS (17 published/in-dev)
+- **ZionBrowser v2.0 BETA**: $9.99 — LIVE! 6 modules, ~5MB RAM, ZERO deps
+  - **SALES PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ (HTTP 200)
+  - **Repo PRIVATE**: https://github.com/ElromEvedElElyon/zion-browser
+  - **Repo PUBLIC (sales)**: https://github.com/ElromEvedElElyon/buy-zion-browser
+  - **Payments**: PayPal $9.99 + BTC + ETH + SOL + PIX R$54.90
+  - **Legal**: Full beta disclaimer, NO REFUNDS, user assumes ALL risk, waives legal disputes
+  - **Delivery**: Manual via email after payment receipt
 - **MYTHOS Guide**: $6.66/idioma, 14 langs, PayPal+Crypto+PIX+Web3
 - **TapToons**: $0.99, PWA funny sounds + N64 game, Stripe+PayPal
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
@@ -135,29 +142,41 @@
 - PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
 - See: x-rules-anti-suspension.md
 
-## ZION BROWSER v2.0 ECOSYSTEM (Session 56 — FULL BUILD)
+## ZION BROWSER v2.0 ECOSYSTEM (Session 58 — LAUNCHED FOR SALE!)
+- **SALES PAGE LIVE**: https://elromevedelelyon.github.io/buy-zion-browser/ — $9.99 BETA
 - **6 tools**: `~/bin/zion` `~/bin/zion-agent` `~/bin/zion-cdp` `~/bin/lion` `~/bin/lion1` `~/bin/pirate`
 - **6 modules**: zion_browser.py, zion_cdp.py, zion_agent.py, lion.py, lion_one.py, pirate.py
-- ALL pure Python stdlib, ZERO deps, persistent memory in ~/.zion/
+- **5,982 lines** | **388KB total** | ALL pure Python stdlib, ZERO deps
 - **ZionBrowser**: HTTP+Chrome hybrid, 678 cookies, DuckDuckGo search, pipelines, API server
 - **LION**: Learning brain — 14 sites, 3 auth strategies, error memory, auto-adapts
 - **LION-1**: Cookie/token/key hunter + prompt injection shield + file integrity (26,275 files baselined)
 - **PIRATE**: Military guardian — 8 layers, rootkit detection, process/network scanner, quarantine
-- **Scan Results**: 5521 files scanned, rootkit 6/7 CLEAN, 0 dangerous ports, 302 processes clean
-- **Shadow Backups**: ~/.zion/lion1/shadow_backups/ (15 critical files)
-- **PRODUTO**: $29.99 — AI Agent Browser Toolkit
+- **Payments**: PayPal + BTC + ETH + SOL + PIX (all wallets verified)
+- **Legal**: Beta, no refunds, user assumes all risk, waives legal/extrajudicial disputes
 
-## ISRAEL AGENTS (I/1→I/9) + LION + LION-1 + PIRATE
+## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
+- **I/10 Israel/Dez**: `~/bin/israel10` — GUARDIAO DA ESTABILIDADE (Session 57, NUNCA DELETAR)
+- **I/11 Israel/Onze**: `~/bin/israel11` — REVENUE ACCELERATOR (Session 58)
+  - 5 tiers: Freelance imediato, Bounties, Credito, Aceleradoras, Freelance premium
+  - Comandos: status, plan, prs, sentinel, soul
+- **I/12 Israel/Doze**: `~/bin/israel12` — HACKATHON COMMANDER (Session 58)
+  - 9 hackathons tracked: $552K+ em premios
+  - Comandos: status, plan, soul
+  - Monitora RAM/CPU/swap/processos/sessoes 24/7
+  - Previne OOM, mata processos perigosos, protege janelas
+  - Identifica tarefas locais+remotas, HMAC-signed state
+  - Comandos: status, health, sessions, tasks, hogs, emergency, sentinel, history, backup, soul
 - **LION**: `~/bin/lion` — Learning navigator
 - **LION-1**: `~/bin/lion1` — Cookie/token hunter + shield
 - **PIRATE**: `~/bin/pirate` — Military machine guardian
 - See: zion-army-reference.md
 
-## ROTA MORTAL — Session 56 Update
+## ROTA MORTAL — Session 57 Update
 - **War Plan**: ~/israel-seven/WAR_PLAN.md
 - PRONAMPE R$250K | Freelance $75-200/hr | 14 bounty platforms | 39 revenue channels
 - **PIPELINE: $33M+ optimistic, $17M+ realistic**
+- **Israel/Dez (I/10)**: CRIADO Session 57 — guardiao de estabilidade, NUNCA deletar
 
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, capybara-bible-product.md

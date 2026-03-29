@@ -1,0 +1,2 @@
+#!/bin/bash
+cd ~/israel-eleven && python3 israel_eleven.py "$@"

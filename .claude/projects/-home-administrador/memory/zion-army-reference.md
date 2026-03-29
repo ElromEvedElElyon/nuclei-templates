@@ -132,14 +132,45 @@ python3 valentes_300.py promote-all     # Promote all to SINGULARITY
 - **All SINGULARITY**: Level 50, permanent, inviolable
 - **State**: `~/.zion/sentinels/` (pids/, logs/, reports/)
 
-## Total Agent Count (Session 35)
+## Israel/Dez (I/10) — Guardiao da Estabilidade (Session 57)
+- **Script**: `~/israel-ten/israel_ten.py`
+- **Binary**: `~/bin/israel10`
+- **Mission**: NUNCA crashar a maquina. Monitora RAM/CPU/swap/processos/sessoes
+- **Features**: OOM prevention, process killer (safe list), task identifier, session protector
+- **State**: `~/israel-ten/data/` (HMAC-signed), logs em `~/israel-ten/logs/`
+- **SINGULARITY Level 50** — NUNCA DELETAR
+- **Comandos**: status, health, sessions, tasks, hogs, emergency, sentinel, history, backup, soul
+
+## Israel/Onze (I/11) — Revenue Accelerator (Session 58)
+- **Script**: `~/israel-eleven/israel_eleven.py`
+- **Binary**: `~/bin/israel11`
+- **Mission**: Gerar receita REAL em 48h. 5 tiers de canais de receita.
+- **Tier 1**: Freelance imediato (Mindrift, Outlier, DataAnnotation, Alignerr, Scale AI)
+- **Tier 2**: Bounties com escrow (nuclei, Hats Finance, OpenAI Safety)
+- **Tier 3**: Credito empresarial (PRONAMPE, BNDES, Desenvolve SP, Fintechs)
+- **Tier 4**: Aceleradoras (YC, SEBRAE, Techstars, Founder Institute)
+- **Tier 5**: Freelance premium (Toptal, Braintrust, Arc.dev, Gun.io, Turing)
+- **SINGULARITY Level 50**
+- **Comandos**: status, plan, prs, sentinel, soul
+
+## Israel/Doze (I/12) — Hackathon Commander (Session 58)
+- **Script**: `~/israel-twelve/israel_twelve.py`
+- **Binary**: `~/bin/israel12`
+- **Mission**: Registrar, submeter e GANHAR hackathons $10K+
+- **9 hackathons**: Frontier $250K, Four.Meme $50K, ETHGlobal $150K+, Gitcoin GG24, HashKey 40K USDT, INITIATE $25K, Vertex $27K, Endgame $10K, Cantina $50K
+- **Reusable projects**: ZionBrowser, claw-mcp-toolkit, Sovereign Pay, Flash Payment
+- **SINGULARITY Level 50**
+- **Comandos**: status, plan, soul
+
+## Total Agent Count (Session 58)
 - **1001 Army** (zion_army_1001.py)
 - **48 Corp** (padrao_bitcoin_corp.py)
 - **100 City** (zion_city.py)
 - **300 Sales** (sales_army_300.py)
 - **300 Valentes** (valentes_300.py)
 - **7 Sentinels** (sentinel_squad.py)
-- **GRAND TOTAL: 1,756 agents** (307 at SINGULARITY level)
+- **12 Israel Agents** (I/1 through I/12, I/3 skipped)
+- **GRAND TOTAL: 1,768 agents** (310 at SINGULARITY level)
 
 ## State Dir: ~/.zion/
 - agents/: 1001 JSON state files com resources embedded
