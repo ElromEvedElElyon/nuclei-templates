@@ -53,16 +53,13 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 62)
+## REVENUE STATUS (29 Mar 2026 — SESSION 64)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **ZION BROWSER v2.0.1**: LIVE! Sales page updated, Stripe+PayPal+Crypto buttons OK
-- **AI DISCOVERABILITY**: llms.txt + robots.txt + sitemap.xml + ai-plugin.json DEPLOYED
-- **AMAZON KDP**: LOGADO! MYTHOS Guide $6.66 JA LISTADO! Falta completar conta+2SV
-- **nuclei-templates**: 8 PRs OPEN, NO bounty label, so reputacao
-- **Algora REAL**: nuclei CORE #6674 ($100) + #6532 ($100) = $200 com bounty label
+- **ZION BROWSER v2.0.1**: FREE & OPEN SOURCE (MIT), repo PUBLIC, donate model
+- **GITFLIX**: Netflix for GitHub repos — NEW SaaS project, TAM $7.5B-$15B, ZERO competitors
+- **MYTHOS Guide**: 23 langs PRONTOS, ZERO canal ativo
 - **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!)
-- **NEXT**: Post Reddit (r/Python, r/selfhosted) + DEV.to + Show HN + Gumroad listing
-- See: revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
+- See: revenue-status.md, bounties-pipeline.md
 
 ## xAI / GROK API
 - **Console**: https://console.x.ai — vinculado a @opencllaw
@@ -98,20 +95,12 @@
 - **ACAO**: Gerar NOVO token no npmjs.com via browser, depois `npm publish`
 - See: atomus-project.md, credentials-secure.md #6
 
-## PRODUCTS (18 published/in-dev)
-- **ZionBrowser v2.0.1**: $9.99 Desktop + $0.99 Mobile — LIVE!
-  - **SALES PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ (HTTP 200)
-  - **PWA (FREE)**: https://elromevedelelyon.github.io/zion-android/ (LIVE!)
-  - **GitHub Release**: v2.0.1 tag, ZionBrowser-v2.0.zip (64KB, 0 downloads)
-  - **Repo PRIVATE**: https://github.com/ElromEvedElElyon/zion-browser
-  - **Repo PUBLIC (sales)**: https://github.com/ElromEvedElElyon/buy-zion-browser
-  - **Stripe Payment Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j (PRIMARY BUTTON)
-  - **Stripe Product**: prod_UEowuPFWWuBkjp | Price: price_1TGLLuCrBH7uXgTeNNZy1ccb
-  - **Payments**: Stripe (auto) + PayPal + BTC + ETH + SOL + PIX R$54.90
-  - **AI Discovery**: llms.txt + llms-full.txt + robots.txt + sitemap.xml + ai-plugin.json
-  - **Legal**: Beta, NO REFUNDS, BINDING ARBITRATION (CCBC), user assumes ALL risk
-- **MYTHOS Guide**: $6.66/idioma, 14 langs, PayPal+Crypto+PIX+Web3
-- **TapToons**: $0.99, PWA funny sounds + N64 game, Stripe+PayPal
+## PRODUCTS (19 published/in-dev)
+- **ZionBrowser v2.0.1**: FREE & OPEN SOURCE (MIT), repo PUBLIC, donate model
+  - See: ZION BROWSER section below
+- **GITFLIX**: Netflix for GitHub repos — SaaS, uses atomus-ai + claw-mcp-toolkit + sovereign-pay
+- **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs PRONTOS, ZERO canal ativo
+- **TapToons v2.1**: $0.99, N64 Monster Edition LIVE, V2 CORRETO no deploy (cache issue)
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
 - **Sovereign Pay** | **Sovereign Pay Lite** | **Commerce Pay MCP**
 - **Flash Payment System** (116 clones) | **sintex.ai** | **OpenClaw Pro**
@@ -119,25 +108,20 @@
 - **STBTCx**: 386JZJtkvf43yoNawAHmHHeEhZWUTZ4UuJJtxC9fpump
 - See: capybara-bible-product.md
 
-## TAPTOONS — DOIS PRODUTOS LIVE (Session 51 Fix)
+## TAPTOONS — DOIS PRODUTOS LIVE (Session 63 VERIFIED)
 ### V1 — Pixel Art Edition
 - **LIVE**: https://elromevedelelyon.github.io/taptoons-v1/
-- **Repo PUBLIC**: https://github.com/ElromEvedElElyon/taptoons-v1 (main branch)
-- **Title**: "TapToons v1 - Pixel Art Sounds & Game" (FIXED Session 51)
-- **Local**: ~/taptoons/ (public mirror, master branch)
+- **Repo PUBLIC**: github.com/ElromEvedElElyon/taptoons-v1 (main branch)
 - 1425 lines, 64KB, emojis nos botoes
 
 ### V2.1 — N64 Monster Edition (CURRENT BEST)
 - **LIVE**: https://elromevedelelyon.github.io/taptoons/
-- **Repo PUBLIC**: https://github.com/ElromEvedElElyon/taptoons (master branch)
-- **Repo PRIVATE**: https://github.com/ElromEvedElElyon/taptoons-v2 (main branch)
-- **Local dev**: ~/taptoons-v2/ | **Local public**: ~/taptoons/
-- **Title**: "TapToons v2 - Monster Runner N64" (RESTORED Session 51)
-- 1422 lines, 67KB, text labels (sem emojis), game pad mobile, 6 monsters
-- **Features**: 100 sounds, game pad controls, 6 procedural monsters, SW cache v5
+- **VERIFIED Session 63**: V2 N64 Monster Edition CORRETO no deploy (MD5 match public=private)
+- **Se graficos antigos aparecem**: CACHE DO BROWSER/SW — Ctrl+Shift+R ou limpar dados do site
+- **Repo PUBLIC**: github.com/ElromEvedElElyon/taptoons (master) | **PRIVATE**: taptoons-v2 (main)
+- **Local**: ~/taptoons/ = ~/taptoons-v2/ (identicos, 1422 lines, 67KB)
+- 6 monsters (Sulley, Mike, Rosie, Drake, Gears, Rex), game pad, 100 sounds
 - **Price**: $0.99 | **Stripe**: `https://buy.stripe.com/6oUdR80Vu5pm3S56uV0x20c`
-- **PayPal**: `https://www.paypal.com/paypalme/PadraoBitcoin/0.99`
-- **APK**: `~/taptoons-twa/taptoons-v2.apk` (11.1KB, signed)
 - See: taptoons-v2-plan.md
 
 ## X/Twitter — STATUS CRITICO
@@ -145,27 +129,26 @@
 - PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
 - See: x-rules-anti-suspension.md
 
-## ZION BROWSER v2.0.1 — FOR SALE (Session 60-62)
-- **SALE PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ — LIVE, Stripe button ADDED
-- **PWA LIVE**: https://elromevedelelyon.github.io/zion-android/ — FREE mobile web
-- **GitHub Release**: v2.0.1, ZionBrowser-v2.0.zip (64KB), 0 downloads
-- **Source**: ~/zion-browser/ (6 .py files, 972KB, private) | ~/zion-android/ (mobile)
-- **PRICE**: $9.99 Desktop | $0.99 Mobile | PWA FREE
-- **Stripe $9.99**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j (PRIMARY CTA)
-- **PayPal**: paypal.me/PadraoBitcoin | **Crypto**: SOL/ETH/BTC on page
-- **AI DISCOVERABILITY (Session 62)**:
-  - llms.txt: https://elromevedelelyon.github.io/buy-zion-browser/llms.txt (HTTP 200)
-  - llms-full.txt: Complete tech reference for LLMs
-  - robots.txt: Allows GPTBot, ClaudeBot, Google-Extended, PerplexityBot
-  - sitemap.xml: 4 URLs indexed
-  - .well-known/ai-plugin.json: ChatGPT plugin manifest
-  - `<link rel="llms">` tags in HTML head
-- **13/13 regression tests PASS**: all critical paths verified
-- **MARKET**: Browser automation $24.25B (2026), agentic browsers $76.8B by 2034
-- **COMPETITORS**: Browser-Use 50K+ stars (free), Agent-Browser 14K+ (free), Playwright (free)
-- **UNIQUE**: ONLY ultra-lightweight (~5MB) zero-dep CLI browser for AI agents
-- **DANGER**: ~/zion-browser/scripts/submit_hackenproof.json TEM SENHAS — NUNCA incluir na venda!
-- **PENDING**: Reddit/HN posts, Gumroad listing, itch.io, DEV.to article
+## ZION BROWSER v2.0.1 — FREE & OPEN SOURCE (Session 64)
+- **REPO PUBLIC**: https://github.com/ElromEvedElElyon/zion-browser — MIT License
+- **SALE PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ — FREE + Donate model
+- **PWA**: https://elromevedelelyon.github.io/zion-android/ — FREE mobile web
+- **Model**: FREE open source, donations via PayPal/Stripe/Crypto/PIX
+- **AI Discovery**: llms.txt, robots.txt, sitemap.xml, ai-plugin.json — all HTTP 200
+- **Credential REMOVED**: submit_hackenproof.json DELETED before going public
+
+## GITFLIX — Netflix for GitHub Repos (Session 64 — LIVE!)
+- **APP**: https://elromevedelelyon.github.io/gitflix/ — HTTP 200
+- **SINTEX PAGE**: https://sintex.ai/gitflix — landing + terms + monetization
+- **GitHub**: https://github.com/ElromEvedElElyon/gitflix (PUBLIC)
+- **Local**: ~/gitflix/ (878 lines, React 19 + TS + Vite)
+- **10 categories**: Trending, AI/ML, MCP, Web3, DevTools, TS, Python, Rust, Security, CLI
+- **Features**: Netflix-style UI, search, repo detail+README, horizontal carousels
+- **AI**: llms.txt, robots.txt, sitemap.xml deployed
+- **Revenue**: Free + Pro $9.99/mo + Team $29.99/mo + 10% platform fee
+- **LEGAL**: Beta disclaimer, no refunds, waiver, CCBC arbitration, software-only
+- **Stack**: atomus-ai + claw-mcp-toolkit + sovereign-pay
+- **Backup**: ~/backups/session64-complete-20260329.tar.gz
 
 ## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
