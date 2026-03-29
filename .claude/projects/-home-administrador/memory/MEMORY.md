@@ -53,17 +53,15 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 58)
+## REVENUE STATUS (29 Mar 2026 — SESSION 60)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **nuclei-templates**: 8 PRs OPEN, NONE approved (#15700 has review comments, NOT approved!)
-  - 4 PRs need fixes (#15700, #15696, #15676, #15675)
-  - 4 PRs awaiting review (#15710, #15707, #15705, #15701)
-  - 6 PRs CLOSED without merge
-- **CREDITO EMPRESARIAL**: PRONAMPE R$150K + BNDES R$2M + Desenvolve SP R$700K + Fintechs R$900K
-- **FREELANCE IMEDIATO**: Mindrift $30-100/hr, Outlier $50-65/hr, DataAnnotation $40/hr, Alignerr $150/hr
-- **HACKATHONS**: Frontier $250K, ETHGlobal $150K, Four.Meme $50K, HashKey 40K USDT
-- **ACELERADORAS**: YC $500K (DL 4 Mai), SEBRAE R$250K (DL 30 Abr), Techstars $120K
-- **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!) — pre-aceleracao GRATUITA
+- **AMAZON KDP**: LOGADO! MYTHOS Guide $6.66 JA LISTADO! Falta completar conta+2SV
+- **AMAZON DEVELOPER**: Logado, registro incompleto (form JS-only)
+- **ZION BROWSER FIX**: Accept-Encoding: identity — Amazon/sites comprimidos agora legíveis
+- **nuclei-templates**: 8 PRs OPEN, NO bounty label, so reputacao
+- **Algora REAL**: nuclei CORE #6674 ($100) + #6532 ($100) = $200 com bounty label
+- **npm atomus-ai**: Token 401 EXPIRED — gerar novo URGENTE
+- **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!)
 - See: revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 
 ## xAI / GROK API
@@ -92,11 +90,12 @@
 - **Engines**: gemini_free_engine.py, grok_free_engine.py (needs fix)
 - See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
 
-## ATOMUS AI PROJECT (Session 45, Updated 55)
-- **atomus-ai**: NOT PUBLISHED on npm! Token EXPIRES 3 Apr 2026!
+## ATOMUS AI PROJECT (Session 58/59 — CRITICO)
+- **atomus-ai**: NOT PUBLISHED! npm token retorna 401 UNAUTHORIZED (JA EXPIROU?)
+- **dist/ BUILD EXISTS**: 20+ files compilados (index.js, agent.js, etc)
 - **GitHub**: https://github.com/ElromEvedElElyon/atomus-ai
 - **npm account**: `elromevedelelyon` (2FA OTP email)
-- **URGENTE**: Publicar ANTES do token expirar ou gerar novo
+- **ACAO**: Gerar NOVO token no npmjs.com via browser, depois `npm publish`
 - See: atomus-project.md, credentials-secure.md #6
 
 ## PRODUCTS (17 published/in-dev)
@@ -104,9 +103,13 @@
   - **SALES PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ (HTTP 200)
   - **Repo PRIVATE**: https://github.com/ElromEvedElElyon/zion-browser
   - **Repo PUBLIC (sales)**: https://github.com/ElromEvedElElyon/buy-zion-browser
-  - **Payments**: PayPal $9.99 + BTC + ETH + SOL + PIX R$54.90
-  - **Legal**: Full beta disclaimer, NO REFUNDS, user assumes ALL risk, waives legal disputes
-  - **Delivery**: Manual via email after payment receipt
+  - **Stripe Payment Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j
+  - **Stripe Product**: prod_UEowuPFWWuBkjp | Price: price_1TGLLuCrBH7uXgTeNNZy1ccb
+  - **Payments**: Stripe (auto) + PayPal + BTC + ETH + SOL + PIX R$54.90
+  - **Auto-delivery**: Stripe→verify→HMAC token→ZIP download (72h, 5 downloads)
+  - **Crypto verify**: On-chain SOL/ETH/BTC → auto download
+  - **API Backend**: sintex.ai/api/zion/* (5 Netlify functions)
+  - **Legal**: Beta, NO REFUNDS, BINDING ARBITRATION (CCBC), user assumes ALL risk
 - **MYTHOS Guide**: $6.66/idioma, 14 langs, PayPal+Crypto+PIX+Web3
 - **TapToons**: $0.99, PWA funny sounds + N64 game, Stripe+PayPal
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
@@ -142,17 +145,19 @@
 - PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
 - See: x-rules-anti-suspension.md
 
-## ZION BROWSER v2.0 ECOSYSTEM (Session 58 — LAUNCHED FOR SALE!)
-- **SALES PAGE LIVE**: https://elromevedelelyon.github.io/buy-zion-browser/ — $9.99 BETA
-- **6 tools**: `~/bin/zion` `~/bin/zion-agent` `~/bin/zion-cdp` `~/bin/lion` `~/bin/lion1` `~/bin/pirate`
-- **6 modules**: zion_browser.py, zion_cdp.py, zion_agent.py, lion.py, lion_one.py, pirate.py
-- **5,982 lines** | **388KB total** | ALL pure Python stdlib, ZERO deps
-- **ZionBrowser**: HTTP+Chrome hybrid, 678 cookies, DuckDuckGo search, pipelines, API server
-- **LION**: Learning brain — 14 sites, 3 auth strategies, error memory, auto-adapts
-- **LION-1**: Cookie/token/key hunter + prompt injection shield + file integrity (26,275 files baselined)
-- **PIRATE**: Military guardian — 8 layers, rootkit detection, process/network scanner, quarantine
-- **Payments**: PayPal + BTC + ETH + SOL + PIX (all wallets verified)
-- **Legal**: Beta, no refunds, user assumes all risk, waives legal/extrajudicial disputes
+## ZION BROWSER v2.0 — LAUNCHED FOR SALE (Session 59)
+- **SALE PAGE**: https://elromevedelelyon.github.io/buy-zion-browser/ — LIVE
+- **PRICE**: $1.00 LAUNCH (48h) → $9.99 regular → $29.99+ post-beta
+- **Stripe $1 Link**: https://buy.stripe.com/dRmaEW0VuaJG0FTg5v0x20k
+- **Stripe $9.99 Link**: https://buy.stripe.com/dRm9AS0Vu3hegERaLb0x20j
+- **PayPal**: paypal.me/PadraoBitcoin/1 | **Crypto**: SOL/ETH/BTC on page
+- **Auto-delivery**: sintex.ai/api/zion/* (5 Netlify functions) — Stripe verify → HMAC token → ZIP
+- **Stripe Webhook**: we_1TGLkICrBH7uXgTeXUpSvWQL | Product: prod_UEowuPFWWuBkjp
+- **6 tools**: zion, zion-agent, zion-cdp, lion, lion1, pirate | 5,982 lines | 388KB
+- **Cross-promo**: claw-mcp-toolkit + flash-payment + sovereign-agent-market = PUSHED
+- **Marketing**: /tmp/zion-marketing-copy.md — 9 platform copies (Reddit/HN/PH/Dev.to/IH/LinkedIn/Gumroad/itch)
+- **Legal**: Beta, no refunds, binding arbitration (CCBC), user assumes all risk
+- **PENDING**: Netlify deploy, Gumroad listing, Reddit/HN posts, itch.io listing
 
 ## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
@@ -172,13 +177,18 @@
 - **PIRATE**: `~/bin/pirate` — Military machine guardian
 - See: zion-army-reference.md
 
-## ROTA MORTAL — Session 58 Update
+## ROTA MORTAL — Session 59 Update (WALLET VERIFIED)
 - **War Plan**: ~/israel-seven/WAR_PLAN.md
 - PRONAMPE R$150K | Freelance $30-150/hr | 14 bounty platforms | 55 revenue channels
-- **PIPELINE: $33M+ optimistic, $17M+ realistic**
+- **ALL WALLETS VERIFIED $0.00** em 29 Mar 2026 — ETH, SOL, BTC, L2s, tokens = ZERO
 - **REGRA MAXIMA**: ZERO TRABALHO GRATIS. So com CERTEZA de pagamento.
-- **CANAIS GARANTIDOS**: Algora escrow ($150-250/merge), Immunefi bounty, AI Training (Mindrift/Outlier/DataAnnotation $30-150/hr), PRONAMPE R$150K
-- **PR #15700**: FIXED+PUSHED (flow-based detection), re-review solicitado 29 Mar
+- **CANAIS REALMENTE GARANTIDOS**:
+  - Algora CORE nuclei #6674+#6532 = $200 (com bounty label!)
+  - AI Training (Mindrift/Outlier/DataAnnotation $30-150/hr) — REGISTRAR AGORA
+  - Immunefi #71022 se aceito = $5K-$100K
+  - PRONAMPE R$150K (credito, nao bounty)
+- **TokenTon26**: MORTO (deadline foi 19 Mar, nao 2 Abr)
+- **Superteam Vault**: IMPROVAVEL (competitor PR#44 muito a frente)
 - **DIA 1 ABRIL**: Executar registros (Mindrift+Outlier+SEBRAE+PRONAMPE+Hats Finance)
 
 ## TOPIC FILES
