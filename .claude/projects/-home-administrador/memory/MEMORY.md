@@ -54,17 +54,15 @@
 
 ## REVENUE STATUS (29 Mar 2026 — SESSION 55)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **MYTHOS Book v2.1**: $6.66/idioma, EXPANDING 14→23 idiomas, Web3 Payment BUILT
-  - 9 new translations IN PROGRESS: PT, SV, PL, VI, TH, ID, UK, RO, CS
-  - All site pages updated to "23 languages" (mythos.html, store.html, stbtcx-commerce.js)
-  - build_epub.py + build_pdf.py updated with TITLES for 23 langs
-  - 4 Netlify Functions: payment-create-order, submit-tx, status, download
-  - Phantom+MetaMask wallet connect, on-chain verify, HMAC download tokens
-  - NEXT: rebuild EPUBs+PDFs, deploy to Netlify, set env vars (HMAC_SECRET, DOWNLOAD_SECRET)
-  - KDP: DRAFT PAUSADO — cidadania BR, pessoa fisica, colaborador, revisar material
-- **TapToons v2.0**: LIVE, $0.99, Stripe+PayPal
-- **ZKsync OS $5K-$100K**: Immunefi #71022, triage responded 26 Mar
-- **nuclei-templates**: 8 PRs OPEN = $1,350-$2,250
+- **nuclei-templates**: 8 PRs OPEN (#15675-#15710), #15700 APPROVED = $1,350-$2,250
+- **claude-builders-bounty**: 5 bounties ($50-$200) = $575 total, HEAVY competition (69-100 comments each)
+- **Immunefi #71022**: Session expired, need re-login to check status
+- **TapToons**: v1+v2 LIVE, HTTP 200, $0 sales
+- **MYTHOS**: KDP PAUSADO, Web3 BUILT, 14→23 langs in progress
+- **npm atomus-ai**: NOT PUBLISHED, token EXPIRES 3 Apr!
+- **NEAR**: Security team said use HackenProof — re-submit there
+- **Superteam Vault $4K**: DEADLINE 31 MAR (AMANHA!)
+- **TokenTon26 $25.5K**: DEADLINE 2 ABR (4 DIAS!)
 - See: revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 
 ## xAI / GROK API
@@ -93,12 +91,11 @@
 - **Engines**: gemini_free_engine.py, grok_free_engine.py (needs fix)
 - See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
 
-## ATOMUS AI PROJECT (Session 45)
-- **atomus-ai**: npm toolkit atomico para agentes AI, 10 modules, 46 tests, zero deps
+## ATOMUS AI PROJECT (Session 45, Updated 55)
+- **atomus-ai**: NOT PUBLISHED on npm! Token EXPIRES 3 Apr 2026!
 - **GitHub**: https://github.com/ElromEvedElElyon/atomus-ai
-- **npm account**: `elromevedelelyon` (2FA OTP email, cookies Gmail EXPIRADOS)
-- **Israel Two**: `python3 ~/israel-one/israel_two.py` — npm ecosystem agent
-- **NEXT**: Gmail Firefox login → OTP → `npm publish --access public`
+- **npm account**: `elromevedelelyon` (2FA OTP email)
+- **URGENTE**: Publicar ANTES do token expirar ou gerar novo
 - See: atomus-project.md, credentials-secure.md #6
 
 ## PRODUCTS (16 published/in-dev)
@@ -133,120 +130,33 @@
 - **APK**: `~/taptoons-twa/taptoons-v2.apk` (11.1KB, signed)
 - See: taptoons-v2-plan.md
 
-## ISRAEL/FIVE — TapToons Product Manager (Session 48)
-- **Repo PRIVADO**: https://github.com/ElromEvedElElyon/israel-five (PUSHED)
-- **Agent**: `python3 ~/israel-five/israel_five.py` — ~400 lines, 8 commands
-- **Modes**: SENTINEL, PROMOTER, ANALYST, SUPPORT, COMMANDER
-- **Commands**: sentinel, sales, promote, stores, health, tweet, status, dashboard
-- **Features**: Stripe sales monitoring, site health, tweet gen, store tracking
-- **All 10 health checks PASSING**: site, files, git, Stripe, PayPal, sounds, queue
+## X/Twitter — STATUS CRITICO
+- **@opencllaw**: SUSPENSA | **@standardbitcoin**: ATIVA, warmup only
+- PROIBIDO automation. Apenas OAuth (Buffer, Typefully, X API oficial)
+- See: x-rules-anti-suspension.md
 
-## X/Twitter — STATUS CRITICO (28 Mar 2026)
-- **@opencllaw**: SUSPENSA — conta PERDIDA (browser automation + spam patterns)
-- **@standardbitcoin**: ATIVA — usar ESTA conta, warmup obrigatorio
-- **TODOS sentinels/agents de tweet**: DESLIGADOS, crontab DESABILITADO
-- **PROIBIDO**: curl_cffi, headless Chrome, Selenium, twikit, cookies roubados
-- **PERMITIDO**: Apenas OAuth (Buffer, Typefully, X API oficial)
-- **Warmup**: Dias 1-7: 1-2 tweets/dia MANUAL | Dias 8-14: 3-5/dia OAuth | Dia 15+: 5-10/dia
-- See: x-rules-anti-suspension.md (regras completas)
-
-## ISRAEL/FOUR — Mega Autonomous Agent (Session 46)
-- **Repo PRIVADO**: https://github.com/ElromEvedElElyon/israel-four (PUSHED)
-- **MEGA Agent**: `python3 ~/israel-four/israel_four_mega.py` — 1282 lines, 14 commands
-  - 10-part: Soul, Memory(HMAC), Brain, Eyes, Hands, Shield, Commander, Evolution, Modes, CLI
-  - Modes: SENTINEL, HUNTER, BUILDER, COMMANDER, GUARDIAN, SCHOLAR
-  - Commands: sentinel, audit, hunt, scan, learn, evolve, command, shield, backup, restore, dashboard, tweet, apply, status
-- **Capybara Engine**: `~/israel-four/capybara_edge_engine.py` — 700+ lines, 30 vuln patterns, 8 commands
-- **Scanner**: `~/israel-four/israel_four.py` — monitor, intel, scan
-- **MCP Server**: `~/israel-four/mcp/mythos_mcp_server.py` (7 tools, in ~/.mcp.json)
-- **API Wrapper**: `~/israel-four/capybara_api.py` (auto-switches Opus↔Capybara)
-- **Sentinel PID**: 45195 (ATIVO 27 Mar 2026)
-- **Learn results**: 145 repos, 66 MCP servers, 37 tweets cataloged
-- **Audit results**: 25 vuln patterns found in test contract
-- See: claude-mythos-intel.md, hackerone-anthropic.md
-
-## PALANTIR INTEL (Session 46)
-- **PLTR**: $144.74 | $353B market cap | $7.2B revenue FY2026
-- **palantir-mcp**: npm package, integrates with Foundry + Claude Code
-- **Pentagon-Anthropic CRISIS**: Judge blocked ban 26 Mar 2026
-- **180-day window**: LLM diversification = opportunity
-- See: palantir-intel.md
-
-## ISRAEL/SEVEN — THE MONEY MACHINE (Session 53-54 EXPANDED)
-- **Local**: ~/israel-seven/israel_seven.py — revenue multi-vector agent
-- **Run**: `python3 ~/israel-seven/israel_seven.py warmode` (all vectors)
-- **Commands**: dashboard, hunt, list, credit, follow, warmode, status
-- **8 FRENTES**: Freelance, Marketplace, Credito BR, Bounties, Produtos, Grants, Email, nuclei
-- **WAR PLAN**: ~/israel-seven/WAR_PLAN.md (plano completo ATUALIZADO 29 Mar)
-- **Session 54 EXPANSION (29 Mar 2026)**:
-  - Added: OpenAI Safety ($100K), Gray Swan ($140K), ETH Foundation ($1M), LayerZero ($15M)
-  - Added: AgentBounty.org, Mindrift, Sherlock, Hats Finance, Cantina
-  - Added: TokenTon26 3 tracks x $8.5K = $25.5K (deadline Apr 2!)
-  - Added: Colosseum $50K+$250K, Gitcoin GG24, Protocol Labs grants
-  - **PIPELINE TOTAL: $17M+ optimistic**
-
-## ISRAEL/EIGHT — SALES & MARKETING COMMANDER (Session 54)
-- **Local**: ~/israel-eight/israel_eight.py — product sales automation
-- **Run**: `python3 ~/israel-eight/israel_eight.py warmode`
-- **Commands**: dashboard, tweets, links, stores, copy <id>, warmode
-- **Features**: Marketing copy gen, email campaigns, social content, store submissions
-- **8 PRODUCTS**: All with Stripe LIVE + PayPal links
-- **STORES**: Samsung, Amazon, Huawei, Microsoft, KDP — all pending submission
-
-## ISRAEL/NINE — BOUNTY SUBMISSION COMMANDER (Session 54)
-- **Local**: ~/israel-nine/israel_nine.py — bounty tracking & submission
-- **Run**: `python3 ~/israel-nine/israel_nine.py warmode`
-- **Commands**: dashboard, platforms, findings, register, warmode
-- **14 PLATFORMS** tracked + 11 ACTIVE CONTESTS
-- **FINDINGS**: 8 NEAR reports FORMATTED in ~/israel-nine/ ($154K-$665K)
-- **CONTESTS ATIVOS**: Cantina $50K, Sherlock $200K+$50K+$47K+$41.5K+$26.4K, Usual $16M
-
-## ZION BROWSER v1.0 — ULTRA-LIGHTWEIGHT CLI BROWSER (Session 54)
-- **Local**: ~/zion-browser/zion_browser.py — ZERO deps, pure stdlib
-- **Install**: `python3 ~/zion-browser/setup.py` (cria `zion` no PATH)
-- **Run**: `python3 ~/zion-browser/zion_browser.py interactive`
-- **RAM**: ~5MB (vs Firefox ~500MB) — RESOLVE problema 3.3GB!
-- **Features**: HTTP/S, cookies, forms, login, API, download, automation scripts
-- **Scripts**: ~/zion-browser/scripts/ (HackenProof, Bugcrowd, platform registration)
-- **Commands**: get, links, forms, submit, login, api, download, session, execute, interactive
+## ZION BROWSER v2.0 + LION Agent (Session 56 MAJOR UPGRADE)
+- **CLI**: `~/bin/zion` | `~/bin/zion-agent` | `~/bin/zion-cdp` | `~/bin/lion`
+- **4 modules**: zion_browser.py, zion_cdp.py, zion_agent.py, lion.py — ALL pure Python stdlib
+- **678 Firefox cookies imported** | 14 sites known | 3 auth strategies | DuckDuckGo search
+- **HTTP+Chrome hybrid**: ~5MB (HTTP) / ~200MB (Chrome CDP on-demand for Cloudflare/SPA)
+- **LION**: Learning agent brain — sites, errors, auth, cookies intelligence, auto-adapts
+- **Working**: GitHub, Opire, Bugcrowd, Upwork, DuckDuckGo, GitHub API — all HTTP 200
+- **Cloudflare**: HackenProof, Sherlock, Cantina (need Chrome CDP when RAM free)
 - **PRODUTO**: $29.99 — AI Agent Browser Toolkit
 
-## ISRAEL/SIX — THE REVENUE COMMANDER (Session 50)
-- **Repo**: ~/israel-six/israel_six.py — 700+ lines, 12 modules, 9 modes
-- **Run**: `python3 ~/israel-six/israel_six.py warmode` (full cycle)
-- **Commands**: sentinel, hunt, sell, wallets, emails, prs, tweet, stores, dashboard, command, execute, warmode, status
-- **12 Modules**: Soul, Memory(HMAC), BountyHunter, ProductSales, WalletSentinel, EmailIntel, PRTracker, TweetEngine, StoreSubmitter, ReportGenerator, Commander, Executor
-- **9 Modes**: SENTINEL, HUNTER, SELLER, COMMANDER, AUDITOR, MARKETER, ANALYST, EXECUTOR, WARMODE
-- **WARMODE TESTED**: All systems GO, dashboard generates, tweets queue, PRs track, wallets check
-- **Unifica**: Israel/1 (tweets) + Israel/4 (security) + Israel/5 (products) + bounty + sales
+## ISRAEL AGENTS (I/1→I/9, no I/3) + LION
+- I/1(tweets) I/2(npm) I/4(security+LION) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
+- **LION**: `~/bin/lion status|navigate|learn|recall|train|pipeline`
+- See: zion-army-reference.md
 
-## ZION AGENT SYSTEM (Session 54 — EXPANDED)
-- **1,613+ agentes** = 1001 army + 48 corp + 100 city + 300 sales + 300 valentes + 7 sentinels
-- **Israel Agents**: I/1(tweets) + I/2(npm) + I/4(security) + I/5(TapToons) + I/6(revenue) + **I/7(money)** + **I/8(sales)** + **I/9(bounty)**
-- See: zion-army-reference.md, sentinel-system.md
-
-## INFRA AUTOMATIZADA
-- Auto-Backup (30min), Security Scan (15min), Sentinel Guardian (@reboot)
-- Dashboard port 8777
-
-## CLAUDE MYTHOS / CAPYBARA (Leak 27 Mar 2026)
-- Capybara > Opus > Sonnet > Haiku | Early access privado, SEM API
-- **HackerOne**: https://forms.gle/3ocTorSkkuvcGePn9 ($25K/jailbreak)
-- **Fellows**: https://job-boards.greenhouse.io/anthropic/jobs/5023394008 ($3,850/sem)
-- See: claude-mythos-intel.md
-
-## ROTA MORTAL — PLANO ATIVO (Session 53)
-- **8 FRENTES SIMULTANEAS**: Freelance, Marketplace, Credito, Bounties, Produtos, Grants, Email, PRs
+## ROTA MORTAL — Session 55 Update
 - **War Plan**: ~/israel-seven/WAR_PLAN.md
-- **Meta 24h**: $100+ (primeiro cliente freelance)
-- **Meta 7d**: $1,000+ | **Meta 30d**: $10,000+ | **Meta 90d**: $100,000+
-- **PRONAMPE**: R$250K disponivel para CNPJ 51.148.891/0001-69
-- **Freelance**: Upwork + Fiverr (Claude specialist $75-200/hr)
-- **Marketplace**: Claude Marketplace + mcpmarket.com + Glama (AAA)
+- PRONAMPE R$250K | Freelance $75-200/hr | 14 bounty platforms | 39 revenue channels
+- **PIPELINE: $33M+ optimistic, $17M+ realistic**
+- See: claude-mythos-intel.md, operational-playbook.md
 
 ## TOPIC FILES
-- revenue-status.md, bounties-pipeline.md, prs-active.md, credentials-secure.md
-- taptoons-v2-plan.md, capybara-bible-product.md, claude-mythos-intel.md
-- ai-agents-arsenal.md, operational-playbook.md, x-rules-anti-suspension.md
-- immunefi-automation.md, smart-contract-security.md, opire-bounty-workflow.md
-- zion-army-reference.md, sentinel-system.md, lessons-learned.md
+- revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
+- credentials-secure.md, x-rules-anti-suspension.md, zion-army-reference.md
+- immunefi-automation.md, smart-contract-security.md, lessons-learned.md
