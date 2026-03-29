@@ -138,17 +138,17 @@
 - **Credential REMOVED**: submit_hackenproof.json DELETED before going public
 
 ## GITFLIX — Netflix for GitHub Repos (Session 64 — LIVE!)
-- **APP**: https://elromevedelelyon.github.io/gitflix/ — HTTP 200
-- **SINTEX PAGE**: https://sintex.ai/gitflix — landing + terms + monetization
-- **GitHub**: https://github.com/ElromEvedElElyon/gitflix (PUBLIC)
+- **APP**: https://elromevedelelyon.github.io/gitflix-app/ — HTTP 200
+- **SINTEX PAGE**: https://sintex.ai/gitflix — HTTP 200, landing + terms
+- **GitHub SOURCE**: https://github.com/ElromEvedElElyon/gitflix (PRIVATE)
+- **GitHub DEPLOY**: https://github.com/ElromEvedElElyon/gitflix-app (PUBLIC, gh-pages only)
 - **Local**: ~/gitflix/ (878 lines, React 19 + TS + Vite)
+- **Deploy dir**: /tmp/gitflix-deploy/ (clean dist, 6 files)
 - **10 categories**: Trending, AI/ML, MCP, Web3, DevTools, TS, Python, Rust, Security, CLI
-- **Features**: Netflix-style UI, search, repo detail+README, horizontal carousels
-- **AI**: llms.txt, robots.txt, sitemap.xml deployed
 - **Revenue**: Free + Pro $9.99/mo + Team $29.99/mo + 10% platform fee
-- **LEGAL**: Beta disclaimer, no refunds, waiver, CCBC arbitration, software-only
-- **Stack**: atomus-ai + claw-mcp-toolkit + sovereign-pay
-- **Backup**: ~/backups/session64-complete-20260329.tar.gz
+- **LEGAL**: Beta, no refunds, waiver, CCBC arbitration, software-only
+- **AI**: llms.txt, robots.txt, sitemap.xml
+- **LESSON**: GitHub Pages NAO funciona com repo privado em conta free. Usar repo separado para deploy.
 
 ## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
