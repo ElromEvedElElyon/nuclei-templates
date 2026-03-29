@@ -2,7 +2,7 @@
 # "Preparing for the Biggest Technological Revolution of the Decade"
 # CONFIDENCIAL — Produto Padrao Bitcoin | NUNCA DELETAR
 
-## STATUS: v2.0 — Web3 Payment + 14 Langs + Manuscripts Restructured (Session 54)
+## STATUS: v2.1 — Web3 Payment + 23 Langs + Manuscripts Restructured (Session 55)
 ## PRECO: $6.66 USD per language / R$34.90 BRL / 70% royalty
 ## SALES PAGE: https://sintex.ai/mythos (UPDATED Session 54)
 ## PAYMENT: PayPal | Web3 Wallet Connect (Phantom/MetaMask) | PIX | Manual Crypto
@@ -40,7 +40,14 @@
 - ALL fixed: proper translations + 593 lines of real appendix content added
 - PT manuscript: 787 → 1,380 lines | EN: 1,381 lines
 
-## ALL 14 MANUSCRIPTS COMPLETE (19,330 lines total)
+## EXPANDING TO 23 MANUSCRIPTS (Session 55 — 29 Mar 2026)
+- 9 new translations in progress: PT, SV, PL, VI, TH, ID, UK, RO, CS
+- PT was MISSING — being created as FULL_MANUSCRIPT_PT.md
+- All site pages updated: mythos.html, store.html, stbtcx-commerce.js
+- build_epub.py + build_pdf.py updated with TITLES dict for all 23 langs
+- PENDING: rebuild EPUBs + PDFs after translations complete
+
+## ALL 14 ORIGINAL MANUSCRIPTS (19,330 lines total)
 | Lang | Lines | EPUB | Bible Version | Status |
 |------|-------|------|---------------|--------|
 | PT | 1,380 | 34KB | Almeida RC | DONE |
