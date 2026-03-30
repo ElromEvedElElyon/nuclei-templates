@@ -15,7 +15,7 @@
 
 ## User
 - Elrom Eved El Elyon | standardbitcoin.io@gmail.com
-- GitHub: ElromEvedElElyon (47 repos) | StandardBitcoin10
+- GitHub: ElromEvedElElyon (50+ repos) | StandardBitcoin10
 - Financial: Zero income, ~$1M debt, wife pregnant — MAX URGENCY
 - Machine: i3 M370 2.4GHz, 3.3GB RAM — OOM crashes frequentes!
 
@@ -53,11 +53,11 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 64)
+## REVENUE STATUS (29 Mar 2026 — SESSION 65)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **ZION BROWSER v2.0.1**: FREE & OPEN SOURCE (MIT), repo PUBLIC, donate model
-- **GITFLIX**: Netflix for GitHub repos — NEW SaaS project, TAM $7.5B-$15B, ZERO competitors
-- **MYTHOS Guide**: 23 langs PRONTOS, ZERO canal ativo
+- **GITFLIX v1.1**: REAL product — My List, History, Quality Score, AI Agent Connect
+- **ZION BROWSER v2.0.1**: PWA fixed — multi-proxy CORS, ES5 compat, all browsers
+- **GATEWAY REPO**: padrao-bitcoin-tools — PUBLIC "ante-sala" for all products
 - **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!)
 - See: revenue-status.md, bounties-pipeline.md
 
@@ -137,18 +137,25 @@
 - **AI Discovery**: llms.txt, robots.txt, sitemap.xml, ai-plugin.json — all HTTP 200
 - **Credential REMOVED**: submit_hackenproof.json DELETED before going public
 
-## GITFLIX — Netflix for GitHub Repos (Session 64 — LIVE!)
-- **APP**: https://elromevedelelyon.github.io/gitflix-app/ — HTTP 200
-- **SINTEX PAGE**: https://sintex.ai/gitflix — HTTP 200, landing + terms
+## GITFLIX v1.1 — Netflix for GitHub Repos (Session 65 — REAL PRODUCT)
+- **APP**: https://elromevedelelyon.github.io/gitflix-app/ — LIVE
+- **SINTEX PAGE**: https://sintex.ai/gitflix — landing + terms + AI Agent Connect
 - **GitHub SOURCE**: https://github.com/ElromEvedElElyon/gitflix (PRIVATE)
-- **GitHub DEPLOY**: https://github.com/ElromEvedElElyon/gitflix-app (PUBLIC, gh-pages only)
-- **Local**: ~/gitflix/ (878 lines, React 19 + TS + Vite)
-- **Deploy dir**: /tmp/gitflix-deploy/ (clean dist, 6 files)
+- **GitHub DEPLOY**: https://github.com/ElromEvedElElyon/gitflix-app (PUBLIC, gh-pages)
+- **Local**: ~/gitflix/ (1100+ lines, React 19 + TS + Vite)
+- **FEATURES**: My List (localStorage), Watch History, Quality Score, Continue Browsing
+- **AI AGENT**: "Connect Your AI Agent" section — Claude, ChatGPT, Grok, Gemini setup
 - **10 categories**: Trending, AI/ML, MCP, Web3, DevTools, TS, Python, Rust, Security, CLI
 - **Revenue**: Free + Pro $9.99/mo + Team $29.99/mo + 10% platform fee
 - **LEGAL**: Beta, no refunds, waiver, CCBC arbitration, software-only
-- **AI**: llms.txt, robots.txt, sitemap.xml
-- **LESSON**: GitHub Pages NAO funciona com repo privado em conta free. Usar repo separado para deploy.
+- **LESSON**: GitHub Pages NAO funciona com repo privado em conta free
+
+## PADRAO-BITCOIN-TOOLS — Gateway "Ante-Sala" Repo (Session 65)
+- **REPO**: https://github.com/ElromEvedElElyon/padrao-bitcoin-tools (PUBLIC)
+- **Purpose**: Single entry point showcasing all 15+ projects/tools
+- **Content**: README with ecosystem tables, architecture diagram, quick start
+- **Topics**: mcp, ai-agents, tools, bitcoin, typescript, python, browser, payments, security
+- **SEO**: llms.txt, MIT License, 15 GitHub topics for discoverability
 
 ## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
 - I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)

@@ -132,14 +132,16 @@ python3 valentes_300.py promote-all     # Promote all to SINGULARITY
 - **All SINGULARITY**: Level 50, permanent, inviolable
 - **State**: `~/.zion/sentinels/` (pids/, logs/, reports/)
 
-## Israel/Dez (I/10) — Guardiao da Estabilidade (Session 57)
-- **Script**: `~/israel-ten/israel_ten.py`
-- **Binary**: `~/bin/israel10`
+## Israel/Dez (I/10) v2.0 — Guardiao da Estabilidade (Session 57, upgraded 61)
+- **Script**: `~/israel-ten/israel_ten.py` (v2.0.0)
 - **Mission**: NUNCA crashar a maquina. Monitora RAM/CPU/swap/processos/sessoes
-- **Features**: OOM prevention, process killer (safe list), task identifier, session protector
+- **v2.0 NEW**: EAGAIN detection, DANGEROUS_PROCESSES list (16 types), pre_operation_check()
+- **Features**: OOM prevention, EAGAIN prevention, dangerous process killer, task identifier, session protector
+- **DANGEROUS_PROCESSES**: netlify, esbuild, webpack, turbopack, next-server, vite, tsc, npx, rollup, parcel, jest, mocha, playwright, puppeteer, electron, chromium
 - **State**: `~/israel-ten/data/` (HMAC-signed), logs em `~/israel-ten/logs/`
 - **SINGULARITY Level 50** — NUNCA DELETAR
-- **Comandos**: status, health, sessions, tasks, hogs, emergency, sentinel, history, backup, soul
+- **Comandos**: status, health, eagain, kill-dangerous, safe-check, sessions, tasks, hogs, emergency, sentinel, history, backup, soul
+- **Session 61 Victory**: Detected stuck `ntl deploy` PID 352179 with 1,665 zombie children causing 4,995 threads (EAGAIN). Killed it, system recovered from load 75 → 10
 
 ## Israel/Onze (I/11) — Revenue Accelerator (Session 58)
 - **Script**: `~/israel-eleven/israel_eleven.py`

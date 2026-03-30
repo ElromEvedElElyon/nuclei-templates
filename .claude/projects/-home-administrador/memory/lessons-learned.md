@@ -1,4 +1,12 @@
-# Lessons Learned — Padroes Confirmados (62 Sessions — 29 Mar 2026)
+# Lessons Learned — Padroes Confirmados (65 Sessions — 29 Mar 2026)
+
+## SESSION 65 — REAL PRODUCTS & CROSS-BROWSER
+- **"Produto real" vs "parece real"**: User demands REAL functionality, not just landing pages. Key features that make it real: localStorage persistence (My List, History), Quality Score algorithm, Continue Browsing, proper state management
+- **ZionBrowser PWA fix**: Single CORS proxy = fragile. Always use 3+ proxy fallback array with rotation
+- **ES5 compatibility**: Arrow functions, template literals, const/let break IE11/old browsers. Use `var`, string concatenation, `function(){}` for max compat
+- **Gateway repo pattern**: Public "ante-sala" repo showcases all projects → generates stars/visibility → links to paid/private products. Add 10+ GitHub topics for SEO
+- **Netlify deploy**: `npx netlify-cli deploy --prod --dir=.` works when auth is setup. Falls back to API hash-based upload when CLI fails
+- **AI Agent Connection**: Add MCP config examples for Claude, ChatGPT, Grok, Gemini — makes product compatible with all major AI platforms
 
 ## SESSION 62 — PRODUCT LAUNCH & AI DISCOVERABILITY
 - **STRIPE BUTTON WAS MISSING** from sales page! Always verify ALL payment methods are on the page
