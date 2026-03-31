@@ -1,7 +1,9 @@
 # TapToons — Two Versions
 # Em nome do Senhor Jesus Cristo
 
-## Status: LIVE (28 Mar 2026, Session 51 — REPOS FIXED)
+## Status: LIVE (29 Mar 2026, Session 63 — V2 VERIFIED CORRECT)
+## NOTA: Se graficos antigos aparecem = CACHE do browser/Service Worker. Ctrl+Shift+R ou limpar dados do site.
+## Session 63: MD5 checksum identico entre ~/taptoons/ e ~/taptoons-v2/ — deploy CORRETO
 
 ### V1 — Pixel Art Edition (Original)
 - **LIVE**: https://elromevedelelyon.github.io/taptoons-v1/
@@ -29,6 +31,14 @@
 - v2 public: N64 Monster Edition RESTAURADO (tinha sido revertido para Pixel Art)
 - v2 private: 673 linhas uncommitted COMMITADAS (sessao anterior crashou)
 - Ambas Pages builds: OK, sites verificados LIVE
+
+### Session 63 Verification (29 Mar 2026)
+- **PUBLIC = PRIVATE**: MD5 `7a194244faa0bdf7eedbad4c83707d91` identico
+- **V2 confirmado**: title "Monster Runner N64", 6 monsters, drawMonster(), game pad
+- **Zero uncommitted changes** em ambos repos
+- **Last commit public**: `b254cdb TapToons v2.1 N64 Monster Edition -- restore latest version`
+- **Last commit private**: `6362ca1 Session 50: backup`
+- **Se usuario ve graficos antigos**: Service Worker cache ou browser cache — NAO e problema de codigo
 
 ## ROI Analysis
 - Net per sale: $0.66 (after Stripe/PayPal fees)

@@ -53,13 +53,12 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (29 Mar 2026 — SESSION 65)
+## REVENUE STATUS (30 Mar 2026 — SESSION 71)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **GITFLIX v1.1**: REAL product — My List, History, Quality Score, AI Agent Connect
-- **ZION BROWSER v2.0.1**: PWA fixed — multi-proxy CORS, ES5 compat, all browsers
-- **GATEWAY REPO**: padrao-bitcoin-tools — PUBLIC "ante-sala" for all products
+- **AMAZON KDP**: EN PUBLICADO (ASIN A1M3B0MAA1KRQ), PT em andamento
+- **GITFLIX v3.0**: MARKETPLACE MODEL — 7 Functions, ai-plugin.json, openapi.json
 - **SEBRAE Start Digital SP**: DL 2 ABR (3 DIAS!)
-- See: revenue-status.md, bounties-pipeline.md
+- See: revenue-status.md, gitflix-audit-s71.md
 
 ## xAI / GROK API
 - **Console**: https://console.x.ai — vinculado a @opencllaw
@@ -98,8 +97,8 @@
 ## PRODUCTS (19 published/in-dev)
 - **ZionBrowser v2.0.1**: FREE & OPEN SOURCE (MIT), repo PUBLIC, donate model
   - See: ZION BROWSER section below
-- **GITFLIX**: Netflix for GitHub repos — SaaS, uses atomus-ai + claw-mcp-toolkit + sovereign-pay
-- **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs PRONTOS, ZERO canal ativo
+- **GITFLIX v2.1**: Netflix for GitHub repos — FULL BACKEND, real Stripe Checkout, 5 Netlify Functions
+- **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs — **KDP EN+PT PUBLICANDO!**
 - **TapToons v2.1**: $0.99, N64 Monster Edition LIVE, V2 CORRETO no deploy (cache issue)
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
 - **Sovereign Pay** | **Sovereign Pay Lite** | **Commerce Pay MCP**
@@ -137,61 +136,70 @@
 - **AI Discovery**: llms.txt, robots.txt, sitemap.xml, ai-plugin.json — all HTTP 200
 - **Credential REMOVED**: submit_hackenproof.json DELETED before going public
 
-## GITFLIX v1.1 — Netflix for GitHub Repos (Session 65 — REAL PRODUCT)
+## GITFLIX v3.0 — Code Marketplace (Session 71 — FULL AUDIT + FIXES)
 - **APP**: https://elromevedelelyon.github.io/gitflix-app/ — LIVE
-- **SINTEX PAGE**: https://sintex.ai/gitflix — landing + terms + AI Agent Connect
-- **GitHub SOURCE**: https://github.com/ElromEvedElElyon/gitflix (PRIVATE)
-- **GitHub DEPLOY**: https://github.com/ElromEvedElElyon/gitflix-app (PUBLIC, gh-pages)
-- **Local**: ~/gitflix/ (1100+ lines, React 19 + TS + Vite)
-- **FEATURES**: My List (localStorage), Watch History, Quality Score, Continue Browsing
-- **AI AGENT**: "Connect Your AI Agent" section — Claude, ChatGPT, Grok, Gemini setup
-- **10 categories**: Trending, AI/ML, MCP, Web3, DevTools, TS, Python, Rust, Security, CLI
-- **Revenue**: Free + Pro $9.99/mo + Team $29.99/mo + 10% platform fee
-- **LEGAL**: Beta, no refunds, waiver, CCBC arbitration, software-only
-- **LESSON**: GitHub Pages NAO funciona com repo privado em conta free
+- **SINTEX PAGE**: https://sintex.ai/gitflix — landing + AI Agent Connect
+- **GitHub SOURCE**: https://github.com/ElromEvedElElyon/gitflix (PRIVATE, master)
+- **Local**: ~/gitflix/ (237KB/73KB gzip, React 19 + TS + Vite)
+- **BACKEND**: 7 Netlify Functions + ai-plugin.json + openapi.json (ALL 200):
+  - search, readme, repo, checkout, webhook, verify, status
+- **AI AGENT READY**: ai-plugin.json + openapi.json + llms.txt + CORS *
+- **SECURITY**: Rate limit 30/min/IP, webhook sig enforced, no bypass, tx hash for crypto
+- **QUALITY SCORE**: 5 metrics (popularity, community, docs, maintenance, health), breakdown Pro-only
+- **MODEL**: FREE (10 views) / PRO $9.99 lifetime / CREATOR 85% revenue share / API $29/mo
+- **Stripe webhook**: we_1TGXbq... REGISTERED, 4 events, signature enforced
+- **21 security tests PASSED** (XSS, SQLi, path traversal, rate limit, CORS)
+- See: gitflix-audit-s71.md
 
-## PADRAO-BITCOIN-TOOLS — Gateway "Ante-Sala" Repo (Session 65)
-- **REPO**: https://github.com/ElromEvedElElyon/padrao-bitcoin-tools (PUBLIC)
-- **Purpose**: Single entry point showcasing all 15+ projects/tools
-- **Content**: README with ecosystem tables, architecture diagram, quick start
-- **Topics**: mcp, ai-agents, tools, bitcoin, typescript, python, browser, payments, security
-- **SEO**: llms.txt, MIT License, 15 GitHub topics for discoverability
+## AWESOME-AI-AGENT-TOOLS — Gateway "Ante-Sala" (Session 65)
+- **REPO**: https://github.com/ElromEvedElElyon/awesome-ai-agent-tools (PUBLIC)
+- **RENAMED** from padrao-bitcoin-tools → awesome-ai-agent-tools (10x more stars potential)
+- **Local**: ~/padrao-bitcoin-tools/ (remote updated)
+- **Content**: Awesome-list format, badges, TOC, CONTRIBUTING.md, issue templates, package.json
+- **Topics**: 20/20 (awesome, awesome-list, mcp, model-context-protocol, ai-agents, ai-tools, etc)
+- **SEO**: llms.txt (proper spec), shields.io badges, star-history ready
+- **LESSON**: "awesome-*" repos get 10x more stars than generic names
 
-## ISRAEL AGENTS (I/1→I/12) + LION + LION-1 + PIRATE
-- I/1(tweets) I/2(npm) I/4(security) I/5(TapToons) I/6(revenue) I/7(money) I/8(sales) I/9(bounty)
-- **I/10 Israel/Dez v2.0**: `~/israel-ten/israel_ten.py` — GUARDIAO DA ESTABILIDADE (NUNCA DELETAR)
-  - v2.0: EAGAIN detection, DANGEROUS_PROCESSES kill list, pre_operation_check(), safe-check CLI
-  - Cmds: status, health, eagain, kill-dangerous, safe-check, emergency, sentinel
-- **I/11 Israel/Onze**: `~/bin/israel11` — REVENUE ACCELERATOR (Session 58)
-  - 5 tiers: Freelance imediato, Bounties, Credito, Aceleradoras, Freelance premium
-  - Comandos: status, plan, prs, sentinel, soul
-- **I/12 Israel/Doze**: `~/bin/israel12` — HACKATHON COMMANDER (Session 58)
-  - 9 hackathons tracked: $552K+ em premios
-  - Comandos: status, plan, soul
-  - Monitora RAM/CPU/swap/processos/sessoes 24/7
-  - Previne OOM, mata processos perigosos, protege janelas
-  - Identifica tarefas locais+remotas, HMAC-signed state
-  - Comandos: status, health, sessions, tasks, hogs, emergency, sentinel, history, backup, soul
-- **LION**: `~/bin/lion` — Learning navigator
-- **LION-1**: `~/bin/lion1` — Cookie/token hunter + shield
-- **PIRATE**: `~/bin/pirate` — Military machine guardian
-- See: zion-army-reference.md
+## AUDIT FINDINGS (Session 65) — PROBLEMAS CRITICOS
+- **npm**: claw-mcp-toolkit e atomus-ai NAO PUBLICADOS — 404 no npm registry
+- **Stars**: 4 TOTAL em 50+ repos — zero prova social
+- **ai-plugin.json**: Aponta para API inexistente (site estatico)
+- **PayPal**: HTTP 200 funciona, se user viu erro = browser/cookies
+- **ACAO URGENTE**: Publicar npm (precisa token novo), submeter a awesome-lists
 
-## ROTA MORTAL — Session 59 Update (WALLET VERIFIED)
-- **War Plan**: ~/israel-seven/WAR_PLAN.md
-- PRONAMPE R$150K | Freelance $30-150/hr | 14 bounty platforms | 55 revenue channels
-- **ALL WALLETS VERIFIED $0.00** em 29 Mar 2026 — ETH, SOL, BTC, L2s, tokens = ZERO
-- **REGRA MAXIMA**: ZERO TRABALHO GRATIS. So com CERTEZA de pagamento.
-- **CANAIS REALMENTE GARANTIDOS**:
-  - Algora CORE nuclei #6674+#6532 = $200 (com bounty label!)
-  - AI Training (Mindrift/Outlier/DataAnnotation $30-150/hr) — REGISTRAR AGORA
-  - Immunefi #71022 se aceito = $5K-$100K
-  - PRONAMPE R$150K (credito, nao bounty)
-- **TokenTon26**: MORTO (deadline foi 19 Mar, nao 2 Abr)
-- **Superteam Vault**: IMPROVAVEL (competitor PR#44 muito a frente)
-- **DIA 1 ABRIL**: Executar registros (Mindrift+Outlier+SEBRAE+PRONAMPE+Hats Finance)
+## ISRAEL AGENTS + ROTA MORTAL
+- I/1→I/12, LION, LION-1, PIRATE — See: zion-army-reference.md
+- **I/10**: GUARDIAO ESTABILIDADE (NUNCA DELETAR) `~/israel-ten/israel_ten.py`
+- **ROTA MORTAL**: ALL WALLETS $0.00. DIA 1 ABR: Mindrift+Outlier+SEBRAE+PRONAMPE
+- **Algora**: nuclei #6674+#6532 = $200 (bounty label)
+- **Immunefi #71022**: ZKsync, se aceito $5K-$100K
+- See: zion-army-reference.md, revenue-status.md
+
+## BIBLIA SAGRADA — PRESENTE SILENCIOSO (Session 68)
+- **Versão**: Almeida Revista e Corrigida (ARC) — CCB — SBB 1995
+- **Repo**: github.com/ElromEvedElElyon/biblia-sagrada | **Pages**: LIVE
+- **EPUB**: 1.4MB, 66 livros, 31105 versículos | **QR**: em 23 manuscritos MYTHOS
+- **SINTEX.AI/BIBLE v2.0**: 99KB, 194+ idiomas, 5 seções, contribuição Netlify Forms
+  - Hero + Downloads + João 3:16 (194 langs) + O Codex + Contribuir
+  - Preparada para 7000+ dialetos (ISO 639-3), upload texto/audio/video
+  - GitHub Issues template para contribuições grandes
+- **INTEGRADO NO KDP**: QR code no final do EPUB aponta para biblia-sagrada GitHub Pages
+- **REGRAS**: ZERO marketing, presente silencioso, SEM KJV — só Almeida ARC
+
+## KDP AUTOMATION (Session 70)
+- **kdp_nav.py v2.0**: CDP client com React checkbox, TreeWalker click, wait-for
+- **kdp_publish_lang.py**: Automação para 193 idiomas ($6.66 cada)
+- **22 EPUBs prontos**, EN publicado, PT em andamento (pricing)
+- **Chrome**: `--remote-debugging-port=9222 --user-data-dir=~/.chrome-kdp`
+- **CDP params**: `cdp.send('method', {'param': 'value'})` — dict, NÃO kwargs
+- **CKEditor**: `CKEDITOR.instances.editor1.setData(html)` + `updateElement()` + `fire('change')`
+- **React radio**: CDP `Input.dispatchMouseEvent` com coordenadas reais (JS click não funciona)
+- **React input**: CDP `Input.insertText` + Tab para blur (React validation)
+- **Preço BR**: Usar vírgula (6,66) não ponto — locale brasileiro
+- See: kdp-automation.md
 
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 - credentials-secure.md, x-rules-anti-suspension.md, zion-army-reference.md
 - immunefi-automation.md, smart-contract-security.md, lessons-learned.md
+- **kdp-automation.md** (NEW Session 67)

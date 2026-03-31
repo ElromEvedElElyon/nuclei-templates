@@ -1,4 +1,30 @@
-# Lessons Learned — Padroes Confirmados (65 Sessions — 29 Mar 2026)
+# Lessons Learned — Padroes Confirmados (71 Sessions — 30 Mar 2026)
+
+## SESSION 71 — MULTILANG DIACRITICS FIX & KDP BANK BLOCK
+- **MyMemory API strips diacritics**: Free translation API (50K chars/day) strips accents from body text. Only last ~15 lines of each manuscript had correct Unicode. ALWAYS post-process translations with language-specific accent restoration
+- **Diacritics fix strategy by language**: German: ae→ä/oe→ö/ue→ü with exception wordlist (Abenteuer, aufbauen, etc). Spanish: systematic -cion→-ción patterns + word map. French/Italian: pure word map (150+ entries). Always preserve code blocks (skip ``` regions)
+- **fix_accents_multilang.py**: Reusable tool at ~/capybara-bible/. Applied 876 corrections (ES:352, FR:226, DE:257, IT:40, PT:1). Run before every EPUB/PDF rebuild
+- **KDP bank verification blocks ALL publishing**: Once bank added, account enters "Ainda estamos configurando sua conta" state. EN was published BEFORE bank was added. PT and all other languages must wait ~3 business days for verification. No workaround — just wait
+- **KDP draft saving works while blocked**: Can complete Details + Content + Pricing and save as draft even during bank verification. Only final "Publicar" button is blocked. Strategy: prepare all drafts now, mass-publish after bank verifies
+- **Chrome CDP with low RAM**: Always kill ALL Chrome processes before launch. Use --disable-extensions --disable-background-networking --disable-sync. Need --remote-allow-origins=* for WebSocket. 122MB free RAM = crash risk
+- **Ukrainian translation verified 100% complete**: Was listed as 210/237 chunks but final manuscript is 1384 lines, all 159 headers match, 7 appendices present. The "partial" status was from interrupted pipeline — final output was already complete
+
+## SESSION 69 — FULL BACKEND DEPLOYMENT
+- **Stripe price ID cross-account**: STRIPE_PRICE_PRO env var was from a different Stripe account (Cpy8OI4abM vs CrBH7uXgTe). Always add fallback: try subscription price → if fails → create one-time $9.99 payment via price_data inline
+- **Netlify Functions as backend**: Zero-config serverless. Each .js file in netlify/functions/ becomes an endpoint. Add redirects in netlify.toml for clean URLs (/api/gitflix/search → /.netlify/functions/gitflix-search)
+- **Stripe without npm dependency**: Use raw fetch to api.stripe.com with URLSearchParams body + Bearer auth. No need for `stripe` npm package (saves 500KB+ in function size)
+- **GitHub token in Netlify env**: `gh auth token` gives current CLI token. Set via `npx netlify-cli env:set GITHUB_TOKEN <token>`. Gives 30 search/min (3x unauthenticated) and 5000 core/hr
+- **Server-side cache in Netlify Functions**: In-memory Map persists between warm invocations (~5min). Simple TTL-based eviction. Max entries cap prevents memory leak
+- **Payment verification without database**: Stripe API is the database. Retrieve checkout session → check payment_status. Or lookup customer by email → check subscriptions. No Postgres/Neon needed for MVP
+- **ProModal props mismatch**: After rewriting a component's interface, ALWAYS update all callers in the same commit. TypeScript catches this at build time but only if you actually build
+
+## SESSION 66 — MONETIZATION & PRODUCTION FIXES
+- **GitHub API rate limit**: Unauthenticated search = 10 req/min. 10 categories = exactly at limit. Solution: localStorage persistent cache (30min TTL) + batch requests with delays + graceful 403 fallback to cached data
+- **Free/Pro gating without backend**: localStorage-based activation with URL params (?pro=1). Bypassable but functional for MVP. Real verification needs backend
+- **HTML sanitization without deps**: Strip script/iframe/form/event handlers with regex instead of adding DOMPurify dependency (saves bundle size on low-RAM machine)
+- **Mobile responsive in inline styles**: Use CSS class names in globalCSS + media queries. Inline styles cant do @media. Hybrid approach: global CSS for breakpoints, inline for everything else
+- **Monetization trifecta**: Always offer 3 payment methods: Card (Stripe), PayPal, Crypto. Each captures different audience. Crypto = global reach without banking
+- **OpenClaw integration realistic scope**: Client-side app cant call MCP servers. Phase 1 = show our repos as featured category + footer links. Phase 2 = backend that calls MCP tools
 
 ## SESSION 65 — REAL PRODUCTS & CROSS-BROWSER
 - **"Produto real" vs "parece real"**: User demands REAL functionality, not just landing pages. Key features that make it real: localStorage persistence (My List, History), Quality Score algorithm, Continue Browsing, proper state management
