@@ -1,0 +1,67 @@
+[
+  {
+    "id": "esim_1774295820517",
+    "phoneNumber": "+5511966083891",
+    "carrier": "Claro",
+    "country": "BR",
+    "email": "standardbitcoin.io@gmail.com",
+    "activatedAt": "2026-03-23T19:57:00.517Z",
+    "lastSmsCheck": "2026-03-23T19:57:28.840Z",
+    "smsProvider": "free-services",
+    "inbox": [
+      {
+        "id": "sms_1774295832232_zq7umf",
+        "from": "quackr.io",
+        "body": "Whoops, this is embarassing.  Looks like the page you were looking for wasn't found.",
+        "receivedAt": "2026-03-23T19:57:12.232Z",
+        "read": false
+      },
+      {
+        "id": "sms_1774295832233_a3e7cj",
+        "from": "quackr.io",
+        "body": "The world's most popular temporary number platform, offering thousands of free virtual phone numbers and real non-voip numbers for purchase.",
+        "receivedAt": "2026-03-23T19:57:12.233Z",
+        "read": false
+      },
+      {
+        "id": "sms_1774295832233_tnyuk9",
+        "from": "quackr.io",
+        "body": "We offer bulk discounts of up to 85% for high-volume purchases.",
+        "receivedAt": "2026-03-23T19:57:12.233Z",
+        "read": false
+      },
+      {
+        "id": "sms_1774295832233_hbhl5n",
+        "from": "quackr.io",
+        "body": "Get in touch with our Enterprise Sales Team to learn more.",
+        "receivedAt": "2026-03-23T19:57:12.233Z",
+        "read": false
+      },
+      {
+        "id": "sms_1774295845561_9gzl7r",
+        "from": "receive-sms-online.info",
+        "body": "Receive-SMS-online.info is FREE service for receive SMS messages online, based on REAL SIM and shows you the exact information received by the modem with Dynamic Sender ID. On this website you can check if you receive SMS on different routes,or if you receive using the Dynamic Sender ID feature. — How to use?",
+        "receivedAt": "2026-03-23T19:57:25.561Z",
+        "read": false
+      },
+      {
+        "id": "sms_1774295845561_0sn5x0",
+        "from": "receive-sms-online.info",
+        "body": "Advertisement",
+        "receivedAt": "2026-03-23T19:57:25.561Z",
+        "read": false
+      }
+    ]
+  },
+  {
+    "id": "esim_1774296915765",
+    "phoneNumber": "+13187149390",
+    "carrier": "Twilio",
+    "country": "US",
+    "email": "standardbitcoin.io@gmail.com",
+    "activatedAt": "2026-03-23T20:15:15.765Z",
+    "lastSmsCheck": "",
+    "smsProvider": "twilio",
+    "inbox": []
+  }
+]
