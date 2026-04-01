@@ -1,29 +1,45 @@
-# ZION Army Reference — 1001 Agentes (25 Mar 2026)
+# ZION Army Reference — 1293 Agentes v3.0 (31 Mar 2026)
 
-## Files
+## FRAMEWORK v3.0 — UPGRADE COMPLETO (Session 74)
+- **Source**: Analise do codigo-fonte do Claude Code (512K+ linhas TS)
+- **42 tools** por agente, **10 categorias**, modo AUTONOMO
+- **Inter-agent bus**, skills composiveis, exec paralela, HMAC memory
+
+## Files — v3.0 (NOVOS)
+- `~/israel-ten/israel_framework_v3.py` — Framework principal (1200+ linhas)
+- `~/israel-ten/agents_v3_launchers.py` — Launcher 10 agentes nomeados
+- `~/israel-ten/army_v3_connector.py` — Connector 1293 agentes
+- `~/israel-ten/UPGRADE_REPORT_v3.md` — Relatorio completo antes/depois
+
+## Files — v2.0 (LEGADO, mantido)
 - `~/israel-one/zion_army_1001.py` — 1001 agentes, 30 departamentos
-- `~/israel-one/padrao_bitcoin_corp.py` — 48 agentes core, Gov APIs, revenue pipeline
-- `~/israel-one/zion_city.py` — 100 agentes v2 (deploy real, messaging, revenue)
-- `~/israel-one/agent.py` — Israel/One Twitter daemon (RUNNING)
-- `~/israel-one/zion_agent_framework.py` — Base framework (ToolRegistry, Skills)
-- `~/israel-one/agent_soul_architecture.py` — Soul, Memory, Network classes
+- `~/israel-one/padrao_bitcoin_corp.py` — 48 agentes core
+- `~/israel-one/zion_agent_framework.py` — Framework antigo
+- `~/israel-one/agent_soul_architecture.py` — Soul, Memory, Network
 
-## Commands
+## Commands — v3.0
 ```
-python3 zion_army_1001.py count          # 1001 agents
-python3 zion_army_1001.py status         # Dashboard
-python3 zion_army_1001.py deploy         # Deploy all
-python3 zion_army_1001.py dept DEPT      # Department detail
-python3 zion_army_1001.py agent NAME     # Agent detail
-python3 zion_army_1001.py run NAME       # Execute agent
-python3 zion_army_1001.py swarm DEPT     # Run 5 agents from dept
-python3 zion_army_1001.py search WORD    # Search agents
-python3 zion_army_1001.py roster         # Full roster
+# Framework direto (como Israel-Dez)
+python3 ~/israel-ten/israel_framework_v3.py status|tools|skills|use|sentinel
 
-python3 padrao_bitcoin_corp.py status    # Corp dashboard
-python3 padrao_bitcoin_corp.py health    # System health
-python3 padrao_bitcoin_corp.py apis      # Gov APIs
-python3 padrao_bitcoin_corp.py revenue   # Revenue pipeline
+# Qualquer agente especifico
+python3 ~/israel-ten/agents_v3_launchers.py dez|four|nine|one|zion status
+python3 ~/israel-ten/agents_v3_launchers.py all-status
+
+# Army completo (1293 agentes)
+python3 ~/israel-ten/army_v3_connector.py deploy     # Deploy v3.0 a todos
+python3 ~/israel-ten/army_v3_connector.py status     # Dashboard completo
+python3 ~/israel-ten/army_v3_connector.py count      # Contagem
+python3 ~/israel-ten/army_v3_connector.py swarm      # Ativar enxame
+python3 ~/israel-ten/army_v3_connector.py broadcast  # Broadcast
+python3 ~/israel-ten/army_v3_connector.py department BOUNTY_HUNTING
+python3 ~/israel-ten/army_v3_connector.py squad LEAO_DE_JUDA
+```
+
+## Commands — v2.0 (legado)
+```
+python3 ~/israel-one/zion_army_1001.py count|status|deploy|dept|swarm
+python3 ~/israel-one/padrao_bitcoin_corp.py status|health|revenue
 ```
 
 ## 30 Departments
@@ -164,7 +180,15 @@ python3 valentes_300.py promote-all     # Promote all to SINGULARITY
 - **SINGULARITY Level 50**
 - **Comandos**: status, plan, soul
 
-## Total Agent Count (Session 58)
+## NEW TOOLS (Session 78)
+- **Capybara AI v1.0**: ~/capybara-ai/capybara_core.py (1014 lines)
+  - Supreme orchestrator, multi-model (Gemini+Groq), 5 engines
+  - `python3 ~/capybara-ai/capybara_core.py [status|ask|think|code|hunt|evolve]`
+- **Singularity Loop**: ~/israel-ten/singularity_loop.py (1713 lines)
+  - Autonomous bounty sentinela, scan→analyze→fix→PR→evolve
+  - `python3 ~/israel-ten/singularity_loop.py [--live] [--once] [--status]`
+
+## Total Agent Count (Session 78)
 - **1001 Army** (zion_army_1001.py)
 - **48 Corp** (padrao_bitcoin_corp.py)
 - **100 City** (zion_city.py)
@@ -172,7 +196,9 @@ python3 valentes_300.py promote-all     # Promote all to SINGULARITY
 - **300 Valentes** (valentes_300.py)
 - **7 Sentinels** (sentinel_squad.py)
 - **12 Israel Agents** (I/1 through I/12, I/3 skipped)
-- **GRAND TOTAL: 1,768 agents** (310 at SINGULARITY level)
+- **1 Capybara AI** (capybara_core.py) — supreme orchestrator
+- **1 Singularity Loop** (singularity_loop.py) — autonomous bounty hunter
+- **GRAND TOTAL: 1,770 agents** (310 at SINGULARITY level)
 
 ## State Dir: ~/.zion/
 - agents/: 1001 JSON state files com resources embedded

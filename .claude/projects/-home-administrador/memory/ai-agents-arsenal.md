@@ -1,4 +1,30 @@
-# AI Agents Arsenal — Cloned & Ready (27 Mar 2026)
+# AI Agents Arsenal — Cloned & Ready (31 Mar 2026)
+
+## CAPYBARA AI v1.0 — Supreme Orchestrator (Session 78 — NEW!)
+- **Path**: ~/capybara-ai/capybara_core.py (1014 lines, Pure Python, stdlib only)
+- **GitHub**: https://github.com/ElromEvedElElyon/capybara-ai (PRIVATE)
+- **Multi-model**: Gemini free (unlimited) → Groq free (14,400/day) → fallback
+- **5 engines**: CapybaraEngine, ReasoningChain, CodeGenerator, BountyHunter, EvolutionEngine
+- **CLI**: `python3 capybara_core.py [status|ask|think|code|hunt|evolve]`
+- **Needs**: `export GEMINI_API_KEY=...` and/or `export GROQ_API_KEY=...`
+- **3.3GB RAM safe**: Pure Python stdlib, zero pip dependencies
+
+## SINGULARITY LOOP — Autonomous Bounty Sentinela (Session 78 — NEW!)
+- **Path**: ~/israel-ten/singularity_loop.py (1713 lines, Pure Python)
+- **8 classes**: SingularityLogger, BountyIssue, BountyAttempt, BountyLedger, GeminiClient, GitHubOps, StrategyEngine, SingularityLoop
+- **CLI**: `python3 singularity_loop.py [--live] [--once] [--status] [--interval N]`
+- **Flow**: Scan GitHub issues → Analyze with Gemini → Generate fix → Submit PR → Track → Evolve
+- **DRY RUN default**: Use `--live` for real PRs
+- **Integrates**: Israel Framework v3.0 (IsraelAgent class)
+
+## ISRAEL AGENT FRAMEWORK v3.0 (Session 74 — MAJOR UPGRADE)
+- **Source analysis**: Claude Code full source (512K+ lines TS) cloned to ~/nirholas-claude-code/
+- **Framework**: ~/israel-ten/israel_framework_v3.py — 42 tools, 10 categories, Pure Python
+- **1293 agents**: 30 depts + 30 squads + 12 core + 10 named — ALL have 42 tools
+- **Key patterns from Claude Code**: buildTool(), AgentTool, PermissionMode(4), EventBus, ConcurrentExecutor, SkillRegistry, HMAC Memory
+- **Commands**: `python3 ~/israel-ten/army_v3_connector.py status|deploy|swarm|count`
+- **Per-agent**: `python3 ~/israel-ten/agents_v3_launchers.py dez|four|nine|zion status`
+
 
 ## CLONED REPOS (Session 45)
 

@@ -1,5 +1,11 @@
-# Sentinel System — Complete Documentation (Session 35 — 26 Mar 2026)
+# Sentinel System — Complete Documentation (Session 74 — 31 Mar 2026)
 # Em nome do Senhor Jesus Cristo, nosso Salvador
+
+## FRAMEWORK v3.0 UPGRADE (Session 74)
+- All sentinels now powered by Israel Agent Framework v3.0
+- 42 tools per sentinel, inter-agent bus, skills, concurrent exec
+- New sentinel command: `python3 ~/israel-ten/agents_v3_launchers.py sentinel status`
+- Full army: `python3 ~/israel-ten/army_v3_connector.py status`
 
 ## Overview
 7 Sentinel processes that run 24/7 autonomously. Each has a specific mission.

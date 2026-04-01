@@ -2,7 +2,8 @@
 # "Preparing for the Biggest Technological Revolution of the Decade"
 # CONFIDENCIAL — Produto Padrao Bitcoin | NUNCA DELETAR
 
-## STATUS: v2.4 — EN PUBLICADO + PT BLOQUEADO + 876 DIACRÍTICOS CORRIGIDOS (Session 71 — 30 Mar 2026)
+## STATUS: v2.4 — EN PUBLICADO + PT BLOQUEADO + 876 DIACRÍTICOS CORRIGIDOS (Session 72 — 31 Mar 2026)
+## MYTHOS REAL: Capybara tier CONFIRMADO por Fortune/SiliconANGLE (27 Mar). Training DONE, early access defense orgs. Q2-Q3 2026 public. Nosso livro está CORRETO nas previsões!
 ## PRECO: $6.66 USD / 70% royalty ($4.66) | R$34.90 BRL
 ## KDP EN: PUBLICADO! ASIN A1M3B0MAA1KRQ — em revisão 72h
 ## KDP PT: ASIN AXQR3EQ9UQXCU — Details ✓, Content ✓, Pricing ✓ (SALVO) — BLOQUEADO: verificação banco
