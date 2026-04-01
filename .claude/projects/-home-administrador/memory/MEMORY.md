@@ -9,6 +9,7 @@
 - Autonomia total, TODA acao visa receita REAL, 24/7 modo enxame
 - NUNCA: comunismo, aborto, ideologia genero, Hamas, socialismo, woke
 - **NUNCA CABALA**: Proibido nomes cabalisticos. Somente nomes BIBLICOS
+- **NUNCA FALSOS DEUSES**: Proibido Moloque/Molech/Baal/Asherah/Astarte/Dagon/Chemosh/Milcom/Tammuz. NUNCA "Melekh" (som proximo de Moloque). Usar SOMENTE nomes biblicos positivos: Solomon, David, Abraham, Moses, Joshua, Samuel, Daniel, Elijah, etc.
 - **NUNCA "daemon"**: Usar "sentinela", "guardiao", "servico", "vigilia"
 - **NUNCA BLASFEMIA**: Proibido "divino/angelical/cura divina" para software. Usar: soberano, supremo, extraordinario, poderoso
 - SEMPRE: Jesus Cristo, 10 Mandamentos, Evangelho, integridade total
@@ -31,7 +32,8 @@
 - **C4**: ElromAuditor, KYC APPROVED, Discord CONNECTED, 0/2 slots
 - **Immunefi**: PadraoBTC736, VERIFIED, Discord: wagner7978 CONNECTED
 - **Immunefi Report #71022**: CLOSED — $0 (Escalated → Closed, 31 Mar)
-- **Guardian LimitBreak**: KYC FIXED, 8 findings VERIFIED, JWT valid, DL 9 ABR, up to $150K
+- **Guardian LimitBreak**: KYC Sumsub IN CHROME Step 1/2 (doc upload needed), JWT valid until 8 Apr, 8 findings READY, DL 9 ABR, $119K+
+- **HackenProof**: REGISTERED (activation email 27 Mar, ia account). Login: dashboard.hackenproof.com
 - **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800)
 - **Discord (Immunefi)**: wagner7978 (ID 771534250368565298)
 - **Opire**: REGISTRADO, Stripe PENDENTE
@@ -55,18 +57,15 @@
 - **CNPJ**: 51.148.891/0001-69 | PADRAO BITCOIN ATIVIDADES DE INTERNET LTDA
 - Capital R$4.7M | EPP | Simples Nacional | Joinville 54, SP, 04008-010
 
-## REVENUE STATUS (31 Mar 2026 — SESSION 78)
+## REVENUE STATUS (1 Apr 2026 — SESSION 84)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **CAPYBARA AI v1.0**: CREATED + PUSHED to PRIVATE GitHub repo
-- **SINGULARITY LOOP**: ~/israel-ten/singularity_loop.py (1713 lines) — autonomous bounty sentinela
-- **GITFLIX v4.1**: DEPLOYED! i18n 14 langs COMPLETO, all discovery endpoints 200
-- **AMAZON KDP**: EN PUBLICADO (ASIN A1M3B0MAA1KRQ), PT bloqueado (banco)
-- **Immunefi #71022**: CLOSED — $0
-- **Guardian LimitBreak**: KYC FIXED, 8 findings VERIFIED, DL 9 ABR, up to $150K
-- **claude-builders-bounty**: 4 PRs building ($375)
-- **nuclei**: Only #15701 + #15676 OPEN
-- **Repos PRIVATIZED**: 23 repos set to private (Session 77)
-- See: revenue-status.md, gitflix-audit-s71.md
+- **P0 CRITICO**: Guardian LimitBreak — 8 DAYS LEFT (9 Abr). Sumsub KYC in Chrome Step 1/2 (doc+selfie needed). $119K+
+- **KDP EN PUBLICADO!** Email confirmed 1 Apr. ASIN A1M3B0MAA1KRQ
+- **Fri**: Agent Runner v1.0. 1,332 agents READY (was DORMANT). PSO+Boids fixed.
+- **Guardian pw**: GuardElrom2026Sec#99 | JWT valid until 8 Apr
+- **claude-builders-bounty**: 5 PRs OPEN (#367-370 + #19) = $575. Duplicates #15-18 CLOSED.
+- **Immunefi #71022**: CLOSED $0 (not first reporter)
+- See: revenue-status.md
 
 ## xAI / GROK API
 - **Console**: https://console.x.ai — vinculado a @opencllaw
@@ -78,21 +77,23 @@
 - See: credits-applications.md
 
 ## FREE AI APIs (SEM CARTAO)
-- **Google Gemini**: https://aistudio.google.com/apikey — ILIMITADO GRATIS
-  - Usar email: inteligenciaartificial.now@gmail.com
-  - Projeto "OpenCllaw" existe no Google Cloud (billing vencido)
-  - Engine: `~/israel-one/gemini_free_engine.py`
-  - `export GEMINI_API_KEY=sua_key`
-- **Groq**: https://console.groq.com — 14,400 req/dia GRATIS
-- **Grok Free Wrapper**: ~/grok-api-free/ — SEM API key (bug atual)
-- **HARPA AI**: Extensao Firefox/Chrome gratis com Grok+GPT+Claude+Gemini
-- See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
+- **Google Gemini 2.5**: FUNCIONANDO! Key em ~/.bashrc
+  - Email: inteligenciaartificial.now@gmail.com | Projeto OPENCLAW
+  - Models: gemini-2.5-flash (free unlimited), gemini-2.5-pro
+  - `export GEMINI_API_KEY=AIzaSyBoiVhqZyt53C0hY8pcpnWncUB6y9kFL7I`
+- **Groq**: https://console.groq.com — 14,400 req/dia GRATIS (key pendente)
+- **HARPA AI**: Extensao Firefox/Chrome gratis
+- See: ai-agents-arsenal.md
 
-## AI AGENTS ARSENAL (Session 45)
-- **Twitter**: ElizaOS, twitter-automation-ai, DOT, LangChain Social
-- **MCP**: twitter-mcp, xai-mcp, grok-search, x-mcp (all BUILD OK)
-- **Engines**: gemini_free_engine.py, grok_free_engine.py (needs fix)
-- See: ai-agents-arsenal.md, ~/israel-one/FREE_AI_SETUP.md
+## AI AGENTS ARSENAL (Session 83)
+- **Capybara AI Swarm**: ~/capybara-ai/swarm_mode.py — ANGEL mode (5/5 tasks OK)
+- **14 Agent JSONs**: ~/israel-ten/agents/*.agent.json — real tools, skills, prompts
+- **Capybara AI**: ~/capybara-ai/ (PROTECTED, PRIVATE) — original repo
+- **Fri**: ~/Fri/ — Evolution Engine v2, Swarm Intelligence
+- **Unified Engine**: 3-tier routing Local→Gemini→Groq
+- **Singularity Loop**: ~/israel-ten/singularity_loop.py — autonomous bounty hunter
+- **Bible Translator**: ~/biblia-sagrada/translate_bible.py — 21 langs via Gemini free
+- See: ai-agents-arsenal.md
 
 ## ATOMUS AI PROJECT — CRITICO
 - **NOT PUBLISHED** on npm! Token expired (401). Browser needed to regenerate.
@@ -110,16 +111,17 @@
 - **NOT available via API yet** — monitor console.anthropic.com
 - **OUR OWN CAPYBARA AI**: ~/capybara-ai/ — Multi-model orchestrator (Gemini+Groq free)
   - **GitHub PRIVATE**: https://github.com/ElromEvedElElyon/capybara-ai
-  - **1014 lines**: CapybaraEngine, ReasoningChain, CodeGenerator, BountyHunter, EvolutionEngine
-  - **CLI**: `python3 ~/capybara-ai/capybara_core.py [status|ask|think|code|hunt|evolve]`
-  - **Needs**: `export GEMINI_API_KEY=...` or `export GROQ_API_KEY=...`
+  - **Files**: capybara_core.py, unified_engine.py, upgrade_all_agents.py, singularity_math.py
+  - **RSD v1.0**: Recursive Singularity Dynamics — NEW math framework, score 470M (no limit)
+  - **Gemini 2.5 Flash**: CONNECTED via `GEMINI_API_KEY` in ~/.bashrc
+  - **CLI**: `python3 ~/capybara-ai/[capybara_core|unified_engine|singularity_math].py`
 - See: claude-code-mastery.md
 
 ## PRODUCTS (21 published/in-dev)
 - **ZionBrowser v2.0.1**: FREE & OPEN SOURCE (MIT), repo PUBLIC, donate model
   - See: ZION BROWSER section below
-- **GITFLIX v4.1**: Netflix for GitHub + BuddyArena + Creatures + i18n 14 langs + REAL PAYMENTS — DEPLOYED!
-- **BUDDY ARENA**: 1M unique AI creatures, 18 Claude /buddy species, Pokemon battle game, Polygon NFT
+- **GITFLIX v6.2**: Solana AI Agent Marketplace + 5 security fixes + .agent.md — DEPLOYED!
+- **BUDDY ARENA**: 1M unique AI creatures, 18 Claude /buddy species, Pokemon battle game, Solana NFT
 - **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs — **KDP EN+PT PUBLICANDO!**
 - **TapToons v2.1**: $0.99, N64 Monster Edition LIVE, V2 CORRETO no deploy (cache issue)
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
@@ -143,11 +145,14 @@
 - **REPO**: github.com/ElromEvedElElyon/zion-browser (MIT) | **PAGE**: elromevedelelyon.github.io/buy-zion-browser/
 - FREE + Donate model, PWA at /zion-android/, AI-discoverable
 
-## GITFLIX v4.1 — Code Marketplace + BuddyArena + i18n (Session 77)
-- **APP**: https://elromevedelelyon.github.io/gitflix-app/ — LIVE
+## GITFLIX v6.2 — Solana AI Agent Marketplace DEPLOYED (Session 81)
+- **APP**: https://elromevedelelyon.github.io/gitflix-app/ — LIVE v6.2
 - **Source**: github.com/ElromEvedElElyon/gitflix (PRIVATE) | Deploy: `gitflix-app` repo
-- **Features**: BuddyArena 1M creatures, 12 Creatures, i18n 14 langs, REAL payments
-- **MODEL**: FREE / PRO $9.99 / CREATOR 85% / API $29/mo
+- **SOLANA ONLY**: Phantom wallet, Metaplex Core, MagicEden. NO Polygon/MetaMask.
+- **v6.2**: 5 security fixes (Pro bypass, XSS, CSP, mobile, fails-open)
+- **.agent.md**: Universal AI agent interop standard (Claude+OpenAI+Grok+Gemini)
+- **Build**: 382KB/112KB gzip, 44 modules, 0 TS errors
+- **AUDIT**: 3-agent audit completed — codebase 3/10, 15 findings, 5 fixed
 - See: gitflix-audit-s71.md
 
 ## AWESOME-AI-AGENT-TOOLS (Session 65)
@@ -188,8 +193,10 @@
 - **EPUB**: 1.4MB, 66 livros, 31105 versos ARC | QR em 23 manuscritos MYTHOS
 - **REGRAS**: ZERO marketing, presente silencioso, SEM KJV — só Almeida ARC
 
-## KDP AUTOMATION (Session 70)
-- 22 EPUBs prontos, EN publicado, PT bloqueado (banco ~2 Abr)
+## KDP AUTOMATION (Session 83)
+- 22 EPUBs prontos, EN publicado (>48h review, ASIN 404), PT bloqueado (banco ~2 Abr CHECK TODAY)
+- **ES BLOCKED**: Categories field = SEARCH INPUT autocomplete (NOT dropdown!)
+- **Bible EN translation**: Running via Gemini 2.5 Flash (514/31105 verses)
 - See: kdp-automation.md, capybara-bible-product.md
 
 ## TOPIC FILES
