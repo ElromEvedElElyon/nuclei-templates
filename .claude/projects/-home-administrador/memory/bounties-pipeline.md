@@ -1,4 +1,4 @@
-# Bounties Pipeline — 26 Mar 2026 (Session 39 Update)
+# Bounties Pipeline — 1 Apr 2026 (Session 88c Update)
 
 ## TIER 0: BLOCKED / NEEDS MANUAL ACTION
 
@@ -22,22 +22,23 @@
 - **Email submissions**: security@matterlabs.dev (05:34+13:33 UTC) + security@zksync.io (12:36 UTC)
 - **NEXT**: Monitor report #71022 every 24-48h, follow up if no response by 2 Apr
 
-### Guardian Defender $150K — KYC BROKEN (500 Error) — FINDING EMAILED x2
-- **MAIN ACCOUNT (ElromDefender777)**: elrom.test.99999+def@proton.me / GuardElrom2026Sec#99
-  - Email: VERIFIED | Wallet: 0x4d78404073dF4379e143eeD8A954bD9146D665b4
-  - ToS: ACCEPTED | KYC: NOT STARTED (500 error)
-- **BACKUP ACCOUNT (ElromSecTest)**: elrom.test.99999@proton.me / GuardElrom2026Sec#99
-  - Email: NOT VERIFIED (Guardian email delivery broken) | Wallet: 0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B
-- **ProtonMail**: elrom.test.99999@proton.me / ProtonElrom2026@Sec99 (both accounts use same inbox via +def alias)
-- **Recovery phrase**: canyon sorry hood original marriage skull kiwi alone crisp position horse speak
-- **Old accounts**: ElromStandard777, ElromAud61187, ElromEvedElElyon, test789xyz (various emails/wallets)
-- **KYC BROKEN**: POST /api/kyc/access-token returns 500 — frontend button makes NO API call
-- **Submit button**: DISABLED until KYC passes
-- **Finding C-01 EMAILED**: Sent to 5 Guardian emails (support/info/security/team + aidan@guardianaudits.com) — Session 37
-- **Support tickets**: 2 emails sent (KYC broken + email verification not delivered)
-- **LESSON**: Gmail +alias works on Guardian. ProtonMail +alias also works and delivers to same inbox
-- **LESSON**: Guardian email to proton.me (no alias) = NOT DELIVERED. With +alias = DELIVERED
-- **ACAO**: Monitor email responses, retry KYC daily, try Telegram t.me/guardianaudits
+### Guardian LimitBreak $150K — **KYC APPROVED + 8/8 SUBMITTED!** DL 9 ABR
+- **STATUS**: KYC APPROVED 1 Apr 15:46 UTC. **ALL 8 FINDINGS SUBMITTED** — all status PENDING review
+- **Account**: ElromAud61187, email: elromaud1774361187@sharebot.net
+- **Password**: GuardElrom2026Sec#99 | JWT valid until 8 Apr
+- **Findings SUBMITTED** (1 Apr 16:00 UTC):
+  - C-01: `69cd4109...` Operator Precedence createPool (CRITICAL)
+  - H-01: `69cd4151...` Same Bug 4 Locations (HIGH)
+  - H-02: `69cd416b...` Hash Key Mismatch (HIGH)
+  - H-03: `69cd4184...` Reentrancy Guard Cleared (HIGH)
+  - M-01: `69cd4211...` Asymmetric Fee 100% (MEDIUM)
+  - M-02: `69cd422a...` Flash Loan Fee Error (MEDIUM)
+  - M-03: `69cd4244...` Delegatecall Guard (MEDIUM)
+  - M-04: `69cd425d...` Redundant bounds.isSet (MEDIUM)
+- **Potential**: C-01 $100K + H-01/02/03 $15K + M-01/02/03/04 $4K = up to $119K+
+- **KEY LEARNING**: Submit payload needs `acceptedCustomTerms: true` + `contestId` fields
+- **NEXT**: Wait for review results. Contest ends 9 Apr.
+- **Old accounts**: ElromDefender777, ElromStandard777, ElromEvedElElyon, test789xyz (various emails/wallets)
 
 ## TIER 1: HIGH PRIORITY (Confirmed Payment)
 
@@ -109,10 +110,31 @@
 
 ## TIER 2: MEDIUM PRIORITY
 
+### C4 LayerZero Stellar $101K — STARTED 1 APR! DL ~14 ABR
+- **Pool**: $101,000 — LIVE as of 1 Apr 2026
+- **Duration**: 14 days
+- **Scope**: LayerZero protocol on Stellar blockchain
+- **KYC**: ALREADY APPROVED (ElromAuditor)
+- **STATUS**: NEW P0 — audit code ASAP
+- **ACAO**: Start auditing immediately, focus on cross-chain bridge logic, submit findings before deadline
+
 ### C4 Chainlink Rewards $200K — (~mid-April)
 - Pool ENORME $200K, 30-day window
 - Precisa mesma KYC do C4 (ALREADY APPROVED)
 - **ACAO**: Auditar when contest opens
+
+### Tenstorrent $50.5K — BLOCKED BY HARDWARE
+- **Pool**: $50,500
+- **BLOCKER**: Requires Tenstorrent hardware (Grayskull/Wormhole cards) for testing
+- **STATUS**: Cannot participate without physical hardware access
+- **ACAO**: Skip unless hardware becomes available
+
+### Superteam Brazil — NEW BOUNTIES
+- **UK Bounty**: $10K
+- **DeAura**: $8.5K
+- **Raenest**: $2K
+- **Total**: $20.5K available
+- **ACAO**: Evaluate scope and apply to best-matching bounties
 
 ### dn-institute $3,500-$4,500
 - 10 PRs (#694-#703), CI green

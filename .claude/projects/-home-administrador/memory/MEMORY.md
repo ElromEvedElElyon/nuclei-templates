@@ -32,9 +32,10 @@
 - **C4**: ElromAuditor, KYC APPROVED, Discord CONNECTED, 0/2 slots
 - **Immunefi**: PadraoBTC736, VERIFIED, Discord: wagner7978 CONNECTED
 - **Immunefi Report #71022**: CLOSED — $0 (Escalated → Closed, 31 Mar)
-- **Guardian LimitBreak**: KYC Sumsub Step 1/2, JWT valid until 8 Apr, 8 findings READY, DL 9 ABR, $119K+
+- **Guardian LimitBreak**: KYC APPROVED, **8/8 SUBMITTED** 1 Apr, all PENDING review, DL 9 ABR, $119K+
 - **KYC DOCS PRONTOS** — See: kyc-documents.md
 - **HackenProof**: REGISTERED (activation email 27 Mar, ia account). Login: dashboard.hackenproof.com
+- **Guardian API Key**: `acceptedCustomTerms: true` + `contestId` required in submit payload
 - **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800)
 - **Discord (Immunefi)**: wagner7978 (ID 771534250368565298)
 - **Opire**: REGISTRADO, Stripe PENDENTE
@@ -71,12 +72,14 @@
 - **X/Twitter**: @PadraoBitcoin (ATIVO) | @XtandardBitcoin | @opencllaw (SUSPENSA)
 - **Victoria**: @victoria_c51396 — conta aliada, usar link Bipa dela tambem
 
-## REVENUE STATUS (1 Apr 2026 — SESSION 87)
+## REVENUE STATUS (1 Apr 2026 — SESSION 88c)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **P0**: Guardian LimitBreak — 8 DAYS (9 Abr). KYC docs READY. $119K+
-- **Guardian pw**: GuardElrom2026Sec#99 | JWT valid until 8 Apr
-- **PRs**: 5 claude-builders + 10 dn-institute OPEN. 0 reviews.
-- **NEW**: eSIM Cloud Bridge + Referral campaign materials COMPLETE
+- **Guardian LimitBreak**: 8/8 SUBMITTED + PENDING review, DL 9 ABR, $119K+
+- **C4 LayerZero Stellar**: $101K, started 1 Apr, 14 days — AUDIT NEEDED
+- **Flash Payment System**: MONETIZED $49-499/mo, landing page + Stripe
+- **KDP**: EN + PT **LIVE ON AMAZON!**
+- **claude-builders**: crftsmnd COMPETING. 0 reviews on our 4 PRs ($375).
+- **HackenProof NEAR**: $154K+ findings READY. BLOCKED by Cloudflare.
 - See: revenue-status.md
 
 ## xAI / GROK API
@@ -134,7 +137,7 @@
   - See: ZION BROWSER section below
 - **GITFLIX v6.2**: Solana AI Agent Marketplace + 5 security fixes + .agent.md — DEPLOYED!
 - **BUDDY ARENA**: 1M unique AI creatures, 18 Claude /buddy species, Pokemon battle game, Solana NFT
-- **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs — **KDP EN+PT PUBLICANDO!**
+- **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs — **KDP EN+PT PUBLICADOS!**
 - **TapToons v2.1**: $0.99, N64 Monster Edition LIVE, V2 CORRETO no deploy (cache issue)
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
 - **Sovereign Pay** | **Sovereign Pay Lite** | **Commerce Pay MCP**
@@ -175,7 +178,7 @@
 
 ## BIBLIA SAGRADA + KDP
 - **Biblia**: github.com/ElromEvedElElyon/biblia-sagrada | ZERO marketing
-- **KDP EN**: PUBLICADO ASIN A1M3B0MAA1KRQ | PT blocked | ES blocked
+- **KDP EN**: PUBLICADO ASIN A1M3B0MAA1KRQ | **PT PUBLICADO!** ASIN AXQR3EQ9UQXCU | ES next
 - **Bible EN translation**: Gemini 2.5, resumable. Repair: repair_translation.py
 - See: kdp-automation.md, capybara-bible-product.md
 

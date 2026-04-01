@@ -1,4 +1,11 @@
-# Lessons Learned — Padroes Confirmados (79+ Sessions — 1 Apr 2026)
+# Lessons Learned — Padroes Confirmados (88 Sessions — 1 Apr 2026)
+
+## SESSION 88 — GUARDIAN 8/8 SUBMITTED + KDP PT PUBLISHED
+- **Guardian API undocumented field**: Submit endpoint requires `acceptedCustomTerms: true` in payload when contest has `customTerms`. Without it, returns "You must accept the contest terms". Found by reverse-engineering SPA JS bundle (`/static/js/main.d4b7afb1.js`), searching for "accept" related strings.
+- **SPA reverse engineering technique**: `curl` the main JS bundle → `grep -oP` for API patterns/field names. Key find: `acceptedCustomTerms` and `contestId` were required but undocumented.
+- **Guardian rate limit**: 3 submissions per minute. Use 25s delay between submissions.
+- **Sumsub KYC completion**: Camera access blocked in cross-origin iframes. Solution: use "Continue on phone" option — gives QR/link. User completes selfie on phone → verification auto-syncs.
+- **KDP PT published**: Bank verification completed ~30 Mar (email "Informações tributárias recebidas"). Book auto-published after bank was verified.
 
 ## SESSION 87 — eSIM CLOUD BRIDGE + REFERRAL CAMPAIGN
 - **eSIM without phone = impossible without hardware**: After exhaustive research, confirmed that using an eSIM on desktop REQUIRES a USB cellular modem ($15-80). No pure software solution exists. This IS the market gap.
