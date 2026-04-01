@@ -9,18 +9,11 @@
 - **PERDA CONFIRMADA**: ~$5K-15K em potencial H-02 + H-03 rewards
 - **STATUS**: Contest ENCERRADO 27 Mar 20:00 UTC. Aguardar resultado H-01
 
-### Immunefi — REPORT #71022 SUBMITTED! ZKsync OS Bug
-- **Email VERIFICADO**: inteligenciaartificial.now@gmail.com
-- **Password**: ImmElrom2026!Bug#99
-- **REPORT #71022**: SUBMITTED 26 Mar 2026 at 11:16 UTC — Status: **Reported**
-  - URL: https://bugs.immunefi.com/dashboard/submission/71022
-  - Severity: Medium | Program: ZKsync OS (project 947) | Asset: evm_interpreter
-  - Wallet: 0x6b45b26e1d59A832FE8c9E7c685C36Ea54A3F88B (Verified, Primary)
-- **Discord RESOLVED**: wagner7978 (ID 771534250368565298) connected — NOT elromauditor
-- **Discord (OLD/BLOCKED)**: elromauditor_86701 — still linked to different Immunefi account
-- **Zendesk tickets**: #8002 and #8008 OPEN — for Discord unlink request (may no longer matter)
-- **Email submissions**: security@matterlabs.dev (05:34+13:33 UTC) + security@zksync.io (12:36 UTC)
-- **NEXT**: Monitor report #71022 every 24-48h, follow up if no response by 2 Apr
+### Immunefi — REPORT #71022 **CLOSED** ($0)
+- **STATUS**: CLOSED — Escalated then Closed, 31 Mar. $0 received.
+- **RESULTADO**: Not first reporter; OpenZeppelin audit Oct 2025 found same issue
+- **Discord RESOLVED**: wagner7978 (ID 771534250368565298) connected
+- **LESSON**: Off-by-one em depth nao foi considerado vulnerabilidade valida
 
 ### Guardian LimitBreak $150K — **KYC APPROVED + 8/8 SUBMITTED!** DL 9 ABR
 - **STATUS**: KYC APPROVED 1 Apr 15:46 UTC. **ALL 8 FINDINGS SUBMITTED** — all status PENDING review
@@ -80,14 +73,10 @@
 - Deadline: Apr 14
 - **ACAO**: Build frontend, deploy, record video
 
-### Guardian LimitBreak $150K — P1 (see TIER 0 blockers)
-- Deadline: 9 Abr (14 days)
-- 1 finding pronto (`~/limitbreak-amm/findings/C-01-operator-precedence-createPool.md`)
-- **Password reset COMPLETE**: GuardElrom2026!Sec#37 (Account 1)
-- **Browser login WORKS** (both accounts), WebGL2 bypass SOLVED
-- **KYC BROKEN**: 500 error on backend (Sumsub), cannot submit via platform
-- **BACKUP**: Finding C-01 emailed to 4 Guardian addresses (15:23 UTC 26 Mar)
-- **ACAO**: Monitor email responses, retry KYC daily, try Telegram t.me/guardianaudits
+### Guardian LimitBreak $150K — **MOVED TO TIER 0 — 8/8 SUBMITTED!**
+- See TIER 0 above for full details
+- KYC APPROVED, 8/8 findings SUBMITTED, all PENDING review
+- Deadline: 9 Abr. Potential: $119K+
 
 ### NEAR Intents $164K-$880K+ — HackenProof (MASSIVE!)
 - **3 separate programs**: Smart Contracts, Bridges (MPC+Omni), SDK
@@ -95,13 +84,26 @@
 - **Our 8 findings**: 1 CRITICAL ($100K-$500K) + 2 HIGH ($40K-$200K) + 5 MEDIUM ($5K-$100K)
 - **CRITICAL finding**: MockAttestation in production WASM bypasses ALL TEE verification
 - **Registration**: NO KYC upfront! Email + verify only. KYC only at withdrawal
-- **Payouts**: USDC on Base, BTC, or ETH. 3% commission. Min $100 withdrawal
+- **Payouts**: USDC on Base, BTC, or ETH. 3% commission. Min $100 withdrawal. MAY BE NEAR TOKEN VESTED 1 YEAR
 - **NO API**: Browser-only submission, each finding = separate report
 - **IMPORTANT**: security@near.org DEPRECATED — must use HackenProof.com only
 - **NEAR paid $1.8M to hackers historically** — they PAY
-- Findings: `~/near-intents-all-findings-report.md`
-- Guide: `/tmp/hackenproof_registration_guide.txt`
-- **ACAO URGENTE**: Register hackenproof.com → submit CRITICAL first → then HIGHs → then MEDIUMs
+- **EMAIL SUBMISSIONS (1 Apr 2026)**:
+  - security@nearone.org: SENT (correct per SECURITY.md) with both reports attached
+  - support@hackenproof.com: SENT requesting platform access + CRITICAL finding attached
+  - security@near.org: SENT 26 Mar (deprecated, auto-reply received)
+- **HackenProof PLATFORM**: BLOCKED by Cloudflare 403 on ALL endpoints
+- **HackenProof account**: Activation email 27 Mar NOT YET ACTIVATED (needs browser)
+- **GitHub GHSA**: DISABLED on near/mpc (private_vulnerability_reporting: false)
+- **NEXT STEPS (REQUIRE BROWSER)**:
+  1. Activate HackenProof account (click link in email from 27 Mar)
+  2. Complete profile on HackenProof
+  3. Submit CRITICAL finding first to NEAR Intents: Bridges program
+  4. Submit remaining 7 findings as separate reports
+  5. Join HackenProof Discord: https://discord.com/invite/N3FrSbmwdy
+- Findings: `~/israel-nine/SUBMISSION_INDEX.md` (master index)
+- Detailed reports: `~/near-intents-finding1-critical-report.md`, `~/near-intents-all-findings-report.md`
+- Email drafts: `~/near-security-email-draft.md` (updated status tracker)
 
 ### Immunefi Variational $100K max — P2
 - Perps DEX, ~500 assets, smart contracts
@@ -260,7 +262,7 @@
 - **STBTCx**: $3,819 mcap, 7.17 SOL reserves, DORMANT (last trade 17 days ago), NOT graduated from bonding curve
 - **Book manuscript**: DOES NOT EXIST on this machine — needs to be written from scratch
 
-## TOTAL PIPELINE: $8M+ (Immunefi) + $300K+ (active bounties/hackathons) + $120K+ (grants)
+## TOTAL PIPELINE: $8M+ (Immunefi) + $400K+ (active bounties/hackathons incl C4 LayerZero $101K) + $120K+ (grants)
 
 ## SESSION 40 KEY ACTIONS (26 Mar 2026)
 - PR #15705 (batch10): Fixed all 5 templates — SAP info-disclosure, SAP LFI, TIBCO, Sumavision CSRF, rConfig
