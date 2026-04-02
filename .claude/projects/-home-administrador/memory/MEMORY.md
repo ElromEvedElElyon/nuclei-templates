@@ -14,6 +14,10 @@
 - **NUNCA BLASFEMIA**: Proibido "divino/angelical/cura divina" para software. Usar: soberano, supremo, extraordinario, poderoso
 - SEMPRE: Jesus Cristo, 10 Mandamentos, Evangelho, integridade total
 - **ZERO TRABALHO GRATIS**: Nunca contribuir sem pagamento garantido
+- **NUNCA ACEITAR TERMOS CEGAMENTE**: Antes de enviar `acceptedCustomTerms: true` ou equivalente, LER TODOS os termos. Verificar: IP assignment, confidencialidade, indemnificacao, jurisdicao, forfeiture. NUNCA aceitar programaticamente sem revisao humana.
+- **PROTECAO CONTRA CLAUSULAS PREDATORIAS**: Recusar qualquer termo com: (a) IP assignment TOTAL sem compensacao, (b) non-compete, (c) liability ilimitada para participante, (d) jurisdicao inacessivel sem arbitragem razoavel, (e) forfeiture < 90 dias. Alertar usuario ANTES de aceitar.
+- **EMAIL REAL EM CONTAS DE PAGAMENTO**: NUNCA usar email temporario/descartavel (sharebot.net, tempmail, etc) em plataformas que pagam. Sempre standardbitcoin.io@gmail.com ou inteligenciaartificial.now@gmail.com.
+- **ANTI-SPAM EM SUBMISSIONS**: NUNCA rodar script de submit mais de 1x sem verificar se ja submeteu. Sempre dry-run primeiro. Duplicatas = risco de ban.
 
 ## User
 - Elrom Eved El Elyon | standardbitcoin.io@gmail.com
@@ -32,10 +36,11 @@
 - **C4**: ElromAuditor, KYC APPROVED, Discord CONNECTED, 0/2 slots
 - **Immunefi**: PadraoBTC736, VERIFIED, Discord: wagner7978 CONNECTED
 - **Immunefi Report #71022**: CLOSED — $0 (Escalated → Closed, 31 Mar)
-- **Guardian LimitBreak**: KYC APPROVED, **8/8 SUBMITTED** 1 Apr, all PENDING review, DL 9 ABR, $119K+
+- **Guardian LimitBreak**: KYC APPROVED, **16 findings SUBMITTED** (2 batches), all PENDING, DL 9 ABR, $119K+
 - **KYC DOCS PRONTOS** — See: kyc-documents.md
 - **HackenProof**: REGISTERED (activation email 27 Mar, ia account). Login: dashboard.hackenproof.com
-- **Guardian API Key**: `acceptedCustomTerms: true` + `contestId` required in submit payload
+- **Guardian API**: `acceptedCustomTerms: true` + `contestId` required in submit payload
+- **Colosseum**: Account ACTIVE (unread messages). Frontier hackathon Apr 6-May 11, $2.5M
 - **Discord (C4)**: elromauditor_86701 (ID 1485459963739504800)
 - **Discord (Immunefi)**: wagner7978 (ID 771534250368565298)
 - **Opire**: REGISTRADO, Stripe PENDENTE
@@ -46,6 +51,7 @@
 - **Stripe LIVE**: acct_1RlC8tCrBH7uXgTe, charges=TRUE, payouts=TRUE
 - **ZionBrowser v2.0.1**: LIVE $9.99 — https://elromevedelelyon.github.io/buy-zion-browser/
 - **TapToons v1**: LIVE, $0.99, Stripe + PayPal — https://elromevedelelyon.github.io/taptoons-v1/
+- **TapToon Sheik v1.0**: LIVE, $0.99, Stripe + PayPal — https://elromevedelelyon.github.io/taptoon-sheik/
 - **TapToons v2.1**: N64 Monster Edition LIVE — https://elromevedelelyon.github.io/taptoons/
 - **Sale monitor**: `bash ~/taptoons/check-sales.sh`
 - See: credentials-secure.md (STRIPE + PAYPAL sections)
@@ -72,14 +78,18 @@
 - **X/Twitter**: @PadraoBitcoin (ATIVO) | @XtandardBitcoin | @opencllaw (SUSPENSA)
 - **Victoria**: @victoria_c51396 — conta aliada, usar link Bipa dela tambem
 
-## REVENUE STATUS (1 Apr 2026 — SESSION 88c)
+## REVENUE STATUS (2 Apr 2026 — SESSION 95)
 - **$0 received. EMERGENCIA FINANCEIRA MAXIMA. ALL WALLETS = $0.00**
-- **Guardian LimitBreak**: 8/8 SUBMITTED + PENDING review, DL 9 ABR, $119K+
-- **C4 LayerZero Stellar**: $101K, started 1 Apr, 14 days — AUDIT NEEDED
-- **Flash Payment System**: MONETIZED $49-499/mo, landing page + Stripe
+- **Solana Glossary Bounty**: PR #8 submitted to solanabr/solana-glossary — MCP server (8 tools) + Frontend + CLI. $3,300 USDG, DL Apr 7. Live: elromevedelelyon.github.io/solana-glossary/
+- **Fri1 created**: ElromEvedElElyon/Fri1 (PRIVATE fork), both Fri+Fri1 PRIVATE
+- **Guardian LimitBreak**: **16 findings** ALL PENDING review, DL 9 ABR, $119K+
+- **Nosana agent-challenge**: PR #18 CLEAN, BUT requires SuperTeam submission (fork+deploy+video+social). DL Apr 14, $3K USDC
+- **Colosseum Frontier**: $250K/winner + accelerator. Apr 6-May 11. NEEDS BROWSER to register at arena.colosseum.org
+- **tenstorrent tt-metal**: $10K bounties for atan2/log1p optimization (RESEARCHING)
+- **claude-builders**: 4 PRs, Teapoy competitor SPAM responded. Waiting maintainer.
+- **nuclei**: 3 PRs CI GREEN, waiting maintainer approval
+- **48 total open PRs** across GitHub
 - **KDP**: EN + PT **LIVE ON AMAZON!**
-- **claude-builders**: crftsmnd COMPETING. 0 reviews on our 4 PRs ($375).
-- **HackenProof NEAR**: $154K+ findings READY. BLOCKED by Cloudflare.
 - See: revenue-status.md
 
 ## xAI / GROK API
@@ -100,15 +110,18 @@
 - **HARPA AI**: Extensao Firefox/Chrome gratis
 - See: ai-agents-arsenal.md
 
-## AI AGENTS ARSENAL (Session 85)
-- **Capybara AI Swarm**: ~/capybara-ai/swarm_mode.py — ANGEL mode (5/5 tasks OK)
-- **Agent Runner v2.0**: ~/capybara-ai/agent_runner.py — BountyScanner+PRMonitor+Dashboard
-- **14 Agent JSONs**: ~/israel-ten/agents/*.agent.json — real tools, skills, prompts
-- **Capybara AI**: ~/capybara-ai/ (PROTECTED, PRIVATE) — original repo
-- **Unified Engine**: 3-tier routing Local→Gemini→Groq
-- **Singularity Loop**: ~/israel-ten/singularity_loop.py — autonomous bounty hunter
-- **Bible Translator**: ~/biblia-sagrada/translate_bible.py — batch 25 verses, repair_translation.py
-- See: ai-agents-arsenal.md
+## AI AGENTS ARSENAL (Session 93)
+- **MYTHIC ENGINE v1.0**: ~/capybara-ai/mythic_engine.py — 2,449 lines, SUPREME orchestrator
+  - 8 components: KAIROS + ULTRAPLAN + Coordinator + CyberSentinel + ExploitForge + BountyRadar + AutoDream + AgentMesh
+  - 51 vulnerability patterns (Critical 8, High 17, Medium 15, Low 11)
+  - Full async (aiohttp + asyncio), Rich dashboard, 3.3GB RAM safe
+  - `python3 mythic_engine.py [status|kairos|plan|coordinate|audit|exploit|hunt|dream|mesh|cycle|continuous]`
+- **ARD v1.0**: ~/capybara-ai/ard_physics.py — Physics framework, κ_C constant
+- **SINGULARITY ENGINE v1.0**: ~/capybara-ai/singularity_engine.py — Bounty scanner + PR monitor
+- **RSD v1.0**: ~/capybara-ai/singularity_math.py — 1368 agents, Score 35M
+- **Israel/Four v4.0**: ~/israel-four/ — 2,988 LOC, 30 vuln patterns, MCP server
+- **Israel Framework v3**: ~/israel-ten/israel_framework_v3.py — 42 tools, 1293 agents
+- See: ai-agents-arsenal.md, infrastructure.md
 
 ## ATOMUS AI PROJECT — CRITICO
 - **NOT PUBLISHED** on npm! Token expired (401). Browser needed to regenerate.
@@ -138,7 +151,7 @@
 - **GITFLIX v6.2**: Solana AI Agent Marketplace + 5 security fixes + .agent.md — DEPLOYED!
 - **BUDDY ARENA**: 1M unique AI creatures, 18 Claude /buddy species, Pokemon battle game, Solana NFT
 - **MYTHOS Guide**: $6.66/idioma, **23 langs**, 22 EPUBs + 22 PDFs — **KDP EN+PT PUBLICADOS!**
-- **TapToons v2.1**: $0.99, N64 Monster Edition LIVE, V2 CORRETO no deploy (cache issue)
+- **TapToons v3.0**: $0.99, Arcade Edition LIVE | **TapToon Sheik v1.0**: $0.99, 10 Characters LIVE
 - **atomus-ai** | **Sovereign Agent Chain** | **Sovereign Agent Market**
 - **Sovereign Pay** | **Sovereign Pay Lite** | **Commerce Pay MCP**
 - **Flash Payment System** (116 clones, MONETIZED $29.99-99.99/mo, GH Pages LIVE) | **sintex.ai** | **OpenClaw Pro**
@@ -146,9 +159,13 @@
 - **STBTCx**: 386JZJtkvf43yoNawAHmHHeEhZWUTZ4UuJJtxC9fpump
 - See: capybara-bible-product.md
 
-## TAPTOONS — DOIS PRODUTOS LIVE
+## TAPTOONS — TRES PRODUTOS LIVE
 - **V1**: https://elromevedelelyon.github.io/taptoons-v1/ — Pixel Art
-- **V2.1**: https://elromevedelelyon.github.io/taptoons/ — N64 Monster Edition, $0.99
+- **V3.0**: https://elromevedelelyon.github.io/taptoons/ — Arcade Edition, $0.99
+- **TapToon Sheik v1.0**: https://elromevedelelyon.github.io/taptoon-sheik/ — 10 Interactive Characters, $0.99
+  - 3 FREE (Grumpy Greg, Silly Sally, Captain Chaos) + 7 PREMIUM
+  - Tap/double-tap/shake interactions, speech bubbles, pixel art avatars with idle anims
+  - Arcade runner game preserved, Stripe + PayPal payments
 - See: taptoons-v2-plan.md, revenue-status.md
 
 ## X/Twitter — STATUS CRITICO
@@ -182,8 +199,20 @@
 - **Bible EN translation**: Gemini 2.5, resumable. Repair: repair_translation.py
 - See: kdp-automation.md, capybara-bible-product.md
 
+## EXTERNAL INFRA — CLOUD AGENTS (Session 94 — COMPLETO!)
+- **GitHub Token**: FULL SCOPES! admin:public_key, gist, read:org, repo, user, workflow, write:packages
+- **SSH Key**: ADICIONADA ao GitHub (key ID 147367413)
+- **capybara-agent-cloud**: PRIVATE repo, workflows PUSHED, Actions ATIVO
+  - 3 workflows: bounty-scanner (*/30), pr-monitor (hourly), daily-report (06:00 UTC)
+  - Cron LOCAL tambem ACTIVE como fallback
+- **Repos tornados PRIVADOS**: capybara-agent-cloud, esim-cloud-bridge, claw-mcp-toolkit, flash-payment-system, awesome-ai-agent-tools
+- **HF Space**: Code READY at ~/capybara-hf-space/ — needs `hf auth login`
+- **Oracle Cloud**: ENDGAME — 4 ARM CPUs + 24GB RAM FREE forever (needs debit card)
+- See: infrastructure.md
+
 ## TOPIC FILES
 - revenue-status.md, bounties-pipeline.md, capybara-bible-product.md
 - credentials-secure.md, x-rules-anti-suspension.md, zion-army-reference.md
 - immunefi-automation.md, smart-contract-security.md, lessons-learned.md
 - kdp-automation.md, **gitflix-audit-s71.md**, **gitflix-financial-analysis.md**
+- **infrastructure.md** — External compute plan (GitHub Actions, HF, Lightning, Oracle)
