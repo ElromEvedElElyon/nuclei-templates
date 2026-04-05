@@ -185,6 +185,27 @@
 - [x] **BIBLE PAGE v2.0**: sintex.ai/bible DEPLOYED (99KB, 194+ langs, contribution system)
 - [x] **GitHub Issues template**: biblia-sagrada/.github/ISSUE_TEMPLATE/contribute-translation.yml
 
+## BIBLIA SAGRADA — 194 IDIOMAS (Session 111, 5 Apr 2026)
+
+### HEBRAICO (he) — REGRAS ESPECIAIS INVIOLAVEIS
+- **VT (livros 1-39 / Tanakh)**: Usar ORIGINAL hebraico Massorético (BHS/Leningrado).
+  NAO traduzir do JFA. Fornecer texto original com nikud (ניקוד) e sof-pasuq (׃).
+  Inclui: Torá, Nevi'im, Ketuvim — TODOS os 39 livros do AT.
+  Para seções em aramaico (Daniel, Esdras): usar aramaico original.
+- **NT (livros 40-66)**: Traduzir do JFA CCB Revista e Corrigida para hebraico.
+  Usar linguagem bíblica formal hebraica.
+- **Script**: `python3 ~/biblia-sagrada/translate_hebrew.py`
+- **Status**: INICIADO 5 Apr 2026, Gênesis em andamento
+- **Output**: ~/biblia-sagrada/he/bible_he.json + he/livros/*.md
+- **BATCH_SIZE**: 20 (menor que outros idiomas, texto RTL mais complexo)
+
+### REGRA GERAL PARA DEMAIS IDIOMAS
+- Traduzir do JFA CCB (ARC) para o idioma alvo
+- Tradução FIEL — sem interpretação, sem paráfrase
+- Script: `python3 ~/biblia-sagrada/translate_bible.py <lang_code>`
+- 21 idiomas configurados: en,es,fr,de,it,ru,zh,ja,ko,ar,hi,tr,nl,sv,pl,uk,ro,cs,vi,th,id
+- Meta total: 194 idiomas
+
 ## BIBLIA SAGRADA — PRESENTE SILENCIOSO (Session 68 Update)
 - **Versão**: Almeida Revista e Corrigida (ARC) — CCB — SBB 1995
 - **Repo**: github.com/ElromEvedElElyon/biblia-sagrada (PUBLIC)

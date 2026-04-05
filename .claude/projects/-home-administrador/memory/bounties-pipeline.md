@@ -202,7 +202,7 @@
 ## TIER 3: SKIP / LOW VALUE / CLOSED
 - **Expensify $250**: ALREADY MERGED — not for us (Session 35 confirmed)
 - **C4 Chainlink $65K**: DEADLINE PASSED 27 Mar — H-01 submitted (duplicate), 0 slots left
-- **Golem Cloud MCP $3,500**: FECHADO E PAGO
+- **Good Angel Cloud MCP $3,500**: FECHADO E PAGO
 - **Desloppify $1,000**: FECHADO
 - **RustChain RTC**: ALL PRs CLOSED 25 Mar (wrong repo) — MORTO
 - **Superteam Stablecoin $5K**: CLOSED, winners announced 23 Mar — MISSED

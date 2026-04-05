@@ -1,75 +1,41 @@
-# Claude Mythos / Capybara — Intel Completa
-# Leak: 27 Mar 2026 | Fonte: Fortune, CoinDesk, Futurism
+# Claude Models — ESTADO REAL (5 Apr 2026)
 
-## STATUS: Treinamento COMPLETO, teste limitado early access
-## TIER: Capybara (NOVO, acima de Opus)
-## MODEL ID: Nao divulgado
-## API: NAO disponivel publicamente
-## RELEASE: Sem data (possivelmente Oct 2026 alinhado ao IPO)
+## MODELOS DISPONIVEIS NA API (CONFIRMADO)
 
-## HIERARQUIA COMPLETA
-- Haiku 4.5 ($0.80/$4.00) — Fast, basic reasoning
-- Sonnet 4.6 ($3/$15) — Balanced
-- Opus 4.6 ($5/$25) — Flagship atual
-- **Capybara/Mythos ($10-20/$50-100+ est.)** — Breakthrough, step change
+| Modelo | ID | Input/MTok | Output/MTok | Context | Max Output |
+|--------|-----|-----------|-------------|---------|------------|
+| **Opus 4.6** | claude-opus-4-6 | $5 | $25 | 1M | 128K |
+| **Sonnet 4.6** | claude-sonnet-4-6 | $3 | $15 | 1M | 64K |
+| **Haiku 4.5** | claude-haiku-4-5-20251001 | $1 | $5 | 200K | 64K |
 
-## 6 CAPACIDADES CORE
-1. Cybersecurity — "Far ahead of ANY other AI model"
-2. Code Generation — Multi-language, debugging, large-scale review
-3. Academic Reasoning — Provas math, papers, logica
-4. Complex Multi-Step Reasoning — Cross-source synthesis
-5. Enhanced Agent Workflows — Maior estabilidade em tarefas longas
-6. Vulnerability Discovery — Zero-day identification, attack surface analysis
+### Legacy (ainda disponíveis)
+- Sonnet 4.5 (claude-sonnet-4-5-20250929)
+- Opus 4.5 (claude-opus-4-5-20251101)
+- Opus 4.1 (claude-opus-4-1-20250805)
+- Sonnet 4.0 (claude-sonnet-4-20250514)
+- Opus 4.0 (claude-opus-4-20250514)
+- Haiku 3 — DEPRECATED, retira 19 Apr 2026
 
-## RISCOS RECONHECIDOS PELA ANTHROPIC
-- "Unprecedented cybersecurity risks"
-- Automatiza descoberta E exploracao de vulns
-- "Presages wave of models that exploit vulns far outpacing defenders"
-- Capacidades: password cracking, system hijacking, data exploitation
-- Opera em "defensive mode" — ambiente controlado
+## MYTHOS / CAPYBARA — REAL MAS NAO DISPONIVEL
 
-## IMPACTO MERCADO (27 Mar 2026)
-- BTC caiu para $66K
-- PANW, CRWD, FTNT: -4% a -6%
-- ETF IGV: -2.5%
+- **Status**: Em teste INTERNO com early-access customers
+- **Confirmado por**: Fortune leak (27 Mar 2026), ~3000 docs internos vazados
+- **Tier**: Capybara (ACIMA de Opus em capacidade e custo)
+- **Capacidades reportadas**: Step change em cybersecurity, code gen, reasoning
+- **Release date**: NAO DEFINIDA (pode ser Oct 2026 alinhado ao IPO)
+- **API access**: ZERO. Nenhum model ID publico. NAO existe na API.
+- **Pricing estimado**: $10-20 input / $50-100 output per MTok
+- **ACAO**: Monitorar announcements. NAO gastar tempo tentando acessar.
 
-## O QUE VAZOU
-- ~3,000 documentos internos expostos por erro CMS
-- Draft blog posts, materiais de evento CEO, assets nao publicados
-- Descoberto por Fortune reporter Bea Nolan
+## OPORTUNIDADES REAIS DE ACESSO ANTECIPADO
+- **HackerOne Anthropic Bug Bounty**: https://forms.gle/3ocTorSkkuvcGePn9 (até $25K/jailbreak)
+- **Anthropic Fellows 2026**: Cohort May/Jul, $15.4K/mes + $15K compute
+  - https://job-boards.greenhouse.io/anthropic/jobs/5023394008
 
-## ASL-3 CONNECTION
-- Mythos provavelmente requer ASL-3 protections
-- Constitutional Classifiers, access controls, red-teaming
-- Anthropic tem bug bounty no HackerOne para ASL-3 jailbreaks
-
-## API STATUS (27 Mar 2026)
-- Mythos NAO aparece em NENHUMA doc publica da Anthropic
-- Nenhum model ID, nenhuma referencia em docs.anthropic.com
-- Modelos atuais: Opus 4.6, Sonnet 4.6, Haiku 4.5 (max)
-- Pricing Opus 4.6: $5 input / $25 output per MTok
-- Context: 1M tokens (Opus/Sonnet), 200K (Haiku)
-
-## ACOES DE VANTAGEM ESTRATEGICA
-
-### HackerOne Anthropic Bug Bounty
-- **APLICAR**: https://forms.gle/3ocTorSkkuvcGePn9
-- Max bounty: $25,000 per universal jailbreak
-- Early access a safety systems nao lancados
-- Participantes testam ASL-3 classifiers ANTES do publico
-- See: hackerone-anthropic.md
-
-### Anthropic Fellows Program 2026
-- **APLICAR**: https://job-boards.greenhouse.io/anthropic/jobs/5023394008
-- Cohort 1: May 2026 | Cohort 2: July 2026 | 4 meses
-- Stipend: $3,850/semana ($15,400/mes!)
-- Compute: ~$15K/mes
-- Mentoria direta de researchers Anthropic
-- 40%+ do 1o cohort virou full-time Anthropic
-- Areas: AI security, adversarial robustness, AI control
-- NAO precisa PhD ou ML experience
-
-### Produtos para Integrar Capybara
-- claw-mcp-toolkit, chainlink-sentinel prontos
-- Quando model ID divulgado, so mudar parametro
-- Cada critical finding ($5K-100K) paga meses de API
+## MCP mythos-edge — REALIDADE
+- Localizado em: ~/israel-four/mcp/mythos_mcp_server.py
+- **NAO** conecta a nenhum modelo Mythos. Usa Opus 4.6 (modelo atual desta sessao).
+- security_audit e vuln_scan = prompts rodando no modelo ATUAL, nao em Mythos.
+- mythos_scan = scraper que verifica site da Anthropic por novos modelos.
+- **Util como**: Scanner de novidades + wrapper de audit usando modelo atual.
+- **NAO é**: Acesso a Capybara/Mythos.

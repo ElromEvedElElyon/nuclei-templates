@@ -1,207 +1,109 @@
-# Claude Code Mastery — Complete Internal Architecture
-# Session 72: instructkr reverse-eng | Session 74: FULL SOURCE (nirholas/claude-code)
-# Updated: 31 Mar 2026 — Session 74
+# Claude Code — Estado Real (5 Apr 2026)
 
-## FULL SOURCE CODE (Session 74)
-- **Cloned**: ~/nirholas-claude-code/ — COMPLETE Claude Code source (512K+ lines TS)
-- **40 tools** (not 30), **85+ commands**, React/Ink UI, Bun runtime
-- **Key files**: QueryEngine.ts (46K), Tool.ts (794), commands.ts (758), main.tsx (4684)
-- **Patterns extracted → Israel Framework v3.0**: buildTool(), PermissionMode(4), AgentTool, EventBus, ConcurrentExecutor, SkillRegistry, HMAC Memory
-- **MCP Server**: mcp-server/ — 8 tools, 3 resources, 5 prompts, STDIO+HTTP transport
-- **Feature flags**: PROACTIVE, KAIROS, BRIDGE_MODE, VOICE_MODE, COORDINATOR_MODE
-- **Hidden**: /bughunter, /ant-trace, /good-claude, /ultraplan, /teleport, /thinkback
+## VERSAO
+- **Instalada**: v2.1.92 (4 Apr 2026) — ATUALIZADO de v2.1.63
+- **Sessao atual**: v2.1.63 (REINICIAR para ativar v2.1.92)
+- Auto-updates: ON
+- Source code: ~/nirholas-claude-code/ (512K+ lines TS, referencia)
 
-## COMPLETE TOOL INVENTORY (30 Tools)
-1. **AgentTool** — Sub-agents: general-purpose, explore, plan, claude-code-guide, statusline-setup, verification
-2. **AskUserQuestionTool** — Interactive questions with options
-3. **BashTool** — Shell command execution with sandbox
-4. **BriefTool** — Upload/attach files to context
-5. **ConfigTool** — Settings management
-6. **EnterPlanModeTool** — Switch to plan mode
-7. **EnterWorktreeTool** — Git worktree isolation
-8. **ExitPlanModeV2Tool** — Exit plan with permissions
-9. **ExitWorktreeTool** — Close worktree
-10. **FileEditTool** — Exact string replacement
-11. **FileReadTool** — Read files (text + images + PDFs)
-12. **FileWriteTool** — Create/overwrite files
-13. **GlobTool** — Pattern-based file search
-14. **GrepTool** — Ripgrep content search
-15. **LSPTool** — Language Server Protocol integration
-16. **ListMcpResourcesTool** — List MCP resources
-17. **MCPTool** — Call MCP server tools
-18. **McpAuthTool** — MCP OAuth authentication
-19. **NotebookEditTool** — Jupyter notebook editing
-20. **PowerShellTool** — Windows PowerShell
-21. **ReadMcpResourceTool** — Read MCP resources
-22. **RemoteTriggerTool** — Trigger remote sessions
-23. **ScheduleCronTool** — Cron job management (Create/Delete/List)
-24. **SendMessageTool** — Send messages (Slack?)
-25. **SkillTool** — Execute skills/slash commands
-26. **SleepTool** — Wait/delay
-27. **SyntheticOutputTool** — Synthetic output generation
-28. **TaskTools** — Create/Get/List/Output/Stop/Update tasks
-29. **TeamTools** — Create/Delete teams
-30. **TodoWriteTool** — Todo list management
-31. **ToolSearchTool** — Search available tools
-32. **WebFetchTool** — Fetch web content
-33. **WebSearchTool** — Web search
+## MODELOS REAIS DISPONIVEIS
 
-## COMPLETE COMMAND INVENTORY (60+ Slash Commands)
-### Core Commands
-- `/add-dir` — Add directory to context
-- `/agents` — View/manage sub-agents
-- `/branch` — Git branch operations
-- `/brief` — Quick briefing/attach files
-- `/chrome` — Browser control
-- `/clear` — Clear conversation/caches
-- `/commit` — Git commit
-- `/commit-push-pr` — Commit, push, and create PR
-- `/compact` — Compress context
-- `/config` — View/edit settings
-- `/context` — Manage context window
-- `/copy` — Copy content
-- `/cost` — View cost/usage
-- `/desktop` — Desktop app controls
-- `/diff` — View git diff
-- `/doctor` — Diagnose issues
-- `/effort` — Set reasoning effort level
-- `/exit` — End session
-- `/export` — Export conversation
-- `/fast` — Toggle fast mode (same model, faster)
-- `/feedback` — Submit feedback
-- `/files` — List files in context
-- `/help` — Show help
-- `/hooks` — Manage hooks
-- `/ide` — IDE integration
-- `/init` — Initialize CLAUDE.md
-- `/insights` — Usage analytics
-- `/keybindings` — Customize shortcuts
-- `/login` / `/logout` — Auth management
-- `/mcp` — MCP server management
-- `/memory` — View/edit memory files
-- `/mobile` — Mobile app controls
-- `/model` — Switch model
-- `/permissions` — Permission settings
-- `/plan` — Enter plan mode
-- `/plugin` — Plugin management (marketplace, install, discover)
-- `/release-notes` — Show latest changes
-- `/remote-env` / `/remote-setup` — Remote environment
-- `/rename` — Rename session
-- `/resume` — Resume previous session
-- `/review` — Code review
-- `/rewind` — Undo changes
-- `/sandbox-toggle` — Toggle sandbox mode
-- `/security-review` — Security audit
-- `/session` — Session management
-- `/share` — Share conversation
-- `/skills` — View/manage skills
-- `/stats` — Session statistics
-- `/status` — Current status
-- `/stickers` — Visual stickers
-- `/tag` — Tag sessions
-- `/tasks` — Task management
-- `/theme` / `/color` — Visual theme
-- `/thinkback` — Review thinking process
-- `/ultraplan` — Advanced planning mode
-- `/upgrade` — Update Claude Code
-- `/usage` / `/extra-usage` — Usage tracking
-- `/version` — Show version
-- `/vim` — Vim mode toggle
-- `/voice` — Voice input
+| Modelo | ID | $/MTok In | $/MTok Out | Context | Max Out |
+|--------|-----|----------|-----------|---------|---------|
+| **Opus 4.6** | claude-opus-4-6 | $5 | $25 | 1M | 128K |
+| **Sonnet 4.6** | claude-sonnet-4-6 | $3 | $15 | 1M | 64K |
+| **Haiku 4.5** | claude-haiku-4-5-20251001 | $1 | $5 | 200K | 64K |
 
-### Hidden/Internal Commands
-- `/ant-trace` — Anthropic internal trace
-- `/autofix-pr` — Auto-fix PR issues
-- `/bridge` / `/bridge-kick` — Bridge mode
-- `/btw` — Side notes
-- `/bughunter` — Bug hunting mode
-- `/ctx_viz` — Context visualization
-- `/debug-tool-call` — Debug tool calls
-- `/good-claude` — Positive reinforcement
-- `/heapdump` — Memory dump
-- `/mock-limits` — Test rate limits
-- `/oauth-refresh` — Refresh OAuth tokens
-- `/onboarding` — New user setup
-- `/teleport` — Remote teleport
-- `/output-style` — Output formatting
+### Legacy (ainda na API)
+- Sonnet 4.5, Opus 4.5, Opus 4.1, Sonnet 4.0, Opus 4.0
+- Haiku 3 — DEPRECATED, retira 19 Apr 2026
 
-## BUILT-IN SKILLS (18 Skills)
-1. **batch** — Batch operations
-2. **claudeApi** — Claude API interaction
-3. **claudeInChrome** — Chrome integration
-4. **debug** — Debugging utilities
-5. **keybindings** — Keyboard shortcut management
-6. **loop** — Iterative operations
-7. **loremIpsum** — Placeholder text
-8. **remember** — Memory management
-9. **scheduleRemoteAgents** — Schedule remote agents
-10. **simplify** — Code simplification
-11. **skillify** — Create new skills
-12. **stuck** — Get unstuck from blocks
-13. **updateConfig** — Configuration updates
-14. **verify** — Verify implementations
-15. **commit** — Git commit
-16. **claude-developer-platform** — Build with Claude API
-17. **keybindings-help** — Keyboard help
+### Mythos/Capybara — NAO DISPONIVEL
+- Teste interno early-access. Leak Fortune 27 Mar. Sem release date.
+- Ver: claude-mythos-intel.md
 
-## SUBSYSTEMS ARCHITECTURE
-- **assistant** — Core assistant logic
-- **bootstrap** — Startup/initialization
-- **bridge** — External connections
-- **buddy** — Companion features
-- **cli** — CLI interface
-- **components** — UI components
-- **constants** — Configuration constants
-- **coordinator** — Agent coordination
-- **entrypoints** — Entry points
-- **hooks** — Event hooks system
-- **keybindings** — Key binding engine
-- **memdir** — Memory directory management
-- **migrations** — Data migrations
-- **moreright** — Permission escalation
-- **native_ts** — TypeScript native modules
-- **outputStyles** — Output formatting
-- **plugins** — Plugin system
-- **remote** — Remote execution
-- **schemas** — Data schemas
-- **screens** — UI screens
-- **server** — Server mode
-- **services** — Background services
-- **skills** — Skill system
-- **state** — State management
-- **types** — Type definitions
-- **upstreamproxy** — Proxy management
-- **utils** — Utilities
-- **vim** — Vim mode
-- **voice** — Voice input
+## FEATURES v2.1.64→v2.1.92 (DISPONIVEIS POS-RESTART)
 
-## AGENT TYPES (Built-in)
-1. **general-purpose** — Research, code search, multi-step tasks (ALL tools)
-2. **Explore** — Fast codebase exploration (read-only tools)
-3. **Plan** — Architecture planning (read-only tools)
-4. **claude-code-guide** — Help with Claude Code usage
-5. **statusline-setup** — Configure status line
-6. **verification** — Verify implementation correctness
+### Novos Comandos
+- `/powerup` — Lessons interativas
+- `/effort low|medium|high` — Ajustar profundidade
+- `/loop 5m <prompt>` — Rodar prompts em intervalo
+- `/simplify` — Review code quality
+- `/color` — Mudar cor prompt bar
+- `/plan <desc>` — Plan mode com descricao direta
+- `/release-notes` — Interactive version picker
+- `/cost` — Per-model cost breakdown
 
-## KEY POWER-USER TECHNIQUES
-- Use `/compact` to free context window
-- Use `/effort` to adjust reasoning depth per task
-- Use `/fast` for quick tasks (same model, faster output)
-- Use `/plan` before complex implementations
-- Parallel Agent spawning for research
-- `/plugin` marketplace for extending capabilities
-- `/hooks` for automation on tool events
-- `/skills` directory for custom slash commands
-- CLAUDE.md for persistent project instructions
-- `.claude/settings.json` for MCP servers and permissions
-- Git worktrees for isolated experiments
+### Novas Capacidades
+- **ExitWorktree tool** — Sair de worktree
+- **Named Subagents** — @mention typeahead
+- **MCP Elicitation** — Servers pedem input via dialogs
+- **Remote sessions** — Bridge para claude.ai/code (browser/phone)
+- **Computer Use** — Point, click, navigate (Pro/Max)
+- **Cloud scheduled tasks** — Cron em infra Anthropic
+- **Auto-fix CI** — Cloud corrige PRs automaticamente
+- **300K output** — Batches API com beta header
 
-## CLAUDE MYTHOS / CAPYBARA
-- **Status**: Training COMPLETE, limited early access
-- **Tier**: NEW 4th tier above Opus (Haiku < Sonnet < Opus < Capybara)
-- **Model ID**: Unknown yet (possibly claude-capybara-*)
-- **Capabilities**: "Dramatically" better than Opus 4.6 at coding + reasoning
-- **Release**: Q2-Q3 2026 estimated (Polymarket: 45% by June 30)
-- **Pricing**: More expensive than Opus
-- **NOT available via API yet**
-- Source: Fortune, SiliconANGLE, Euronews (27 Mar 2026)
+### Performance
+- Write tool diff 60% mais rapido
+- 74% menos re-renders
+- Startup ~500ms mais rapido
+- SSE transport linear time
+
+### Seguranca
+- `sandbox.failIfUnavailable`
+- `allowRead` em regioes denyRead
+- `CLAUDE_CODE_SUBPROCESS_ENV_SCRUB`
+
+### Hooks Novos
+- `CwdChanged`, `FileChanged`, `TaskCreated`
+- `PermissionDenied` — retry on denial
+- `PostCompact` — after compaction
+- Conditional `if` field em hooks
+
+### Config/Env Vars Novos
+- `CLAUDE_CODE_NO_FLICKER=1`
+- `CLAUDE_CODE_DISABLE_CRON`
+- `ANTHROPIC_CUSTOM_MODEL_OPTION`
+- `MCP_CONNECTION_NONBLOCKING=true`
+
+### Removidos
+- `/tag`, `/vim` removidos (usar /config)
+- `/output-style` deprecated
+- Agent `resume` parameter removido
+
+## TOOLS COMPLETOS (33 tools built-in)
+AgentTool, AskUserQuestion, Bash, Brief, Config, EnterPlanMode, EnterWorktree, ExitPlanMode, ExitWorktree, FileEdit, FileRead, FileWrite, Glob, Grep, LSP, ListMcpResources, MCPTool, McpAuth, NotebookEdit, PowerShell, ReadMcpResource, RemoteTrigger, ScheduleCron, SendMessage, Skill, Sleep, SyntheticOutput, TaskTools (Create/Get/List/Output/Stop/Update), TeamTools, TodoWrite, ToolSearch, WebFetch, WebSearch
+
+## AGENT TYPES (built-in)
+1. general-purpose — Research, code, multi-step (ALL tools)
+2. Explore — Fast codebase search (read-only)
+3. Plan — Architecture planning (read-only)
+4. claude-code-guide — Claude Code help
+5. statusline-setup — Status line config
+6. code-reviewer — PR review
+7. revenue-accelerator — Revenue/bounties
+8. deployer — Build/deploy
+9. bounty-hunter — Security audit
+
+## MCP SERVERS ATIVOS (desta maquina — ~/.mcp.json)
+1. **xai-grok** — Grok chat/image/vision/search (KEY PENDENTE)
+2. **grok-search** — Web/news/X search (KEY PENDENTE)
+3. **x-mcp** — Twitter/X CRUD (OAuth ATIVO)
+4. **mythos-edge** — Scanner Anthropic + audit via modelo ATUAL (NAO é Mythos)
+5. **mcp-crypto-prices** — CoinGecko data
+6. **openclaw-webtools** — SEO/DNS/SSL/headers
+7. **claw-mcp-toolkit** — Crypto/social/finance/productivity
+8. **sequential-thinking** — Chain-of-thought
+9. **paypal** — PayPal HTTP MCP
+
+## POWER-USER TECHNIQUES
+- `/compact` — Liberar context window
+- `/effort` — Ajustar reasoning por task
+- `/fast` — Mesmo modelo, output mais rapido
+- `/plan` — Planejar antes de implementar
+- Parallel Agent spawning para pesquisa
+- `/plugin` marketplace para estender
+- `/hooks` para automacao em tool events
+- Git worktrees para experimentos isolados
+- CLAUDE.md para instrucoes persistentes

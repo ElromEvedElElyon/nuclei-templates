@@ -68,6 +68,6 @@
 1. AGUARDAR Immunefi #71022 (96h SLA, nada a fazer)
 2. AGUARDAR C4 Chainlink resultado
 3. UPGRADE RAM → 8GB+ (usuário planeja)
-4. COM 8GB: Criar Algora → clamar Golem MCP $3,500 + Twenty $2,500
+4. COM 8GB: Criar Algora → clamar Good Angel MCP $3,500 + Twenty $2,500
 5. COM 8GB: Submeter bugs a HackenProof 0-rep → build rep → NEAR
 6. REGISTRAR hackathons (Colosseum, AgentBeats, INITIATE)
