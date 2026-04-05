@@ -65,7 +65,7 @@
 - **TensorBlock review mismatch**: Reviewer thought entry was under wrong category but it was already correct. Always check diff before panicking — just reply with clarification.
 - **Guardian submissions doubled**: Running submit script twice creates duplicates (16 total). API doesn't dedup. May affect review process — each batch has overlapping findings.
 - **Colosseum Frontier $2.5M**: Hackathon Apr 6 - May 11. Already have Colosseum account from previous registration. Use GitHub OAuth to register for Frontier.
-- **Stripe key mismatch**: Multiple Stripe keys exist in memory. The one in credentials-secure.md works (`sk_live_51RlC8t...TfUzN`), the one in MEMORY.md doesn't. Always use credentials file as source of truth.
+- **Stripe key mismatch**: Multiple Stripe keys exist in memory. The one in credentials-secure.md works (see locally), the one in MEMORY.md doesn't. Always use credentials file as source of truth.
 - **All revenue = $0 still**: SOL, ETH, BTC all 0.000. Stripe 0 charges. PayPal 0. Need BROWSER for most revenue actions (npm publish, SEBRAE, Colosseum, HackenProof, Opire).
 
 ## SESSION 88 — GUARDIAN 8/8 SUBMITTED + KDP PT PUBLISHED
@@ -291,7 +291,7 @@
 - **~31 KEV CVEs still uncovered** in issue #7549
 
 ### GITHUB WEB LOGIN BLOCKERS
-- gh CLI token (gho_) CANNOT be used as web password — GitHub rejects it
+- gh CLI token CANNOT be used as web password — GitHub rejects it
 - gnome-keyring Login collection LOCKED — Chrome cookies can't be decrypted properly
 - os_crypt portal prev_init_success: false — BUT garbled output suggests keyring key was used at some point
 - Cookie regex cleanup: `re.search(r'[a-zA-Z0-9_%+/=-]{4,}$', text)` gets suffix

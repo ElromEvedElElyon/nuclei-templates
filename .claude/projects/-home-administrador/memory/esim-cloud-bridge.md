@@ -50,7 +50,7 @@ Use your eSIM on any device without a phone — SMS, calls, 2FA.
 - OU contatar Claro para reemitir QR code do eSIM
 
 ## TWILIO (funcional)
-- **SID**: TWILIO_SID_REDACTED
+- **SID**: [TWILIO_SID — see credentials-secure.md locally]
 - **Phone**: +13187149390 (SMS+MMS+Voice)
 - **Saldo**: $14.34
 - **Checker**: `bash ~/twilio-sms-checker.sh`

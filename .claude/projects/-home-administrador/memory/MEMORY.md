@@ -182,10 +182,16 @@
 - **Modelos reais**: Opus 4.6 ($5/$25, 1M ctx, 128K out), Sonnet 4.6 ($3/$15), Haiku 4.5 ($1/$5).
 - **Solomon Edge MCP v2.0**: deep_audit, vuln_analyze, code_review, bounty_scout, ai_chain, model_watch
 - **Solomon Orchestrator**: `python3 ~/israel-four/mcp/solomon_orchestrator.py` (audit/vuln/chain/bounty-prep/rex)
-- **Rex Engine v1.0**: ~/Rex/ (PRIVATE repo). 4-pass consensus audit, 10 vuln classes, 70+ signatures.
-  - `python3 ~/Rex/rex_engine.py audit <file>` | `audit-dir <dir>` | `quick <file>`
+- **Rex Engine v1.1**: ~/Rex/ (PRIVATE repo). 4-pass consensus audit, 19 vuln classes, 116 signatures.
+  - `python3 ~/Rex/rex_engine.py audit <file>` | `audit-dir <dir>` | `quick <file>` | `stats` | `clear-cache`
+  - Languages: Solidity, Rust/Anchor, Move, Vyper (auto-detect)
+  - 12h result caching, Gemini key rotation, multi-format reports (immunefi/c4/markdown/json)
   - Consensus: Gemini analisa → OpenRouter verifica → divergencias = false positives eliminados
 - **AI Stack FREE**: Gemini 2.5 Flash (1M ctx) + OpenRouter Qwen3 235B ($0) + Opus 4.6 (1M/128K)
+- **Singularity Memory**: github.com/ElromEvedElElyon/singularity-memory (PRIVATE)
+  - 63+ memory files, sanitized (keys redacted), auto-sync every 6h via cron
+  - `bash ~/memory-sync.sh` — manual sync
+  - `bash ~/agent-evolution.sh` — evolution cycle (every 2h cron)
 - **GitHub Token**: FULL SCOPES (key 147367413)
 - **KDP**: EN ASIN A1M3B0MAA1KRQ, PT ASIN AXQR3EQ9UQXCU
 
