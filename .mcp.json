@@ -28,10 +28,14 @@
         "TWITTER_ACCESS_SECRET": "CONFIGURE_EM_developer.x.com"
       }
     },
-    "mythos-edge": {
+    "solomon-edge": {
       "command": "python3",
       "args": ["/home/administrador/israel-four/mcp/mythos_mcp_server.py"],
-      "env": {}
+      "env": {
+        "GEMINI_API_KEY": "AIzaSyDQI6pbeelQN4q2m0UIIEeqvC-y4EJ0oJQ",
+        "GEMINI_API_KEY_STD": "AIzaSyBa5C_6EnfBi_auEaJ1HGDHCg-oJH54CLw",
+        "OPENROUTER_API_KEY": "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"
+      }
     }
   }
 }
